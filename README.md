@@ -1,6 +1,6 @@
 # Mentiphy
 
-Läromedel för gymnasiet
+Läromedel för gymnasiet, baserat på https://github.com/executablebooks/cookiecutter-jupyter-book
 
 ## Usage
 
