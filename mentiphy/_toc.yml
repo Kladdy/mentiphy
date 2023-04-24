@@ -11,7 +11,14 @@ parts:
     - file: markdown-notebooks
   - caption: Fysik 1
     chapters:
-    - file: kurser/fysik-1/markdown
+    - file: kurser/fysik-1/rörelse
+    - file: kurser/fysik-1/newtons-lagar
+    - file: kurser/fysik-1/energi
+    - file: kurser/fysik-1/rörelsemängd
+    - file: kurser/fysik-1/termodynamik
+    - file: kurser/fysik-1/elektricitet
+    - file: kurser/fysik-1/kärnfysik
+    - file: kurser/fysik-1/relativitetsteori
   # - caption: Fysik 2
   #   chapters:
   #   - file: markdown
