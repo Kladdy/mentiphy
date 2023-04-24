@@ -2,8 +2,34 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+root: index
+parts:
+  - caption: Exempel
+    chapters:
+    - file: markdown
+    - file: notebooks
+    - file: markdown-notebooks
+  - caption: Fysik 1
+    chapters:
+    - file: kurser/fysik-1/markdown
+  # - caption: Fysik 2
+  #   chapters:
+  #   - file: markdown
+  # - caption: Fysik 3
+  #   chapters:
+  #   - file: markdown
+  # - caption: Matematik 1
+  #   chapters:
+  #   - file: markdown
+  # - caption: Matematik 2
+  #   chapters:
+  #   - file: markdown
+  # - caption: Matematik 3
+  #   chapters:
+  #   - file: markdown
+  # - caption: Matematik 4
+  #   chapters:
+  #   - file: markdown
+  # - caption: Matematik 5
+  #   chapters:
+  #   - file: markdown
