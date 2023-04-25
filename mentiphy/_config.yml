@@ -6,9 +6,9 @@
 #######################################################################################
 # Book settings
 title                       : Mentiphy  # The title of the book. Will be placed in the left navbar.
-author                      : Emma Söderström & Emil Sarling  # The author of the book
+author                      : Emil Sarling & Emma Söderström  # The author of the book
 copyright                   : "2023"  # Copyright year to be placed in the footer
-logo                        : img/logo.png  # A path to the book logo
+logo                        : img/log.png  # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

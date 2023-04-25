@@ -21,7 +21,7 @@ parts:
   #   - file: markdown
   # - caption: Fysik 3
   #   chapters:
-  #   - file: markdown
+  #   - file: kurser/fysik-3/relativitetsteori
   # - caption: Matematik 1
   #   chapters:
   #   - file: markdown
