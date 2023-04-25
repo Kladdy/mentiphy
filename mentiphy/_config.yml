@@ -39,8 +39,24 @@ html:
   extra_footer: "Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
 
 # Configure sphinx to use Swedish strings, such as search_bar_text
+# Do "jupyter-book config sphinx mentiphy" to get the options given this _config.yml
 sphinx:
   config: 
     html_theme_options:
       search_bar_text: "Sök på Mentiphy..."
+      # launch_buttons:
+      #   notebook_interface: "classic"
+      #   binderhub_url: ""
+      #   jupyterhub_url: ""
+      #   thebe: false
+      #   colab_url: ""
+      # path_to_docs: ""
+      # repository_url: ""
+      # repository_branch: "master"
+      extra_footer: "Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
+      home_page_in_toc: true
+      # announcement: ""
+      # analytics:
+      #   google_analytics_id: ""
+      # use_repository_button: false
     language: sv
