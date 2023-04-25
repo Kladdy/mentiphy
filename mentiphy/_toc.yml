@@ -4,11 +4,6 @@
 format: jb-book
 root: index
 parts:
-  - caption: Exempel
-    chapters:
-    - file: markdown
-    - file: notebooks
-    - file: markdown-notebooks
   - caption: Fysik 1
     chapters:
     - file: kurser/fysik-1/rörelse
