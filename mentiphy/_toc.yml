@@ -19,7 +19,9 @@ parts:
     - file: kurser/fysik-1/elektricitet
     - file: kurser/fysik-1/kärnfysik
     - file: kurser/fysik-1/relativitetsteori
-  # - caption: Fysik 2
+  - caption: Fysik 2
+    chapters:
+    - file: kurser/fysik-2/elektromagnetism
   #   chapters:
   #   - file: markdown
   # - caption: Fysik 3
