@@ -4,6 +4,15 @@
 format: jb-book
 root: index
 parts:
+  - caption: Fysik åk 9
+    chapters:
+    - file: kurser/fysik-9/materia
+    - file: kurser/fysik-9/mekanik
+    - file: kurser/fysik-9/tryckvärmeklimat
+    - file: kurser/fysik-9/elektromagnetism
+    - file: kurser/fysik-9/vågoroptik
+    - file: kurser/fysik-9/astronomi
+    - file: kurser/fysik-9/atomokärn
   - caption: Fysik 1
     chapters:
     - file: kurser/fysik-1/rörelse
