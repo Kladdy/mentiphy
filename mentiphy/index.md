@@ -1,4 +1,7 @@
-![](img/l.png)
+```{image} img/l.png
+:alt: mentiphy
+:class: bg-transparent
+```
 
 # Hem
 
