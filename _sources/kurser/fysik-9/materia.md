@@ -47,6 +47,45 @@ En atom består av en positivt laddad atomkärna, som är uppbyggd av positivt l
 
 _____________________________________________
 
+### Uppgifter
+
+1. Vad är materia uppbyggt av?
+
+```{admonition} Visa svar
+:class: caution collapsible
+All materia är uppbyggd av atomer.
+```
+
+2. Finns det sådant som inte är materia?
+
+```{admonition} Visa svar
+:class: caution collapsible
+Ja, tillexempel värme och ljus. Materia måste kunna vägas, men notera att även luft kan vägas!
+```
+
+3. Vad menas med ett grundämne?
+
+```{admonition} Visa svar
+:class: caution collapsible
+Ett ämne som bara består av en sorts atom.
+```
+
+4. Vad kallas ämnen som inte är grundämnen?
+
+```{admonition} Visa svar
+:class: caution collapsible
+Kemiska föreningar (eller också sammansatta ämnen).
+```
+
+5. Vad är en atom uppbyggd av?
+
+```{admonition} Visa svar
+:class: caution collapsible
+En atomkärna (som består av protoner och neutroner) och en eller flera elektroner.
+```
+
+_____________________________________________
+
 ## Ämnen i olika former
 
 Hoolabaloo
