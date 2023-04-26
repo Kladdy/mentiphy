@@ -17,7 +17,15 @@ _____________________________________________
 
 Här nedan finns en video som kort förklarar atomer och molekyler:
 
-LÄGG IN VIDEO HÄR NÄR DEN FINNS PÅ YOUTUBE
+<iframe
+    width="400"
+    height="300"
+    src="https://www.youtube.com/embed/VUc68sRGl9g"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 Atomer är pyttesmå byggstenar som skapar alla ämnen runt omkring oss. Det finns massvis med olika atomer och tillsammans kan atomerna bilda *molekyler*. Exempel på några molekyler är vatten ($H_2O$) och syre ($O_2$). 
 
@@ -39,8 +47,8 @@ Trots att atomer är ofattbart små så består de av ännu mindre byggstenar. A
 Här följer en video som fördjupar sig lite mer i atomens uppbyggnad:
 
 <iframe
-    width="640"
-    height="480"
+    width="400"
+    height="300"
     src="https://www.youtube.com/embed/T5KAOqxvsbQ"
     frameborder="0"
     allow="autoplay; encrypted-media"
