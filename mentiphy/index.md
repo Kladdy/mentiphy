@@ -1,4 +1,4 @@
-Vad händer om jag gör någonting ovanför titeln?
+![](img/l.png)
 
 # Hem
 
@@ -12,7 +12,14 @@ Det gick att göra dessa inforutor med egna titlar. Man kan välja mellan ett av
 attention, caution, danger, error, hint, important, note, seealso, warning
 ``` -->
 
+_____________________________________________
+
 ## Om oss
+
+Vi som gör den här hemsidan heter Emil Sarling och Emma Söderström. Vi tog ämneslärarexamen vid Uppsala universitet år 2023, och är båda legitimerade ämneslärare i fysik och matematik. 
+
+<!-- Typ vart vi jobbar och så?
+Lägga in länk till pdf på vårt examensarbete? -->
 
 <!-- ```{tableofcontents}
 ``` -->

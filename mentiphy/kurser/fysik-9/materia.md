@@ -38,7 +38,15 @@ Trots att atomer är ofattbart små så består de av ännu mindre byggstenar. A
 
 Här följer en video som fördjupar sig lite mer i atomens uppbyggnad:
 
-LÄGG IN VIDEO HÄR
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/T5KAOqxvsbQ"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ```{admonition} Fördjupning
 :class: seealso
