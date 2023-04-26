@@ -104,7 +104,7 @@ _____________________________________________
 
 ### Spel
 
-Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado).
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Prova att bygga olika sorters atomer. Vad händer om du lägger till fler än två elektroner? Kika också på periodiska systemet, vad finns det för samband med antalet protoner och atomens position i periodiska systemet?
 
 <div>
    <iframe src="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"
