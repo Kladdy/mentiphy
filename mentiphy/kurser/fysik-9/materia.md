@@ -11,5 +11,42 @@ Med hjälp av elementen kunde Aristoteles förklara varför en sten faller ner n
 
 Idag vet vi att den här modellen inte fungerar, utan att all materia istället består av *atomer*. Atomer är små beståndsdelar som bygger upp vår omvärld.
 
+_____________________________________________
+
 ## Atomer och molekyler
 
+Här nedan finns en video som kort förklarar atomer och molekyler:
+
+LÄGG IN VIDEO HÄR NÄR DEN FINNS PÅ YOUTUBE
+
+Atomer är pyttesmå byggstenar som skapar alla ämnen runt omkring oss. Det finns massvis med olika atomer och tillsammans kan atomerna bilda *molekyler*. Exempel på några molekyler är vatten ($H_2O$) och syre ($O_2$). 
+
+Alla ämnen vi känner till är antingen ett *grundämne* eller en *kemisk förening*. Grundämnen är de ämnen som bara består av en atom, exempelvis så är syre ett grundämne eftersom det består av syremolekyler som bara innehåller två syreatomer. Kemiska föreningar kallas alla ämnen som innehåller minst två olika sorters atomer, så som vatten som består av två väteatomer och en syreatom.
+
+```{admonition} Kom ihåg
+:class: attention
+* Atomer bygger upp materia
+* Atomer är ofattbart små
+* Atomer bildar molekyler
+* Grundämnen består bara av en sorts atom
+* Kemiska föreningar består av olika sorters atomer
+```
+
+_____________________________________________
+
+Trots att atomer är ofattbart små så består de av ännu mindre byggstenar. Atomen har en positivt laddad *atomkärna* som omges av negativt laddade *elektroner*. 
+
+Här följer en video som fördjupar sig lite mer i atomens uppbyggnad:
+
+LÄGG IN VIDEO HÄR
+
+```{admonition} Fördjupning
+:class: seealso
+En atom består av en positivt laddad atomkärna, som är uppbyggd av positivt laddade *protoner* och oladdade *neutroner*. Kring atomkärnan finns en eller flera negativt laddade *elektroner*. Inte nog med det, även elektronerna och protonerna är uppbyggda av ännu mindre byggstenar som kallas för *kvarkar*.
+```
+
+_____________________________________________
+
+## Ämnen i olika former
+
+Hoolabaloo
