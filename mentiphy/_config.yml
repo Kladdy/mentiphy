@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : Mentiphy  # The title of the book. Will be placed in the left navbar.
+title                       : mentiphy  # The title of the book. Will be placed in the left navbar.
 author                      : Emil Sarling & Emma Söderström  # The author of the book
 copyright                   : "2023"  # Copyright year to be placed in the footer
 logo                        : img/lo.png  # A path to the book logo
