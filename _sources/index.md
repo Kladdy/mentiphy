@@ -6,13 +6,13 @@ Vad händer om jag gör någonting ovanför titeln?
 
 Därför har vi skapat den här sidan. Den erbjuder ett hjälpmedel för elever i grundskolans senare del samt gymnasieskolan, så att alla ska ha tillgång till gratis fysikundervisning på nätet. För varje enskild kurs (och mot nians mål) finns en varsin kategori med olika teman som innehåller förklaringar, videor, uppgifter och mycket mer, så det är bara att börja utforska fysikens värld!
 
-```{admonition} **Detta** är *mycket* viktigt!
+<!-- ```{admonition} **Detta** är *mycket* viktigt!
 :class: warning
 Det gick att göra dessa inforutor med egna titlar. Man kan välja mellan ett av följande format:
 attention, caution, danger, error, hint, important, note, seealso, warning
-```
+``` -->
 
-Banger skriver en längre text för att den inte ska se så smal ut i introsidan
+## Om oss
 
-```{tableofcontents}
-```
+<!-- ```{tableofcontents}
+``` -->

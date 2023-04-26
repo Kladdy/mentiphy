@@ -303,7 +303,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -319,6 +321,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Innehåll </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#om-oss">Om oss</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -333,42 +343,20 @@ document.write(`
 <h1>Hem<a class="headerlink" href="#hem" title="Permalink to this heading">#</a></h1>
 <p><strong>Fysik är svårt</strong>. Till och med Aristoteles, som vi kan komma överens om var en rätt klyftig kille, ägnade en hel del tid åt att bevisa att jorden <em>inte</em> roterar kring sin egen axel (vilket vi idag ju vet att den gör). Det har tagit flera tusen år och många smarta personer att nå dit vi är idag i fysiken, och idag krävs det också smarta personer för att faktiskt förstå den här fysiken.</p>
 <p>Därför har vi skapat den här sidan. Den erbjuder ett hjälpmedel för elever i grundskolans senare del samt gymnasieskolan, så att alla ska ha tillgång till gratis fysikundervisning på nätet. För varje enskild kurs (och mot nians mål) finns en varsin kategori med olika teman som innehåller förklaringar, videor, uppgifter och mycket mer, så det är bara att börja utforska fysikens värld!</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>Detta</strong> är <em>mycket</em> viktigt!</p>
-<p>Det gick att göra dessa inforutor med egna titlar. Man kan välja mellan ett av följande format:
-attention, caution, danger, error, hint, important, note, seealso, warning</p>
-</div>
-<p>Banger skriver en längre text för att den inte ska se så smal ut i introsidan</p>
+<!-- ```{admonition} **Detta** är *mycket* viktigt!
+:class: warning
+Det gick att göra dessa inforutor med egna titlar. Man kan välja mellan ett av följande format:
+attention, caution, danger, error, hint, important, note, seealso, warning
+``` -->
+<section id="om-oss">
+<h2>Om oss<a class="headerlink" href="#om-oss" title="Permalink to this heading">#</a></h2>
+<!-- ```{tableofcontents}
+``` --></section>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fysik åk 9</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/materia.html">Materia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/mekanik.html">Mekanik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/tryckv%C3%A4rmeklimat.html">Tryck, värme och klimat</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/elektromagnetism.html">Elektromagnetism</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/v%C3%A5goroptik.html">Vågor och optik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/astronomi.html">Astronomi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-9/atomok%C3%A4rn.html">Atomfysik och energiförsörjning</a></li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fysik 1</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/r%C3%B6relse.html">Rörelse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/newtons-lagar.html">Newtons lagar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/energi.html">Energi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/r%C3%B6relsem%C3%A4ngd.html">Rörelsemängd</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/termodynamik.html">Termodynamik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/elektricitet.html">Elektricitet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/k%C3%A4rnfysik.html">Kärnfysik</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-1/relativitetsteori.html">Relativitetsteori</a></li>
-</ul>
 </div>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Fysik 2</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="kurser/fysik-2/elektromagnetism.html">Elektromagnetism</a></li>
-</ul>
 </div>
 </section>
 
@@ -421,6 +409,20 @@ attention, caution, danger, error, hint, important, note, seealso, warning</p>
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Innehåll
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#om-oss">Om oss</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
