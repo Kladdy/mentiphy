@@ -18,8 +18,9 @@ _____________________________________________
 Här nedan finns en video som kort förklarar atomer och molekyler:
 
 <iframe
-    width="400"
-    height="300"
+    width="100%"
+    max-width="800"
+    height="450"
     src="https://www.youtube.com/embed/VUc68sRGl9g"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -47,8 +48,9 @@ Trots att atomer är ofattbart små så består de av ännu mindre byggstenar. A
 Här följer en video som fördjupar sig lite mer i atomens uppbyggnad:
 
 <iframe
-    width="400"
-    height="300"
+    width="100%"
+    max-width="800"
+    height="450"
     src="https://www.youtube.com/embed/T5KAOqxvsbQ"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -108,12 +110,12 @@ Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av Univ
 
 <div>
    <iframe src="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"
-        width="400"
-        height="300"
+        width="100%"
+        max-width="800"
+        height="450"
         allowfullscreen>
     </iframe>
 </div>
-
 
 _____________________________________________
 
