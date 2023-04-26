@@ -102,6 +102,21 @@ En atomkärna (som består av protoner och neutroner) och en eller flera elektro
 
 _____________________________________________
 
+### Spel
+
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado).
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html"
+        width="400"
+        height="300"
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+_____________________________________________
+
 ## Ämnen i olika former
 
 Hoolabaloo
