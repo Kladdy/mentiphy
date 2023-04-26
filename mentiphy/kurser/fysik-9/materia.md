@@ -52,35 +52,35 @@ _____________________________________________
 1. Vad är materia uppbyggt av?
 
 ```{admonition} Visa svar
-:class: caution collapsible
+:class: caution dropdown
 All materia är uppbyggd av atomer.
 ```
 
 2. Finns det sådant som inte är materia?
 
 ```{admonition} Visa svar
-:class: caution collapsible
+:class: caution dropdown
 Ja, tillexempel värme och ljus. Materia måste kunna vägas, men notera att även luft kan vägas!
 ```
 
 3. Vad menas med ett grundämne?
 
 ```{admonition} Visa svar
-:class: caution collapsible
+:class: caution dropdown
 Ett ämne som bara består av en sorts atom.
 ```
 
 4. Vad kallas ämnen som inte är grundämnen?
 
 ```{admonition} Visa svar
-:class: caution collapsible
+:class: caution dropdown
 Kemiska föreningar (eller också sammansatta ämnen).
 ```
 
 5. Vad är en atom uppbyggd av?
 
 ```{admonition} Visa svar
-:class: caution collapsible
+:class: caution dropdown
 En atomkärna (som består av protoner och neutroner) och en eller flera elektroner.
 ```
 
