@@ -121,4 +121,61 @@ _____________________________________________
 
 ## Ämnen i olika former
 
-Hoolabaloo
+Ämnen är uppbyggda av atomer och molekyler, men trots att ett ämne (exempelvis vatten) består av samma molekyler ($H_2O$) så kan ämnet ha olika *form*. Här nedan finns en video som förklarar det här lite närmare.
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/6eYnRtKrXek"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+De tre formerna som tas upp i videon är fast form (som järn, guld och is), flytande form (som bensin, sprit och vatten) och gasform (som syre, koldioxid och vatten).
+
+```{admonition} Kom ihåg
+:class: attention
+Ett ämne kan ha olika form. Det är samma molekyler oavsett vilken form ämnet är i, men molekylerna beter sig olika:
+* I fast form sitter molekylerna fast och vibrerar på sina bestämda platser
+* I flytande form sitter molekylerna något lösare och kan byta plats med varandra
+* I gasform rör sig molekylerna så pass mycket att de bryter sig loss från varandra
+```
+
+_____________________________________________
+
+Mellan dessa tre former så finns det fyra olika sorters övergångar som är bra att ha koll på:
+
+* **Smältning** är när ett ämne övergår från fast till flytande form (tänk på is som smälter)
+* **Stelning** är när ett ämne övergår från flytande till fast form (guld som har smält kan stelna om den höga temperaturen inte bibehålls)
+* **Avdunstning** är när ett ämne övergår från flytande form till gasform (man säger att ämnet avdunstar)
+* **Kondensation** är när ett ämne övergår från gasform till flytande form (man säger att ämnet kondenseras)
+
+_____________________________________________
+
+De här övergångarna sker vid olika temperaturer beroende på vilket ämne det handlar om. Vatten smälter/stelnar vid 0&deg;C och avdunstar/kondenseras vid 100&deg;C. För guld däremot (som vanligtvis är i fast form) krävs det mer än 1000&deg;C för att det ska smälta!
+
+_____________________________________________
+
+### Experiment
+
+Experiment med glaset
+
+_____________________________________________
+
+### Uppgifter
+
+Några uppgifter
+
+_____________________________________________
+
+### Spel
+
+PhET spel
+
+<!-- Lägg in experiemnt med vatten som får droppar på utsidan.
+lägg in spel från phet
+lägg in uppgifter -->
+
