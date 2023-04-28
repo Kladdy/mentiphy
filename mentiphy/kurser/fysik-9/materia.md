@@ -155,7 +155,7 @@ Mellan dessa tre former så finns det fyra olika sorters övergångar som är br
 
 _____________________________________________
 
-De här övergångarna sker vid olika temperaturer beroende på vilket ämne det handlar om. Vatten smälter/stelnar vid 0&deg;C och avdunstar/kondenseras vid 100&deg;C. För guld däremot (som vanligtvis är i fast form) krävs det mer än 1000&deg;C för att det ska smälta!
+<!-- De här övergångarna sker vid olika temperaturer beroende på vilket ämne det handlar om. Vatten smälter/stelnar vid 0&deg;C och avdunstar/kondenseras vid 100&deg;C. För guld däremot (som vanligtvis är i fast form) krävs det mer än 1000&deg;C för att det ska smälta! -->
 
 _____________________________________________
 
@@ -173,7 +173,16 @@ _____________________________________________
 
 ### Spel
 
-PhET spel
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Välj "Intro" i första läger. Prova att pumpa in 200 röda partiklar i lådan (det går att göra i menyn till höger). Vad händer om du ökar temperaturen? Vad händer om du sänker den? Kan du koppla det till hur molekyler beter sig i olika faser (fast, flytande eller gasform)?
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div>
 
 <!-- Lägg in experiemnt med vatten som får droppar på utsidan.
 lägg in spel från phet
