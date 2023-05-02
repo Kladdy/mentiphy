@@ -55,7 +55,7 @@ sphinx:
       # path_to_docs: ""
       # repository_url: ""
       # repository_branch: "master"
-      extra_footer: "Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
+      extra_footer: "Vi finns på <a href='https://youtube.com/@mentiphy1'>Youtube</a>. <br> Kontakta oss på info@mentiphy.se. <br> Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
       home_page_in_toc: true
       # announcement: ""
       # analytics:
