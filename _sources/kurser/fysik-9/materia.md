@@ -267,5 +267,84 @@ Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av Univ
     </iframe>
 </div>
 
+_____________________________________________
+
+## Massa, volym och densitet
+
+### Massa
+
+Inom fysiken så talar man ofta om olika *storheter*, så som massa, volym, kraft, ström, längd och tid. Varje storhet är någonting vi kan mäta, och varje storhet har därför en *enhet*, tillexempel så mäter vi längd i meter, tid i sekunder och kraft i någonting som kallas newton (efter vetenskapsmannen Sir Isaac Newton). 
+
+Massa berättar hur mycket ett föremål *väger*. Till vardags används ofta ordet vikt men inom fysiken använder vi ordet massa. Ett föremåls massa avgörs av hur många atomer som bygger upp föremålet och hur mycket varje enskild atom väger.
+
+```{admonition} Historia
+:class: note
+Förr hade man inte något bra mått på massa, utan man använda enheter som korn och skålpund, men eftersom korn kan väga olika mycket är det inte ett särskilt tillförlitligt mått. Man förstod senare att man behövde en enhet som var samma överallt, och bestämde då att 1 kg (som är grundenheten för massa) skulle motsvara massan av 1 liter vatten vid temperaturen 4&deg;C. Man tyckte sedan även det var för inexakt och tillverkade en metallcylinder som skulle motsvara exakt 1 kg. 
+
+Idag har vi gått ifrån både definitionen med vattnet och metallcylindern, nu definieras 1 kg med hjälp av någonting som kallas *Plancks konstant*.
+```
+
+_____________________________________________
+
+Som nämnt är grundenheten för massa *kilogram*. I vardagen pratar man ofta om att någonting väger ett "kilo" eller att man köper två "hekto" lösgodis. Det man egentligen menar då är kilogram eller hektogram, eftersom kilo och hekto faktiskt bara betyder tusen och hundra.
+
+Här finns en tabell med olika enheter för massa och hur de omvandlas till gram:
+
+```{list-table}
+:header-rows: 1
+
+* - Enhet
+  - Omvandlat till kg
+* - 1 ton
+  - 1 000 000 gram (g)
+* - 1 kilogram (kg)
+  - 1 000 gram (g)
+* - 1 hektogram (hg)
+  - 100 gram (g)
+* - 1 milligram (mg)
+  - 0,001 gram (g)
+```
+
+_____________________________________________
+
+### Volym
+
+Volym beskriver hur mycket utrymme ett föremål tar upp. I affärer kan man köpa juice i raka eller runda förpackningar, men de brukar ha samma volym (1 liter). För att räkna ut volymen på ett föremål tar vi hjälp av matematiken, se filmen nedan:
+
+FILM OM HUR VI RÄKNAR UT VOLYM: cylinder, rätblock, ojämnt format föremål.
+
+I filmen såg vi att volymen på ett rätblock fås av att räkna längden multiplicerat med bredden multiplicerat med höjden. Om vi mäter sidorna i decimeter (dm) får vi då volymenheten kubikdecimeter dm<sup>3</sup>.
+
+Ett annat namn på kubikdecmineter är *liter*. 
+
+Här finns en tabell med olika enheter för volym och hur de omvandlas till liter/kubikdecimeter:
+
+```{list-table}
+:header-rows: 1
+
+* - Enhet
+  - Omvandlat till l/dm<sup>3</sup>
+* - 1 kubikmeter (m<sup>3</sup>)
+  - 1 000 liter (l)
+* - 1 centiliter (cl)
+  - 0,01 liter (l)
+* - 1 kubikcentimeter (cm<sup>3</sup>)
+  - 0,001 liter (l)
+* - 1 milliliter (ml)
+  - 0,001 liter (l)
+```
+
+```{admonition} Kom ihåg
+:class: attention
+En liter är samma som en kubikdecimeter och en milliliter är samma som en kubikcentimeter.
+```
+
+_____________________________________________
+
+### Densitet
+
+Ye burh
+
+
 
 
