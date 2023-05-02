@@ -36,6 +36,8 @@ html:
   use_issues_button: false
   use_repository_button: false
   use_edit_page_button: false
+  extra_footer: "Vi finns på <a href='https://youtube.com/@mentiphy1'>Youtube</a>."
+  extra_footer: "Kontakta oss på info@mentiphy.se."
   extra_footer: "Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
 
 # Configure sphinx to use Swedish strings, such as search_bar_text
