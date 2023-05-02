@@ -343,7 +343,81 @@ _____________________________________________
 
 ### Densitet
 
-Ye burh
+Vad väger mest, 1 kg järn eller 1 kg fjädrar? Båda väger ju lika mycket! Massan anger hur mycket någonting väger och om vi har järn som väger 1 kg väger det alltså precis lika mycket som fjädrar som väger 1 kg. Skillnaden är att det kommer behövas mycket mer fjädrar än järn för att nå massan 1 kg.
+
+För att vi ska kunna säga att något ämne väger mer än något annat måste vi jämföra samma volym. Järn väger mer än fjädrar om vi tar lika stor volym (om vi fyller lika stora lådor med järn och fjädrar kommer lådan med järn väga betydligt mer). 
+
+Vi talar därför om hur mycket någonting *väger per volymenhet*, vilket kallas *densitet*. En kubikcentimeter järn väger 7,8 gram, och därför säger vi att järn har densiteten 7,8 g/cm<sup>3</sup>.
+
+```{admonition} Kom ihåg
+:class: attention
+Densiteten = hur många gram 1 cm<sup>3</sup> (1 ml) väger, vilket är samma sak som hur många kilogram 1 dm<sup>3</sup> (1 l) väger.
+```
+
+_____________________________________________
+
+Här finns en tabell på några ämnen och deras densitet:
+
+```{list-table}
+:header-rows: 1
+
+* - Ämne
+  - Densitet i g/cm<sup>3</sup>
+* - Aluminium
+  - 2,7 g/cm<sup>3</sup>
+* - Bly
+  - 11,3 g/cm<sup>3</sup>
+* - Glas
+  - 2,5 g/cm<sup>3</sup>
+* - Guld
+  - 19,3 g/cm<sup>3</sup>
+* - Is
+  - 0,9 g/cm<sup>3</sup>
+* - Kork
+  - 0,2 g/cm<sup>3</sup>
+* - Vatten
+  - 1,0 g/cm<sup>3</sup>
+* - Trä (furu)
+  - 0,5 g/cm<sup>3</sup>
+* - Tändvätska
+  - 0,8 g/cm<sup>3</sup>
+```
+
+_____________________________________________
+
+För att göra beräkningar med densiteten behöver vi en symbol, och densitet betecknas $\rho$, liksom massa betecknas $m$ och volym $V$.
+
+När vi ska beräkna densiteten för ett ämne eller ett föremål tar vi reda på dess massa och volym:
+
+$\rho = \frac{m}{V}$
+
+På liknande sätt kan vi beräkna massan eller volymen om vi har de två andra:
+
+$m = \rho \cdot V$ eller $V = \frac{m}{\rho}$
+
+_____________________________________________
+
+### Experiment
+
+betsämma volym på stne
+
+_____________________________________________
+
+### Uppgifter
+
+1. Vilka är de tre vanligaste formerna som ämnen förekommer i?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Fast form, flytande form och gasform.
+```
+
+_____________________________________________
+
+### Spel
+
+ye density
+
 
 
 
