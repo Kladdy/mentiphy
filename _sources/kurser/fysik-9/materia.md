@@ -311,7 +311,16 @@ _____________________________________________
 
 Volym beskriver hur mycket utrymme ett föremål tar upp. I affärer kan man köpa juice i raka eller runda förpackningar, men de brukar ha samma volym (1 liter). För att räkna ut volymen på ett föremål tar vi hjälp av matematiken, se filmen nedan:
 
-FILM OM HUR VI RÄKNAR UT VOLYM: cylinder, rätblock, ojämnt format föremål.
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/H-2pXixjS1g"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 I filmen såg vi att volymen på ett rätblock fås av att räkna längden multiplicerat med bredden multiplicerat med höjden. Om vi mäter sidorna i decimeter (dm) får vi då volymenheten kubikdecimeter dm<sup>3</sup>.
 
@@ -399,24 +408,54 @@ _____________________________________________
 
 ### Experiment
 
-betsämma volym på stne
+Leta reda på en sten utomhus och bestäm dess densitet. Vad behöver du för att beräkna densiteten? Hur gör du för att hitta det du behöver?
+
+```{admonition} Lösning
+:class: caution dropdown
+För att hitta densiteten på ett föremål behöver du dess massa och dess volym. Massan hittar du enkelt genom att väga stenen (håll koll på enheterna!). Volymen får du genom att lägga stenen i en bägare med vatten och se hur vattenytan höjs (se filmen under volym ovan). Sedan kan du beräkna densiteten genom att ta massan dividerat med volymen!
+```
 
 _____________________________________________
 
 ### Uppgifter
 
-1. Vilka är de tre vanligaste formerna som ämnen förekommer i?
+1. Hur stor massa har 1 liter vatten?
 
 ```{admonition} Visa svar
 :class: caution dropdown
-Fast form, flytande form och gasform.
+1 liter vatten väger 1 kilogram.
+```
+
+2. Ett klassrum är 8 meter brett och 12 meter långt. Vilken area har klassrummet?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Area beräknas genom att ta längden multiplicerat med bredden:
+
+$A=12 \cdot 8 = 96 m^2$
+```
+
+3. ye
+
+```{admonition} Visa svar
+:class: caution dropdown
+ye
 ```
 
 _____________________________________________
 
 ### Spel
 
-ye density
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Välj "Intro" i första läget. Prova olika ämnen. Varje ämne har samma densitet, vad händer om du ökar massan? Varför flyter vissa ämnen och andra inte?
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/density/latest/density_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div>
 
 
 
