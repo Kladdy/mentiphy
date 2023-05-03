@@ -398,7 +398,7 @@ För att göra beräkningar med densiteten behöver vi en symbol, och densitet b
 
 När vi ska beräkna densiteten för ett ämne eller ett föremål tar vi reda på dess massa och volym:
 
-$\rho = \frac{m}{V}$
+$$\rho = \frac{m}{V}$$
 
 På liknande sätt kan vi beräkna massan eller volymen om vi har de två andra:
 
@@ -432,14 +432,45 @@ _____________________________________________
 :class: caution dropdown
 Area beräknas genom att ta längden multiplicerat med bredden:
 
-$A=12 \cdot 8 = 96 m^2$
+$A=l \cdot b = 12 \cdot 8 = 96 m^2$
 ```
 
-3. ye
+3. Varför flyter vissa ämnen på vatten och andra inte?
 
 ```{admonition} Visa svar
 :class: caution dropdown
-ye
+Det har att göra med ämnets densitet. Om ämnet har lägre densitet än vatten kommer det flyta, annars sjunker det. Jämför med tabellen ovanför och se om du känner igen vilka ämnen som flyter eller inte.
+```
+
+4. Vilken densitet har en sten med volymen 1,5 dm<sup>3</sup> och massan 9 kg?
+
+```{admonition} Visa svar
+:class: caution dropdown
+För att beräkna densiteten behöver vi veta massan och volymen, vilka båda anges i uppgiften. Eftersom kg/dm<sup>3</sup> är ett vanligt sätt (förutom g/cm<sup>3</sup>) att ange densitet behöver vi inte bekymra oss över enheterna utan kan beräkna direkt:
+
+$\rho = \frac{m}{V} = \frac{9 kg}{1,5 dm<sup>3</sup>} = 6 kg/dm<sup>3</sup>$
+```
+
+5. Flyter is på tändvätska? Använd tabellen ovan.
+
+```{admonition} Visa svar
+:class: caution dropdown
+Nej. Is har densiteten 0,9 g/cm<sup>3</sup> och tändvätska har densiteten 0,8 g/cm<sup>3</sup>. Eftersom is har högre densitet än tändvätska kommer is inte flyta på tändvätskan.
+```
+
+5. En cylinder har radien 5 cm och höjden 17 cm. Vilken volym har cylindern?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Först måste vi beräkna bottenarean på cylindern. Arean på en cirkel fås av $\pi r^2$, och blir här
+
+$A = \pi \cdot 5^2 = 78,5 cm^2$
+
+Sedan, för att få volymen, tas arean multiplicerat med höjden och blir då:
+
+$V = A \cdot h = 78,5 cm^2 \cdot 17 cm = 1335 cm^3$
+
+Eftersom 1335 cm<sup>3</sup> är en rätt hög siffra kan vi byta enhet för att få en smidigare siffra. Det gäller att $1000 cm^3 = 1 dm^3$, och därför kan vi räkna om volymen till 1,335 dm<sup>3</sup>, eller förkortat 1,3 dm<sup>3</sup>.
 ```
 
 _____________________________________________
@@ -457,7 +488,28 @@ Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av Univ
     </iframe>
 </div>
 
+_____________________________________________
 
+## Värme och densitet
 
+**Densiteten påverkas av värme**. Men vad är då värme? Jo, *värme* är ett mått på hur mycket atomerna och molekylerna rör på sig.
 
+```{admonition} Kom ihåg
+:class: attention
+Det är värmen som avgör vilken form ett ämne har. Om is värms upp börjar molekylerna röra sig mer och smälter till vatten, och värms de ännu mer avdunstar vattnet till vattenånga.
+```
+
+Eftersom molekylerna rör sig mer när de värms så behöver de också mer plats. Det skiljer sig dock mellan ämnen, aluminium blir tillexempel mycket större än järn om det värms!
+
+```{admonition} Tips
+:class: hint
+Glas utvidgar sig ungefär hälften så mycket som järn. Om du har svårt att öppna en syltburk kan du därför hälla varmvatten på locket en stund, locket kommer då bli större än glaset!
+```
+
+Även om det kanske låter som att ämnena blir mycket större vid ökad temperatur så är så inte riktigt fallet, ämnen i fast form utvidgar sig nämligen ganska lite. De utvidgas dock mycket nog för att vi ska behöva ta hänsyn till det - dels att vi kan använda det för att öppna syltburkar men vi måste också tänka på det när vi bygger broar. Man brukar bygga broar på stålrullar så att den kan röra sig fram och tillbaka, och man brukar också göra en springa i varsin ände av bron (tänk hur bilen låter när man kör på en bro!) för att den ska kunna bli lite längre eller kortare beroende på temperatur. 
+
+```{admonition} Fördjupning
+:class: seealso
+En termometer fungerar just med hjälp av densiteten! beskriv hur
+```
 
