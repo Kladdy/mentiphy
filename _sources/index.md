@@ -3,7 +3,7 @@
 :class: bg-transparent
 ```
 
-# Hem 2
+# Hem 3
 
 **Fysik är svårt**. Till och med Aristoteles, som vi kan komma överens om var en rätt klyftig kille, ägnade en hel del tid åt att bevisa att jorden *inte* roterar kring sin egen axel (vilket vi idag ju vet att den gör). Det har tagit flera tusen år och många smarta personer att nå dit vi är idag i fysiken, och idag krävs det också smarta personer för att faktiskt förstå den här fysiken. 
 
