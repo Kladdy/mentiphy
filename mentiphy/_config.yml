@@ -36,9 +36,6 @@ html:
   use_issues_button: false
   use_repository_button: false
   use_edit_page_button: false
-  extra_footer: "Vi finns på <a href='https://youtube.com/@mentiphy1'>Youtube</a>."
-  extra_footer: "Kontakta oss på info@mentiphy.se."
-  extra_footer: "Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
 
 # Configure sphinx to use Swedish strings, such as search_bar_text
 # Do "jupyter-book config sphinx mentiphy" to get the options given this _config.yml
@@ -55,7 +52,7 @@ sphinx:
       # path_to_docs: ""
       # repository_url: ""
       # repository_branch: "master"
-      extra_footer: "Vi finns på <a href='https://youtube.com/@mentiphy1'>Youtube</a>. <br> Kontakta oss på info@mentiphy.se. <br> Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
+      extra_footer: "Vi finns på <a href='https://youtube.com/@mentiphy1'>YouTube</a>. <br>Kontakta oss på <a href='mailto:info@mentiphy.se'>info@mentiphy.se</a>. <br>Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>."
       home_page_in_toc: true
       # announcement: ""
       # analytics:

@@ -25,7 +25,7 @@ Vi som gör den här hemsidan heter Emil Sarling och Emma Söderström. Vi tog �
 
 Kontakta oss på info@mentiphy.se, eller nå oss individuellt på emil@mentiphy.se eller emma@mentiphy.se.
 
-Vi finns även på <a href='https://youtube.com/@mentiphy1'>Youtube</a>.
+Vi finns även på <a href='https://youtube.com/@mentiphy1'>YouTube</a>.
 
 <!-- Typ vart vi jobbar och så?
 Lägga in länk till pdf på vårt examensarbete? -->
