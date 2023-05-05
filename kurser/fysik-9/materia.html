@@ -349,7 +349,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Spel</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#varme-och-densitet">Värme och densitet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperatur-och-densitet">Temperatur och densitet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Uppgifter</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -513,7 +516,16 @@ document.write(`
 <section id="experiment">
 <h3>Experiment<a class="headerlink" href="#experiment" title="Permalink to this heading">#</a></h3>
 <p>I filmen nedan syns ett glas fyllt med vatten. Filmen är snabbspolad men visar egentligen XX minuter. Vad sker i filmen? Hur kan du förklara det?</p>
-<p>FILM HÄR SOM SKA SPELAS IN</p>
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/d6sYKBQOg2g"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 <div class="caution dropdown admonition">
 <p class="admonition-title">Vad har du observerat?</p>
 <p>Det bildas vattendroppar på utsidan av glaset.</p>
@@ -814,23 +826,61 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section id="varme-och-densitet">
-<h2>Värme och densitet<a class="headerlink" href="#varme-och-densitet" title="Permalink to this heading">#</a></h2>
-<p><strong>Densiteten påverkas av värme</strong>. Men vad är då värme? Jo, <em>värme</em> är ett mått på hur mycket atomerna och molekylerna rör på sig.</p>
+<section id="temperatur-och-densitet">
+<h2>Temperatur och densitet<a class="headerlink" href="#temperatur-och-densitet" title="Permalink to this heading">#</a></h2>
+<p><strong>Densiteten påverkas av temperaturen</strong>. Men vad är då temperatur? Jo, <em>temperatur</em> är ett mått på hur mycket atomerna och molekylerna rör på sig.</p>
 <div class="attention admonition">
 <p class="admonition-title">Kom ihåg</p>
-<p>Det är värmen som avgör vilken form ett ämne har. Om is värms upp börjar molekylerna röra sig mer och smälter till vatten, och värms de ännu mer avdunstar vattnet till vattenånga.</p>
+<p>Det är temperaturen som avgör vilken form ett ämne har. Om is värms upp börjar molekylerna röra sig mer och smälter till vatten, och värms de ännu mer avdunstar vattnet till vattenånga.</p>
 </div>
+<div class="danger admonition">
+<p class="admonition-title">Varning</p>
+<p>Det är vanligt att man till vardags förväxlar orden <em>temperatur</em> och <em>värme</em>. Inom fysiken är värme ett ord som beskriver en energiöverföring mellan två system, inte någonting man ”kan ha”. Någonting kan alltså inte ”ha värme” utan bara ”värmas”. Därför vore det kanske rimligare att inte alls använda ordet värme utan istället enbart tala om värmning, men nu är det ordet värme som gäller och då får vi vara noggranna med hur vi använder det.</p>
+</div>
+<hr class="docutils" />
 <p>Eftersom molekylerna rör sig mer när de värms så behöver de också mer plats. Det skiljer sig dock mellan ämnen, aluminium blir tillexempel mycket större än järn om det värms!</p>
 <div class="hint admonition">
 <p class="admonition-title">Tips</p>
 <p>Glas utvidgar sig ungefär hälften så mycket som järn. Om du har svårt att öppna en syltburk kan du därför hälla varmvatten på locket en stund, locket kommer då bli större än glaset!</p>
 </div>
+<hr class="docutils" />
 <p>Även om det kanske låter som att ämnena blir mycket större vid ökad temperatur så är så inte riktigt fallet, ämnen i fast form utvidgar sig nämligen ganska lite. De utvidgas dock mycket nog för att vi ska behöva ta hänsyn till det - dels att vi kan använda det för att öppna syltburkar men vi måste också tänka på det när vi bygger broar. Man brukar bygga broar på stålrullar så att den kan röra sig fram och tillbaka, och man brukar också göra en springa i varsin ände av bron (tänk hur bilen låter när man kör på en bro!) för att den ska kunna bli lite längre eller kortare beroende på temperatur.</p>
 <div class="seealso admonition">
 <p class="admonition-title">Fördjupning</p>
-<p>En termometer fungerar just med hjälp av densiteten! beskriv hur</p>
+<p>En vanlig termometer fungerar just med hjälp av densiteten! En vätsketermometer består av ett långt smalt rör som innehåller en vätska som inte fryser om det blir för kallt och som utvidgas relativt mycket när det blir varmare (på så vis höjer sig ”det röda sträcket” till den temperatur det är).</p>
 </div>
+<hr class="docutils" />
+<p>I Sverige pratar vi oftast om temperatur enligt <em>Celsiusskalan</em>, om det är varmt ute kan vi säga att det är över 20 grader och då menar vi 20 grader Celsius. I USA är det vanligt att istället använda Fahrenheit, medan det i fysikens värld är vanlig att använda Kelvin.</p>
+<ul class="simple">
+<li><p><strong>Celsiusskalan</strong> används ofta i Sverige, där 0°C är fryspunkten för vatten och 100°C är kokpunkten för vatten.</p></li>
+<li><p><strong>Kelvinskalan</strong> utgår ifrån den absoluta nollpunkten (när atomerna är <em>helt</em> stilla), som är vid -273°C. Alltså är -273°C samma som 0 K (notera att det inte är något ° när vi talar om Kelvin), och vattnets kokpunkt blir då 373 K.</p></li>
+<li><p><strong>Fahrenheitskalan</strong> används ofta i USA. Den bygger på två fixpunkter, en är vid -18°C (då är det 0°F) och en är vid den normala kroppstemperaturen som är 37°C (då är det 96°F). Man kan säga att om Celsiusskalan är anpassad efter vad som ”känns varmt eller kallt för vatten” är Fahrenheitskalan anpassad efter vad som känns varmt eller kallt för människor.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="id6">
+<h3>Uppgifter<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Hur fungerar en vätsketermometer?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Den innehåller en vätska som utvidgas när temperaturen ökar. Eftersom vätskan är färgad syns det som att färgen åker uppåt när temperaturen ökar.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Vad är den absoluta nollpunkten?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Den punkt då atomerna står helt stilla, vilket är vid 0 K eller -273°C.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Vad är temperatur?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Ett mått på hur mycket atomerna rör sig.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -921,7 +971,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Spel</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#varme-och-densitet">Värme och densitet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperatur-och-densitet">Temperatur och densitet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Uppgifter</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
