@@ -23,6 +23,7 @@ Atomer är i sin grundform neutralt laddade (de har lika många protoner som ele
 _____________________________________________
 
 Om två partiklar har lika laddning *repellerar* de (stöter bort) varandra. Om två partiklar har olika laddning *attraherar* de (dras mot) varandra.
+
 Videon visar det:
 
 <iframe
@@ -38,6 +39,18 @@ Videon visar det:
 
 _____________________________________________
 
+Ye bruh elektrostatisk jämvikt
+
+_____________________________________________
+
+ye influens
+
+_____________________________________________
+
+ye COUOMBS LAGGGGGGG
+
+_____________________________________________
+
 ### Experiment
 
 Ta en ballong och gnid den i håret ett tag innan du släpper. Ballongen kommer då sitta kvar i håret! Varför det?
@@ -46,3 +59,15 @@ Ta en ballong och gnid den i håret ett tag innan du släpper. Ballongen kommer 
 :class: caution dropdown
 Det beror på att elektroner skrapas av från håret när du gnider ballongen mot det, vilket gör att håret blir positivt laddat (underskott på elektroner) och ballongen blir negativt laddad (överskott på elektroner). Därför attraherar de varandra!
 ```
+
+_____________________________________________
+
+### Uppgifter
+
+ye
+
+_____________________________________________
+
+### Spel
+
+ye
