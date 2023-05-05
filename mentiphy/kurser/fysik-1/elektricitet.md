@@ -163,3 +163,31 @@ Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av Univ
         allowfullscreen>
     </iframe>
 </div>
+
+_____________________________________________
+
+## Ledare och isolatorer
+
+Saker som leder ström bra kallas **ledare**. De flesta metaller är bra ledare, exempelvis koppar, silver, guld, aluminium och järn. Det beror på att de har fria elektroner som kan förflytta sig, vilket gör att de leder elektrisk ström. 
+
+Kablar kan exempelvis vara av koppar.
+
+_____________________________________________
+
+Motsatsen till ledare kallas **isolatorer**, vilket är saker som (nästan) inte leder någon ström alls. Exempel på isolatorer är plast, glas, gummi och keramik. De är bra isolatorer eftersom de har inga, eller nästan inga, fria elektroner. Molekylerna håller hårt i alla elektroner, vilket gör att de inte leder elektrisk ström. 
+
+Som tidigare nämnt kan kablar vara av koppar. Den elektriska ledaren i en kabel är omsluten av en isolator, så som gummi, vilket gör att vi kan hålla i kabeln även om det finns ström i den.
+
+_____________________________________________
+
+En **halvledare** är som namnet antyder någonting vars ledningsförmåga är mellan en ledares och en isolators. Det beror på att halvledarens molekylers valensskal är halvfyllda. Halvledare leder elektricitet när de är uppvärmda till en viss temperatur, men är annars isolatorer. Två exempel är kisel och germanium som används mycket i datorteknik.
+
+_____________________________________________
+
+**Supraledare** är material som tillåter att strömmen passerar utan någon resistans (motstånd). Två exempel på supraledare är bly och tenn (vid mycket låga temperaturer). Supraledare är användbara för att exempelvis skapa mycket starka elektromagneter som används i magnetkameror och partikelacceleratorer.
+
+_____________________________________________
+
+## Elektriska fält
+
+happy guy
