@@ -175,7 +175,16 @@ _____________________________________________
 
 I filmen nedan syns ett glas fyllt med vatten. Filmen är snabbspolad men visar egentligen XX minuter. Vad sker i filmen? Hur kan du förklara det? 
 
-FILM HÄR SOM SKA SPELAS IN
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/d6sYKBQOg2g"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ```{admonition} Vad har du observerat?
 :class: caution dropdown
@@ -490,14 +499,21 @@ Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av Univ
 
 _____________________________________________
 
-## Värme och densitet
+## Temperatur och densitet
 
-**Densiteten påverkas av värme**. Men vad är då värme? Jo, *värme* är ett mått på hur mycket atomerna och molekylerna rör på sig.
+**Densiteten påverkas av temperaturen**. Men vad är då temperatur? Jo, *temperatur* är ett mått på hur mycket atomerna och molekylerna rör på sig.
 
 ```{admonition} Kom ihåg
 :class: attention
-Det är värmen som avgör vilken form ett ämne har. Om is värms upp börjar molekylerna röra sig mer och smälter till vatten, och värms de ännu mer avdunstar vattnet till vattenånga.
+Det är temperaturen som avgör vilken form ett ämne har. Om is värms upp börjar molekylerna röra sig mer och smälter till vatten, och värms de ännu mer avdunstar vattnet till vattenånga.
 ```
+
+```{admonition} Varning
+:class: danger
+Det är vanligt att man till vardags förväxlar orden *temperatur* och *värme*. Inom fysiken är värme ett ord som beskriver en energiöverföring mellan två system, inte någonting man "kan ha". Någonting kan alltså inte "ha värme" utan bara "värmas". Därför vore det kanske rimligare att inte alls använda ordet värme utan istället enbart tala om värmning, men nu är det ordet värme som gäller och då får vi vara noggranna med hur vi använder det. 
+```
+
+_____________________________________________
 
 Eftersom molekylerna rör sig mer när de värms så behöver de också mer plats. Det skiljer sig dock mellan ämnen, aluminium blir tillexempel mycket större än järn om det värms!
 
@@ -506,10 +522,48 @@ Eftersom molekylerna rör sig mer när de värms så behöver de också mer plat
 Glas utvidgar sig ungefär hälften så mycket som järn. Om du har svårt att öppna en syltburk kan du därför hälla varmvatten på locket en stund, locket kommer då bli större än glaset!
 ```
 
+_____________________________________________
+
 Även om det kanske låter som att ämnena blir mycket större vid ökad temperatur så är så inte riktigt fallet, ämnen i fast form utvidgar sig nämligen ganska lite. De utvidgas dock mycket nog för att vi ska behöva ta hänsyn till det - dels att vi kan använda det för att öppna syltburkar men vi måste också tänka på det när vi bygger broar. Man brukar bygga broar på stålrullar så att den kan röra sig fram och tillbaka, och man brukar också göra en springa i varsin ände av bron (tänk hur bilen låter när man kör på en bro!) för att den ska kunna bli lite längre eller kortare beroende på temperatur. 
 
 ```{admonition} Fördjupning
 :class: seealso
-En termometer fungerar just med hjälp av densiteten! beskriv hur
+En vanlig termometer fungerar just med hjälp av densiteten! En vätsketermometer består av ett långt smalt rör som innehåller en vätska som inte fryser om det blir för kallt och som utvidgas relativt mycket när det blir varmare (på så vis höjer sig "det röda sträcket" till den temperatur det är). 
 ```
+
+_____________________________________________
+
+I Sverige pratar vi oftast om temperatur enligt *Celsiusskalan*, om det är varmt ute kan vi säga att det är över 20 grader och då menar vi 20 grader Celsius. I USA är det vanligt att istället använda Fahrenheit, medan det i fysikens värld är vanlig att använda Kelvin. 
+
+* **Celsiusskalan** används ofta i Sverige, där 0&deg;C är fryspunkten för vatten och 100&deg;C är kokpunkten för vatten.
+* **Kelvinskalan** utgår ifrån den absoluta nollpunkten (när atomerna är *helt* stilla), som är vid -273&deg;C. Alltså är -273&deg;C samma som 0 K (notera att det inte är något &deg; när vi talar om Kelvin), och vattnets kokpunkt blir då 373 K. 
+* **Fahrenheitskalan** används ofta i USA. Den bygger på två fixpunkter, en är vid -18&deg;C (då är det 0&deg;F) och en är vid den normala kroppstemperaturen som är 37&deg;C (då är det 96&deg;F). Man kan säga att om Celsiusskalan är anpassad efter vad som "känns varmt eller kallt för vatten" är Fahrenheitskalan anpassad efter vad som känns varmt eller kallt för människor.
+
+_____________________________________________
+
+### Uppgifter
+
+1. Hur fungerar en vätsketermometer?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Den innehåller en vätska som utvidgas när temperaturen ökar. Eftersom vätskan är färgad syns det som att färgen åker uppåt när temperaturen ökar.
+```
+
+2. Vad är den absoluta nollpunkten?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Den punkt då atomerna står helt stilla, vilket är vid 0 K eller -273&deg;C.
+```
+
+3. Vad är temperatur?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Ett mått på hur mycket atomerna rör sig.
+```
+
+
+
 
