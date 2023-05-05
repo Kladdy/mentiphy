@@ -330,6 +330,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laddningar">Laddningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulombs-lag">Coulombs lag</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgifter">Uppgifter</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spel">Spel</a></li>
@@ -377,12 +378,18 @@ document.write(`
     allowfullscreen
 >
 </iframe>
+<p>Om ett föremål är negativt laddat (överskott av elektroner) kommer överskottselektronerna repellera varandra så mycket de kan (lika laddningar repellerar) och därför spridas jämnt över föremålets yta. På så vis blir ett föremål lika laddat överallt, vilket kallas <strong>elektrostatisk jämvikt</strong>. På samma vis kommer en positiv laddning spridas jämnt.</p>
+<!-- _____________________________________________
+
+ye influens? -->
 <hr class="docutils" />
-<p>Ye bruh elektrostatisk jämvikt</p>
-<hr class="docutils" />
-<p>ye influens</p>
-<hr class="docutils" />
-<p>ye COUOMBS LAGGGGGGG</p>
+<section id="coulombs-lag">
+<h3>Coulombs lag<a class="headerlink" href="#coulombs-lag" title="Permalink to this heading">#</a></h3>
+<p>För att de här laddningarna ska kunna repellera och attrahera varandra krävs det en <em>kraft</em>. Båda laddningarna kommer påverka varandra med en lika stor kraft fast i motsatt riktning. De är varandras <em>motkrafter</em>, vilket vi kommer ihåg stämmer väl ihop med Newtons tredje lag. Eftersom de två krafterna antingen är riktade mot varandra eller från varandra så behöver vi bara veta storleken på kraften, och den kan vi få från Coulombs lag:</p>
+<div class="math notranslate nohighlight">
+\[ F = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} \]</div>
+<p>där <span class="math notranslate nohighlight">\(k\)</span> är en konstant, (<span class="math notranslate nohighlight">\(k = \frac{1}{4\pi \epsilon_0} = 8,99 \cdot 10^9 Nm^2/C^2\)</span>), <span class="math notranslate nohighlight">\(Q_1\)</span> och <span class="math notranslate nohighlight">\(Q_2\)</span> är laddningarnas storlek i coulomb (C) och <span class="math notranslate nohighlight">\(r\)</span> är avståndet mellan laddningarna.</p>
+</section>
 <hr class="docutils" />
 <section id="experiment">
 <h3>Experiment<a class="headerlink" href="#experiment" title="Permalink to this heading">#</a></h3>
@@ -395,13 +402,92 @@ document.write(`
 <hr class="docutils" />
 <section id="uppgifter">
 <h3>Uppgifter<a class="headerlink" href="#uppgifter" title="Permalink to this heading">#</a></h3>
-<p>ye</p>
+<ol class="arabic simple">
+<li><p>Vad innebär det att två laddningar repellerar eller attraherar varandra? För vilka laddningar gäller det?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Två lika laddningar kommer repellera varandra, alltså stöta bort varandra, medan två olika laddningar kommer attrahera varandra, alltså dras mot varandra.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Vad innebär det att någonting har ett ”överskott av elektroner”?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Det ”någonting” är då negativt laddat eftersom det finns fler elektroner än protoner.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Vad är elementarladdningen?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Den laddning en elektron har, alltså <span class="math notranslate nohighlight">\(1,602\cdot10^{-19}C\)</span>.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Två laddningar, <span class="math notranslate nohighlight">\(Q_1\)</span> och <span class="math notranslate nohighlight">\(Q_2\)</span> befinner sig 20 cm ifrån varandra. <span class="math notranslate nohighlight">\(Q_1\)</span> har laddningen +8,0 nC och <span class="math notranslate nohighlight">\(Q_2\)</span> har laddningen -10,0 nC. Åt vilket håll är krafterna som de verkar på varandra med riktade? Hur stora är de?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Eftersom <span class="math notranslate nohighlight">\(Q_1\)</span> är en positiv laddning och <span class="math notranslate nohighlight">\(Q_2\)</span> är en negativ laddning kommer de attrahera varandra. Krafterna är alltså riktade mot varandra.</p>
+<p>Storleken ges sedan av Coulombs lag. Vi räknar först om alla värden från uppgiften till rätt enheter:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Q_1 = 8,0 nC = 8,0 \cdot 10^{-9} C\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_2 = -10,0 nC = -10,0 \cdot 10^{-9} C\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(r = 20 cm = 0,2 m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(k = 8,99 \cdot 10^9 Nm^2/C^2\)</span></p></li>
+</ul>
+<p>Sätter vi in det i Coulombs lag får vi svaret för båda krafterna (eftersom de är lika stora!):</p>
+<div class="math notranslate nohighlight">
+\[ F = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} = 8,99 \cdot 10^9 \cdot \frac{|8,0 \cdot 10^{-9} \cdot (-10,0 \cdot 10^{-9})|}{0,2^2} \approx 1,8 \cdot 10^{-5} N = 18 \mu N\]</div>
+<p>Krafterna har ungefär storlekarna <span class="math notranslate nohighlight">\(18\mu N\)</span>.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>En kula med massan 0,3 gram svävar i luften på grund av att den attraheras uppåt av ett stort metallklot med laddningen <span class="math notranslate nohighlight">\(2,0\mu C\)</span> och nedåt av jordens dragningskraft. Kulan är 0,20 meter från metallklotet. Vad är kulans laddning?</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Den elektriska kraften, <span class="math notranslate nohighlight">\(F_E\)</span>, måste vara lika stor som dragningskraften, <span class="math notranslate nohighlight">\(F_g\)</span>, eftersom kulan är stilla. Detta ger <span class="math notranslate nohighlight">\(F_E=F_g\)</span>, vilket enligt Newtons andra lag (<span class="math notranslate nohighlight">\(F=ma\)</span>) och Coulombs lag är samma sak som</p>
+<div class="math notranslate nohighlight">
+\[k \frac{|Q_1\cdot Q_2|}{r^2}=mg\]</div>
+<p>Vi söker kulans laddning. Vi väljer kulans laddning till <span class="math notranslate nohighlight">\(Q_1\)</span> och klotets till <span class="math notranslate nohighlight">\(Q_2\)</span>, och bryter sedan ut <span class="math notranslate nohighlight">\(Q_1\)</span> eftersom det är denne vi söker. Detta ger</p>
+<div class="math notranslate nohighlight">
+\[Q_1 = \frac{mgr^2}{kQ_2}\]</div>
+<p>Vi sätter sedan in värdena från uppgiften med deras omvandlade enheter:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(m = 0,3g=0,3 \cdot 10^{-3}kg\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(g = 9,82 m/s^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(r=0,2 m\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(k = 8,99 \cdot 10^9 Nm^2/C^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Q_1 = 2,0\mu C = 2,0 \cdot 10^{-6} C\)</span></p></li>
+</ul>
+<p>och beräknar <span class="math notranslate nohighlight">\(Q_1\)</span></p>
+<div class="math notranslate nohighlight">
+\[Q_1 = \frac{0,3 \cdot 10^{-3} \cdot 9,82 \cdot 0,20^2}{8,99 \cdot 10^9 \cdot 2,0 \cdot 10^{-6}} \approx 6,6 \cdot 10^{-9} C \]</div>
+<p>Svaret blir alltså att kulans laddning är <span class="math notranslate nohighlight">\(6,6nC\)</span></p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Förklara både matematiskt (utifrån Coulombs lag) och fysikaliskt varför kraften som <span class="math notranslate nohighlight">\(Q_1\)</span> verkar på <span class="math notranslate nohighlight">\(Q_2\)</span> med är lika stor som kraften som <span class="math notranslate nohighlight">\(Q_2\)</span> verkar på <span class="math notranslate nohighlight">\(Q_1\)</span> med är.</p></li>
+</ol>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>Matematiskt:</p>
+<p>Enligt Coulombs lag kan vi säga att ena kraften beräknas med hjälp av <span class="math notranslate nohighlight">\( F_1 = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} \)</span> och att den andra kraften beräknas med hjälp av <span class="math notranslate nohighlight">\( F_2 = k \cdot \frac{|Q_2 \cdot Q_1|}{r^2} \)</span>. Eftersom <span class="math notranslate nohighlight">\(Q_1 \cdot Q_2 = Q_2 \cdot Q_1|\)</span> (multiplikation är kommutativt) så kommer storleken på krafterna att bli samma (även om riktningarna är olika).</p>
+<p>Fysikaliskt:</p>
+<p>Newtons tredje lag säger att för varje kraft som verkar på en kropp, finns det en lika stor och motriktad kraft som verkar tillbaka på den kroppen. När två laddningar interagerar med varandra genom elektrostatisk kraft så är den kraft som den ena laddningen verkar på den andra med alltså precis lika stor som den kraft som den andra laddningen verkar på den första med, men riktad i motsatt riktning.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="spel">
 <h3>Spel<a class="headerlink" href="#spel" title="Permalink to this heading">#</a></h3>
-<p>ye</p>
-</section>
+<p>Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Välj ”Macro Scale” i första läget. Prova att ändra storleken på laddningarna och avståndet mellan dem. Vad händer med krafterna?</p>
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div></section>
 </section>
 </section>
 
@@ -473,6 +559,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#laddningar">Laddningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#coulombs-lag">Coulombs lag</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment">Experiment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgifter">Uppgifter</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spel">Spel</a></li>
