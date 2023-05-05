@@ -37,17 +37,21 @@ Videon visar det:
 >
 </iframe>
 
-_____________________________________________
+Om ett föremål är negativt laddat (överskott av elektroner) kommer överskottselektronerna repellera varandra så mycket de kan (lika laddningar repellerar) och därför spridas jämnt över föremålets yta. På så vis blir ett föremål lika laddat överallt, vilket kallas **elektrostatisk jämvikt**. På samma vis kommer en positiv laddning spridas jämnt.
 
-Ye bruh elektrostatisk jämvikt
+<!-- _____________________________________________
 
-_____________________________________________
-
-ye influens
+ye influens? -->
 
 _____________________________________________
 
-ye COUOMBS LAGGGGGGG
+### Coulombs lag
+
+För att de här laddningarna ska kunna repellera och attrahera varandra krävs det en *kraft*. Båda laddningarna kommer påverka varandra med en lika stor kraft fast i motsatt riktning. De är varandras *motkrafter*, vilket vi kommer ihåg stämmer väl ihop med Newtons tredje lag. Eftersom de två krafterna antingen är riktade mot varandra eller från varandra så behöver vi bara veta storleken på kraften, och den kan vi få från Coulombs lag:
+
+$$ F = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} $$
+
+där $k$ är en konstant, ($k = \frac{1}{4\pi \epsilon_0} = 8,99 \cdot 10^9 Nm^2/C^2$), $Q_1$ och $Q_2$ är laddningarnas storlek i coulomb (C) och $r$ är avståndet mellan laddningarna.
 
 _____________________________________________
 
@@ -64,10 +68,98 @@ _____________________________________________
 
 ### Uppgifter
 
-ye
+1. Vad innebär det att två laddningar repellerar eller attraherar varandra? För vilka laddningar gäller det?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Två lika laddningar kommer repellera varandra, alltså stöta bort varandra, medan två olika laddningar kommer attrahera varandra, alltså dras mot varandra.
+```
+
+2. Vad innebär det att någonting har ett "överskott av elektroner"?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Det "någonting" är då negativt laddat eftersom det finns fler elektroner än protoner.
+```
+
+3. Vad är elementarladdningen?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Den laddning en elektron har, alltså $1,602\cdot10^{-19}C$.
+```
+
+4. Två laddningar, $Q_1$ och $Q_2$ befinner sig 20 cm ifrån varandra. $Q_1$ har laddningen +8,0 nC och $Q_2$ har laddningen -10,0 nC. Åt vilket håll är krafterna som de verkar på varandra med riktade? Hur stora är de?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Eftersom $Q_1$ är en positiv laddning och $Q_2$ är en negativ laddning kommer de attrahera varandra. Krafterna är alltså riktade mot varandra. 
+
+Storleken ges sedan av Coulombs lag. Vi räknar först om alla värden från uppgiften till rätt enheter:
+
+* $Q_1 = 8,0 nC = 8,0 \cdot 10^{-9} C$
+* $Q_2 = -10,0 nC = -10,0 \cdot 10^{-9} C$
+* $r = 20 cm = 0,2 m$
+* $k = 8,99 \cdot 10^9 Nm^2/C^2$
+
+Sätter vi in det i Coulombs lag får vi svaret för båda krafterna (eftersom de är lika stora!):
+
+$$ F = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} = 8,99 \cdot 10^9 \cdot \frac{|8,0 \cdot 10^{-9} \cdot (-10,0 \cdot 10^{-9})|}{0,2^2} \approx 1,8 \cdot 10^{-5} N = 18 \mu N$$ 
+
+Krafterna har ungefär storlekarna $18\mu N$.
+```
+
+5. En kula med massan 0,3 gram svävar i luften på grund av att den attraheras uppåt av ett stort metallklot med laddningen $2,0\mu C$ och nedåt av jordens dragningskraft. Kulan är 0,20 meter från metallklotet. Vad är kulans laddning?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Den elektriska kraften, $F_E$, måste vara lika stor som dragningskraften, $F_g$, eftersom kulan är stilla. Detta ger $F_E=F_g$, vilket enligt Newtons andra lag ($F=ma$) och Coulombs lag är samma sak som
+
+$$k \frac{|Q_1\cdot Q_2|}{r^2}=mg$$
+
+Vi söker kulans laddning. Vi väljer kulans laddning till $Q_1$ och klotets till $Q_2$, och bryter sedan ut $Q_1$ eftersom det är denne vi söker. Detta ger 
+       
+$$Q_1 = \frac{mgr^2}{kQ_2}$$
+      
+Vi sätter sedan in värdena från uppgiften med deras omvandlade enheter:
+
+* $m = 0,3g=0,3 \cdot 10^{-3}kg$
+* $g = 9,82 m/s^2$
+* $r=0,2 m$
+* $k = 8,99 \cdot 10^9 Nm^2/C^2$
+* $Q_1 = 2,0\mu C = 2,0 \cdot 10^{-6} C$
+
+och beräknar $Q_1$
+
+$$Q_1 = \frac{0,3 \cdot 10^{-3} \cdot 9,82 \cdot 0,20^2}{8,99 \cdot 10^9 \cdot 2,0 \cdot 10^{-6}} \approx 6,6 \cdot 10^{-9} C $$
+
+Svaret blir alltså att kulans laddning är $6,6nC$
+```
+
+6. Förklara både matematiskt (utifrån Coulombs lag) och fysikaliskt varför kraften som $Q_1$ verkar på $Q_2$ med är lika stor som kraften som $Q_2$ verkar på $Q_1$ med är.
+
+```{admonition} Visa svar
+:class: caution dropdown
+Matematiskt: 
+
+Enligt Coulombs lag kan vi säga att ena kraften beräknas med hjälp av $ F_1 = k \cdot \frac{|Q_1 \cdot Q_2|}{r^2} $ och att den andra kraften beräknas med hjälp av $ F_2 = k \cdot \frac{|Q_2 \cdot Q_1|}{r^2} $. Eftersom $Q_1 \cdot Q_2 = Q_2 \cdot Q_1|$ (multiplikation är kommutativt) så kommer storleken på krafterna att bli samma (även om riktningarna är olika). 
+
+Fysikaliskt:
+
+Newtons tredje lag säger att för varje kraft som verkar på en kropp, finns det en lika stor och motriktad kraft som verkar tillbaka på den kroppen. När två laddningar interagerar med varandra genom elektrostatisk kraft så är den kraft som den ena laddningen verkar på den andra med alltså precis lika stor som den kraft som den andra laddningen verkar på den första med, men riktad i motsatt riktning.
+```
 
 _____________________________________________
 
 ### Spel
 
-ye
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Välj "Macro Scale" i första läget. Prova att ändra storleken på laddningarna och avståndet mellan dem. Vad händer med krafterna? 
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div>
