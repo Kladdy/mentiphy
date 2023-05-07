@@ -30,7 +30,7 @@ Videon visar det:
     width="100%"
     max-width="800"
     height="450"
-    src="https://www.youtube.com/embed/yeSEiQTNxybdM"
+    src="https://www.youtube.com/embed/SEiQTNxybdM"
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
@@ -190,4 +190,114 @@ _____________________________________________
 
 ## Elektriska fält
 
-happy guy
+Föremål kan ha laddning - och laddningar har *elektriska fält*. 
+
+Elektriska fält kan jämföras med jordens gravitationsfält. Runt jorden finns ett gravitationsfält som drar alla föremål med massa ner mot jorden, ett fält som påverkar föremål med en *kraft*. Runt varje laddning finns ett elektriskt fält som påverkar andra laddningar med en annan *kraft*. 
+
+Här finns en video som förklarar det här lite mer:
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/iEMuz3eTnsU"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+```{admonition} Kom ihåg
+:class: attention
+* Varje laddning omges av ett elektriskt fält
+* Elektriska fält påverkar andra laddningar
+* Ett elektriskt fält kan variera i styrka eller vara *homogent* 
+* Fältlinjer ritas från en positiv till negativ laddning
+* Positiva laddningar påverkas av en kraft i samma riktning som fältlinjerna
+* Negativa laddningar påverkas av en kraft i motsatt riktning som fältlinjerna
+```
+
+_____________________________________________
+
+### Elektrisk fältstyrka
+
+Elektriska fält kan ha olika styrka. För att mäta fältets styrka använder vi den fysikaliska storheten *elektrisk fältstyrka* som betecknas **E** och mäts i enheten N/C eller V/m. 
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/TWfVhTDFFsM"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+Elektrisk fältstyrka beräknas med hjälp av vilken kraft en laddning påverkas av när den befinner sig i fältet:
+
+$$**E** = \frac{F}{Q}$$
+
+där $F$ är kraften som påverkar laddningen i fältet och $Q$ är laddningens storlek.
+
+_____________________________________________
+
+I ett homogent fält är den elektriska fältstyrkan lika stor överallt. Ett sådant kan uppstå mellan två laddade plattor. Då är det också möjligt att avgöra den elektriska fältstyrkan med hjälp av spänningen över plattorna och avståndet mellan dem:
+
+$$**E** = \frac{U}{d}$$
+
+där $U$ är spänningen över plattorna och $d$ är avståndet mellan plattorna.
+
+_____________________________________________
+
+### Faradays bur
+
+Ye
+
+_____________________________________________
+
+### Uppgifter
+
+1. Vad är ett elektriskt fält?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Inom fysiken talar vi ofta om fält. Elektriska fält är den elektromagnetiska motsvarigheten till ett gravitationsfält och omger alla laddade partiklar. Ett elektriskt fält påverkar andra laddningar i fältet med en kraft.
+```
+
+2. Vad är elektrisk fältstyrka?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Den elektriska fältstyrkan avgör med hur stor kraft fältet påverkar en laddning i just den punkten. Ett elektriskt fält kan ha olika fältstyrka på olika ställen eller samma fältstyrka överallt.
+```
+
+3. Vad är ett homogent elektriskt fält?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Ett elektriskt fält där den elektriska fältstyrkan är lika stor överallt, alltså oavsett vart vi placerar en laddning i fältet så kommer den påverkas med samma kraft.
+```
+
+```{admonition} OBS
+:class: danger
+Fler uppgifter är på väg!
+```
+
+<!-- **räkneuppgifter, faradays bur, laddningar i fält, och så vidare, jorden? coulombs lag + elektriskt fältstyrka, koppla ihop** -->
+
+_____________________________________________
+
+### Spel
+
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Prova att få så hög fältstyrka som möjligt (sätt på "Values" i den högra menyn och lägg in den gula sensorn). Prova sedan få så låg fältstyrka som möjligt.
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div>
+
