@@ -33,6 +33,7 @@ repository:
 # Disable GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  favicon: img/favicon.ico
   use_issues_button: false
   use_repository_button: false
   use_edit_page_button: false
