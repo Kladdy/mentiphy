@@ -2,6 +2,11 @@
 
 Läromedel för gymnasiet, baserat på https://github.com/executablebooks/cookiecutter-jupyter-book
 
+## Links
+
+- Based on https://github.com/executablebooks/cookiecutter-jupyter-book
+- For Microsoft Clarity integration: https://github.com/executablebooks/jupyter-book/issues/1853
+
 ## Usage
 
 ### Building the book
