@@ -6,6 +6,8 @@ _____________________________________________
 
 ## Laddningar
 
+### Atomens laddning
+
 Elektricitet finns naturligt, bland annat i atomer. En atom består av mindre partiklar som är *elektriskt laddade*. 
 
 <img src="kurser\fysik-9\img-9\Atomen.png" alt="En atom med protoner (röda), neutroner (vita) och elektroner (blåa)" align="left" width="200" /> 
@@ -15,3 +17,9 @@ I figuren här syn en atom. I varje atom finns en *atomkärna* som består av pr
 :class: danger
 Protonerna, elektronerna och neutronerna är inte röda, blåa eller vita i verkligheten, utan det är bara i illustrationssyfte!
 ```
+
+Atomen är neutral. Antalet protoner, elektroner och neutroner i en atom påverkar vilket ämne det är. I bilden ovanför är det en heliumatom, eftersom den har två protoner och två elektroner. I atomerna finns det lika många protoner som elektroner, och atomens laddning blir därför neutral. 
+
+### Statisk elektricitet
+
+Ye ye
