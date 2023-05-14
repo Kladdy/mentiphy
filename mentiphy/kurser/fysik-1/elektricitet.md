@@ -4,7 +4,7 @@
 
 *Elektrisk laddning* är en fysikalisk storhet som betecknas $Q$ och har enheten *coulomb* (C). 
 
-Laddningar är helt enkelt laddade partiklar. De kan antingen vara positiva eller negativa, vilka är varandras motsatser. För varje partikel som finns i vår natur finns det, så viss vi vet, en *antipartikel* som har motsatt laddning.
+Laddningar är helt enkelt laddade partiklar. De kan antingen vara positiva eller negativa, vilka är varandras motsatser. För varje partikel som finns i vår natur finns det, så vitt vi vet, en *antipartikel* som har motsatt laddning.
 
 _____________________________________________
 
