@@ -11,7 +11,7 @@ Elektricitet finns naturligt, bland annat i atomer. En atom består av mindre pa
 ```{image} fysik-9/img-9/Atomen.png
 ```
 
-<img src="fysik-9/img-9/Atomen.png" alt="En atom med protoner (röda), neutroner (vita) och elektroner (blåa)" align="left" width="200" /> 
+<img src="img-9/Atomen.png" alt="En atom med protoner (röda), neutroner (vita) och elektroner (blåa)" align="left" width="200" /> 
 Här skriver jag
 
 Här skriver jag också
