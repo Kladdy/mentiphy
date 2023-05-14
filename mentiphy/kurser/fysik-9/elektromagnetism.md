@@ -8,10 +8,10 @@ _____________________________________________
 
 Elektricitet finns naturligt, bland annat i atomer. En atom består av mindre partiklar som är *elektriskt laddade*. 
 
-```{image} fysik-9/img-9/Atomen.png
+<img src="kurser\fysik-9\img-9\Atomen.png" alt="En atom med protoner (röda), neutroner (vita) och elektroner (blåa)" align="left" width="200" /> 
+I figuren här syn en atom. I varje atom finns en *atomkärna* som består av protoner (röda) och neutroner (vita). Atomkärnan är positivt laddad, eftersom protonerna har positiv laddning och neutronerna är oladdade. Runt atomkärnan kretsar elektroner (blåa) som är negativt laddade. 
+
+```{admonition} Varning
+:class: danger
+Protonerna, elektronerna och neutronerna är inte röda, blåa eller vita i verkligheten, utan det är bara i illustrationssyfte!
 ```
-
-<img src="img-9/Atomen.png" alt="En atom med protoner (röda), neutroner (vita) och elektroner (blåa)" align="left" width="200" /> 
-Här skriver jag
-
-Här skriver jag också
