@@ -23,6 +23,28 @@ Protonerna, elektronerna och neutronerna är inte röda, blåa eller vita i verk
 
 Atomen är neutral. Antalet protoner, elektroner och neutroner i en atom påverkar vilket ämne det är. I bilden ovanför är det en heliumatom, eftersom den har två protoner och två elektroner. I atomerna finns det lika många protoner som elektroner, och atomens laddning blir därför neutral. 
 
+_____________________________________________
+
 ### Statisk elektricitet
 
-Ye ye
+Om man gnider en ballong mot håret och sedan lyfter bort den kommer håret vilja följa med. För att förstå *varför* det sker måste vi igen titta på bilden på atomen ovan. Statisk elektricitet kan kanske enklast förklaras med hjälp av att vi gnuggar en ballong mot håret. När vi sedan lyfter bort ballongen kommer håret vilja följa med, och det beror på statisk elektricitet! Videon här förklarar varför det är så:
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/BxC-Kmf_qAs"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
+Elektronerna "hoppar" alltså från håret till ballongen och skapar en laddningsskillnad mellan dem (håret blir positivt laddat eftersom det finns fler protoner än neutroner, ballongen blir negativt laddad eftersom det finns fler elektroner än protoner). 
+
+Olika laddningar dras alltså mot varandra, medan lika laddningar dras ifrån varandra. Vill du veta mer, klicka <a href='https://mentiphy.se/kurser/fysik-1/elektricitet.html#laddningar'>här</a>. 
+
+_____________________________________________
+
+### Åska
+
