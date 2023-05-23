@@ -48,3 +48,30 @@ _____________________________________________
 
 ### Åska
 
+yeye
+
+_____________________________________________
+
+### Uppgifter
+
+1. Fråga?
+
+```{admonition} Visa svar
+:class: caution dropdown
+Svar
+```
+
+_____________________________________________
+
+### Spel
+
+Här nedan finns ett spel från PhET Interactive Simulations (som ges ut av University of Colorado). Här kan du prova gnugga en ballong mot en stickad tröja. Vilka är elektronerna? Hur beter de sig när du gnuggar ballongen mot tröjan? Vad händer om du släpper ballongen en bit ifrån tröjan? Vad beror det på?
+
+<div>
+   <iframe src="https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html"
+        width="100%"
+        max-width="800"
+        height="450"
+        allowfullscreen>
+    </iframe>
+</div>
