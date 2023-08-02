@@ -10,7 +10,7 @@ _____________________________________________
 
 Elektricitet finns naturligt, bland annat i atomer. En atom består av mindre partiklar som är *elektriskt laddade*. 
 
-```{image} img/img-9/Atomen.png
+```{image} img/Atomen.png
 :alt: En atom med protoner (röda), neutroner (vita) och elektroner (blåa).
 ```
 
