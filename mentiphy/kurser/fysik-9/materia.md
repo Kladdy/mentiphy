@@ -303,7 +303,7 @@ Här finns en tabell med olika enheter för massa och hur de omvandlas till gram
 :header-rows: 1
 
 * - Enhet
-  - Omvandlat till kg
+  - Omvandlat till g
 * - 1 ton
   - 1 000 000 gram (g)
 * - 1 kilogram (kg)
