@@ -7,12 +7,15 @@ parts:
   - caption: Fysik åk 9
     chapters:
     - file: kurser/fysik-9/materia
+    - file: kurser/fysik-9/elektricitet
     - file: kurser/fysik-9/mekanik
+    - file: kurser/fysik-9/ljud
+    - file: kurser/fysik-9/ljus
     - file: kurser/fysik-9/tryckvärmeklimat
     - file: kurser/fysik-9/elektromagnetism
-    - file: kurser/fysik-9/vågoroptik
-    - file: kurser/fysik-9/astronomi
+    - file: kurser/fysik-9/energioeffekt
     - file: kurser/fysik-9/atomokärn
+    - file: kurser/fysik-9/universum
   - caption: Fysik 1
     chapters:
     - file: kurser/fysik-1/rörelse
