@@ -1,0 +1,344 @@
+[
+    {
+      "question": "Vilken laddning har en elektron?",
+      "type": "many_choice",
+      "answers": [
+          {
+              "answer": "Negativ",
+              "correct": true,
+              "feedback": "Snyggt!"
+          },
+          {
+              "answer": "Neutral",
+              "correct": false,
+              "feedback": "Nej, det är neutronen som har neutral laddning."
+          },
+          {
+              "answer": "Positiv",
+              "correct": false,
+              "feedback": "Nej, det är protonen som har positiv laddning."
+          }
+      ]
+    },
+    {
+        "question": "Vilken laddning har en proton?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Positiv",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "Neutral",
+                "correct": false,
+                "feedback": "Nej, det är neutronen som har neutral laddning."
+            },
+            {
+                "answer": "Negativ",
+                "correct": false,
+                "feedback": "Nej, det är elektronen som har negativ laddning."
+          }
+      ]
+    },
+    {
+        "question": "Vilken laddning har en neutron?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Neutral",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "Positiv",
+                "correct": false,
+                "feedback": "Nej, det är protonen som har positiv laddning."
+            },
+            {
+                "answer": "Negativ",
+                "correct": false,
+                "feedback": "Nej, det är elektronen som har neutral laddning."
+          }
+      ]
+    },
+    {
+        "question": "Olika laddningar _____ varandra.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "attraherar (dras mot)",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "repellerar (dras ifrån)",
+                "correct": false,
+                "feedback": "Försök igen..."
+          }
+      ]
+    },
+    {
+        "question": "Lika laddningar _____ varandra.",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "attraherar (dras mot)",
+                "correct": false,
+                "feedback": "Försök igen..."
+            },
+            {
+                "answer": "repellerar (dras ifrån)",
+                "correct": true,
+                "feedback": "Jajamen!"
+          }
+      ]
+    },
+    {
+        "question": "Spänning har enheten (alltså mäts i)...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ampere",
+                "correct": false,
+                "feedback": "Nej, det är ström som mäts i ampere."
+            },
+            {
+                "answer": "Ohm",
+                "correct": false,
+                "feedback": "Nej, det är resistans som mäts i ohm."
+            },
+            {
+                "answer": "Volt",
+                "correct": true,
+                "feedback": "Exakt, namngivet efter Alessandro Volta."
+          }
+      ]
+    },
+    {
+        "question": "Ström har enheten (alltså mäts i)...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ampere",
+                "correct": true,
+                "feedback": "Exakt, namngivet efter Andre-Marie Ampere."
+            },
+            {
+                "answer": "Ohm",
+                "correct": false,
+                "feedback": "Nej, det är resistans som mäts i ohm."
+            },
+            {
+                "answer": "Volt",
+                "correct": false,
+                "feedback": "Nej, det är spänning som mäts i volt."
+          }
+      ]
+    },
+    {
+        "question": "Resistans har enheten (alltså mäts i)...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ampere",
+                "correct": false,
+                "feedback": "Nej, det är ström som mäts i ampere."
+            },
+            {
+                "answer": "Ohm",
+                "correct": true,
+                "feedback": "Exakt, namngivet efter George Ohm."
+            },
+            {
+                "answer": "Volt",
+                "correct": false,
+                "feedback": "Nej, det är spänning som mäts i volt."
+          }
+      ]
+    },
+    {
+        "question": "Vad är en isolator?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett ämne som inte leder ström",
+                "correct": true,
+                "feedback": "Bra! Exempel på isolatorer är glas och plast."
+            },
+            {
+                "answer": "Ett ämne som leder ström",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Vad är en ledare?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett ämne som inte leder ström",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Ett ämne som leder ström",
+                "correct": true,
+                "feedback": "Kanon! Exempel på bra ledare är silver och koppar."
+          }
+      ]
+    },
+    {
+        "question": "Om ett föremål har ett underskott (för få) av elektroner är det...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "negativt laddat.",
+                "correct": false,
+                "feedback": "Nej, kom ihåg att elektroner är negativt laddade."
+            },
+            {
+                "answer": "positivt laddat.",
+                "correct": true,
+                "feedback": "Precis! Eftersom elektroner är negativt laddade blir ett föremål positivt laddat om det har för få elektroner."
+          }
+      ]
+    },
+    {
+        "question": "Om ett föremål har ett överskott (för många) av elektroner är det...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "negativt laddat.",
+                "correct": true,
+                "feedback": "Precis! Eftersom elektroner är negativt laddade blir ett föremål också negativt laddat om det har för många elektroner."
+            },
+            {
+                "answer": "positivt laddat.",
+                "correct": false,
+                "feedback": "Nej, kom ihåg att elektroner är negativt laddade."
+          }
+      ]
+    },
+    {
+        "question": "Vad påverkar resistansen hos en tråd/sladd/kabel?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Tråden längd",
+            "correct": true,
+            "feedback": "Precis, en längre kabel ger en högre resistans."
+        },
+        {
+            "answer": "Trådens material",
+            "correct": true,
+            "feedback": "Exakt, exempelvis så har järn högre resistans än silver."
+        },
+        {
+            "answer": "Trådens tjocklek",
+            "correct": true,
+            "feedback": "Snyggt, en tunnare sladd har en högre resistans."
+        },
+        {
+            "answer": "Trådens färg",
+            "correct": false,
+            "feedback": "Nej tyvärr, du kan lika gärna välja de svarta som de röda sladdarna när vi labbar."
+        }
+    ]
+    },
+    {
+        "question": "Vad händer om man seriekopplar två lampor?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "De lyser starkare än om man bara hade haft en lampa (de får dubbel spänning)",
+            "correct": false,
+            "feedback": "Nej, fler lampor ger inte en högre spänning."
+        },
+        {
+            "answer": "De lyser svagare än om man bara hade haft en lampa (de får hälften så mycket spänning)",
+            "correct": true,
+            "feedback": "Exakt, bra jobbat!"
+        },
+        {
+            "answer": "De lyser lika starkt som om man bara hade haft en lampa (de får samma spänning)",
+            "correct": false,
+            "feedback": "Nej tyvärr, men det här är sant för parallellkopplade lampor om det var så du tänkte."
+        }
+    ]
+    },
+    {
+        "question": "Vad händer om man parallellkopplar två lampor?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "De lyser starkare än om man bara hade haft en lampa (de får dubbel spänning)",
+            "correct": false,
+            "feedback": "Nej, fler lampor ger inte en högre spänning."
+        },
+        {
+            "answer": "De lyser svagare än om man bara hade haft en lampa (de får hälften så mycket spänning)",
+            "correct": false,
+            "feedback": "Nej tyvärr, men det här är sant för två seriekopplade lampor om det var så du tänkte."
+        },
+        {
+            "answer": "De lyser lika starkt som om man bara hade haft en lampa (de får samma spänning)",
+            "correct": true,
+            "feedback": "Exakt, bra jobbat!"
+        }
+    ]
+    },
+    {
+        "question": "Vad händer om man seriekopplar två batterier?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Spänningen i kretsen ökar jämfört men om man bara hade haft ett batteri.",
+            "correct": true,
+            "feedback": "Precis, batteriernas spänning läggs ihop och ökar spänningen i kretsen."
+        },
+        {
+            "answer": "Spänningen i kretsen blir samma som om man bara hade haft ett batteri.",
+            "correct": false,
+            "feedback": "Nej, men det här stämmer om du skulle parallellkoppla batterierna."
+        },
+        {
+            "answer": "Batterierna håller lika länge som om man bara hade haft ett batteri.",
+            "correct": true,
+            "feedback": "Jajamen!"
+        },
+        {
+            "answer": "Batterierna håller längre jämfört med om man bara hade haft ett batteri.",
+            "correct": false,
+            "feedback": "Nej, men det här stämmer om du skulle parallellkoppla batterierna."
+        }
+    ]
+    },
+    {
+        "question": "Vad händer om man parallellkopplar två batterier?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Spänningen i kretsen ökar jämfört men om man bara hade haft ett batteri.",
+            "correct": false,
+            "feedback": "Nej, men det här stämmer om du skulle seriekoppla batterierna."
+        },
+        {
+            "answer": "Spänningen i kretsen blir samma som om man bara hade haft ett batteri.",
+            "correct": true,
+            "feedback": "Bravo!"
+        },
+        {
+            "answer": "Batterierna håller lika länge som om man bara hade haft ett batteri.",
+            "correct": false,
+            "feedback": "Nej, men det här stämmer om du skulle seriekoppla batterierna."
+        },
+        {
+            "answer": "Batterierna håller längre jämfört med om man bara hade haft ett batteri.",
+            "correct": true,
+            "feedback": "Exakt!"
+        }
+    ]
+    }
+  ]
