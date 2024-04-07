@@ -11,6 +11,17 @@ kernelspec:
 ---
 
 # Quiz
+asdasdsadasdasd
+
+## Hej
+
+```{code-cell} ipython3
+:tags: [remove-input]
+from jupyterquiz import display_quiz
+display_quiz("quiz/frågor.json", shuffle_answers=True, shuffle_questions=True)
+```
+
+## Hej
 
 ```{code-cell} ipython3
 :tags: [remove-input]
