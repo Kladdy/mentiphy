@@ -26,7 +26,7 @@ En atom som har för många eller för få elektroner kallas för en *jon* och �
 
 Atomkärnan beskrivs med hjälp av *masstal* och *atomnummer*. De anger antalet protoner och neutroner i kärnan.
 
-```{image} img/AK Atomnummer och masstal.png
+```{image} img/AK_Atomnummer_och_masstal.png
 :alt: Så här ser grundämnet syre ut i periodiska systemet. Här är 16 *masstalet* och 8 *atomnumret*.
 ```
 
