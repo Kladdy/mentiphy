@@ -564,6 +564,14 @@ Den punkt då atomerna står helt stilla, vilket är vid 0 K eller -273&deg;C.
 Ett mått på hur mycket atomerna rör sig.
 ```
 
+_____________________________________________
 
+## Quiz
+
+```{code-cell} ipython3
+:tags: [remove-input]
+from jupyterquiz import display_quiz
+display_quiz("quiz/materia.json", shuffle_answers=True, shuffle_questions=True)
+```
 
 

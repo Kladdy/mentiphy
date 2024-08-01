@@ -1,0 +1,495 @@
+[
+    {
+      "question": "Vilket svar beskriver ett grundämne?",
+      "type": "many_choice",
+      "answers": [
+          {
+              "answer": "Ett ämne som bara består av en sorts atomer",
+              "correct": true,
+              "feedback": "Exakt, som exempelvis syre!"
+          },
+          {
+              "answer": "Ett ämne som består av flera sorters atomer",
+              "correct": false,
+              "feedback": "Nej, då är det en kemisk förening"
+          }
+      ]
+    },
+    {
+        "question": "Vilket svar beskriver en kemisk förening?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett ämne som bara består av en sorts atomer",
+                "correct": false,
+                "feedback": "Nej, ämnen som bara har en sorts atomer är grundämnen"
+            },
+            {
+                "answer": "Ett ämne som består av flera sorters atomer",
+                "correct": false,
+                "feedback": "Snyggt! Ett exempel är vatten, som består av väte och syre."
+          }
+      ]
+    },
+    {
+        "question": "Vatten är en/ett _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kemisk förening",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "grundämne",
+                "correct": false,
+                "feedback": "Försök igen..."
+          }
+      ]
+    },
+    {
+        "question": "Syre är en/ett _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kemisk förening",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "grundämne",
+                "correct": true,
+                "feedback": "Yes!"
+          }
+      ]
+    },
+    {
+        "question": "Väte är en/ett _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kemisk förening",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "grundämne",
+                "correct": true,
+                "feedback": "Yes!"
+          }
+      ]
+    },
+    {
+        "question": "Vilka tre partiklar består en atom av?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Proton",
+                "correct": true,
+                "feedback": "Ja, i atomkärnan finns protoner."
+            },
+            {
+                "answer": "Molekyl",
+                "correct": false,
+                "feedback": "Nej, molekylen består av atomer."
+            },
+            {
+                "answer": "Elektron",
+                "correct": true,
+                "feedback": "Ja, elektroner är små partiklar som kretsar runt atomkärnan i atomen."
+            },
+            {
+                "answer": "Neutron",
+                "correct": true,
+                "feedback": "Ja, i atomkärnan finns neutroner."
+          }
+      ]
+    },
+    {
+        "question": "Vilken av dessa är i storleksordningen minst-störst?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Proton - Syreatom - Syremolekyl",
+                "correct": true,
+                "feedback": "Precis, det finns 8 protoner i en syreatom och 2 syreatomer i en syremolekyl."
+            },
+            {
+                "answer": "Syreatom - Syremolekyl - Proton",
+                "correct": false,
+                "feedback": "Nej, protonen är mindre än syreatomen."
+            },
+            {
+                "answer": "Syremolekyl - Proton - Syreatom",
+                "correct": false,
+                "feedback": "Nej, här är de fullkomligt huller om buller."
+          }
+      ]
+    },
+    {
+        "question": "Vilka tre former förekommer ämnen oftast i?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Flytande form",
+                "correct": true,
+                "feedback": "Yes!"
+            },
+            {
+                "answer": "Ful form",
+                "correct": false,
+                "feedback": "Nej..."
+            },
+            {
+                "answer": "Gasform",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "Fast form",
+                "correct": true,
+                "feedback": "Ja!"
+          }
+      ]
+    },
+    {
+        "question": "Vad händer om temperaturen ökar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Molekylerna i ett ämne rör sig mer",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "Molekylerna i ett ämne rör sig mindre",
+                "correct": false,
+                "feedback": "Nej, men om det inte är mindre så är det ...??"
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär det att ett ämne kondenserar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det går från flytande till fast form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från flytande form till gasform.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från gasform till flytande form",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "Det går från fast till flytande form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär det att ett ämne avdunstar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det går från flytande till fast form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från flytande form till gasform.",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "Det går från gasform till flytande form",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från fast till flytande form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär det att ett ämne smälter?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det går från flytande till fast form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från flytande form till gasform.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från gasform till flytande form",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från fast till flytande form.",
+                "correct": true,
+                "feedback": "Snyggt!"
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär det att ett ämne stelnar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det går från flytande till fast form.",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "Det går från flytande form till gasform.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från gasform till flytande form",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Det går från fast till flytande form.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Övergången från fast till flytande form kallas _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kondensera",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "avdunsta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "smälta",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "stelna",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Övergången från flytande till fast form kallas _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kondensera",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "avdunsta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "smälta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "stelna",
+                "correct": true,
+                "feedback": "Bravo!"
+          }
+      ]
+    },
+    {
+        "question": "Övergången från gasform till flytande form kallas _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kondensera",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "avdunsta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "smälta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "stelna",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Övergången från flytande form till gasform kallas _____",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "kondensera",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "avdunsta",
+                "correct": true,
+                "feedback": "Bravo"
+            },
+            {
+                "answer": "smälta",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "stelna",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Varför flyter vissa ämnen på vatten och andra inte?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det beror på föremålets massa",
+                "correct": false,
+                "feedback": "Nej, massa är vikt och tänk att tillexempel en båt som väger mycket ändå kan flyta."
+            },
+            {
+                "answer": "Det beror på föremålets densitet",
+                "correct": true,
+                "feedback": "Precis! Om föremålet har lägre densitet än vattnet kommer det flyta."
+            },
+            {
+                "answer": "Det beror på föremålets volym",
+                "correct": false,
+                "feedback": "Nej, volym är storlek och tänk att tillexempel en båt som är väldigt stor ändå kan flyta."
+          }
+      ]
+    },
+    {
+        "question": "Vad är massa?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Vikt, ett mått på hur mycket någonting väger",
+            "correct": true,
+            "feedback": "Precis, och massa mäts i kilogram!"
+        },
+        {
+            "answer": "Storlek, ett mått på hur stort någonting är",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        },
+        {
+            "answer": "Täthet, ett mått på hur mycket någonting väger jämfört med sin storlek",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        }
+    ]
+    },
+    {
+        "question": "Vad är volym?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Vikt, ett mått på hur mycket någonting väger",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        },
+        {
+            "answer": "Storlek, ett mått på hur stort någonting är",
+            "correct": true,
+            "feedback": "Precis, och volymen kan mätas i exempelvis kubikmeter eller liter."
+        },
+        {
+            "answer": "Täthet, ett mått på hur mycket någonting väger jämfört med sin storlek",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        }
+    ]
+    },
+    {
+        "question": "Vad är densitet?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Vikt, ett mått på hur mycket någonting väger",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        },
+        {
+            "answer": "Storlek, ett mått på hur stort någonting är",
+            "correct": false,
+            "feedback": "Nej tyvärr, prova igen!"
+        },
+        {
+            "answer": "Täthet, ett mått på hur mycket någonting väger jämfört med sin storlek",
+            "correct": true,
+            "feedback": "Precis, ett mått på hur tätt atomerna är packade."
+        }
+    ]
+    },
+    {
+        "question": "Vad är temperatur?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Ett mått på hur mycket molekylerna rör sig",
+            "correct": true,
+            "feedback": "Exakt, högre temperatur är samma som att molekylerna rör sig mer."
+        },
+        {
+            "answer": "Kallt",
+            "correct": false,
+            "feedback": "Jadu..."
+        }
+    ]
+    },
+    {
+        "question": "Vad är den absoluta nollpunkten?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Den punkt då temperaturen är som absolut lägst, när atomerna står helt stilla",
+            "correct": true,
+            "feedback": "Nej, fler lampor ger inte en högre spänning."
+        },
+        {
+            "answer": "Den punkt då temperaturen är som absolut högst, när atomerna rör sig så mycket som möjligt",
+            "correct": false,
+            "feedback": "Nej tyvärr."
+        }
+    ]
+    }
+  ]
