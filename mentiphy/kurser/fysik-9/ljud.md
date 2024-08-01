@@ -2,8 +2,18 @@
 
 ## Vad är ljud?
 
-vibrationer och vågor
-ruta om ekolod
+Ljud är vibrationer.
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src="https://www.youtube.com/embed/Bl5HH31U6v0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 _____________________________________________
 
