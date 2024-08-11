@@ -1,0 +1,375 @@
+[
+    {
+      "question": "Vad är ljud (det finns flera rätt svar)?",
+      "type": "many_choice",
+      "answers": [
+          {
+              "answer": "Engelska för sound",
+              "correct": false,
+              "feedback": "Nja, tvärtom är det väl?"
+          },
+          {
+              "answer": "Vibrationer",
+              "correct": true,
+              "feedback": "Kanon!"
+          },
+          {
+              "answer": "Vågor",
+              "correct": true,
+              "feedback": "Där satt den!"
+          }
+      ]
+    },
+    {
+        "question": "I vilket av dessa tre ämnen färdas ljud snabbast?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Metall",
+                "correct": true,
+                "feedback": "Exakt!"
+            },
+            {
+                "answer": "Vatten",
+                "correct": false,
+                "feedback": "Nej, men åtminstone snabbare än i luft."
+            },
+            {
+                "answer": "Luft",
+                "correct": false,
+                "feedback": "Nej, ljud färdas relativt sakta i luft."
+          }
+      ]
+    },
+    {
+        "question": "Vad är ljudets hastighet i luft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ungefär 5000 m/s",
+                "correct": false,
+                "feedback": "Nej, det krävs exempelvis metall för ljudet att färdas så fort."
+            },
+            {
+                "answer": "Ungefär 1500 m/s",
+                "correct": false,
+                "feedback": "Nej, det är ljudhastigheten i vatten."
+            },
+            {
+                "answer": "Ungefär 340 m/s",
+                "correct": true,
+                "feedback": "Exakt!"
+          }
+      ]
+    },
+    {
+        "question": "Hur låter en gitarr i en vakuumkammare?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Inte alls",
+                "correct": true,
+                "feedback": "Precis, ljudet behöver någonting att färdas i för att “låta”."
+            },
+            {
+                "answer": "Högre än vanligt",
+                "correct": false,
+                "feedback": "Nej."
+          }
+      ]
+    },
+    {
+        "question": "Varför färdas ljud fortare i metall än i luft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Metallen är mycket tätare så vibrationerna sprider sig snabbare",
+                "correct": true,
+                "feedback": "Där satt den!"
+            },
+            {
+                "answer": "Metallen är mycket lenare så ljudet kan åka längs med.",
+                "correct": false,
+                "feedback": "Nja, så är det väl inte riktigt?"
+          }
+      ]
+    },
+    {
+        "question": "Vad är frekvens?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Det som gör att det låter mer.",
+                "correct": false,
+                "feedback": "Nja, men du kanske tänker på någonting som liknar resonans?"
+            },
+            {
+                "answer": "Antalet svängningar per sekund",
+                "correct": true,
+                "feedback": "Bravo!"
+          }
+      ]
+    },
+    {
+        "question": "Vilken enhet har frekvens?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Hertz (Hz)",
+                "correct": true,
+                "feedback": "Bra jobbat!"
+            },
+            {
+                "answer": "Decibel (dB)",
+                "correct": false,
+                "feedback": "Nej, det är ljudnivån som mäts i decibel."
+          }
+      ]
+    },
+    {
+        "question": "Vad menas med 440 Hz?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Att ljudvibrationerna svänger 440 gånger per sekund",
+                "correct": true,
+                "feedback": "Snyggt! Just 440 Hz är också normaltonen."
+            },
+            {
+                "answer": "Att ljudet färdas i 440 m/s.",
+                "correct": true,
+                "feedback": "Nej, frekvens har ingenting med ljudhastighet att göra."
+          }
+      ]
+    },
+    {
+        "question": "Vilka frekvenser kan människan höra?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Mellan 0 och 20 Hz",
+                "correct": false,
+                "feedback": "Nej, det här ljudet kallas infraljud och kan inte höras av människan, men t. ex. duvor kan höra det!"
+            },
+            {
+                "answer": "Mellan 20 och 20 000 Hz",
+                "correct": true,
+                "feedback": "Bra! Exempel på isolatorer är glas och plast."
+            },
+            {
+                "answer": "Mellan 20 000 och 7 000 000 Hz",
+                "correct": false,
+                "feedback": "Nej, det här ljudet kallas ultraljud och kan inte höras av människan, men t. ex. hundar kan höra det!"
+          }
+      ]
+    },
+    {
+        "question": "Vad är infraljud?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljud med frekvens över 20 000 Hz",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "Ljud med frekvens under 20 Hz",
+                "correct": true,
+                "feedback": "Kanon! Visste du att duvor kan höra infraljud?"
+          }
+      ]
+    },
+    {
+        "question": "Vad är ultraljud?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljud med frekvens över 20 000 Hz",
+                "correct": true,
+                "feedback": "Kanon! Visste du att hundar och fladdermöss kan höra infraljud?"
+            },
+            {
+                "answer": "Ljud med frekvens under 20 Hz",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "Vad kan ultraljud vara användbart till?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Undersöka mjuka organ eller foster inom sjukvården",
+                "correct": true,
+                "feedback": "Jajamen, ultraljud är användbart."
+            },
+            {
+                "answer": "Navigera, t. ex. med hjälp av ett ekolod.",
+                "correct": true,
+                "feedback": "Precis, många båtar använder ekolod för att läsa av havsdjupet."
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär resonans?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Att en låda eller något annat förstärker ljudet genom att “svänga med”",
+                "correct": true,
+                "feedback": "Precis, tänk på en stämgaffel mot ett bord eller en gitarr."
+            },
+            {
+                "answer": "Att ljudet saktar in norrut.",
+                "correct": true,
+                "feedback": "Nja, det där är helt påhittat."
+          }
+      ]
+    },
+    {
+        "question": "En hög frekvens leder till att vi får en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "ljus (hög) ton.",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "mörk (låg) ton.",
+                "correct": false,
+                "feedback": "Nej, men en låg frekvens ger en mörk ton."
+          }
+      ]
+    },
+    {
+        "question": "En låg frekvens leder till att vi får en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "ljus (hög) ton.",
+                "correct": false,
+                "feedback": "Nej, men en hög frekvens ger en ljus ton."
+            },
+            {
+                "answer": "mörk (låg) ton.",
+                "correct": true,
+                "feedback": "Jajamen!"
+          }
+      ]
+    },
+    {
+        "question": "Om du ska rita en ljudvåg som visar ett ljud med hög frekvens, vad ska du tänka på då?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Att rita tätt mellan vågtopparna och vågdalarna",
+                "correct": true,
+                "feedback": "Exakt, ju mer ihoptryckt din våg är, desto högre frekvens motsvarar den."
+            },
+            {
+                "answer": "Att rita glest mellan vågtopparna och vågdalarna",
+                "correct": false,
+                "feedback": "Nej, ju mer utsträckt din våg är, desto lägre frekvens motsvarar den."
+          }
+      ]
+    },
+    {
+        "question": "Om du ska rita en ljudvåg som visar ett ljud med låg frekvens, vad ska du tänka på då?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Att rita tätt mellan vågtopparna och vågdalarna",
+                "correct": false,
+                "feedback": "Nej, ju mer ihoptryckt din våg är, desto högre frekvens motsvarar den."
+            },
+            {
+                "answer": "Att rita glest mellan vågtopparna och vågdalarna",
+                "correct": true,
+                "feedback": "Exakt, ju mer utsträckt din våg är, desto lägre frekvens motsvarar den."
+          }
+      ]
+    },
+
+    {
+        "question": "Vad brukar vi mäta ljudnivå i för enhet?",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Hertz (Hz)",
+            "correct": false,
+            "feedback": "Nej, det är frekvensen vi mäter i hertz."
+        },
+        {
+            "answer": "Decibel (dB)",
+            "correct": true,
+            "feedback": "Exakt!"
+        }
+    ]
+    },
+    {
+        "question": "Decibelskalan är logaritmisk, det betyder att om du ökar med 10 dB (exempelvis från 110 dB till 120 dB) så är det egentligen en dubblering.",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Sant",
+            "correct": true,
+            "feedback": "Bravo!"
+        },
+        {
+            "answer": "Falskt",
+            "correct": false,
+            "feedback": "Nej tyvärr."
+        }
+    ]
+    },
+    {
+        "question": "Det kan vara skadligt för hörseln att lyssna på musik i hörlurar.",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Sant",
+            "correct": true,
+            "feedback": "Exakt, hörseln påverkar av vilken ljudnivå du har och hur länge du lyssnar."
+        },
+        {
+            "answer": "Falskt",
+            "correct": false,
+            "feedback": "Jo det kan faktiskt det, det beror på hur länge du lyssnar och på vilken ljudnivå."
+        }
+    ]
+    },
+    {
+        "question": "Ett ljud på 150 dB är skadligt trots att man bara hör det väldigt fort.",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Sant",
+            "correct": true,
+            "feedback": "Ja, och gränsen för det går faktiskt ännu lägre än 150 dB."
+        },
+        {
+            "answer": "Falskt",
+            "correct": false,
+            "feedback": "Jo, 150 dB är ungefär som ett gevärsskott."
+        }
+    ]
+    },
+    {
+        "question": "Ett ljud på 85 dB är skadligt trots att man bara hör det väldigt fort.",
+    "type": "many_choice",
+    "answers": [
+        {
+            "answer": "Sant",
+            "correct": false,
+            "feedback": "Nej, men om du lyssnar på en ljudnivå på 85 dB under en längre tid kan det vara skadligt."
+        },
+        {
+            "answer": "Falskt",
+            "correct": true,
+            "feedback": "Precis, 85 dB kan vara skadligt men inte om du bara hör det snabbt."
+        }
+    ]
+    }
+  ]
