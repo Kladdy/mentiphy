@@ -74,10 +74,9 @@ ye
 
 _____________________________________________
 
-## Toner
+### Toner
 
-Höga och låga toner
-Starka och svaga toner
+ye
 
 _____________________________________________
 
@@ -116,6 +115,25 @@ Ultraljud är användbart i sjukvården. Det ljudet har frekvensen 3-7 miljoner 
 _____________________________________________
 
 ### Ljudnivå
+
+```{list-table}
+:header-rows: 1
+
+* - Exempel
+  - Ljudnivå i decibel (dB)
+* - Fågelkvitter
+  - 20 dB
+* - Samtal
+  - 60 dB
+* - Skolmatsal
+  - 80 dB
+* - Nattklubb
+  - 110 dB
+* - Konsert
+  - 120 dB
+* - Gevärsskott
+  - 150 dB
+```
 
 ye
 decibelskala + hörselskador
