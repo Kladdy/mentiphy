@@ -42,6 +42,17 @@ _____________________________________________
 
 ### Frekvens
 
+Ovan står det att ljud är vibrationer. Ljudet kan vibrera olika fort - vilket vi kan mäta! Det gör vi genom att mäta antalet svängningar per sekund.
+
+Det här måttet är centralt inom fysiken, och kallas för **frekvens**. Frekvens är en *storhet* (precis som massa eller längd) och har därför en enhet - *hertz* som förkortas *Hz* (precis som att kg är enheter för massa eller m är enheten för längd).
+
+```{admonition} Kom ihåg
+:class: attention
+Frekvens betyder antalet svängningar per sekund och mäts i hertz (Hz).
+```
+
+Om en gitarrsträng vibrerar med frekvensen 440 Hz så vibrerar strängen fram och tillbaka 440 gånger på en sekund.
+
 <iframe
     width="100%"
     max-width="800"
@@ -52,6 +63,8 @@ _____________________________________________
     allowfullscreen
 >
 </iframe>
+
+Det finns vissa ljud vi inte hör, som exempelvis ultra- eller infraljud. Det berättar vi mer om klicka <a href='https://mentiphy.se/kurser/fysik-9/ljud.html#infraljud-och-ultraljud>här</a>. 
 
 _____________________________________________
 
@@ -76,13 +89,29 @@ _____________________________________________
 
 ## Vår hörsel
 
-varför hör vi?
+Ljudet består som tidigare nämnt av vibrationer, som kan färdas genom luften. När vibrationerna når fram till våra inneröron orsakas tryckförändringar. Dessa registreras av hårcellerna vi har i örat och omvandlas till signaler som skickas upp till hjärnan för att tolkas. På så vis kan hjärnan få de mest spännande vibrationerna att låta som en konsert med David Bowie.
 
 _____________________________________________
 
 ### Infraljud och ultraljud
 
-ruta: ultraljud i sjukvården
+Människan kan (som bäst) höra ljud med frekvensen 20 - 20 000 Hz. Men, det finns ändå ljud som har lägre frekvenser än 20 Hz eller högre än 20 000 Hz.
+
+*Infraljud* har frekvenser under 20 Hz. Vi kan inte höra infraljud men vi kan påverkas av det, exempelvis genom att vi blir trötta. Vissa djur kan höra infraljud, som duvor.
+
+*Ultraljud* har frekvenser över 20 000 Hz. Vi kan inte höra ultraljud heller men vi kan använda oss av det i sjukvården. Vissa djur kan höra ultraljud, som hundar eller fladdermöss.
+
+```{admonition} Fördjupning
+:class: seealso
+Både fladdermöss och hundar kan "använda" ultraljud. Till hundar finns det speciella visselpipor som skickar ut ultraljud så att hunden ska höra utan att omgivningen störs. Fladdermöss använder ultraljud för att navigera - de skickar ut ljudsignaler och noterar sedan hur lång tid det tog för ljudet att eka (ljud som studsar kallas eko) tillbaka. Precis som ett ekolod fungerar!
+```
+
+```{admonition} Kom ihåg
+:class: attention
+*Infraljud* har frekvenser under 20 Hz och *ultraljud* har frekvenser över 20 000 Hz.
+```
+
+Ultraljud är användbart i sjukvården. Det ljudet har frekvensen 3-7 miljoner hertz och det finns ännu inte några hittade nackdelar. Det kan användas för att undersöka foster och andra mjuka organ, men också till att krossa njursten utan att behöva använda kirurgi.
 
 _____________________________________________
 
