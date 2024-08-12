@@ -1,3 +1,15 @@
+---
+jupytext:
+    formats: md:myst
+    text_representation:
+        extension: .md
+        format_name: myst
+kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+---
+
 # Materia 
 
 Allt vi ser runt omkring oss är *materia*. Träd, hus och fotbollar - allt består av materia, till och med luften vi andas. 
