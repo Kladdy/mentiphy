@@ -16,19 +16,22 @@ parts:
     - file: kurser/fysik-9/energioeffekt
     - file: kurser/fysik-9/atomokärn
     - file: kurser/fysik-9/universum
-  - caption: Fysik 1
+  - caption: Programmering 1
     chapters:
-    - file: kurser/fysik-1/rörelse
-    - file: kurser/fysik-1/newtons-lagar
-    - file: kurser/fysik-1/energi
-    - file: kurser/fysik-1/rörelsemängd
-    - file: kurser/fysik-1/termodynamik
-    - file: kurser/fysik-1/elektricitet
-    - file: kurser/fysik-1/kärnfysik
-    - file: kurser/fysik-1/relativitetsteori
-  - caption: Fysik 2
-    chapters:
-    - file: kurser/fysik-2/elektromagnetism
+    - file: kurser/programmering-1/test
+  # - caption: Fysik 1
+  #   chapters:
+  #   - file: kurser/fysik-1/rörelse
+  #   - file: kurser/fysik-1/newtons-lagar
+  #   - file: kurser/fysik-1/energi
+  #   - file: kurser/fysik-1/rörelsemängd
+  #   - file: kurser/fysik-1/termodynamik
+  #   - file: kurser/fysik-1/elektricitet
+  #   - file: kurser/fysik-1/kärnfysik
+  #   - file: kurser/fysik-1/relativitetsteori
+  # - caption: Fysik 2
+  #   chapters:
+  #   - file: kurser/fysik-2/elektromagnetism
   #   chapters:
   #   - file: markdown
   # - caption: Fysik 3
