@@ -18,8 +18,7 @@ parts:
     - file: kurser/fysik-9/universum
   - caption: Programmering 1
     chapters:
-    - file: kurser/programmering-1/test
-    - file: kurser/programmering-1/test2
+    - file: kurser/programmering-1/centralt
   # - caption: Fysik 1
   #   chapters:
   #   - file: kurser/fysik-1/rörelse

@@ -6,3 +6,7 @@ Hej Sigfrid är snäll som tar sin tid och hjälper till. :-)
 Tjenare din jäkla coola
 for i in list(i)
 ```
+
+```python
+
+```
