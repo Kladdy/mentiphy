@@ -19,6 +19,7 @@ parts:
   - caption: Programmering 1
     chapters:
     - file: kurser/programmering-1/introduktion
+    - file: kurser/programmering-1/pseudokod
   # - caption: Fysik 1
   #   chapters:
   #   - file: kurser/fysik-1/rörelse
