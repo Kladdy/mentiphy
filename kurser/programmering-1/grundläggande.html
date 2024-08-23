@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduktion &#8212; mentiphy</title>
+    <title>Grundläggande programmering i Python &#8212; mentiphy</title>
   
   
   
@@ -58,11 +58,10 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/introduktion';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/grundläggande';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
-    <link rel="prev" title="Universum" href="../fysik-9/universum.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
   </head>
@@ -124,6 +123,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -194,8 +195,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../fysik-9/universum.html">Universum</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering 1</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduktion</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
 </ul>
 
     </div>
@@ -250,7 +251,7 @@
       
       
       
-      <li><a href="../../_sources/kurser/programmering-1/introduktion.md" target="_blank"
+      <li><a href="../../_sources/kurser/programmering-1/grundläggande.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Ladda ner källfil"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -334,7 +335,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduktion</h1>
+    <h1>Grundläggande programmering i Python</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -344,9 +345,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Grundläggande programmering i Python</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kommentarer">Kommentarer</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-satsen">print-satsen</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -357,60 +362,38 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduktion">
-<h1>Introduktion<a class="headerlink" href="#introduktion" title="Link to this heading">#</a></h1>
-<p>Välkomna till kursen Programmering 1!</p>
-<p>Under den här fliken kommer ni kunna få åtkomst till allmän information om kursen, det centrala innehållet i kursen och kursens betygskriterier.</p>
-<p>Kursen kommer skrivas i programmeringsspråket Python, eftersom att det är användarvänligt och ett språk som är bra för nybörjare.</p>
-<p>Koden kommer att skrivas i ett program som heter Visual Studio Code vilket är en så kallad ”integrerad utvecklingsmiljö” där koden kan skrivas, felsökas, sparas och köras i samma program.</p>
-<hr class="docutils" />
-<section id="centralt-innehall">
-<h2>Centralt innehåll<a class="headerlink" href="#centralt-innehall" title="Link to this heading">#</a></h2>
-<p>Nedan visas det centrala innehållet från Skolverkets hemsida.</p>
-<div class="hint admonition">
+  <section class="tex2jax_ignore mathjax_ignore" id="grundlaggande-programmering-i-python">
+<h1>Grundläggande programmering i Python<a class="headerlink" href="#grundlaggande-programmering-i-python" title="Link to this heading">#</a></h1>
+<p>För att börja att programmera i Python finns det vissa grundläggande kod och färdigheter som är bra att börja med.</p>
+<section id="kommentarer">
+<h2>Kommentarer<a class="headerlink" href="#kommentarer" title="Link to this heading">#</a></h2>
+<p>Vi ska börja med någonting som är mycket viktigt, men inte påverkar utfallet av koden, nämligen kommentarer ibland kallat psuedokod. Kommentarer underlättar  m många också säger används för att kommunicera med sig själv eller andra vad koden gör. För att skapa en kommentar i Python lägger man ett # framför sin text.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Det här är en kommentar!</span>
+</pre></div>
+</div>
+<p>Kommentarer underlättar processen att planera, strukturera och kommunicera sin kod med sig själv eller andra, vilket i slutändan gör det lättare att skriva och förstå kod.</p>
+<p>När man blir tilldelad en programmeringsuppgift är det ett bra hjälpmedel att kommentera hur man vill göra sin kod innan man börjar skriva den ”riktiga” koden som faktiskt påverkar programmet.</p>
+<p>Nedan visas ett exempel på hur pseudokoden kan användas för att underlätta processen av att lösa ett problem.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Deklarera variabeln</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1"># Skapa loopen och låt programmet skriva ut resultatet av loopen</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="attention admonition">
 <p class="admonition-title">Programmering 1</p>
-<ul class="simple">
-<li><p>Grundläggande programmering i ett eller flera programspråk varav minst ett av språken är textbaserat.</p></li>
-<li><p>Programmering och dess olika användningsområden ur ett socialt perspektiv inklusive genus, kultur och socioekonomisk bakgrund.</p></li>
-<li><p>Programmeringens möjligheter och begränsningar utifrån datorns funktionssätt.</p></li>
-<li><p>Strukturerat arbetssätt för problemlösning och programmering.</p></li>
-<li><p>Grundläggande kontrollstrukturer, konstruktioner och datatyper.</p></li>
-<li><p>Arbetsmetoder för förebyggande av programmeringsfel, testning, felsökning och rättning av kod.</p></li>
-<li><p>Grundläggande datastrukturer och algoritmer.</p></li>
-<li><p>Gränssnitt för interaktion mellan program och användare.</p></li>
-<li><p>Normer och värden inom programmering, till exempel läsbarhet, dokumentation, testbarhet, rena gränssnitt och nyttan av standard.</p></li>
-</ul>
+<p>Du behöver inte förstå koden ovan, utan det är hur koden kommenteras som är det viktiga.</p>
 </div>
 </section>
-<hr class="docutils" />
-<section id="betygskriterier">
-<h2>Betygskriterier<a class="headerlink" href="#betygskriterier" title="Link to this heading">#</a></h2>
-<p>Nedan visas betygskriterierna från Skolverkets hemsida.</p>
-<div class="hint admonition">
-<p class="admonition-title">För betyget E</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar i samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och enkelt kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta i program av enkel karaktär.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför felsökning av enkla syntaxfel. Innan programmeringsuppgiften avslutas utvärderar eleven med enkla omdömen programmets prestanda och ändamålsenlighet i någon situation och i något sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör översiktligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör översiktligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
-</div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget C</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen programmets prestanda och ändamålsenlighet i några situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
-</div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget A</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften samt motiverar utförligt sina val. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant och utförligt kommenterad källkod med gott resultat. Dessutom väljer eleven med säkerhet ett uttryckssätt som är anpassat för att på ett gott sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med gott resultat i ett eller flera programspråk som är stabila och robusta i program av komplex karaktär.</p></li>
-<li><p>Eleven anpassar med säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt och effektivt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen och med förslag på förbättringar programmets prestanda och ändamålsenlighet i flera situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt och nyanserat för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt och nyanserat för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
-</div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="print-satsen">
+<h1>print-satsen<a class="headerlink" href="#print-satsen" title="Link to this heading">#</a></h1>
+<p>När vi vill se resultatet utskrivet av en kod behöver vi använda print-satsen. När vi skriver ett program i en fil och sedan vill köra den behövs det för att se resultatet, så är inte fallet om man skriver koden direkt i en terminal.</p>
+<p>Skapa en fil, ange vilket programmeringsspråk, skriv in koden nedan, spara filen, kör sedan koden och se resultatet!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -443,15 +426,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="../fysik-9/universum.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">föregående</p>
-        <p class="prev-next-title">Universum</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -468,9 +442,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Grundläggande programmering i Python</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kommentarer">Kommentarer</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-satsen">print-satsen</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

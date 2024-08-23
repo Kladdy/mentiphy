@@ -1,6 +1,6 @@
 # Introduktion
 
-Välkomna till gymnasiekursen Programmering 1!
+Välkomna till kursen Programmering 1!
 
 Under den här fliken kommer ni kunna få åtkomst till allmän information om kursen, det centrala innehållet i kursen och kursens betygskriterier.
 
