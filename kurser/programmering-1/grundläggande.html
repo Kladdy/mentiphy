@@ -198,6 +198,7 @@
 <li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Grundläggande programmering i Python</a></li>
 
+
 </ul>
 
     </div>
@@ -351,6 +352,16 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-satsen">print-satsen</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabler-och-tilldelningar">Variabler och tilldelningar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fraga-vad-hade-korningen-visat-for-svar">Fråga: Vad hade körningen visat för svar?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Fråga: Vad hade körningen visat för svar?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-satsen">Input-satsen</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -368,7 +379,7 @@ document.write(`
 <p>För att börja att programmera i Python finns det vissa grundläggande kod och färdigheter som är bra att börja med.</p>
 <section id="kommentarer">
 <h2>Kommentarer<a class="headerlink" href="#kommentarer" title="Link to this heading">#</a></h2>
-<p>Vi ska börja med någonting som är mycket viktigt, men inte påverkar utfallet av koden, nämligen kommentarer ibland kallat psuedokod. Kommentarer underlättar  m många också säger används för att kommunicera med sig själv eller andra vad koden gör. För att skapa en kommentar i Python lägger man ett # framför sin text.</p>
+<p>Vi ska börja med någonting som är mycket viktigt, men inte påverkar utfallet av koden, nämligen kommentarer. Kommentarer används för att kommunicera med sig själv eller andra vad koden gör. För att skapa en kommentar i Python lägger man ett # framför sin text.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Det här är en kommentar!</span>
 </pre></div>
 </div>
@@ -383,7 +394,7 @@ document.write(`
 </pre></div>
 </div>
 <div class="attention admonition">
-<p class="admonition-title">Programmering 1</p>
+<p class="admonition-title">Notera</p>
 <p>Du behöver inte förstå koden ovan, utan det är hur koden kommenteras som är det viktiga.</p>
 </div>
 </section>
@@ -395,6 +406,86 @@ document.write(`
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>För att skriva text i python (som kallas för strängar) behöver man ha ett ’ mellan texten man skriver. Vi kommer till olika datatyper senare på den här sidan.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="variabler-och-tilldelningar">
+<h1>Variabler och tilldelningar<a class="headerlink" href="#variabler-och-tilldelningar" title="Link to this heading">#</a></h1>
+<p>En <em>variabel</em> är en en namnigven storhet  som kan ha ett värde. För att skapa en variabel så skriver vi först ett variabelnamn, sedan tilldelar vi variabeln ett värde.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variabel</span> <span class="o">=</span> <span class="n">uttryck</span>
+</pre></div>
+</div>
+<p>Variabeln kan sedan användas istället för värdet.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Deklarera variabeln och tilldela värdet</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1">#Visa vad värdet är</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I exemplet ovan har variabeln x först ”deklarerats” och sedan ”tilldelats” värdet 5. Resultatet av koden kommer då vara 5 och inte x.</p>
+<p>Det finns en rad olika fördelar med att använda variabler över att bara beräkna med olika värden direkt för det första ger det en tydligare struktur. Nedan finns det två exemplel på en kod som räknar ut hur många sekunder det går på ett år, jämför hur koden ser ut mellan de två exemplen.</p>
+<section id="exempel-1">
+<h2>Exempel 1<a class="headerlink" href="#exempel-1" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dagar</span> <span class="o">=</span> <span class="mi">365</span>
+<span class="n">timmar</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="n">minuter</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">sekunder</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dagar</span><span class="o">*</span><span class="n">timmar</span><span class="o">*</span><span class="n">minuter</span><span class="o">*</span><span class="n">sekunder</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="exempel-2">
+<h2>Exempel 2<a class="headerlink" href="#exempel-2" title="Link to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">60</span><span class="o">*</span><span class="mi">60</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">365</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Det som skiljer är att det första exemplet är tydligare och mer välstrukturerat. Exempel 2 kommer ge rätt svar när programmet körs, men vid större programmeringsprojekt och längre kod kommer variabler bli betydligt lättare att hålla koll på än värden som man inte riktigt vet var dem kommer från.</p>
+<p>En annan fördel med att använda variabler är att variablers värden kan ändras.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">-</span><span class="mi">1</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Svaret av körningen ovan kommer vara att x tilldelas värdet 5, sen 5+2=7, sen 7-1=6 och till sist 6/2 = 3.</p>
+<hr class="docutils" />
+<section id="fraga-vad-hade-korningen-visat-for-svar">
+<h3>Fråga: Vad hade körningen visat för svar?<a class="headerlink" href="#fraga-vad-hade-korningen-visat-for-svar" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">-</span><span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">*</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>5</p>
+</div>
+</section>
+<section id="id1">
+<h3>Fråga: Vad hade körningen visat för svar?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">)</span> 
+</pre></div>
+</div>
+<div class="caution dropdown admonition">
+<p class="admonition-title">Visa svar</p>
+<p>27</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="input-satsen">
+<h2>Input-satsen<a class="headerlink" href="#input-satsen" title="Link to this heading">#</a></h2>
+<p>Ibland vill man inte tilldela ett värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sida</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange kvadratens sidlängd&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sida</span><span class="o">*</span><span class="n">sida</span><span class="p">,</span> <span class="s1">&#39;är kvadratens area&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med en area av kvadraten. Eftersom datatypen för sidan är av typen <em>int</em> behöver koden förtydliga att inputen kommer vara av typen int. Om int inte explicit anges kommer python tolka inputen av typen sträng.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -457,6 +548,16 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-satsen">print-satsen</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#variabler-och-tilldelningar">Variabler och tilldelningar</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fraga-vad-hade-korningen-visat-for-svar">Fråga: Vad hade körningen visat för svar?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Fråga: Vad hade körningen visat för svar?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-satsen">Input-satsen</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>
