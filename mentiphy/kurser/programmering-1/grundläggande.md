@@ -3,7 +3,7 @@
 För att börja att programmera i Python finns det vissa grundläggande kod och färdigheter som är bra att börja med.
 
 ## Kommentarer
-Vi ska börja med någonting som är mycket viktigt, men inte påverkar utfallet av koden, nämligen kommentarer ibland kallat psuedokod. Kommentarer underlättar  m många också säger används för att kommunicera med sig själv eller andra vad koden gör. För att skapa en kommentar i Python lägger man ett # framför sin text.
+Vi ska börja med någonting som är mycket viktigt, men inte påverkar utfallet av koden, nämligen kommentarer. Kommentarer används för att kommunicera med sig själv eller andra vad koden gör. För att skapa en kommentar i Python lägger man ett # framför sin text.
 
 ```python
 # Det här är en kommentar!
@@ -22,7 +22,7 @@ x = 5
 for i in range(5):
     print(i*x)
 ```
-```{admonition} Programmering 1
+```{admonition} Notera
 :class: attention
 Du behöver inte förstå koden ovan, utan det är hur koden kommenteras som är det viktiga.
 ```
@@ -34,3 +34,92 @@ Skapa en fil, ange vilket programmeringsspråk, skriv in koden nedan, spara file
 ```python
 print('Hello world')
 ```
+
+För att skriva text i python (som kallas för strängar) behöver man ha ett ' mellan texten man skriver. Vi kommer till olika datatyper senare på den här sidan.
+
+# Variabler och tilldelningar
+
+En *variabel* är en en namnigven storhet  som kan ha ett värde. För att skapa en variabel så skriver vi först ett variabelnamn, sedan tilldelar vi variabeln ett värde.
+
+```python
+variabel = uttryck
+```
+Variabeln kan sedan användas istället för värdet. 
+
+```python
+#Deklarera variabeln och tilldela värdet
+x = 5
+#Visa vad värdet är
+print(x)
+```
+I exemplet ovan har variabeln x först "deklarerats" och sedan "tilldelats" värdet 5. Resultatet av koden kommer då vara 5 och inte x. 
+
+Det finns en rad olika fördelar med att använda variabler över att bara beräkna med olika värden direkt för det första ger det en tydligare struktur. Nedan finns det två exemplel på en kod som räknar ut hur många sekunder det går på ett år, jämför hur koden ser ut mellan de två exemplen.
+
+### Exempel 1
+```python
+dagar = 365
+timmar = 24
+minuter = 60
+sekunder = 60
+print(dagar*timmar*minuter*sekunder)
+```
+
+### Exempel 2
+```python
+print(60*60*24*365)
+```
+
+Det som skiljer är att det första exemplet är tydligare och mer välstrukturerat. Exempel 2 kommer ge rätt svar när programmet körs, men vid större programmeringsprojekt och längre kod kommer variabler bli betydligt lättare att hålla koll på än värden som man inte riktigt vet var dem kommer från.
+
+En annan fördel med att använda variabler är att variablers värden kan ändras.
+
+```python
+x = 5
+x = x+2
+x = x-1
+x = x/2
+print(x)
+```
+
+Svaret av körningen ovan kommer vara att x tilldelas värdet 5, sen 5+2=7, sen 7-1=6 och till sist 6/2 = 3.
+
+_____________________________________________
+
+#### Fråga: Vad hade körningen visat för svar?
+
+```python
+y = 3
+y = 9
+y = y-4
+y = y*2
+print(y)
+```
+
+```{admonition} Visa svar
+:class: caution dropdown
+5
+```
+
+#### Fråga: Vad hade körningen visat för svar?
+
+```python
+x = 3
+y = 9
+print(x*y) 
+```
+
+```{admonition} Visa svar
+:class: caution dropdown
+27
+```
+_____________________________________________
+## Input-satsen
+Ibland vill man inte tilldela ett värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.
+
+```python
+sida = int(input('Ange kvadratens sidlängd'))
+print(sida*sida, 'är kvadratens area')
+```
+
+Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med en area av kvadraten. Eftersom datatypen för sidan är av typen *int* behöver koden förtydliga att inputen kommer vara av typen int. Om int inte explicit anges kommer python tolka inputen av typen sträng.
