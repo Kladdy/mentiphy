@@ -359,6 +359,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Fråga: Vad hade körningen visat för svar?</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datatyper-och-typkonverteringar">Datatyper och typkonverteringar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-satsen">Input-satsen</a></li>
 </ul>
 </li>
@@ -476,10 +477,34 @@ document.write(`
 </div>
 </section>
 </section>
+<section id="datatyper-och-typkonverteringar">
+<h2>Datatyper och typkonverteringar<a class="headerlink" href="#datatyper-och-typkonverteringar" title="Link to this heading">#</a></h2>
+<p>Beroende på vilken sorts information som ska lagras i en variabel finns det olika datatyper. Inledningsvis ska vi titta på några få datatyper, men under kursens gång kommer vi fylla på med olika datatyper som är relevanta för kursen.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Datatypen int</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="c1">#Datatypen float</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">5.4</span>
+<span class="c1">#Datatypen sträng</span>
+<span class="n">namn</span> <span class="o">=</span> <span class="s1">&#39;Sigfrid&#39;</span>
+<span class="c1">#Datatypen list</span>
+<span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emil&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Variabeln x som deklarerades ovan och blev tilldelad värdet 5 blir av datatypen int eftersom 5 endast består av ett <em>heltal</em>. Variabeln y är ett så kallat <em>flyttal</em> som både har en decimaldel och den heltalsdel. Efter det ser vi en datatyp som heter ”sträng” som innehåller bokstäver, ord eller meningar. Till sist har vi en lista som har många viktiga funktioner som kommer behandlas senare.</p>
+<p>I vissa situationer kan det krävas att man går från en datatyp till en annan, detta kallas för en <em>typkonvertering</em>. Nedan listas några exempel på viktiga typkonverteringar.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Gör från int till sträng</span>
+<span class="n">int_till_sträng</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="c1">#Gör från sträng till int</span>
+<span class="n">sträng_till_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">)</span>
+<span class="c1">#Gör från sträng till lista</span>
+<span class="n">sträng_till_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 <hr class="docutils" />
 <section id="input-satsen">
 <h2>Input-satsen<a class="headerlink" href="#input-satsen" title="Link to this heading">#</a></h2>
-<p>Ibland vill man inte tilldela ett värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.</p>
+<p>Ibland vill man inte tilldela ett statiskt värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sida</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange kvadratens sidlängd&#39;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">sida</span><span class="o">*</span><span class="n">sida</span><span class="p">,</span> <span class="s1">&#39;är kvadratens area&#39;</span><span class="p">)</span>
 </pre></div>
@@ -555,6 +580,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Fråga: Vad hade körningen visat för svar?</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datatyper-och-typkonverteringar">Datatyper och typkonverteringar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-satsen">Input-satsen</a></li>
 </ul>
 </li>
