@@ -113,9 +113,36 @@ print(x*y)
 :class: caution dropdown
 27
 ```
+
+## Datatyper och typkonverteringar
+Beroende på vilken sorts information som ska lagras i en variabel finns det olika datatyper. Inledningsvis ska vi titta på några få datatyper, men under kursens gång kommer vi fylla på med olika datatyper som är relevanta för kursen.
+
+```python
+#Datatypen int
+x = 5
+#Datatypen float
+y = 5.4
+#Datatypen sträng
+namn = 'Sigfrid'
+#Datatypen list
+namn_lista = ['Emil', 'Ava']
+```
+Variabeln x som deklarerades ovan och blev tilldelad värdet 5 blir av datatypen int eftersom 5 endast består av ett *heltal*. Variabeln y är ett så kallat *flyttal* som både har en decimaldel och den heltalsdel. Efter det ser vi en datatyp som heter "sträng" som innehåller bokstäver, ord eller meningar. Till sist har vi en lista som har många viktiga funktioner som kommer behandlas senare.
+
+I vissa situationer kan det krävas att man går från en datatyp till en annan, detta kallas för en *typkonvertering*. Nedan listas några exempel på viktiga typkonverteringar. 
+
+```python
+#Gör från int till sträng
+int_till_sträng = str(12)
+#Gör från sträng till int
+sträng_till_int = int('12')
+#Gör från sträng till lista
+sträng_till_lista = list('abc')
+```
+
 _____________________________________________
 ## Input-satsen
-Ibland vill man inte tilldela ett värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.
+Ibland vill man inte tilldela ett statiskt värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.
 
 ```python
 sida = int(input('Ange kvadratens sidlängd'))
