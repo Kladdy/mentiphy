@@ -4,7 +4,7 @@ Välkomna till kursen Programmering 1!
 
 Under den här fliken kommer ni kunna få åtkomst till allmän information om kursen, det centrala innehållet i kursen och kursens betygskriterier.
 
-Kursen kommer skrivas i programmeringsspråket Python, eftersom att det är användarvänligt och ett språk som är bra för nybörjare.
+Kursen kommer skrivas i programmeringsspråket Python, eftersom att det är användarvänligt språk som är bra för nybörjare.
 
 Koden kommer att skrivas i ett program som heter Visual Studio Code vilket är en så kallad "integrerad utvecklingsmiljö" där koden kan skrivas, felsökas, sparas och köras i samma program.
 

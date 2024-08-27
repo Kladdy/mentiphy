@@ -120,10 +120,13 @@ Beroende på vilken sorts information som ska lagras i en variabel finns det oli
 ```python
 #Datatypen int
 x = 5
+
 #Datatypen float
 y = 5.4
+
 #Datatypen sträng
 namn = 'Sigfrid'
+
 #Datatypen list
 namn_lista = ['Emil', 'Ava']
 ```
@@ -134,8 +137,10 @@ I vissa situationer kan det krävas att man går från en datatyp till en annan,
 ```python
 #Gör från int till sträng
 int_till_sträng = str(12)
+
 #Gör från sträng till int
 sträng_till_int = int('12')
+
 #Gör från sträng till lista
 sträng_till_lista = list('abc')
 ```
@@ -145,8 +150,70 @@ _____________________________________________
 Ibland vill man inte tilldela ett statiskt värde till en variabel, utan istället kan det ibland vara bättre att fråga användaren om ett värde till variabeln (en input). Då använder vi input-satsen. Vi ska se ett exempel på hur inputsatsen kan användas.
 
 ```python
+namn = input('Ange ditt namn')
+print('Hej', namn, 'trevligt att träffas!')
+```
+
+Programmet ovan börjar med att fråga om en input, i det här fallet användarens namn. Efter det tilldelas variabeln värdet (namnet) och till sist anropas det i print-satsen på raden under. Det här är bara ett av många exempel på när det blir intressant att använda input för att göra sitt program mer interaktivt.
+
+Vi ska titta på ett till exempel här nedan.
+
+```python
 sida = int(input('Ange kvadratens sidlängd'))
 print(sida*sida, 'är kvadratens area')
 ```
 
-Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med en area av kvadraten. Eftersom datatypen för sidan är av typen *int* behöver koden förtydliga att inputen kommer vara av typen int. Om int inte explicit anges kommer python tolka inputen av typen sträng.
+Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med en area av kvadraten. Eftersom datatypen för sidan är av typen *int* behöver koden förtydliga att inputen kommer vara av typen int. Om datatypen int inte explicit anges kommer python tolka inputen av typen sträng.
+
+## Övningar
+Här nedan listas flera övningar kopplad till innehållet av den här sidan, skriv din kod och se om du kan få svaret som programmet efterfrågar.
+
+Tänk på att kommentera din kod. Tänk även på att deklarera och namnge på ett korrekt sätt för relevanta variabler för din kod.  
+### Övning 1
+Skriv ett program som hälsar på användaren. Exempelvis med orden "Hej på dig!"
+
+```{admonition} Tips
+:class: Hint
+Använd print-satsen.
+```
+### Övning 2
+Skriv ett program som utför additionen 5+7 och skriver ut svaret av additionen. 
+
+```{admonition} Tips
+:class: Hint
+Använd additionstecknet och print-satsen.
+```
+### Övning 3
+Skriv ett program som frågar efter din ålder och skriver ut hur gammal du kommer vara om 5 år.
+
+```{admonition} Tips
+:class: Hint
+Använd input-satsen.
+```
+### Övning 4
+Skapa en simpel miniräknare som frågar efter två nummer och sedan skriver ut vad summan, skillnaden, produkten och kvoten är mellan dessa tal.
+
+```{admonition} Tips
+:class: Hint
+Börja med att använda input-satsen, deklarera variabler och tilldela värdena genom att utföra beräkningarna, använd till sist en print-sats.
+```
+
+### Övning 5
+Skapa ett program som frågar efter en temperatur i enheten i grader Celsius och sedan skriver ut vad den temperaturen korresponderar i grader Fahrenheit. Tips formeln för konverteringen från grader Celsius till grader Fahrenheit är: 
+
+$F= \frac{9}{5} \cdot C + 32 $
+
+```{admonition} Tips
+:class: Hint
+Börja med att använda input-satsen, deklarera variabeln och tilldela värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
+```
+
+### Övning 6
+Skapa ett program där programmet frågar efter en summa pengar, efter en räntesats och ett antal år. Beräkna summan av ränta på ränta på det insatta kapitalet med hjälp av en exponentialfunktion och skriv ut resultatet till användaren.
+
+$y = C \cdot a^x $
+
+```{admonition} Tips
+:class: Hint
+Börja med att använda input-satsen, deklarera variablerna och tilldela värdena genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
+```
