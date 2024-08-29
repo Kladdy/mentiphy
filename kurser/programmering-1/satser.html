@@ -58,6 +58,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/satser';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -351,6 +353,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -443,6 +455,68 @@ document.write(`
 </pre></div>
 </div>
 </section>
+<section id="for-loopen">
+<h2>for-loopen<a class="headerlink" href="#for-loopen" title="Link to this heading">#</a></h2>
+</section>
+<section id="ovningar">
+<h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
+<p>De första övningarna är till för att göras innan delen om for-loopar börjar. Resterande uppgifter kan även inkludera for-loopar.</p>
+<section id="ovning-1">
+<h3>Övning 1<a class="headerlink" href="#ovning-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.</p>
+</div>
+</section>
+<section id="ovning-2">
+<h3>Övning 2<a class="headerlink" href="#ovning-2" title="Link to this heading">#</a></h3>
+<p>Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.</p>
+<p>100 eller mer: A</p>
+<p>50-100 poäng: C</p>
+<p>30-50 poäng: E</p>
+<p>30 eller mindre: F</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd sen en if-, elif- och else-sats.</p>
+</div>
+</section>
+<section id="ovning-3">
+<h3>Övning 3<a class="headerlink" href="#ovning-3" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.</p>
+</div>
+</section>
+<section id="ovning-4">
+<h3>Övning 4<a class="headerlink" href="#ovning-4" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+<section id="ovning-5">
+<h3>Övning 5<a class="headerlink" href="#ovning-5" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+<section id="ovning-6">
+<h3>Övning 6<a class="headerlink" href="#ovning-6" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:</p>
+<p><span class="math notranslate nohighlight">\(n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \)</span></p>
+<p>Där 1 i fakultet definieras som:</p>
+<p><span class="math notranslate nohighlight">\(1!=1\)</span></p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -503,6 +577,16 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

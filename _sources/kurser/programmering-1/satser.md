@@ -91,3 +91,59 @@ elif ålder < 12:
 else:
     print('Du har redan varit tonåring')
 ```
+## for-loopen
+
+## Övningar
+De första övningarna är till för att göras innan delen om for-loopar börjar. Resterande uppgifter kan även inkludera for-loopar.
+
+### Övning 1
+Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
+```
+### Övning 2
+Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
+
+100 eller mer: A
+
+50-100 poäng: C
+
+30-50 poäng: E
+
+30 eller mindre: F 
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd sen en if-, elif- och else-sats.
+```
+### Övning 3
+Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
+```{admonition} Tips
+:class: Hint dropdown
+Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
+```
+### Övning 4 
+Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.
+```{admonition} Tips
+:class: Hint dropdown
+Använd en for-loop och använd range() funktionen.
+```
+### Övning 5
+Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
+```{admonition} Tips
+:class: Hint dropdown
+Använd en for-loop och använd range() funktionen.
+```
+### Övning 6
+Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
+
+$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $
+
+Där 1 i fakultet definieras som: 
+
+$1!=1$
+```{admonition} Tips
+:class: Hint dropdown
+Använd en for-loop och använd range() funktionen.
+```
