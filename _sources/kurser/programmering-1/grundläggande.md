@@ -35,7 +35,7 @@ Skapa en fil, ange vilket programmeringsspråk, skriv in koden nedan, spara file
 print('Hello world')
 ```
 
-För att skriva text i python (som kallas för strängar) behöver man ha ett ' mellan texten man skriver. Vi kommer till olika datatyper senare på den här sidan.
+För att skriva text i python (som kallas för strängar) behöver man ha ett ' eller " mellan texten man skriver. Vi kommer till olika datatyper senare på den här sidan.
 
 # Variabler och tilldelningar
 
@@ -47,12 +47,12 @@ variabel = uttryck
 Variabeln kan sedan användas istället för värdet. 
 
 ```python
-#Deklarera variabeln och tilldela värdet
+# Deklarera variabeln och tilldela värdet
 x = 5
-#Visa vad värdet är
+# Visa vad värdet är
 print(x)
 ```
-I exemplet ovan har variabeln x först "deklarerats" och sedan "tilldelats" värdet 5. Resultatet av koden kommer då vara 5 och inte x. 
+I exemplet ovan har variabeln `x` först "deklarerats" och sedan "tilldelats" värdet 5. Resultatet av koden kommer då vara 5 och inte `x`. 
 
 Det finns en rad olika fördelar med att använda variabler över att bara beräkna med olika värden direkt för det första ger det en tydligare struktur. Nedan finns det två exemplel på en kod som räknar ut hur många sekunder det går på ett år, jämför hur koden ser ut mellan de två exemplen.
 
@@ -82,7 +82,7 @@ x = x/2
 print(x)
 ```
 
-Svaret av körningen ovan kommer vara att x tilldelas värdet 5, sen 5+2=7, sen 7-1=6 och till sist 6/2 = 3.
+Svaret av körningen ovan kommer vara att `x` tilldelas värdet `5`, sen `5+2=7`, sen `7-1=6` och till sist `6/2 = 3`.
 
 _____________________________________________
 
@@ -98,7 +98,7 @@ print(y)
 
 ```{admonition} Visa svar
 :class: caution dropdown
-5
+10
 ```
 
 #### Fråga: Vad hade körningen visat för svar?
@@ -118,30 +118,30 @@ print(x*y)
 Beroende på vilken sorts information som ska lagras i en variabel finns det olika datatyper. Inledningsvis ska vi titta på några få datatyper, men under kursens gång kommer vi fylla på med olika datatyper som är relevanta för kursen.
 
 ```python
-#Datatypen int
+# Datatypen int
 x = 5
 
-#Datatypen float
+# Datatypen float
 y = 5.4
 
-#Datatypen sträng
+# Datatypen sträng
 namn = 'Sigfrid'
 
-#Datatypen list
+# Datatypen list
 namn_lista = ['Emil', 'Ava']
 ```
-Variabeln x som deklarerades ovan och blev tilldelad värdet 5 blir av datatypen int eftersom 5 endast består av ett *heltal*. Variabeln y är ett så kallat *flyttal* som både har en decimaldel och den heltalsdel. Efter det ser vi en datatyp som heter "sträng" som innehåller bokstäver, ord eller meningar. Till sist har vi en lista som har många viktiga funktioner som kommer behandlas senare.
+Variabeln `x` som deklarerades ovan och blev tilldelad värdet `5` blir av datatypen int eftersom `5` endast består av ett *heltal*. Variabeln `y` är ett så kallat *flyttal* som både har en decimaldel och den heltalsdel. Efter det ser vi en datatyp som heter "sträng" som innehåller bokstäver, ord eller meningar. Till sist har vi en lista som har många viktiga funktioner som kommer behandlas senare.
 
 I vissa situationer kan det krävas att man går från en datatyp till en annan, detta kallas för en *typkonvertering*. Nedan listas några exempel på viktiga typkonverteringar. 
 
 ```python
-#Gör från int till sträng
+# Gör från int till sträng
 int_till_sträng = str(12)
 
-#Gör från sträng till int
+# Gör från sträng till int
 sträng_till_int = int('12')
 
-#Gör från sträng till lista
+# Gör från sträng till lista
 sträng_till_lista = list('abc')
 ```
 
@@ -173,28 +173,28 @@ Tänk på att kommentera din kod. Tänk även på att deklarera och namnge på e
 Skriv ett program som hälsar på användaren. Exempelvis med orden "Hej på dig!"
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd print-satsen.
 ```
 ### Övning 2
 Skriv ett program som utför additionen 5+7 och skriver ut svaret av additionen. 
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd additionstecknet och print-satsen.
 ```
 ### Övning 3
 Skriv ett program som frågar efter din ålder och skriver ut hur gammal du kommer vara om 5 år.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd input-satsen.
 ```
 ### Övning 4
 Skapa en simpel miniräknare som frågar efter två nummer och sedan skriver ut vad summan, skillnaden, produkten och kvoten är mellan dessa tal.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Börja med att använda input-satsen, deklarera variabler och tilldela värdena genom att utföra beräkningarna, använd till sist en print-sats.
 ```
 
@@ -204,7 +204,7 @@ Skapa ett program som frågar efter en temperatur i enheten i grader Celsius och
 $F= \frac{9}{5} \cdot C + 32 $
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Börja med att använda input-satsen, deklarera variabeln och tilldela värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
 
@@ -214,6 +214,6 @@ Skapa ett program där programmet frågar efter en summa pengar, efter en ränte
 $y = C \cdot a^x $
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Börja med att använda input-satsen, deklarera variablerna och tilldela värdena genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
