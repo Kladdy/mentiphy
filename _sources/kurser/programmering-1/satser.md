@@ -38,4 +38,56 @@ else:
     print('Det andra talet är störst')
 ```
 
-Nu med elif-satsen introducerad tar den satsen hand om fallet när båda talen är lika stora.
+Nu med elif-satsen introducerad tar den satsen hand om fallet när båda talen är lika stora. Betydelsen av elif är helt enkelt "else if" eller "annars om"på svenska ska det tolkas som. Alltså, om det första villkoret inte är uppfyllt då tittar programmet om nästa villkor som anges i elif-satsen är uppfyllt, om detta villkor inte heller är uppfyllt avslutar programmet med att köra koden som står angivet i else-satsen.
+
+## Logiska uttryck
+
+I situationer där satser som if-satsen, elif-satsen och else-satsen används kan det vara bra att förstå vad olika logiska uttryck betyder och hur de används.
+
+```python
+# x är lika med y
+x == y
+
+# x är inte lika med y
+x != y
+
+# x är större än y
+x > y
+
+# x är mindre än y
+x < y
+
+# x är större eller lika med y
+x => y
+
+# x är mindre eller lika med y
+x =< y
+```
+
+Det är viktigt att operanderna är jämförbara, dvs `x` och `y` ska kunna jämföras på ett lätt sätt. Till exempel när både `x`och `y` är av typen sträng, int eller float.
+
+Det finns även andra logiska uttryck som `and`, `or` och `not`. Exempel om hur det kan användas visas nedan.
+
+```python
+dag = 'Måndag'
+
+if dag== 'Måndag' or dag=='Tisdag' or dag=='Onsdag':
+    print('Vi är i starten av veckan!')
+else:
+    print('Vi är i slutet av veckan!')
+```
+
+Med `or` operanden kan vi addera fler villkor inom samma if-sats, vilket i många fall kan vara smidigare än att upprepa fler if-satser efter varandra. 
+
+När vi har ett intervall kan det vara smidigt att använda en `and` operand.
+
+```python
+ålder = int(input('Ange din ålder: '))
+
+if ålder > 12 and ålder < 20:
+    print('Du är tonåring')
+elif ålder < 12:
+    print('Du är inte tonåringen ännu')
+else:
+    print('Du har redan varit tonåring')
+```

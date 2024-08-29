@@ -350,6 +350,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
 </ul>
             </nav>
         </div>
@@ -395,7 +396,52 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det andra talet är störst&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Nu med elif-satsen introducerad tar den satsen hand om fallet när båda talen är lika stora.</p>
+<p>Nu med elif-satsen introducerad tar den satsen hand om fallet när båda talen är lika stora. Betydelsen av elif är helt enkelt ”else if” eller ”annars om”på svenska ska det tolkas som. Alltså, om det första villkoret inte är uppfyllt då tittar programmet om nästa villkor som anges i elif-satsen är uppfyllt, om detta villkor inte heller är uppfyllt avslutar programmet med att köra koden som står angivet i else-satsen.</p>
+</section>
+<section id="logiska-uttryck">
+<h2>Logiska uttryck<a class="headerlink" href="#logiska-uttryck" title="Link to this heading">#</a></h2>
+<p>I situationer där satser som if-satsen, elif-satsen och else-satsen används kan det vara bra att förstå vad olika logiska uttryck betyder och hur de används.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># x är lika med y</span>
+<span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
+
+<span class="c1"># x är inte lika med y</span>
+<span class="n">x</span> <span class="o">!=</span> <span class="n">y</span>
+
+<span class="c1"># x är större än y</span>
+<span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>
+
+<span class="c1"># x är mindre än y</span>
+<span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
+
+<span class="c1"># x är större eller lika med y</span>
+<span class="n">x</span> <span class="o">=&gt;</span> <span class="n">y</span>
+
+<span class="c1"># x är mindre eller lika med y</span>
+<span class="n">x</span> <span class="o">=&lt;</span> <span class="n">y</span>
+</pre></div>
+</div>
+<p>Det är viktigt att operanderna är jämförbara, dvs <code class="docutils literal notranslate"><span class="pre">x</span></code> och <code class="docutils literal notranslate"><span class="pre">y</span></code> ska kunna jämföras på ett lätt sätt. Till exempel när både <code class="docutils literal notranslate"><span class="pre">x</span></code>och <code class="docutils literal notranslate"><span class="pre">y</span></code> är av typen sträng, int eller float.</p>
+<p>Det finns även andra logiska uttryck som <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> och <code class="docutils literal notranslate"><span class="pre">not</span></code>. Exempel om hur det kan användas visas nedan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dag</span> <span class="o">=</span> <span class="s1">&#39;Måndag&#39;</span>
+
+<span class="k">if</span> <span class="n">dag</span><span class="o">==</span> <span class="s1">&#39;Måndag&#39;</span> <span class="ow">or</span> <span class="n">dag</span><span class="o">==</span><span class="s1">&#39;Tisdag&#39;</span> <span class="ow">or</span> <span class="n">dag</span><span class="o">==</span><span class="s1">&#39;Onsdag&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vi är i starten av veckan!&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vi är i slutet av veckan!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Med <code class="docutils literal notranslate"><span class="pre">or</span></code> operanden kan vi addera fler villkor inom samma if-sats, vilket i många fall kan vara smidigare än att upprepa fler if-satser efter varandra.</p>
+<p>När vi har ett intervall kan det vara smidigt att använda en <code class="docutils literal notranslate"><span class="pre">and</span></code> operand.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ålder</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange din ålder: &#39;</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">ålder</span> <span class="o">&gt;</span> <span class="mi">12</span> <span class="ow">and</span> <span class="n">ålder</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du är tonåring&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">ålder</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du är inte tonåringen ännu&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du har redan varit tonåring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -456,6 +502,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
 </ul>
   </nav></div>
 
