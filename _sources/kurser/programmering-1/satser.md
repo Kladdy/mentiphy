@@ -2,6 +2,68 @@
 
 För att kunna programmera på en lite högre nivå behöver fler satser användas. På föregående sida nämndes några få satser, som print-satsen och input-satsen. Under denna flik kommer vi lägga till flera nya satser som kommer vara nödvändiga att lära sig för att lösa nya sorters problem.
 
+## Listor
+Innan vi börjar med satser ska vi titta på listor, vilket är viktigt att använda när vi vill lagra mycket information i samma variabel. Nedan följer ett exempel på när en lista kan vara bra.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava']
+```
+
+I exemplet ovan skapar vi en lista för att hålla redan på namnen, exempelvis i en klass som läser programmering. Om vi nu vill redigera den här listan finns det inbggda funktioner och metoder som gör att man kan ändra listan utan att behöva deklarera en ny.
+
+Säg till exempel att det tillkommer en till person vi behöver lägga till på listan. Då använder vi en inbyggd metod i listorna som lägger till det namnet.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava']
+namn_lista.append('Linus')
+
+print(namn_lista)
+```
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+Metoden `.append()´ lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Klara, då hade det varit bäst att göra det på följande sätt.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
+namn_lista.remove('Klara')
+```
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+Det finns en hel rad inbydda funktioner och metoder inbydda i python, nedan listas åtminstone många av dem.
+
+```{list-table}
+:header-rows: 1
+
+* - Metod
+  - Betydelse
+* - `append`
+  - Lägger till ett element sist.
+* - `clear`
+  - Tar bort alla element ut listan.
+* - `copy`
+  - Skapar en kopia av listan dvs ett nytt objekt med samma innehåll.
+* - `count`
+  - Räknar antalet förekomster visst element.  
+* - `extend`
+  - Lägger till alla element från en annan lista.
+* - `index`
+  - Returnerar index för första förekomst av ett element.
+* - `insert`
+  - Stoppar in ett nytt element på angivet index.
+* - `pop`
+  - Tar bort och returnerar sista elementet.
+* - `remove`
+  - Tar bort första förekomst av angivet element.
+* - `reverse`
+  - Vänder på listan.
+* - `sort`
+  - Sorterar listan.
+```
+
 ## if- och else-satsen
 I vissa situationer efterfrågar ett program att någonting ska hända, förutsatt att ett visst villkor uppfylls.
 
@@ -91,7 +153,26 @@ elif ålder < 12:
 else:
     print('Du har redan varit tonåring')
 ```
+elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.
 ## for-loopen
+För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.
+
+### Exempel 1
+```python
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+print(6)
+```
+### Exempel 2
+```python
+for i in range(6):
+    print(i)
+```
+Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har. 
+
 
 ## Övningar
 De första övningarna är till för att göras innan delen om for-loopar börjar. Resterande uppgifter kan även inkludera for-loopar.
