@@ -350,7 +350,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor">Listor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor">Listor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hantera-element-i-listor">Hantera element i listor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fler-metoder-och-funktioner-med-listor">Fler metoder och funktioner med listor</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
@@ -366,6 +370,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7">Övning 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8">Övning 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 </ul>
 </li>
 </ul>
@@ -409,7 +416,40 @@ document.write(`
 <p class="admonition-title">Tips</p>
 <p>Kopiera koden, kör den och se resultatet!</p>
 </div>
-<p>Det finns en hel rad inbydda funktioner och metoder inbydda i python, nedan listas åtminstone många av dem.</p>
+<section id="hantera-element-i-listor">
+<h3>Hantera element i listor<a class="headerlink" href="#hantera-element-i-listor" title="Link to this heading">#</a></h3>
+<p>Det finns en hel del olika sätt att hantera olika element i listor. Nedan följer lite simpla sätt att få åtkomst till olika element i en lista samt skapa dellistor. Mer information om det kommer lite längre ner.</p>
+<p>För att nå ett specifikt element i listan skrivs det på följande sätt.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<p>Listor i Python är nollindexerade vilket betyder att det första elementet i listan befinner sig på plats 0 i listan, det andra elementet på plats 1, osv.</p>
+<p>I vissa situationer vill man dela upp listan i dellistor, då kan det vara smidigt att använda <em>skivningsoperatorer</em>. En skivningsoperator fungerar på följande sätt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">steg</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Start indikerar var man vill börja med att dela upp listan, stop betyder var man vill sluta med att dela upp listan och steg innebär hur många steg som ska hoppas över per element när dellistan ska skapas. Vi återvänder till exemplet med <code class="docutils literal notranslate"><span class="pre">namn_lista</span></code> för att skapa några olika dellistor.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+</section>
+<section id="fler-metoder-och-funktioner-med-listor">
+<h3>Fler metoder och funktioner med listor<a class="headerlink" href="#fler-metoder-och-funktioner-med-listor" title="Link to this heading">#</a></h3>
+<p>Det finns en hel rad olika metoder och funktioner som är inbyggt i Python rörande listor, nedan listas en hel rad olika metoder och funktioner.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Metod</p></th>
@@ -453,6 +493,7 @@ document.write(`
 </tbody>
 </table>
 </div>
+</section>
 </section>
 <section id="if-och-else-satsen">
 <h2>if- och else-satsen<a class="headerlink" href="#if-och-else-satsen" title="Link to this heading">#</a></h2>
@@ -554,61 +595,117 @@ document.write(`
 </pre></div>
 </div>
 <p>Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har.</p>
+<p>Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nummerlista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">nummerlista</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<p>Först deklareras listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> sen i for-loopen betyder <code class="docutils literal notranslate"><span class="pre">element</span></code> ett element i listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> och för varje element ska for-loopen skriva ut vad värdet av elementet är.</p>
+<p>for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.</p>
 </section>
 </section>
 <section id="ovningar">
 <h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
-<p>De första övningarna är till för att göras innan delen om for-loopar börjar. Resterande uppgifter kan även inkludera for-loopar.</p>
+<p>De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.</p>
 <section id="ovning-1">
 <h3>Övning 1<a class="headerlink" href="#ovning-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett program där en lista med dina fyra favoritfrukter är inkluderade i en lista. Skriv sedan ut den första och den sista frukten i listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">[]</span></code> efter listan för att få åtkomst till olika element inom listan, <code class="docutils literal notranslate"><span class="pre">[-1]</span></code> indikerar det sista elementet i listan.</p>
+</div>
+</section>
+<section id="ovning-2">
+<h3>Övning 2<a class="headerlink" href="#ovning-2" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd +-operatorn för att lägga ihop två listor.</p>
+</div>
+</section>
+<section id="ovning-3">
+<h3>Övning 3<a class="headerlink" href="#ovning-3" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd skivningsoperatorerna.</p>
+</div>
+</section>
+<section id="ovning-4">
+<h3>Övning 4<a class="headerlink" href="#ovning-4" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.</p>
 </div>
 </section>
-<section id="ovning-2">
-<h3>Övning 2<a class="headerlink" href="#ovning-2" title="Link to this heading">#</a></h3>
+<section id="ovning-5">
+<h3>Övning 5<a class="headerlink" href="#ovning-5" title="Link to this heading">#</a></h3>
 <p>Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.</p>
-<p>100 eller mer: A</p>
-<p>50-100 poäng: C</p>
-<p>30-50 poäng: E</p>
-<p>30 eller mindre: F</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Betyg</p></th>
+<th class="head"><p>Poäng</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>A</p></td>
+<td><p>100 poäng eller mer.</p></td>
+</tr>
+<tr class="row-odd"><td><p>C</p></td>
+<td><p>50-100 poäng.</p></td>
+</tr>
+<tr class="row-even"><td><p>E</p></td>
+<td><p>30-50 poäng.</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>30 eller mindre</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd sen en if-, elif- och else-sats.</p>
 </div>
 </section>
-<section id="ovning-3">
-<h3>Övning 3<a class="headerlink" href="#ovning-3" title="Link to this heading">#</a></h3>
+<section id="ovning-6">
+<h3>Övning 6<a class="headerlink" href="#ovning-6" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.</p>
 </div>
 </section>
-<section id="ovning-4">
-<h3>Övning 4<a class="headerlink" href="#ovning-4" title="Link to this heading">#</a></h3>
+<section id="ovning-7">
+<h3>Övning 7<a class="headerlink" href="#ovning-7" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
-<section id="ovning-5">
-<h3>Övning 5<a class="headerlink" href="#ovning-5" title="Link to this heading">#</a></h3>
+<section id="ovning-8">
+<h3>Övning 8<a class="headerlink" href="#ovning-8" title="Link to this heading">#</a></h3>
 <p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
-<section id="ovning-6">
-<h3>Övning 6<a class="headerlink" href="#ovning-6" title="Link to this heading">#</a></h3>
+<section id="ovning-9">
+<h3>Övning 9<a class="headerlink" href="#ovning-9" title="Link to this heading">#</a></h3>
 <p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:</p>
-<p><span class="math notranslate nohighlight">\(n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \)</span></p>
+<div class="math notranslate nohighlight">
+\[n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \]</div>
 <p>Där 1 i fakultet definieras som:</p>
-<p><span class="math notranslate nohighlight">\(1!=1\)</span></p>
+<div class="math notranslate nohighlight">
+\[1!=1\]</div>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en for-loop och använd range() funktionen.</p>
@@ -672,7 +769,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor">Listor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor">Listor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hantera-element-i-listor">Hantera element i listor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fler-metoder-och-funktioner-med-listor">Fler metoder och funktioner med listor</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
@@ -688,6 +789,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7">Övning 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8">Övning 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 </ul>
 </li>
 </ul>
