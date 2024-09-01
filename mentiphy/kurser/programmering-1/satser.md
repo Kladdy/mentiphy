@@ -33,7 +33,46 @@ namn_lista.remove('Klara')
 :class: Hint
 Kopiera koden, kör den och se resultatet!
 ```
-Det finns en hel rad inbydda funktioner och metoder inbydda i python, nedan listas åtminstone många av dem.
+
+### Hantera element i listor
+Det finns en hel del olika sätt att hantera olika element i listor. Nedan följer lite simpla sätt att få åtkomst till olika element i en lista samt skapa dellistor. Mer information om det kommer lite längre ner. 
+
+För att nå ett specifikt element i listan skrivs det på följande sätt.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
+print(namn_lista[0])
+print(namn_lista[5])
+print(namn_lista[-1])
+```
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+
+Listor i Python är nollindexerade vilket betyder att det första elementet i listan befinner sig på plats 0 i listan, det andra elementet på plats 1, osv.
+
+I vissa situationer vill man dela upp listan i dellistor, då kan det vara smidigt att använda *skivningsoperatorer*. En skivningsoperator fungerar på följande sätt:
+
+```python
+[start:stop:steg]
+```
+Start indikerar var man vill börja med att dela upp listan, stop betyder var man vill sluta med att dela upp listan och steg innebär hur många steg som ska hoppas över per element när dellistan ska skapas. Vi återvänder till exemplet med `namn_lista` för att skapa några olika dellistor.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
+print(namn_lista[0:2])
+print(namn_lista[0:5:2])
+print(namn_lista[0:5:3])
+```
+
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+
+### Fler metoder och funktioner med listor
+Det finns en hel rad olika metoder och funktioner som är inbyggt i Python rörande listor, nedan listas en hel rad olika metoder och funktioner.
 
 ```{list-table}
 :header-rows: 1
@@ -173,57 +212,102 @@ for i in range(6):
 ```
 Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har. 
 
+Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.
+
+```python
+nummerlista = [1, 2, 3, 4, 5]
+for element in nummerlista:
+  print(element)
+```
+
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+
+Först deklareras listan `nummerlista` sen i for-loopen betyder `element` ett element i listan `nummerlista` och för varje element ska for-loopen skriva ut vad värdet av elementet är.
+
+for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.
 
 ## Övningar
-De första övningarna är till för att göras innan delen om for-loopar börjar. Resterande uppgifter kan även inkludera for-loopar.
+De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
 
 ### Övning 1
+Skapa ett program där en lista med dina fyra favoritfrukter är inkluderade i en lista. Skriv sedan ut den första och den sista frukten i listan.
+```{admonition} Tips
+:class: Hint dropdown
+Använd `[]` efter listan för att få åtkomst till olika element inom listan, `[-1]` indikerar det sista elementet i listan.
+```
+
+### Övning 2
+Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista. 
+```{admonition} Tips
+:class: Hint dropdown
+Använd +-operatorn för att lägga ihop två listor.
+```
+
+### Övning 3
+Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd skivningsoperatorerna.
+```
+
+### Övning 4
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
 ```
-### Övning 2
+### Övning 5
 Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
 
-100 eller mer: A
+```{list-table}
+:header-rows: 1
 
-50-100 poäng: C
-
-30-50 poäng: E
-
-30 eller mindre: F 
+* - Betyg
+  - Poäng
+* - A
+  - 100 poäng eller mer.
+* - C
+  - 50-100 poäng.
+* - E
+  - 30-50 poäng.
+* - F
+  - 30 eller mindre
+```
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd sen en if-, elif- och else-sats.
 ```
-### Övning 3
+### Övning 6
 Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
 ```
-### Övning 4 
+### Övning 7 
 Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
-### Övning 5
+### Övning 8
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
-### Övning 6
+### Övning 9
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
 
-$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $
+$$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $$
 
 Där 1 i fakultet definieras som: 
 
-$1!=1$
+$$1!=1$$
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
