@@ -363,6 +363,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
@@ -392,12 +393,12 @@ document.write(`
 <section id="listor">
 <h2>Listor<a class="headerlink" href="#listor" title="Link to this heading">#</a></h2>
 <p>Innan vi börjar med satser ska vi titta på listor, vilket är viktigt att använda när vi vill lagra mycket information i samma variabel. Nedan följer ett exempel på när en lista kan vara bra.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>I exemplet ovan skapar vi en lista för att hålla redan på namnen, exempelvis i en klass som läser programmering. Om vi nu vill redigera den här listan finns det inbggda funktioner och metoder som gör att man kan ändra listan utan att behöva deklarera en ny.</p>
 <p>Säg till exempel att det tillkommer en till person vi behöver lägga till på listan. Då använder vi en inbyggd metod i listorna som lägger till det namnet.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
 <span class="n">namn_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Linus&#39;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">)</span>
@@ -407,9 +408,9 @@ document.write(`
 <p class="admonition-title">Tips</p>
 <p>Kopiera koden, kör den och se resultatet!</p>
 </div>
-<p>Metoden `.append()´ lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Klara, då hade det varit bäst att göra det på följande sätt.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
-<span class="n">namn_lista</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Klara&#39;</span><span class="p">)</span>
+<p>Metoden <code class="docutils literal notranslate"><span class="pre">.append()</span></code> lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Lia, då hade det varit bäst att göra det på följande sätt.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<span class="n">namn_lista</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Lia&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <div class="hint admonition">
@@ -420,7 +421,8 @@ document.write(`
 <h3>Hantera element i listor<a class="headerlink" href="#hantera-element-i-listor" title="Link to this heading">#</a></h3>
 <p>Det finns en hel del olika sätt att hantera olika element i listor. Nedan följer lite simpla sätt att få åtkomst till olika element i en lista samt skapa dellistor. Mer information om det kommer lite längre ner.</p>
 <p>För att nå ett specifikt element i listan skrivs det på följande sätt.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -436,7 +438,8 @@ document.write(`
 </pre></div>
 </div>
 <p>Start indikerar var man vill börja med att dela upp listan, stop betyder var man vill sluta med att dela upp listan och steg innebär hur många steg som ska hoppas över per element när dellistan ska skapas. Vi återvänder till exemplet med <code class="docutils literal notranslate"><span class="pre">namn_lista</span></code> för att skapa några olika dellistor.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Klara&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
@@ -608,6 +611,21 @@ document.write(`
 <p>Först deklareras listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> sen i for-loopen betyder <code class="docutils literal notranslate"><span class="pre">element</span></code> ett element i listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> och för varje element ska for-loopen skriva ut vad värdet av elementet är.</p>
 <p>for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.</p>
 </section>
+</section>
+<section id="while-loopen">
+<h2>while-loopen<a class="headerlink" href="#while-loopen" title="Link to this heading">#</a></h2>
+<p>Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en <code class="docutils literal notranslate"><span class="pre">while-loop</span></code>. Ordet <code class="docutils literal notranslate"><span class="pre">while</span></code> på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Beräkning av n!&#39;</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange n: &#39;</span><span class="p">))</span>
+<span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">prod</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="n">prod</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="ovningar">
 <h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
@@ -782,6 +800,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
