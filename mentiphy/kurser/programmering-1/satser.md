@@ -6,7 +6,7 @@ För att kunna programmera på en lite högre nivå behöver fler satser använd
 Innan vi börjar med satser ska vi titta på listor, vilket är viktigt att använda när vi vill lagra mycket information i samma variabel. Nedan följer ett exempel på när en lista kan vara bra.
 
 ```python
-namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava']
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava']
 ```
 
 I exemplet ovan skapar vi en lista för att hålla redan på namnen, exempelvis i en klass som läser programmering. Om vi nu vill redigera den här listan finns det inbggda funktioner och metoder som gör att man kan ändra listan utan att behöva deklarera en ny.
@@ -14,7 +14,7 @@ I exemplet ovan skapar vi en lista för att hålla redan på namnen, exempelvis 
 Säg till exempel att det tillkommer en till person vi behöver lägga till på listan. Då använder vi en inbyggd metod i listorna som lägger till det namnet.
 
 ```python
-namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava']
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava']
 namn_lista.append('Linus')
 
 print(namn_lista)
@@ -23,11 +23,11 @@ print(namn_lista)
 :class: Hint
 Kopiera koden, kör den och se resultatet!
 ```
-Metoden `.append()´ lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Klara, då hade det varit bäst att göra det på följande sätt.
+Metoden `.append()` lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Lia, då hade det varit bäst att göra det på följande sätt.
 
 ```python
-namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
-namn_lista.remove('Klara')
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava', 'Linus']
+namn_lista.remove('Lia')
 ```
 ```{admonition} Tips
 :class: Hint
@@ -40,7 +40,8 @@ Det finns en hel del olika sätt att hantera olika element i listor. Nedan följ
 För att nå ett specifikt element i listan skrivs det på följande sätt.
 
 ```python
-namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava', 'Linus']
+
 print(namn_lista[0])
 print(namn_lista[5])
 print(namn_lista[-1])
@@ -60,7 +61,8 @@ I vissa situationer vill man dela upp listan i dellistor, då kan det vara smidi
 Start indikerar var man vill börja med att dela upp listan, stop betyder var man vill sluta med att dela upp listan och steg innebär hur många steg som ska hoppas över per element när dellistan ska skapas. Vi återvänder till exemplet med `namn_lista` för att skapa några olika dellistor.
 
 ```python
-namn_lista = ['Emma', 'Hussein', 'Klara', 'Malcolm', 'Ava', 'Linus']
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava', 'Linus']
+
 print(namn_lista[0:2])
 print(namn_lista[0:5:2])
 print(namn_lista[0:5:3])
@@ -228,6 +230,21 @@ Kopiera koden, kör den och se resultatet!
 Först deklareras listan `nummerlista` sen i for-loopen betyder `element` ett element i listan `nummerlista` och för varje element ska for-loopen skriva ut vad värdet av elementet är.
 
 for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.
+
+## while-loopen
+Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en `while-loop`. Ordet `while` på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.
+
+```python
+print('Beräkning av n!')
+n = int(input('Ange n: '))
+prod = 1
+i = 1
+
+while i <= n:
+    prod += i
+    i += 1
+print(n, '=', prod)
+```
 
 ## Övningar
 De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
