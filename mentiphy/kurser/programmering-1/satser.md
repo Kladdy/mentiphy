@@ -111,8 +111,8 @@ I vissa situationer efterfrågar ett program att någonting ska hända, förutsa
 if-satsen används i dessa situationer, nedan exemplifieras användingsområdet av if-satsen.
 
 ```python
-x = int(input('Ange det första talet: ))
-y = int(input('Ange det andra talet: ))
+x = int(input('Ange det första talet: '))
+y = int(input('Ange det andra talet: '))
 
 if x > y:
     print('Det första talet är störst')
@@ -130,8 +130,8 @@ Som många förmodligen tänkte på är koden ovan inte perfekt, det beror framf
 För att förbättra koden ovan kan vi introducera en elif-sats. Koden förbättras på följande sätt om elif introduceras.
 
 ```python
-x = int(input('Ange det första talet: ))
-y = int(input('Ange det andra talet: ))
+x = int(input('Ange det första talet: '))
+y = int(input('Ange det andra talet: '))
 
 if x > y:
     print('Det första talet är störst')
@@ -161,10 +161,10 @@ x > y
 x < y
 
 # x är större eller lika med y
-x => y
+x >= y
 
 # x är mindre eller lika med y
-x =< y
+x <= y
 ```
 
 Det är viktigt att operanderna är jämförbara, dvs `x` och `y` ska kunna jämföras på ett lätt sätt. Till exempel när både `x`och `y` är av typen sträng, int eller float.
@@ -195,56 +195,7 @@ else:
     print('Du har redan varit tonåring')
 ```
 elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.
-## for-loopen
-För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.
 
-### Exempel 1
-```python
-print(1)
-print(2)
-print(3)
-print(4)
-print(5)
-print(6)
-```
-### Exempel 2
-```python
-for i in range(6):
-    print(i)
-```
-Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har. 
-
-Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.
-
-```python
-nummerlista = [1, 2, 3, 4, 5]
-for element in nummerlista:
-  print(element)
-```
-
-```{admonition} Tips
-:class: Hint
-Kopiera koden, kör den och se resultatet!
-```
-
-Först deklareras listan `nummerlista` sen i for-loopen betyder `element` ett element i listan `nummerlista` och för varje element ska for-loopen skriva ut vad värdet av elementet är.
-
-for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.
-
-## while-loopen
-Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en `while-loop`. Ordet `while` på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.
-
-```python
-print('Beräkning av n!')
-n = int(input('Ange n: '))
-prod = 1
-i = 1
-
-while i <= n:
-    prod += i
-    i += 1
-print(n, '=', prod)
-```
 
 ## Övningar
 De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
@@ -294,6 +245,7 @@ Skapa ett program där användaren anger hur många poäng hen fick på provet. 
 * - F
   - 30 eller mindre
 ```
+Låt sedan programmet skriva ut vilket betyg som användaren fick.
 
 ```{admonition} Tips
 :class: Hint dropdown
@@ -305,27 +257,4 @@ Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret �
 :class: Hint dropdown
 Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
 ```
-### Övning 7 
-Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.
-```{admonition} Tips
-:class: Hint dropdown
-Använd en for-loop och använd range() funktionen.
-```
-### Övning 8
-Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
-```{admonition} Tips
-:class: Hint dropdown
-Använd en for-loop och använd range() funktionen.
-```
-### Övning 9
-Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
 
-$$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $$
-
-Där 1 i fakultet definieras som: 
-
-$$1!=1$$
-```{admonition} Tips
-:class: Hint dropdown
-Använd en for-loop och använd range() funktionen.
-```

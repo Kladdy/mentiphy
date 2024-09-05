@@ -21,6 +21,8 @@ parts:
     - file: kurser/programmering-1/introduktion
     - file: kurser/programmering-1/grundläggande
     - file: kurser/programmering-1/satser
+    - file: kurser/programmering-1/loopar
+    
   # - caption: Fysik 1
   #   chapters:
   #   - file: kurser/fysik-1/rörelse
