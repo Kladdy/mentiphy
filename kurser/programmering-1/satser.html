@@ -58,12 +58,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/satser';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
+    <link rel="next" title="Loopar" href="loopar.html" />
     <link rel="prev" title="Grundläggande programmering i Python" href="grundl%C3%A4ggande.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
@@ -202,6 +201,7 @@
 
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Satser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
 </ul>
 
     </div>
@@ -358,12 +358,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
@@ -371,9 +365,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7">Övning 7</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8">Övning 8</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 </ul>
 </li>
 </ul>
@@ -502,8 +493,8 @@ document.write(`
 <h2>if- och else-satsen<a class="headerlink" href="#if-och-else-satsen" title="Link to this heading">#</a></h2>
 <p>I vissa situationer efterfrågar ett program att någonting ska hända, förutsatt att ett visst villkor uppfylls.</p>
 <p>if-satsen används i dessa situationer, nedan exemplifieras användingsområdet av if-satsen.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: ))</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: ))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: &#39;</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: &#39;</span><span class="p">))</span>
 
 <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det första talet är störst&#39;</span><span class="p">)</span>
@@ -518,8 +509,8 @@ document.write(`
 <section id="elif-satsen">
 <h2>elif-satsen<a class="headerlink" href="#elif-satsen" title="Link to this heading">#</a></h2>
 <p>För att förbättra koden ovan kan vi introducera en elif-sats. Koden förbättras på följande sätt om elif introduceras.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: ))</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: ))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: &#39;</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: &#39;</span><span class="p">))</span>
 
 <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det första talet är störst&#39;</span><span class="p">)</span>
@@ -547,10 +538,10 @@ document.write(`
 <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
 
 <span class="c1"># x är större eller lika med y</span>
-<span class="n">x</span> <span class="o">=&gt;</span> <span class="n">y</span>
+<span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>
 
 <span class="c1"># x är mindre eller lika med y</span>
-<span class="n">x</span> <span class="o">=&lt;</span> <span class="n">y</span>
+<span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span>
 </pre></div>
 </div>
 <p>Det är viktigt att operanderna är jämförbara, dvs <code class="docutils literal notranslate"><span class="pre">x</span></code> och <code class="docutils literal notranslate"><span class="pre">y</span></code> ska kunna jämföras på ett lätt sätt. Till exempel när både <code class="docutils literal notranslate"><span class="pre">x</span></code>och <code class="docutils literal notranslate"><span class="pre">y</span></code> är av typen sträng, int eller float.</p>
@@ -576,56 +567,6 @@ document.write(`
 </pre></div>
 </div>
 <p>elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.</p>
-</section>
-<section id="for-loopen">
-<h2>for-loopen<a class="headerlink" href="#for-loopen" title="Link to this heading">#</a></h2>
-<p>För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.</p>
-<section id="exempel-1">
-<h3>Exempel 1<a class="headerlink" href="#exempel-1" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="exempel-2">
-<h3>Exempel 2<a class="headerlink" href="#exempel-2" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har.</p>
-<p>Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nummerlista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">nummerlista</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="hint admonition">
-<p class="admonition-title">Tips</p>
-<p>Kopiera koden, kör den och se resultatet!</p>
-</div>
-<p>Först deklareras listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> sen i for-loopen betyder <code class="docutils literal notranslate"><span class="pre">element</span></code> ett element i listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> och för varje element ska for-loopen skriva ut vad värdet av elementet är.</p>
-<p>for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.</p>
-</section>
-</section>
-<section id="while-loopen">
-<h2>while-loopen<a class="headerlink" href="#while-loopen" title="Link to this heading">#</a></h2>
-<p>Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en <code class="docutils literal notranslate"><span class="pre">while-loop</span></code>. Ordet <code class="docutils literal notranslate"><span class="pre">while</span></code> på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Beräkning av n!&#39;</span><span class="p">)</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange n: &#39;</span><span class="p">))</span>
-<span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
-    <span class="n">prod</span> <span class="o">+=</span> <span class="n">i</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="n">prod</span><span class="p">)</span>
-</pre></div>
-</div>
 </section>
 <section id="ovningar">
 <h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
@@ -687,6 +628,7 @@ document.write(`
 </tbody>
 </table>
 </div>
+<p>Låt sedan programmet skriva ut vilket betyg som användaren fick.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd sen en if-, elif- och else-sats.</p>
@@ -698,35 +640,6 @@ document.write(`
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.</p>
-</div>
-</section>
-<section id="ovning-7">
-<h3>Övning 7<a class="headerlink" href="#ovning-7" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.</p>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Använd en for-loop och använd range() funktionen.</p>
-</div>
-</section>
-<section id="ovning-8">
-<h3>Övning 8<a class="headerlink" href="#ovning-8" title="Link to this heading">#</a></h3>
-<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Använd en for-loop och använd range() funktionen.</p>
-</div>
-</section>
-<section id="ovning-9">
-<h3>Övning 9<a class="headerlink" href="#ovning-9" title="Link to this heading">#</a></h3>
-<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:</p>
-<div class="math notranslate nohighlight">
-\[n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \]</div>
-<p>Där 1 i fakultet definieras som:</p>
-<div class="math notranslate nohighlight">
-\[1!=1\]</div>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
 </section>
@@ -771,6 +684,15 @@ document.write(`
         <p class="prev-next-title">Grundläggande programmering i Python</p>
       </div>
     </a>
+    <a class="right-next"
+       href="loopar.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">nästa</p>
+        <p class="prev-next-title">Loopar</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -795,12 +717,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
@@ -808,9 +724,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4">Övning 4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5">Övning 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6">Övning 6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7">Övning 7</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8">Övning 8</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 </ul>
 </li>
 </ul>

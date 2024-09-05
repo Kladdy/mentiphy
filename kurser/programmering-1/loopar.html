@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Energi &#8212; mentiphy</title>
+    <title>Loopar &#8212; mentiphy</title>
   
   
   
@@ -60,10 +60,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/fysik-1/energi';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/loopar';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
+    <link rel="prev" title="Satser" href="satser.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
   </head>
@@ -125,8 +126,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -197,13 +196,13 @@
 <li class="toctree-l1"><a class="reference internal" href="../fysik-9/universum.html">Universum</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering 1</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../programmering-1/introduktion.html">Introduktion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programmering-1/grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="../programmering-1/satser.html">Satser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../programmering-1/loopar.html">Loopar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="satser.html">Satser</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Loopar</a></li>
 </ul>
 
     </div>
@@ -258,7 +257,7 @@
       
       
       
-      <li><a href="../../_sources/kurser/fysik-1/energi.md" target="_blank"
+      <li><a href="../../_sources/kurser/programmering-1/loopar.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Ladda ner källfil"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -329,7 +328,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -340,11 +341,32 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Energi</h1>
+    <h1>Loopar</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Innehåll </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#range-funktionen">range-funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor-och-for-loopar">Listor och for-loopar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -354,14 +376,109 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="energi">
-<h1>Energi<a class="headerlink" href="#energi" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Observera</p>
-<p>Detta dokument är under utveckling.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="loopar">
+<h1>Loopar<a class="headerlink" href="#loopar" title="Link to this heading">#</a></h1>
+<p>Under det här fliken kommer vi djupfyka i problem där kod behöver upprepas många gånger efter varandra. För att upprepa kod på ett effektivt sätt är det perfekt att göra med hjälp av loopar, som vi ska kolla på under det här avsnittet.</p>
+<section id="for-loopen">
+<h2>for-loopen<a class="headerlink" href="#for-loopen" title="Link to this heading">#</a></h2>
+<p>För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.</p>
+<section id="exempel-1">
+<h3>Exempel 1<a class="headerlink" href="#exempel-1" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
 </div>
-<p>I framtiden kommer det att finnas otroligt mycket mer information här. Just nu får du nöja dig med denna ekvation:</p>
-<p><span class="math notranslate nohighlight">\(Lorem = Ipsum - Dolor\)</span></p>
+</section>
+<section id="exempel-2">
+<h3>Exempel 2<a class="headerlink" href="#exempel-2" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">siffror</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">siffror</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har.</p>
+<p>Koden i Exempel 2 börjar med en <code class="docutils literal notranslate"><span class="pre">for</span></code> (vilket översätts till svenskans för) vilket följs up av siffror. Det betyder alltså till att börja med, ”för alla siffror”, sedan kommer ett <code class="docutils literal notranslate"><span class="pre">in</span></code> vilket då betyder i. Till sist kommer <code class="docutils literal notranslate"><span class="pre">range(6)</span></code> vilket betyder en siffra i intervallet 0-5. Om vi ska tänka hur koden fungerar i termer av ord så blir det: ”för alla siffror i intervallet 0-5”. Kolonet betyder sedan att för det här intervallet ska koden nedan upprepas för hela intervallet.</p>
+</section>
+</section>
+<section id="range-funktionen">
+<h2>range-funktionen<a class="headerlink" href="#range-funktionen" title="Link to this heading">#</a></h2>
+<p>När man vill skapa en loop som uppdateras ett visst antal gånger baserat på ett antal siffror är range-funkionen perfekt för det ändamålet. Range-funktionen generar en sekvens med heltal. Vilket skapas på följande sätt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">slut</span><span class="p">,</span> <span class="n">steg</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Vilket liknar skivningsoperatorerna för listorna vi gjorde i föregående avsnitt. Som ni kanske såg i exempel 2 angavs bara ett värde, vilket händer ganska ofta när man använder funktioner. Om inte allting anges antar range-funktionen vissa standardvärden, i det här fallet är följande inputs densamma.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>För att bli bekväm med hur range-funktionen fungerar kommer några frågor nedan för att vänja er med hur range-funktionen fungerar.</p>
+</section>
+<section id="listor-och-for-loopar">
+<h2>Listor och for-loopar<a class="headerlink" href="#listor-och-for-loopar" title="Link to this heading">#</a></h2>
+<p>Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">nummerlista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">nummerlista</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<p>Först deklareras listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> sen i for-loopen betyder <code class="docutils literal notranslate"><span class="pre">element</span></code> ett element i listan <code class="docutils literal notranslate"><span class="pre">nummerlista</span></code> och för varje element ska for-loopen skriva ut vad värdet av elementet är.</p>
+<p>for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.</p>
+</section>
+<section id="while-loopen">
+<h2>while-loopen<a class="headerlink" href="#while-loopen" title="Link to this heading">#</a></h2>
+<p>Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en <code class="docutils literal notranslate"><span class="pre">while-loop</span></code>. Ordet <code class="docutils literal notranslate"><span class="pre">while</span></code> på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Beräkning av n!&#39;</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange n: &#39;</span><span class="p">))</span>
+<span class="n">prod</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+    <span class="n">prod</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="n">prod</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="ovningar">
+<h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
+<p>Här kommer fliken för övningar, de första tre övningarna är bra för att träna på for-loopar, sedan kommer övningar för while-loopen.</p>
+<section id="ovning-1">
+<h3>Övning 1<a class="headerlink" href="#ovning-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+<section id="ovning-2">
+<h3>Övning 2<a class="headerlink" href="#ovning-2" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+<section id="ovning-3">
+<h3>Övning 3<a class="headerlink" href="#ovning-3" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:</p>
+<div class="math notranslate nohighlight">
+\[n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \]</div>
+<p>Där 1 i fakultet definieras som:</p>
+<div class="math notranslate nohighlight">
+\[1!=1\]</div>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -377,7 +494,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./kurser/fysik-1"
+            path: "./kurser/programmering-1"
         },
         predefinedOutput: true
     }
@@ -394,12 +511,49 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="satser.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">föregående</p>
+        <p class="prev-next-title">Satser</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Innehåll
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#for-loopen">for-loopen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-1">Exempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-2">Exempel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#range-funktionen">range-funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listor-och-for-loopar">Listor och for-loopar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#while-loopen">while-loopen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
