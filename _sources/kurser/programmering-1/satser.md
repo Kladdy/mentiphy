@@ -200,45 +200,37 @@ elif-satsen underlättar för addera fler villkor om det behövs för att progra
 ## Övningar till avsnittet
 De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
 
-<!-- start-övning1 -->
-### Övning 1
+<!-- start-övningar -->
+### Övning 2.1
 Skapa ett program där en lista med dina fyra favoritfrukter är inkluderade i en lista. Skriv sedan ut den första och den sista frukten i listan.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd `[]` efter listan för att få åtkomst till olika element inom listan, `[-1]` indikerar det sista elementet i listan.
 ```
-<!-- end-övning1 -->
 
-<!-- start-övning2 -->
-### Övning 2
+### Övning 2.2
 Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista. 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd +-operatorn för att lägga ihop två listor.
 ```
-<!-- end-övning2 -->
 
-<!-- start-övning3 -->
-### Övning 3
+### Övning 2.3
 Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd skivningsoperatorerna.
 ```
-<!-- end-övning3 -->
 
-<!-- start-övning4 -->
-### Övning 4
+### Övning 2.4
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
 ```
-<!-- end-övning4 -->
 
-<!-- start-övning5 -->
-### Övning 5
+### Övning 2.5
 Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
 
 ```{list-table}
@@ -261,13 +253,11 @@ Låt sedan programmet skriva ut vilket betyg som användaren fick.
 :class: Hint dropdown
 Använd sen en if-, elif- och else-sats.
 ```
-<!-- end-övning5 -->
 
-<!-- start-övning6 -->
-### Övning 6
+### Övning 2.6
 Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
 ```
-<!-- end-övning6 -->
+<!-- end-övningar -->

@@ -23,65 +23,14 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 
 ## 1. Grundläggande programmering
 ```{include} grundläggande.md
-:start-after: <!-- start-övning1 -->
-:end-before: <!-- end-övning1 -->
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
 ```
-
-```{include} grundläggande.md
-:start-after: <!-- start-övning2 -->
-:end-before: <!-- end-övning2 -->
-```
-
-```{include} grundläggande.md
-:start-after: <!-- start-övning3 -->
-:end-before: <!-- end-övning3 -->
-```
-
-```{include} grundläggande.md
-:start-after: <!-- start-övning4 -->
-:end-before: <!-- end-övning4 -->
-```
-
-```{include} grundläggande.md
-:start-after: <!-- start-övning5 -->
-:end-before: <!-- end-övning5 -->
-```
-
-```{include} grundläggande.md
-:start-after: <!-- start-övning6 -->
-:end-before: <!-- end-övning6 -->
-```
-
 
 ## 2. Satser
 ```{include} satser.md
-:start-after: <!-- start-övning1 -->
-:end-before: <!-- end-övning1 -->
-```
-
-```{include} satser.md
-:start-after: <!-- start-övning2 -->
-:end-before: <!-- end-övning2 -->
-```
-
-```{include} satser.md
-:start-after: <!-- start-övning3 -->
-:end-before: <!-- end-övning3 -->
-```
-
-```{include} satser.md
-:start-after: <!-- start-övning4 -->
-:end-before: <!-- end-övning4 -->
-```
-
-```{include} satser.md
-:start-after: <!-- start-övning5 -->
-:end-before: <!-- end-övning5 -->
-```
-
-```{include} satser.md
-:start-after: <!-- start-övning6 -->
-:end-before: <!-- end-övning6 -->
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
 ```
 
 ### Övning 2.7
@@ -131,28 +80,6 @@ Använd en inbyggd metod för listor som heter len().
 ## 3. Loopar
 
 ```{include} loopar.md
-:start-after: <!-- start-övning1 -->
-:end-before: <!-- end-övning1 -->
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
 ```
-
-```{include} loopar.md
-:start-after: <!-- start-övning2 -->
-:end-before: <!-- end-övning2 -->
-```
-
-```{include} loopar.md
-:start-after: <!-- start-övning3 -->
-:end-before: <!-- end-övning3 -->
-```
-
-```{include} loopar.md
-:start-after: <!-- start-övning4 -->
-:end-before: <!-- end-övning4 -->
-```
-
-```{include} loopar.md
-:start-after: <!-- start-övning5 -->
-:end-before: <!-- end-övning5 -->
-```
-
-
