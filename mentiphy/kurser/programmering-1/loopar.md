@@ -38,7 +38,7 @@ range(0, 5, 1)
 
 För att bli bekväm med hur range-funktionen fungerar kommer några frågor nedan för att vänja er med hur range-funktionen fungerar.
 
-## Listor och for-loopar
+## Listor och for-  loopar
 
 Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.
 
@@ -72,21 +72,36 @@ while i <= n:
 print(n, '=', prod)
 ```
 
-## Övningar
+## Övningar till avsnittet
 Här kommer fliken för övningar, de första tre övningarna är bra för att träna på for-loopar, sedan kommer övningar för while-loopen.
-### Övning 1 
-Skapa ett program som räknar ner från det angivet talet ner till 0, koden avslutas sedan med att skriva ut att nedräkningen är avslutad.
+### Övning 1
+Skapa ett program som med hjälp av en for-loop skriver ut dina favoritluncher från en lista. 
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera en lista med dina favoritluncher, sedan använd en for-loop för att skriva ut samtliga element ur listan.
+```
+### Övning 2 
+Skapa ett program som räknar upp till ett angiet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
-### Övning 2
+
+### Övning 3
+Skapa en lista med alla jämna tal mellan 1-50. Listan ska skapas utan skriva in talen själv.
+```{admonition} Tips
+:class: Hint dropdown
+I den här övningen behövs faktiskt bara en range-funktion. Den kan även göras med en for-loop. Försök att få till en med både en for-loop och en utan.
+```
+
+### Övning 4
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
-### Övning 3
+### Övning 5
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
 
 $$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $$

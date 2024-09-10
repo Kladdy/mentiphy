@@ -197,7 +197,7 @@ else:
 elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.
 
 
-## Övningar
+## Övningar till avsnittet
 De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
 
 ### Övning 1
@@ -258,3 +258,7 @@ Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret �
 Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
 ```
 
+<!-- start-testövning -->
+### Testövning
+Detta är en testövning, för att se om den går att inkludera i den andra filen.
+<!-- end-testövning -->
