@@ -74,6 +74,9 @@ print(n, '=', prod)
 
 ## Övningar till avsnittet
 Här kommer fliken för övningar, de första tre övningarna är bra för att träna på for-loopar, sedan kommer övningar för while-loopen.
+
+
+<!-- start-övning1 -->
 ### Övning 1
 Skapa ett program som med hjälp av en for-loop skriver ut dina favoritluncher från en lista. 
 
@@ -81,26 +84,32 @@ Skapa ett program som med hjälp av en for-loop skriver ut dina favoritluncher f
 :class: Hint dropdown
 Börja med att deklarera en lista med dina favoritluncher, sedan använd en for-loop för att skriva ut samtliga element ur listan.
 ```
+<!-- end-övning1 -->
+<!-- start-övning2 -->
 ### Övning 2 
 Skapa ett program som räknar upp till ett angiet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
-
+<!-- end-övning2 -->
+<!-- start-övning3 -->
 ### Övning 3
 Skapa en lista med alla jämna tal mellan 1-50. Listan ska skapas utan skriva in talen själv.
 ```{admonition} Tips
 :class: Hint dropdown
 I den här övningen behövs faktiskt bara en range-funktion. Den kan även göras med en for-loop. Försök att få till en med både en for-loop och en utan.
 ```
-
+<!-- end-övning3 -->
+<!-- start-övning4 -->
 ### Övning 4
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
+<!-- end-övning4 -->
+<!-- start-övning5 -->
 ### Övning 5
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
 
@@ -113,3 +122,4 @@ $$1!=1$$
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
+<!-- end-övning5 -->
