@@ -169,44 +169,40 @@ Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med e
 Här nedan listas flera övningar kopplad till innehållet av den här sidan, skriv din kod och se om du kan få svaret som programmet efterfrågar.
 
 Tänk på att kommentera din kod. Tänk även på att deklarera och namnge på ett korrekt sätt för relevanta variabler för din kod.  
-<!-- start-övning1 -->
-### Övning 1
+<!-- start-övningar -->
+### Övning 1.1
 Skriv ett program som hälsar på användaren. Exempelvis med orden "Hej på dig!"
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd print-satsen.
 ```
-<!-- end-övning1 -->
-<!-- start-övning2 -->
-### Övning 2
+
+### Övning 1.2
 Skriv ett program som utför additionen 5+7 och skriver ut svaret av additionen. 
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd additionstecknet och print-satsen.
 ```
-<!-- end-övning2 -->
-<!-- start-övning3 -->
-### Övning 3
+
+### Övning 1.3
 Skriv ett program som frågar efter din ålder och skriver ut hur gammal du kommer vara om 5 år.
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd input-satsen.
 ```
-<!-- end-övning3 -->
-<!-- start-övning4 -->
-### Övning 4
+
+### Övning 1.4
 Skapa en simpel miniräknare som frågar efter två nummer och sedan skriver ut vad summan, skillnaden, produkten och kvoten är mellan dessa tal.
 
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att använda input-satsen, deklarera variabler och tilldela värdena genom att utföra beräkningarna, använd till sist en print-sats.
 ```
-<!-- end-övning4 -->
-<!-- start-övning5 -->
-### Övning 5
+
+### Övning 1.5
 Skapa ett program som frågar efter en temperatur i enheten i grader Celsius och sedan skriver ut vad den temperaturen korresponderar i grader Fahrenheit. Tips formeln för konverteringen från grader Celsius till grader Fahrenheit är: 
 
 $F= \frac{9}{5} \cdot C + 32 $
@@ -215,9 +211,8 @@ $F= \frac{9}{5} \cdot C + 32 $
 :class: Hint dropdown
 Börja med att använda input-satsen, deklarera variabeln och tilldela värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
-<!-- end-övning5 -->
-<!-- start-övning6 -->
-### Övning 6
+
+### Övning 1.6
 Skapa ett program där programmet frågar efter en summa pengar, efter en räntesats och ett antal år. Beräkna summan av ränta på ränta på det insatta kapitalet med hjälp av en exponentialfunktion och skriv ut resultatet till användaren.
 
 $y = C \cdot a^x $
@@ -226,4 +221,4 @@ $y = C \cdot a^x $
 :class: Hint dropdown
 Börja med att använda input-satsen, deklarera variablerna och tilldela värdena genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
-<!-- end-övning6 -->
+<!-- end-övningar -->
