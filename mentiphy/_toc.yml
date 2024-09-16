@@ -22,6 +22,7 @@ parts:
     - file: kurser/programmering-1/grundläggande
     - file: kurser/programmering-1/satser
     - file: kurser/programmering-1/loopar
+    - file: kurser/programmering-1/turtle
     - file: kurser/programmering-1/övningar
     
   # - caption: Fysik 1

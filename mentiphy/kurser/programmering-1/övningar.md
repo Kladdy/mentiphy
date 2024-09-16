@@ -19,6 +19,9 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 * - Loopar
   - for-loopen, range-funktionen, listor och for-loopar, while-loopen.
   - *3.1-3.5*
+' - Turtles
+  - Rita simpel grafik med hjälp av turtle-modulen.
+  - *4.1-4.6*
 ```
 
 ## 1. Grundläggande programmering
@@ -80,6 +83,13 @@ Använd en inbyggd metod för listor som heter len().
 ## 3. Loopar
 
 ```{include} loopar.md
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
+```
+
+## 4. Turtles
+
+```{include} turtle.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
