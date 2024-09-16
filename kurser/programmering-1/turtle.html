@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduktion &#8212; mentiphy</title>
+    <title>Turtles &#8212; mentiphy</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/introduktion';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/turtle';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
-    <link rel="next" title="Grundläggande programmering i Python" href="grundl%C3%A4ggande.html" />
-    <link rel="prev" title="Universum" href="../fysik-9/universum.html" />
+    <link rel="next" title="Övningar till kursen" href="%C3%B6vningar.html" />
+    <link rel="prev" title="Loopar" href="loopar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
   </head>
@@ -196,13 +196,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering 1</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="satser.html">Satser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtles</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Turtles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%C3%B6vningar.html">Övningar till kursen</a></li>
 </ul>
 
@@ -258,7 +258,7 @@
       
       
       
-      <li><a href="../../_sources/kurser/programmering-1/introduktion.md" target="_blank"
+      <li><a href="../../_sources/kurser/programmering-1/turtle.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Ladda ner källfil"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -342,7 +342,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduktion</h1>
+    <h1>Turtles</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -352,8 +352,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-en-turtle">Skapa en turtle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#borja-rita">Börja rita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viktiga-metoder-for-att-rita-med-turtles">Viktiga metoder för att rita med turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-1">Övning 4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-2">Övning 4.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-3">Övning 4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-4">Övning 4.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -365,59 +375,127 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduktion">
-<h1>Introduktion<a class="headerlink" href="#introduktion" title="Link to this heading">#</a></h1>
-<p>Välkomna till kursen Programmering 1!</p>
-<p>Under den här fliken kommer ni kunna få åtkomst till allmän information om kursen, det centrala innehållet i kursen och kursens betygskriterier.</p>
-<p>Kursen kommer skrivas i programmeringsspråket Python, eftersom att det är användarvänligt språk som är bra för nybörjare.</p>
-<p>Koden kommer att skrivas i ett program som heter Visual Studio Code vilket är en så kallad ”integrerad utvecklingsmiljö” där koden kan skrivas, felsökas, sparas och köras i samma program.</p>
-<hr class="docutils" />
-<section id="centralt-innehall">
-<h2>Centralt innehåll<a class="headerlink" href="#centralt-innehall" title="Link to this heading">#</a></h2>
-<p>Nedan visas det centrala innehållet från Skolverkets hemsida.</p>
-<div class="hint admonition">
-<p class="admonition-title">Programmering 1</p>
-<ul class="simple">
-<li><p>Grundläggande programmering i ett eller flera programspråk varav minst ett av språken är textbaserat.</p></li>
-<li><p>Programmering och dess olika användningsområden ur ett socialt perspektiv inklusive genus, kultur och socioekonomisk bakgrund.</p></li>
-<li><p>Programmeringens möjligheter och begränsningar utifrån datorns funktionssätt.</p></li>
-<li><p>Strukturerat arbetssätt för problemlösning och programmering.</p></li>
-<li><p>Grundläggande kontrollstrukturer, konstruktioner och datatyper.</p></li>
-<li><p>Arbetsmetoder för förebyggande av programmeringsfel, testning, felsökning och rättning av kod.</p></li>
-<li><p>Grundläggande datastrukturer och algoritmer.</p></li>
-<li><p>Gränssnitt för interaktion mellan program och användare.</p></li>
-<li><p>Normer och värden inom programmering, till exempel läsbarhet, dokumentation, testbarhet, rena gränssnitt och nyttan av standard.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="turtles">
+<h1>Turtles<a class="headerlink" href="#turtles" title="Link to this heading">#</a></h1>
+<section id="skapa-en-turtle">
+<h2>Skapa en turtle<a class="headerlink" href="#skapa-en-turtle" title="Link to this heading">#</a></h2>
+<p>I Python finns en inbyggd modul som heter <code class="docutils literal notranslate"><span class="pre">turtle</span></code> vilket låter användaren skapa en simpel grafik. Skölpaddan kan rita och fylla i figurer med olika färger. För att börja med turtle-modulen behöver vi börja med att skriva följande.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+</pre></div>
+</div>
+<p>Vi behöver importera turle modulen för att koden ska få åtkomst till alla funktioner och metoder som finns inbyggt i modulen. Efter vi har gjort det kan vi börja med att skapa en turtle. Skriv följande kod:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Nu har vi skapat skölpaddan och varje gång vi vill att skölpaddan ska göra någonting så hänvisar vi till skölpaddan genom variabeln <code class="docutils literal notranslate"><span class="pre">t</span></code>.</p>
+</section>
+<section id="borja-rita">
+<h2>Börja rita<a class="headerlink" href="#borja-rita" title="Link to this heading">#</a></h2>
+<p>Nu när vi har skapat skölpaddan kan vi beordra den att göra olika saker. En metod är en funktion som är kopplad till ett speciellt objekt (skolpaddan i det här fallet). För att använda en metod använder man <em>punktnotation</em>. Precis som när vi använde olika metoder för listor som t.ex <code class="docutils literal notranslate"><span class="pre">.append()</span></code>.</p>
+<p>Vi börjar med ett lätt exempel, inkludera koden ovan och kopiera även in detta:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">turtle</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Titta vad koden gör och försök klura ut vad de separata metoderna gör för skölpaddan. Genom att titta flera gånger och att försöka förklara för sig själv kan man förstå mycket mer av koden.</p>
+<p>Koden <code class="docutils literal notranslate"><span class="pre">turtle.exitonclick()</span></code> gör att fönstret där bilden ritas inte försvinner direkt när skölpaddan är klar, utan försvinner när man stänger ner fönstret.</p>
+</section>
+<section id="viktiga-metoder-for-att-rita-med-turtles">
+<h2>Viktiga metoder för att rita med turtles<a class="headerlink" href="#viktiga-metoder-for-att-rita-med-turtles" title="Link to this heading">#</a></h2>
+<p>Nedan listas de viktigaste metoderna när det kommer till turtle-modulen som är bra att använda.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metod</p></th>
+<th class="head"><p>Betydelse</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.forward(längd)</span></code></p></td>
+<td><p>Skölpaddan rör sig rakt fram lika långt som <code class="docutils literal notranslate"><span class="pre">längd</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.left(antal_grader)</span></code></p></td>
+<td><p>Skölpaddan svänger åt vänster <code class="docutils literal notranslate"><span class="pre">antal_grader</span></code> anger hur många grader som skölpaddan ska svänga med.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.color(penfärg,</span> <span class="pre">fyllnadsfärg)</span></code></p></td>
+<td><p>Ändrar färgen för pennans färg och färgen som man vill fylla i med.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.begin_fill()</span></code></p></td>
+<td><p>Börjar att fylla i färgen.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.end_fill()</span></code></p></td>
+<td><p>Avslutar att fylla i färgen.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.goto(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p>Går till x-koordinaten <code class="docutils literal notranslate"><span class="pre">x</span></code> och y-koordinaten <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code></p></td>
+<td><p>Sätter ner pennan och börjar rita.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.penup()</span></code></p></td>
+<td><p>Tar upp pennan och slutar rita.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.hideturtle()</span></code></p></td>
+<td><p>Gömmer skölpaddan osynlig.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.showturtle</span></code></p></td>
+<td><p>Gör skölpaddan synlig.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.clear()</span></code></p></td>
+<td><p>Tar bort allting som har ritats.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
-<hr class="docutils" />
-<section id="betygskriterier">
-<h2>Betygskriterier<a class="headerlink" href="#betygskriterier" title="Link to this heading">#</a></h2>
-<p>Nedan visas betygskriterierna från Skolverkets hemsida.</p>
-<div class="hint admonition">
-<p class="admonition-title">För betyget E</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar i samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och enkelt kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta i program av enkel karaktär.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför felsökning av enkla syntaxfel. Innan programmeringsuppgiften avslutas utvärderar eleven med enkla omdömen programmets prestanda och ändamålsenlighet i någon situation och i något sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör översiktligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör översiktligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
+<section id="ovningar-till-avsnittet">
+<h2>Övningar till avsnittet<a class="headerlink" href="#ovningar-till-avsnittet" title="Link to this heading">#</a></h2>
+<!-- start-övningar -->
+<section id="ovning-4-1">
+<h3>Övning 4.1<a class="headerlink" href="#ovning-4-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som ritar en kvadrat med sidlängden 100. Gör koden först utan en for-loop och sedan med en for-loop.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd metoderna med <code class="docutils literal notranslate"><span class="pre">t.forward(längd)</span></code>, <code class="docutils literal notranslate"><span class="pre">t.left()</span></code> och en for-loop som upprepar koden för varje sida av kvadraten.</p>
 </div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget C</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen programmets prestanda och ändamålsenlighet i några situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
+</section>
+<section id="ovning-4-2">
+<h3>Övning 4.2<a class="headerlink" href="#ovning-4-2" title="Link to this heading">#</a></h3>
+<p>Använd koden från övning 4.1 och förbättra den så att kvadratens sidor är ritade med färgen <code class="docutils literal notranslate"><span class="pre">'blue'</span></code> och fyll i kvadraten med färgen <code class="docutils literal notranslate"><span class="pre">'lightblue'</span></code>.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd metoderna med <code class="docutils literal notranslate"><span class="pre">t.color(penfärg,</span> <span class="pre">fyllnadsfärg)</span></code> för att välja färg samt metoderna <code class="docutils literal notranslate"><span class="pre">t.begin_fill()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.end_fill()</span></code> för att fylla i färgerna.</p>
 </div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget A</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften samt motiverar utförligt sina val. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant och utförligt kommenterad källkod med gott resultat. Dessutom väljer eleven med säkerhet ett uttryckssätt som är anpassat för att på ett gott sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med gott resultat i ett eller flera programspråk som är stabila och robusta i program av komplex karaktär.</p></li>
-<li><p>Eleven anpassar med säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt och effektivt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen och med förslag på förbättringar programmets prestanda och ändamålsenlighet i flera situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt och nyanserat för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt och nyanserat för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
+</section>
+<section id="ovning-4-3">
+<h3>Övning 4.3<a class="headerlink" href="#ovning-4-3" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar om en sidlängd och sedan ritar en liksidig triangel med den angivna sidlängden.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Deklarera en variabel som använder input-funktionen för att lagra vilken sidlängd som triangeln ska ha. Använd metoderna med <code class="docutils literal notranslate"><span class="pre">t.forward(längd)</span></code>, <code class="docutils literal notranslate"><span class="pre">t.left()</span></code> och en for-loop som upprepar koden för varje sida av triangeln. Tänk på hur många grader varje vinkel har i en liksidig triangel.</p>
 </div>
+</section>
+<section id="ovning-4-4">
+<h3>Övning 4.4<a class="headerlink" href="#ovning-4-4" title="Link to this heading">#</a></h3>
+<p>Använd koden från övning 4.3 och förbättra den så att triangelns sidor är ritade med en färg som användaren användaren anger, låt även användaren ange med vilken färg som triangeln ska fyllas i med.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Deklarera två variabel som använder input-funktionen för att lagra vilken färg som triangeln ska ritas och fyllas i med. Använd metoderna med <code class="docutils literal notranslate"><span class="pre">t.color(penfärg,</span> <span class="pre">fyllnadsfärg)</span></code> för att välja färg samt metoderna <code class="docutils literal notranslate"><span class="pre">t.begin_fill()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.end_fill()</span></code> för att fylla i färgerna.</p>
+</div>
+</section>
+<section id="ovning-4-5">
+<h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.</p>
+<img alt="Flera ringar inom varandra." src="kurser/programmering-1/img/turtleRings.png" />
+</section>
+<section id="ovning-4-6">
+<h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
+<p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
+<img alt="En spiral." src="kurser/programmering-1/img/turtleSpiral.png" />
+<!-- end-övningar -->
+</section>
 </section>
 </section>
 
@@ -452,20 +530,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../fysik-9/universum.html"
+       href="loopar.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">föregående</p>
-        <p class="prev-next-title">Universum</p>
+        <p class="prev-next-title">Loopar</p>
       </div>
     </a>
     <a class="right-next"
-       href="grundl%C3%A4ggande.html"
+       href="%C3%B6vningar.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">nästa</p>
-        <p class="prev-next-title">Grundläggande programmering i Python</p>
+        <p class="prev-next-title">Övningar till kursen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -485,8 +563,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-en-turtle">Skapa en turtle</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#borja-rita">Börja rita</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#viktiga-metoder-for-att-rita-med-turtles">Viktiga metoder för att rita med turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-1">Övning 4.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-2">Övning 4.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-3">Övning 4.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-4">Övning 4.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
