@@ -1,7 +1,8 @@
 # Turtles
+I Python finns en inbyggd modul som heter `turtle` vilket låter användaren skapa en simpel grafik. Skölpaddan kan rita och fylla i figurer med olika färger.
 
 ## Skapa en turtle
-I Python finns en inbyggd modul som heter `turtle` vilket låter användaren skapa en simpel grafik. Skölpaddan kan rita och fylla i figurer med olika färger. För att börja med turtle-modulen behöver vi börja med att skriva följande.
+För att börja med turtle-modulen behöver vi börja med att skriva följande.
 
 ```python
 import turtle
@@ -54,6 +55,8 @@ Nedan listas de viktigaste metoderna när det kommer till turtle-modulen som är
   - Avslutar att fylla i färgen.
 * - `t.goto(x, y)`
   - Går till x-koordinaten `x` och y-koordinaten `y`.
+* - `t.circle(radie)`
+  - Skapar en cirkel med radien `radie`.
 * - `t.pendown()`
   - Sätter ner pennan och börjar rita.
 * - `t.penup()`
@@ -104,15 +107,43 @@ Deklarera två variabel som använder input-funktionen för att lagra vilken fä
 ### Övning 4.5
 Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.
 
-```{image} img/turtleRings.png
+```{image} img/turtleRings.PNG
 :alt: Flera ringar inom varandra.
 ```
 
-### Övning 4.6
-Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
-
-```{image} img/turtleSpiral.png
-:alt: En spiral.
+```{admonition} Tips
+:class: Hint dropdown
+Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden `t.circle(radie)`. Det är viktigt att for-loopen även inkluderar *var* skölpaddan ska börja med att rita cirkeln. Använd `t.penup()` och `t.pendown()` och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.
 ```
 
+### Övning 4.6
+Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.
+
+```{image} img/turtleHouse.PNG
+:alt: Flera ringar inom varandra.
+```
+
+### Övning 4.7
+Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.
+
+```{image} img/turtleColorrings.PNG
+:alt: Ringar med färger.
+```
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras. 
+```
 <!-- end-övningar -->
+
+### Övning 4.8
+Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
+
+```{image} img/turtleSpiral.PNG
+:alt: En spiral.
+```
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. `längd += 1` Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas. 
+```
+

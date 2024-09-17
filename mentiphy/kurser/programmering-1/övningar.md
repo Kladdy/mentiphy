@@ -21,7 +21,7 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - *3.1-3.5*
 ' - Turtles
   - Rita simpel grafik med hjälp av turtle-modulen.
-  - *4.1-4.6*
+  - *4.1-4.8*
 ```
 
 ## 1. Grundläggande programmering
