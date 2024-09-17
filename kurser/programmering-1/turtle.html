@@ -362,6 +362,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-4">Övning 4.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-7">Övning 4.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-8">Övning 4.8</a></li>
 </ul>
 </li>
 </ul>
@@ -377,9 +379,10 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="turtles">
 <h1>Turtles<a class="headerlink" href="#turtles" title="Link to this heading">#</a></h1>
+<p>I Python finns en inbyggd modul som heter <code class="docutils literal notranslate"><span class="pre">turtle</span></code> vilket låter användaren skapa en simpel grafik. Skölpaddan kan rita och fylla i figurer med olika färger.</p>
 <section id="skapa-en-turtle">
 <h2>Skapa en turtle<a class="headerlink" href="#skapa-en-turtle" title="Link to this heading">#</a></h2>
-<p>I Python finns en inbyggd modul som heter <code class="docutils literal notranslate"><span class="pre">turtle</span></code> vilket låter användaren skapa en simpel grafik. Skölpaddan kan rita och fylla i figurer med olika färger. För att börja med turtle-modulen behöver vi börja med att skriva följande.</p>
+<p>För att börja med turtle-modulen behöver vi börja med att skriva följande.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
 </pre></div>
 </div>
@@ -431,19 +434,22 @@ document.write(`
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.goto(x,</span> <span class="pre">y)</span></code></p></td>
 <td><p>Går till x-koordinaten <code class="docutils literal notranslate"><span class="pre">x</span></code> och y-koordinaten <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code></p></td>
+<td><p>Skapar en cirkel med radien <code class="docutils literal notranslate"><span class="pre">radie</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code></p></td>
 <td><p>Sätter ner pennan och börjar rita.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.penup()</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.penup()</span></code></p></td>
 <td><p>Tar upp pennan och slutar rita.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.hideturtle()</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.hideturtle()</span></code></p></td>
 <td><p>Gömmer skölpaddan osynlig.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.showturtle</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.showturtle</span></code></p></td>
 <td><p>Gör skölpaddan synlig.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">t.clear()</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">t.clear()</span></code></p></td>
 <td><p>Tar bort allting som har ritats.</p></td>
 </tr>
 </tbody>
@@ -488,13 +494,35 @@ document.write(`
 <section id="ovning-4-5">
 <h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.</p>
-<img alt="Flera ringar inom varandra." src="kurser/programmering-1/img/turtleRings.png" />
+<img alt="Flera ringar inom varandra." src="../../_images/turtleRings.PNG" />
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code>. Det är viktigt att for-loopen även inkluderar <em>var</em> skölpaddan ska börja med att rita cirkeln. Använd <code class="docutils literal notranslate"><span class="pre">t.penup()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code> och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.</p>
+</div>
 </section>
 <section id="ovning-4-6">
 <h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
-<p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
-<img alt="En spiral." src="kurser/programmering-1/img/turtleSpiral.png" />
+<p>Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.</p>
+<img alt="Flera ringar inom varandra." src="../../_images/turtleHouse.PNG" />
+</section>
+<section id="ovning-4-7">
+<h3>Övning 4.7<a class="headerlink" href="#ovning-4-7" title="Link to this heading">#</a></h3>
+<p>Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.</p>
+<img alt="Ringar med färger." src="../../_images/turtleColorrings.PNG" />
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras.</p>
+</div>
 <!-- end-övningar -->
+</section>
+<section id="ovning-4-8">
+<h3>Övning 4.8<a class="headerlink" href="#ovning-4-8" title="Link to this heading">#</a></h3>
+<p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
+<img alt="En spiral." src="../../_images/turtleSpiral.PNG" />
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. <code class="docutils literal notranslate"><span class="pre">längd</span> <span class="pre">+=</span> <span class="pre">1</span></code> Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas.</p>
+</div>
 </section>
 </section>
 </section>
@@ -573,6 +601,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-4">Övning 4.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-7">Övning 4.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-8">Övning 4.8</a></li>
 </ul>
 </li>
 </ul>
