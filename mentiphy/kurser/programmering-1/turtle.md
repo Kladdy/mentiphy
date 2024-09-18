@@ -63,7 +63,7 @@ Nedan listas de viktigaste metoderna när det kommer till turtle-modulen som är
   - Tar upp pennan och slutar rita.
 * - `t.hideturtle()`
   - Gömmer skölpaddan osynlig.
-* - `t.showturtle`
+* - `t.showturtle()`
   - Gör skölpaddan synlig.
 * - `t.clear()`
   - Tar bort allting som har ritats.
