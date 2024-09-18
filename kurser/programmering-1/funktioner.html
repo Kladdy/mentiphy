@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduktion &#8212; mentiphy</title>
+    <title>Funktioner &#8212; mentiphy</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/introduktion';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/funktioner';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
-    <link rel="next" title="Grundläggande programmering i Python" href="grundl%C3%A4ggande.html" />
-    <link rel="prev" title="Universum" href="../fysik-9/universum.html" />
+    <link rel="next" title="Övningar till kursen" href="%C3%B6vningar.html" />
+    <link rel="prev" title="Turtles" href="turtle.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
   </head>
@@ -196,14 +196,14 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering 1</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
 
 
 <li class="toctree-l1"><a class="reference internal" href="satser.html">Satser</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="funktioner.html">Funktioner</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Funktioner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%C3%B6vningar.html">Övningar till kursen</a></li>
 </ul>
 
@@ -259,7 +259,7 @@
       
       
       
-      <li><a href="../../_sources/kurser/programmering-1/introduktion.md" target="_blank"
+      <li><a href="../../_sources/kurser/programmering-1/funktioner.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Ladda ner källfil"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -343,7 +343,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduktion</h1>
+    <h1>Funktioner</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -353,8 +353,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
 </ul>
             </nav>
         </div>
@@ -366,58 +365,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduktion">
-<h1>Introduktion<a class="headerlink" href="#introduktion" title="Link to this heading">#</a></h1>
-<p>Välkomna till kursen Programmering 1!</p>
-<p>Under den här fliken kommer ni kunna få åtkomst till allmän information om kursen, det centrala innehållet i kursen och kursens betygskriterier.</p>
-<p>Kursen kommer skrivas i programmeringsspråket Python, eftersom att det är användarvänligt språk som är bra för nybörjare.</p>
-<p>Koden kommer att skrivas i ett program som heter Visual Studio Code vilket är en så kallad ”integrerad utvecklingsmiljö” där koden kan skrivas, felsökas, sparas och köras i samma program.</p>
-<hr class="docutils" />
-<section id="centralt-innehall">
-<h2>Centralt innehåll<a class="headerlink" href="#centralt-innehall" title="Link to this heading">#</a></h2>
-<p>Nedan visas det centrala innehållet från Skolverkets hemsida.</p>
-<div class="hint admonition">
-<p class="admonition-title">Programmering 1</p>
-<ul class="simple">
-<li><p>Grundläggande programmering i ett eller flera programspråk varav minst ett av språken är textbaserat.</p></li>
-<li><p>Programmering och dess olika användningsområden ur ett socialt perspektiv inklusive genus, kultur och socioekonomisk bakgrund.</p></li>
-<li><p>Programmeringens möjligheter och begränsningar utifrån datorns funktionssätt.</p></li>
-<li><p>Strukturerat arbetssätt för problemlösning och programmering.</p></li>
-<li><p>Grundläggande kontrollstrukturer, konstruktioner och datatyper.</p></li>
-<li><p>Arbetsmetoder för förebyggande av programmeringsfel, testning, felsökning och rättning av kod.</p></li>
-<li><p>Grundläggande datastrukturer och algoritmer.</p></li>
-<li><p>Gränssnitt för interaktion mellan program och användare.</p></li>
-<li><p>Normer och värden inom programmering, till exempel läsbarhet, dokumentation, testbarhet, rena gränssnitt och nyttan av standard.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="funktioner">
+<h1>Funktioner<a class="headerlink" href="#funktioner" title="Link to this heading">#</a></h1>
+<p>För att kunna skapa större och mer komplexa program är funktioner viktigt att använda för tydlighe, struktur och simplicitet. Funktioner kan vara lite svårt att komma igång med men de är helt nödvändiga vid större projekt.</p>
+<section id="skapa-funktioner">
+<h2>Skapa funktioner<a class="headerlink" href="#skapa-funktioner" title="Link to this heading">#</a></h2>
+<p>För att skapa en funktion börjar man likt en variabel med att deklarera den.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">namn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
+    <span class="c1"># Fyll  på med koden här.</span>
+</pre></div>
 </div>
-</section>
-<hr class="docutils" />
-<section id="betygskriterier">
-<h2>Betygskriterier<a class="headerlink" href="#betygskriterier" title="Link to this heading">#</a></h2>
-<p>Nedan visas betygskriterierna från Skolverkets hemsida.</p>
-<div class="hint admonition">
-<p class="admonition-title">För betyget E</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar i samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och enkelt kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta i program av enkel karaktär.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför felsökning av enkla syntaxfel. Innan programmeringsuppgiften avslutas utvärderar eleven med enkla omdömen programmets prestanda och ändamålsenlighet i någon situation och i något sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör översiktligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör översiktligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
-</div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget C</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med viss säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant kommenterad källkod med tillfredsställande resultat. Dessutom väljer eleven med viss säkerhet ett uttryckssätt som är anpassat för att på ett tillfredsställande sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med tillfredsställande resultat i ett eller flera programspråk som är stabila och robusta.</p></li>
-<li><p>Eleven anpassar med viss säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen programmets prestanda och ändamålsenlighet i några situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med viss säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
-</div>
-<div class="hint admonition">
-<p class="admonition-title">För betyget A</p>
-<ul class="simple">
-<li><p>Eleven formulerar och planerar efter samråd med handledare programmeringsuppgifter med pseudokod eller diagramteknik. I planeringen väljer eleven med säkerhet kontrollstrukturer, metoder, variabler, datastrukturer och algoritmer som är adekvata för uppgiften samt motiverar utförligt sina val. I sin programmering skapar eleven med konsekvent kodningsstil och tydlig namngivning korrekt, strukturerad och noggrant och utförligt kommenterad källkod med gott resultat. Dessutom väljer eleven med säkerhet ett uttryckssätt som är anpassat för att på ett gott sätt interagera med den avsedda användaren. Elevens färdiga program eller skript är utförda med gott resultat i ett eller flera programspråk som är stabila och robusta i program av komplex karaktär.</p></li>
-<li><p>Eleven anpassar med säkerhet sin planering av programmeringsuppgiften och utför på ett systematiskt och effektivt sätt felsökning av syntaxfel, körtidsfel och programmeringslogiska fel. Innan programmeringsuppgiften avslutas utvärderar eleven med nyanserade omdömen och med förslag på förbättringar programmets prestanda och ändamålsenlighet i flera situationer och sammanhang. Eleven kommunicerar om programmeringsuppgiften och dess utvärdering och använder då med säkerhet datavetenskapliga begrepp.</p></li>
-<li><p>Eleven redogör utförligt och nyanserat för programmeringens möjligheter och begränsningar samt hur programmering har påverkat och påverkar vardagen. Eleven redogör utförligt och nyanserat för principer för att uppnå god kvalitet vid skapandet av datorprogram.</p></li>
-</ul>
+<p>Alltid när en ny funktion ska skapas påbörjas det med <code class="docutils literal notranslate"><span class="pre">def</span></code>, sedan kommer namnet av definitionen <code class="docutils literal notranslate"><span class="pre">namn</span></code>. Namnet väljer man helt själv med precis som för variabler så ska funktioner deklareras med rimliga och förklarande namn som passar situationen.</p>
+<p>Exempelvis om man vill skapa en funktion som räknar ut summan mellan två tal så skulle funktionsnamnet kunna vara <code class="docutils literal notranslate"><span class="pre">summa</span></code>.</p>
+<p>Efter funktionens namn kommer <em>parametrarna</em> som funktionen behöver använda för att kunna ge tillbaka ett funktionsvärde. I matematiken är vi vana med att en funktion tar ett input-värde (vanligtvis x) och sen får man funktionsvärdet som svar. En funktion i programmering fungerar på liknande sätt, funktionen tar ett antal parametrar och ger tillbaka ett funktionsvärde, i funktionen ovan är parametrarna skrivna med <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> och <code class="docutils literal notranslate"><span class="pre">z</span></code> samt separerade med ett komma mellan dem.</p>
+<p>I exemplet tidigare om funktionen <code class="docutils literal notranslate"><span class="pre">summa</span></code> hade det varit rimligt med två parametrar för att kunna ge ett svar. Vi skulle kunna kalla parametrar för <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code> inom parentesen.</p>
+<p>I slutet kan funktionen även ge en output (alltså ett funktionsvärde) genom att ge tillbaka ett värde. Då behöver funktionen avslutas med en <code class="docutils literal notranslate"><span class="pre">return</span></code>-sats.</p>
+<p>För att exemplifiera hur en hel funktion ser ut ska vi skriva hur hela funktionen <code class="docutils literal notranslate"><span class="pre">summa</span></code> kan se ut.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">summa</span><span class="p">(</span><span class="n">tal1</span><span class="p">,</span> <span class="n">tal2</span><span class="p">):</span>
+    <span class="n">totalt</span> <span class="o">=</span> <span class="n">tal1</span> <span class="o">+</span> <span class="n">tal2</span>
+    <span class="k">return</span> <span class="n">totalt</span>
+</pre></div>
 </div>
 </section>
 </section>
@@ -453,20 +420,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../fysik-9/universum.html"
+       href="turtle.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">föregående</p>
-        <p class="prev-next-title">Universum</p>
+        <p class="prev-next-title">Turtles</p>
       </div>
     </a>
     <a class="right-next"
-       href="grundl%C3%A4ggande.html"
+       href="%C3%B6vningar.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">nästa</p>
-        <p class="prev-next-title">Grundläggande programmering i Python</p>
+        <p class="prev-next-title">Övningar till kursen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -486,8 +453,7 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centralt-innehall">Centralt innehåll</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betygskriterier">Betygskriterier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
 </ul>
   </nav></div>
 
