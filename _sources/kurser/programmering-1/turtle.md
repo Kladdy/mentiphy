@@ -123,6 +123,11 @@ Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.
 :alt: Flera ringar inom varandra.
 ```
 
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt. 
+```
+
 ### Övning 4.7
 Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.
 
@@ -134,7 +139,6 @@ Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultat
 :class: Hint dropdown
 Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras. 
 ```
-<!-- end-övningar -->
 
 ### Övning 4.8
 Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
@@ -146,4 +150,4 @@ Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
 :class: Hint dropdown
 Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. `längd += 1` Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas. 
 ```
-
+<!-- end-övningar -->

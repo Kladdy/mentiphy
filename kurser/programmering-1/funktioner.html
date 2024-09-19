@@ -58,6 +58,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/funktioner';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -354,6 +356,15 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flera-funktioner">Flera funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-2">Övning 5.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -386,6 +397,102 @@ document.write(`
     <span class="k">return</span> <span class="n">totalt</span>
 </pre></div>
 </div>
+<p>Efter att funktionen är definierade kan man anropa funktionen genom att skriva:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">summa</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera både funktionen och print-satsen, kör den och se resultatet!</p>
+</div>
+</section>
+<section id="flera-funktioner">
+<h2>Flera funktioner<a class="headerlink" href="#flera-funktioner" title="Link to this heading">#</a></h2>
+<p>När vi programmerar större program kan vi använda oss av flera olika funktioner för att kunna skapa mer sofistikerade program. Säg att vi vill räkna ut arean på en triangel och en rektangeln som bilden nedan visar.</p>
+<img alt="Area av hus" src="kurser/programmering-1/img/areaHouse.jog" />
+<p>Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rek_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">h</span>
+</pre></div>
+</div>
+<p>Samt en funktion för arean av triangeln:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tri_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>För att räkna ut summan av areorna kan vi även använda vår gamla funktion <code class="docutils literal notranslate"><span class="pre">summa</span></code> för att beräkna den totala arean. Ett exempel på hur man skulle kunna använda programmet kommer nedan.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># En funktion för arean av rektangeln</span>
+<span class="k">def</span> <span class="nf">rek_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">h</span>
+
+<span class="c1"># En funktion för arean av triangeln</span>
+<span class="k">def</span> <span class="nf">tri_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="c1"># En funktion för summan</span>
+<span class="k">def</span> <span class="nf">summa</span><span class="p">(</span><span class="n">tal1</span><span class="p">,</span> <span class="n">tal2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">tal1</span> <span class="o">+</span> <span class="n">tal2</span>
+
+<span class="c1"># Deklarerar basen och höjderna</span>
+<span class="n">basen</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">höjden_rek</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">höjden_tri</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="c1"># Beräknar areorna genom att anropa funktionerna</span>
+<span class="n">arean_tri</span> <span class="o">=</span> <span class="n">tri_area</span><span class="p">(</span><span class="n">basen</span><span class="p">,</span> <span class="n">höjden_tri</span><span class="p">)</span>
+<span class="n">arean_rek</span> <span class="o">=</span> <span class="n">rek_area</span><span class="p">(</span><span class="n">basen</span><span class="p">,</span> <span class="n">höjden_rek</span><span class="p">)</span>
+
+<span class="c1"># Skriver ut summan av båda areorna</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">summa</span><span class="p">(</span><span class="n">arean_tri</span><span class="p">,</span> <span class="n">arean_rek</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlighetens skull viktigt att bryta ner problemet i mindre steg, för att sen lösa de individuella stegen med funktioner.</p>
+</section>
+<section id="ovningar-till-avsnittet">
+<h2>Övningar till avsnittet<a class="headerlink" href="#ovningar-till-avsnittet" title="Link to this heading">#</a></h2>
+<!-- start-övningar -->
+<section id="ovning-5-1">
+<h3>Övning 5.1<a class="headerlink" href="#ovning-5-1" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion med parametrarna <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code> som returnerar skillnaden mellan talen.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code>. I funktionskroppen returneras skillnaden mellan talen.</p>
+</div>
+</section>
+<section id="ovning-5-2">
+<h3>Övning 5.2<a class="headerlink" href="#ovning-5-2" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som tar ett namn som parameter och sedan hälsar på användaren genom att säga <em>Hej på dig</em> och sen namnet.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">namn</span></code>. I funktionskroppen skrivs en print-sats innehållande en hälsningsfras och sen namnet.</p>
+</div>
+</section>
+<section id="ovning-5-3">
+<h3>Övning 5.3<a class="headerlink" href="#ovning-5-3" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar tre parametrar och returnerar talet som är störst</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> och <code class="docutils literal notranslate"><span class="pre">c</span></code>. I funktionskroppen returneras det största värdet genom att använda funktionen den inbyggda funktionen <code class="docutils literal notranslate"><span class="pre">max()</span></code>.</p>
+</div>
+</section>
+<section id="ovning-5-4">
+<h3>Övning 5.4<a class="headerlink" href="#ovning-5-4" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar en input parameter i grader Celsius <code class="docutils literal notranslate"><span class="pre">c</span></code> och sen skriver ut vad den temperaturen korresponderar i grader Fahrenheit <code class="docutils literal notranslate"><span class="pre">f</span></code>. Formeln för konverteringen från grader Celsius till grader Fahrenheit är:</p>
+<p><span class="math notranslate nohighlight">\(F= \frac{9}{5} \cdot C + 32 \)</span></p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen.</p>
+</div>
+</section>
+<section id="ovning-5-5">
+<h3>Övning 5.5<a class="headerlink" href="#ovning-5-5" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är skottår, skriv ut <code class="docutils literal notranslate"><span class="pre">'Skottår!'</span></code> om det inte är skottår: skriv ut <code class="docutils literal notranslate"><span class="pre">'Inte</span> <span class="pre">skottår!'</span></code>.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">år</span></code>. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.</p>
+</div>
+<!-- end-övningar -->
+</section>
 </section>
 </section>
 
@@ -454,6 +561,15 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flera-funktioner">Flera funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-2">Övning 5.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -395,6 +395,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-7">Övning 4.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-8">Övning 4.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktioner">5. Funktioner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-2">Övning 5.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
 </ul>
 </li>
 </ul>
@@ -412,6 +421,37 @@ document.write(`
 <h1>Övningar till kursen<a class="headerlink" href="#ovningar-till-kursen" title="Link to this heading">#</a></h1>
 <p>Under den här fliken samlas samtliga övningar till kursen. Istället för att navigera bland de andra flikarna är samtliga övningar samlade här.</p>
 <p>Tabellen nedan visar var övningar till de olika avsnitten finns.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Avsnitt</p></th>
+<th class="head"><p>Innehåll</p></th>
+<th class="head"><p>Nummer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Grundläggande programmering</p></td>
+<td><p>print-satsen, variabler och tilldelningar, datatyper och typkonverteringar, input-satsen.</p></td>
+<td><p><em>1.1-1.6</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Satser</p></td>
+<td><p>Listor, if- och else-satsen, elif-satsen, logiska uttryck.</p></td>
+<td><p><em>2.1-2.10</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Loopar</p></td>
+<td><p>for-loopen, range-funktionen, listor och for-loopar, while-loopen.</p></td>
+<td><p><em>3.1-3.5</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Turtles</p></td>
+<td><p>Rita simpel grafik med hjälp av turtle-modulen.</p></td>
+<td><p><em>4.1-4.8</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Funktioner</p></td>
+<td><p>Deklarera och använda funktioner.</p></td>
+<td><p><em>5.1-5.5</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <section id="grundlaggande-programmering">
 <h2>1. Grundläggande programmering<a class="headerlink" href="#grundlaggande-programmering" title="Link to this heading">#</a></h2>
 <section id="ovning-1-1">
@@ -703,6 +743,10 @@ document.write(`
 <h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.</p>
 <img alt="Flera ringar inom varandra." src="../../_images/turtleHouse.PNG" />
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt.</p>
+</div>
 </section>
 <section id="ovning-4-7">
 <h3>Övning 4.7<a class="headerlink" href="#ovning-4-7" title="Link to this heading">#</a></h3>
@@ -711,6 +755,59 @@ document.write(`
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras.</p>
+</div>
+</section>
+<section id="ovning-4-8">
+<h3>Övning 4.8<a class="headerlink" href="#ovning-4-8" title="Link to this heading">#</a></h3>
+<p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
+<img alt="En spiral." src="../../_images/turtleSpiral.PNG" />
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. <code class="docutils literal notranslate"><span class="pre">längd</span> <span class="pre">+=</span> <span class="pre">1</span></code> Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas.</p>
+</div>
+</section>
+</section>
+<section id="funktioner">
+<h2>5. Funktioner<a class="headerlink" href="#funktioner" title="Link to this heading">#</a></h2>
+<section id="ovning-5-1">
+<h3>Övning 5.1<a class="headerlink" href="#ovning-5-1" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion med parametrarna <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code> som returnerar skillnaden mellan talen.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code>. I funktionskroppen returneras skillnaden mellan talen.</p>
+</div>
+</section>
+<section id="ovning-5-2">
+<h3>Övning 5.2<a class="headerlink" href="#ovning-5-2" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som tar ett namn som parameter och sedan hälsar på användaren genom att säga <em>Hej på dig</em> och sen namnet.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">namn</span></code>. I funktionskroppen skrivs en print-sats innehållande en hälsningsfras och sen namnet.</p>
+</div>
+</section>
+<section id="ovning-5-3">
+<h3>Övning 5.3<a class="headerlink" href="#ovning-5-3" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar tre parametrar och returnerar talet som är störst</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> och <code class="docutils literal notranslate"><span class="pre">c</span></code>. I funktionskroppen returneras det största värdet genom att använda funktionen den inbyggda funktionen <code class="docutils literal notranslate"><span class="pre">max()</span></code>.</p>
+</div>
+</section>
+<section id="ovning-5-4">
+<h3>Övning 5.4<a class="headerlink" href="#ovning-5-4" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar en input parameter i grader Celsius <code class="docutils literal notranslate"><span class="pre">c</span></code> och sen skriver ut vad den temperaturen korresponderar i grader Fahrenheit <code class="docutils literal notranslate"><span class="pre">f</span></code>. Formeln för konverteringen från grader Celsius till grader Fahrenheit är:</p>
+<p><span class="math notranslate nohighlight">\(F= \frac{9}{5} \cdot C + 32 \)</span></p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen.</p>
+</div>
+</section>
+<section id="ovning-5-5">
+<h3>Övning 5.5<a class="headerlink" href="#ovning-5-5" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är skottår, skriv ut <code class="docutils literal notranslate"><span class="pre">'Skottår!'</span></code> om det inte är skottår: skriv ut <code class="docutils literal notranslate"><span class="pre">'Inte</span> <span class="pre">skottår!'</span></code>.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">år</span></code>. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.</p>
 </div>
 </section>
 </section>
@@ -812,6 +909,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-5">Övning 4.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-6">Övning 4.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-7">Övning 4.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-8">Övning 4.8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktioner">5. Funktioner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-2">Övning 5.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
 </ul>
 </li>
 </ul>
