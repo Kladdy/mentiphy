@@ -3,11 +3,11 @@
 För att kunna skapa större och mer komplexa program är funktioner viktigt att använda för tydlighe, struktur och simplicitet. Funktioner kan vara lite svårt att komma igång med men de är helt nödvändiga vid större projekt.
 
 ## Skapa funktioner
-För att skapa en funktion börjar man likt en variabel med att deklarera den.
+För att skapa en funktion börjar man likt en variabel med att deklarera den. 
 
 ```python
 def namn(x, y, z):
-    # Fyll  på med koden här.
+    # Fyll på med koden här.
 ```
 
 Alltid när en ny funktion ska skapas påbörjas det med `def`, sedan kommer namnet av definitionen `namn`. Namnet väljer man helt själv med precis som för variabler så ska funktioner deklareras med rimliga och förklarande namn som passar situationen. 
@@ -43,21 +43,21 @@ Kopiera både funktionen och print-satsen, kör den och se resultatet!
 
 När vi programmerar större program kan vi använda oss av flera olika funktioner för att kunna skapa mer sofistikerade program. Säg att vi vill räkna ut arean på en triangel och en rektangeln som bilden nedan visar.
 
-```{image} img/areaHouse.jog
+```{image} img/areaHouse.jpg
 :alt: Area av hus
 ```
 Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.
 
 ```python
 def rek_area(b, h):
-    return b*h
+    return b * h
 ```
 
 Samt en funktion för arean av triangeln:
 
 ```python
 def tri_area(b, h):
-    return (b*h)/2
+    return (b * h)/2
 ```
 
 För att räkna ut summan av areorna kan vi även använda vår gamla funktion `summa` för att beräkna den totala arean. Ett exempel på hur man skulle kunna använda programmet kommer nedan.
@@ -65,11 +65,11 @@ För att räkna ut summan av areorna kan vi även använda vår gamla funktion `
 ```python
 # En funktion för arean av rektangeln
 def rek_area(b, h):
-    return b*h
+    return b * h
 
 # En funktion för arean av triangeln
 def tri_area(b, h):
-    return (b*h)/2
+    return (b * h)/2
 
 # En funktion för summan
 def summa(tal1, tal2):
@@ -88,6 +88,7 @@ arean_rek = rek_area(basen, höjden_rek)
 print(summa(arean_tri, arean_rek))
 ```
 Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlighetens skull viktigt att bryta ner problemet i mindre steg, för att sen lösa de individuella stegen med funktioner.
+
 
 ## Övningar till avsnittet
 
@@ -134,5 +135,6 @@ Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är s
 :class: Hint dropdown
 Börja med att deklarera funktionen med parametern `år`. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.
 ```
+
 
 <!-- end-övningar -->
