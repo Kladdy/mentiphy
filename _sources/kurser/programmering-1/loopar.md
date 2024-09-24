@@ -86,7 +86,7 @@ Börja med att deklarera en lista med dina favoritluncher, sedan använd en for-
 ```
 
 ### Övning 3.2 
-Skapa ett program som räknar upp till ett angiet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
+Skapa ett program som räknar upp till ett angivet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.

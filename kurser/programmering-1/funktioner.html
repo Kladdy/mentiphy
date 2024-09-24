@@ -64,7 +64,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
-    <link rel="next" title="Övningar till kursen" href="%C3%B6vningar.html" />
+    <link rel="next" title="Mer om funktioner" href="merfunktioner.html" />
     <link rel="prev" title="Turtles" href="turtle.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
@@ -206,6 +206,7 @@
 <li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtles</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Funktioner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merfunktioner.html">Mer om funktioner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%C3%B6vningar.html">Övningar till kursen</a></li>
 </ul>
 
@@ -383,7 +384,7 @@ document.write(`
 <h2>Skapa funktioner<a class="headerlink" href="#skapa-funktioner" title="Link to this heading">#</a></h2>
 <p>För att skapa en funktion börjar man likt en variabel med att deklarera den.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">namn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
-    <span class="c1"># Fyll  på med koden här.</span>
+    <span class="c1"># Fyll på med koden här.</span>
 </pre></div>
 </div>
 <p>Alltid när en ny funktion ska skapas påbörjas det med <code class="docutils literal notranslate"><span class="pre">def</span></code>, sedan kommer namnet av definitionen <code class="docutils literal notranslate"><span class="pre">namn</span></code>. Namnet väljer man helt själv med precis som för variabler så ska funktioner deklareras med rimliga och förklarande namn som passar situationen.</p>
@@ -409,25 +410,25 @@ document.write(`
 <section id="flera-funktioner">
 <h2>Flera funktioner<a class="headerlink" href="#flera-funktioner" title="Link to this heading">#</a></h2>
 <p>När vi programmerar större program kan vi använda oss av flera olika funktioner för att kunna skapa mer sofistikerade program. Säg att vi vill räkna ut arean på en triangel och en rektangeln som bilden nedan visar.</p>
-<img alt="Area av hus" src="kurser/programmering-1/img/areaHouse.jog" />
+<img alt="Area av hus" src="../../_images/areaHouse.jpg" />
 <p>Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rek_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">h</span>
+    <span class="k">return</span> <span class="n">b</span> <span class="o">*</span> <span class="n">h</span>
 </pre></div>
 </div>
 <p>Samt en funktion för arean av triangeln:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tri_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 </pre></div>
 </div>
 <p>För att räkna ut summan av areorna kan vi även använda vår gamla funktion <code class="docutils literal notranslate"><span class="pre">summa</span></code> för att beräkna den totala arean. Ett exempel på hur man skulle kunna använda programmet kommer nedan.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># En funktion för arean av rektangeln</span>
 <span class="k">def</span> <span class="nf">rek_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">b</span><span class="o">*</span><span class="n">h</span>
+    <span class="k">return</span> <span class="n">b</span> <span class="o">*</span> <span class="n">h</span>
 
 <span class="c1"># En funktion för arean av triangeln</span>
 <span class="k">def</span> <span class="nf">tri_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="n">h</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 
 <span class="c1"># En funktion för summan</span>
 <span class="k">def</span> <span class="nf">summa</span><span class="p">(</span><span class="n">tal1</span><span class="p">,</span> <span class="n">tal2</span><span class="p">):</span>
@@ -536,11 +537,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="%C3%B6vningar.html"
+       href="merfunktioner.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">nästa</p>
-        <p class="prev-next-title">Övningar till kursen</p>
+        <p class="prev-next-title">Mer om funktioner</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
