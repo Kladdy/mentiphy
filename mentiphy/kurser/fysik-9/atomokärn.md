@@ -43,7 +43,11 @@ Om du vet atomnumret och masstalet kan du också räkna ut antalet neutroner! Du
 
 ### Isotoper
 
-under konstruktion
+Alla isotoper av ett grundämne har samma *atomnummer* men olika *masstal*. Ett exempel är väte, som har tre isotoper:
+
+* Väte, $ _{1}^{1}\text{H} $ (en proton och ingen neutron)
+* Deuterium, $ _{1}^{2}\text{H} $ (en proton och en neutron)
+* Tritium, $ _{1}^{3}\text{H} $ (en proton och två neutroner)
 
 _____________________________________________
 
