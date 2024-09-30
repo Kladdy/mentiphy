@@ -386,6 +386,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Övning 3.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Övning 3.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-14">Övning 3.14</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turtles">4. Turtles</a><ul class="nav section-nav flex-column">
@@ -696,6 +705,79 @@ document.write(`
 <p>Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler.</p>
 </div>
 </section>
+<section id="id1">
+<h3>Övning 3.6<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en inbyggd metod för listor som heter len().</p>
+</div>
+</section>
+<section id="id2">
+<h3>Övning 3.7<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista med heltal och returnerar summan av alla jämna tal i listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att iterera genom listan och kontrollera om ett tal är jämnt med hjälp av <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">num</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span></code>.</p>
+</div>
+</section>
+<section id="id3">
+<h3>Övning 3.8<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som räknar hur många negativa tal som finns i en lista.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan använda en variabel för att hålla koll på antalet negativa tal och en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop tillsammans med en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats för att jämföra varje tal med 0.</p>
+</div>
+</section>
+<section id="ovning-3-9">
+<h3>Övning 3.9<a class="headerlink" href="#ovning-3-9" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista och ett gränsvärde, och returnerar en ny lista med alla tal som är större än gränsvärdet</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att iterera genom listan och en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats för att kontrollera om varje tal är större än gränsvärdet.</p>
+</div>
+</section>
+<section id="ovning-3-10">
+<h3>Övning 3.10<a class="headerlink" href="#ovning-3-10" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte <code class="docutils literal notranslate"><span class="pre">max()</span></code>)</p>
+<div class="admonition-tips admonition">
+<p class="admonition-title">Tips</p>
+<p>:class: Hint dropdown</p>
+<p>Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.</p>
+</div>
+</section>
+<section id="ovning-3-11">
+<h3>Övning 3.11<a class="headerlink" href="#ovning-3-11" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop.</p>
+</div>
+</section>
+<section id="ovning-3-12">
+<h3>Övning 3.12<a class="headerlink" href="#ovning-3-12" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som kontrollerar om ett tal är ett primtal.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.</p>
+</div>
+</section>
+<section id="ovning-3-13">
+<h3>Övning 3.13<a class="headerlink" href="#ovning-3-13" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan använda <code class="docutils literal notranslate"><span class="pre">max()</span></code> och <code class="docutils literal notranslate"><span class="pre">min()</span></code> för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.</p>
+</div>
+</section>
+<section id="ovning-3-14">
+<h3>Övning 3.14<a class="headerlink" href="#ovning-3-14" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa två tomma listor och använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop tillsammans med en <code class="docutils literal notranslate"><span class="pre">if-else</span></code>-sats för att skilja på jämna och udda tal med hjälp av <code class="docutils literal notranslate"><span class="pre">%</span></code>-operatorn.</p>
+</div>
+</section>
 </section>
 <section id="turtles">
 <h2>4. Turtles<a class="headerlink" href="#turtles" title="Link to this heading">#</a></h2>
@@ -734,7 +816,7 @@ document.write(`
 <section id="ovning-4-5">
 <h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.</p>
-<img alt="Flera ringar inom varandra." src="../../_images/turtleRings.PNG" />
+<a class="reference internal image-reference" href="../../_images/turtleRings.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleRings.PNG" style="width: 50%;" /></a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code>. Det är viktigt att for-loopen även inkluderar <em>var</em> skölpaddan ska börja med att rita cirkeln. Använd <code class="docutils literal notranslate"><span class="pre">t.penup()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code> och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.</p>
@@ -743,7 +825,7 @@ document.write(`
 <section id="ovning-4-6">
 <h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.</p>
-<img alt="Flera ringar inom varandra." src="../../_images/turtleHouse.PNG" />
+<a class="reference internal image-reference" href="../../_images/turtleHouse.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleHouse.PNG" style="width: 50%;" /></a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt.</p>
@@ -752,7 +834,7 @@ document.write(`
 <section id="ovning-4-7">
 <h3>Övning 4.7<a class="headerlink" href="#ovning-4-7" title="Link to this heading">#</a></h3>
 <p>Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.</p>
-<img alt="Ringar med färger." src="../../_images/turtleColorrings.PNG" />
+<a class="reference internal image-reference" href="../../_images/turtleColorrings.PNG"><img alt="Ringar med färger." class="align-center" src="../../_images/turtleColorrings.PNG" style="width: 50%;" /></a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras.</p>
@@ -761,7 +843,7 @@ document.write(`
 <section id="ovning-4-8">
 <h3>Övning 4.8<a class="headerlink" href="#ovning-4-8" title="Link to this heading">#</a></h3>
 <p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
-<img alt="En spiral." src="../../_images/turtleSpiral.PNG" />
+<a class="reference internal image-reference" href="../../_images/turtleSpiral.PNG"><img alt="En spiral." class="align-center" src="../../_images/turtleSpiral.PNG" style="width: 50%;" /></a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. <code class="docutils literal notranslate"><span class="pre">längd</span> <span class="pre">+=</span> <span class="pre">1</span></code> Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas.</p>
@@ -900,6 +982,15 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Övning 3.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Övning 3.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-14">Övning 3.14</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turtles">4. Turtles</a><ul class="nav section-nav flex-column">
