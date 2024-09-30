@@ -45,6 +45,8 @@ När vi programmerar större program kan vi använda oss av flera olika funktion
 
 ```{image} img/areaHouse.jpg
 :alt: Area av hus
+:align: center
+:width: 50%
 ```
 Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.
 
