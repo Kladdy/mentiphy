@@ -364,6 +364,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
 </ul>
 </li>
 </ul>
@@ -381,6 +385,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="mer-om-funktioner">
 <h1>Mer om funktioner<a class="headerlink" href="#mer-om-funktioner" title="Link to this heading">#</a></h1>
+<p>Under den här fliken fördjupar vi våra kunskaper om funktioner, vi kombinerar våra kunskaper om turtle-modulen med våra kunskaper om funktioner.</p>
 <section id="funktioner-och-turtles">
 <h2>Funktioner och turtles<a class="headerlink" href="#funktioner-och-turtles" title="Link to this heading">#</a></h2>
 <p>För att addera lite mer komplexitet när vi skapar turtle-grafik kan vi även använda funktioner. Till att börja med kan vi börja med att skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">hoppa(t,</span> <span class="pre">x,</span> <span class="pre">y)</span></code>:</p>
@@ -402,6 +407,7 @@ document.write(`
 <h2>Funktionsprojekt<a class="headerlink" href="#funktionsprojekt" title="Link to this heading">#</a></h2>
 <p>Nedan kommer ett funktionsprojekt där vi ska använda funktioner för att bygga turtle-grafik.</p>
 <p>Vi ska börja med att använda dessa två funktioner för att göra ett projekt. Gör stegen nedan i ordning eftersom de senare stegen använder kod från de tidigare stegen.</p>
+<hr class="docutils" />
 <section id="uppgift-1-rektangel">
 <h3>Uppgift 1 - Rektangel<a class="headerlink" href="#uppgift-1-rektangel" title="Link to this heading">#</a></h3>
 <p>För att börja projektet behöver vi en funktion som skapar en rektangel.</p>
@@ -411,6 +417,7 @@ document.write(`
 <p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">bredd</span></code>, <code class="docutils literal notranslate"><span class="pre">höjd</span></code> och <code class="docutils literal notranslate"><span class="pre">färg</span></code>. I funktionskroppen anropas först <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">skapa_turtle(x,</span> <span class="pre">y)</span></code> funktionen. Ändra sedan färgen till parametern <code class="docutils literal notranslate"><span class="pre">färg</span></code>, därefter skapa rektangeln.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="uppgift-2-pentagram">
 <h3>Uppgift 2 - Pentagram<a class="headerlink" href="#uppgift-2-pentagram" title="Link to this heading">#</a></h3>
 <p>Vi behöver även en funktion som skapar ett pentagram.</p>
@@ -420,6 +427,7 @@ document.write(`
 <p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> och <code class="docutils literal notranslate"><span class="pre">sida</span></code>. I funktionskroppen anropas funktionen <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">skapa_turtle(x,</span> <span class="pre">y)</span></code>, sedan skapar vi pentagrammet genom att skapa fem sidor, där vinkeln mellan varje sida är 36 grader.</p>
 </div>
 </section>
+<hr class="docutils" />
 <section id="uppgift-3-vietnamnamesiska-flaggan">
 <h3>Uppgift 3 - Vietnamnamesiska flaggan<a class="headerlink" href="#uppgift-3-vietnamnamesiska-flaggan" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">vietnamesiska_flaggan(x,</span> <span class="pre">y,</span> <span class="pre">höjd)</span></code> som ritar den vietnamesiska flaggan med nedre hörnet i punkten <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> och med höjden <code class="docutils literal notranslate"><span class="pre">höjd</span></code>. Funktionen ritar flaggan. Flaggans proportioner är 3:2, alltså bredden är 3 och höjden 2. Pentagrammet ska vara centrerad i flaggan. Se bilden nedan för inspiration.</p>
@@ -431,10 +439,12 @@ Börja med att deklarera funktionen med parametrarna `x`, `y` och `höjd`. I fun
 </section>
 <section id="uppgift-4">
 <h3>Uppgift 4<a class="headerlink" href="#uppgift-4" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <section id="steg-1">
 <h4>Steg 1<a class="headerlink" href="#steg-1" title="Link to this heading">#</a></h4>
 <p>Skapa en ny fil som heter <code class="docutils literal notranslate"><span class="pre">randomTurtles.py</span></code></p>
 </section>
+<hr class="docutils" />
 <section id="steg-2">
 <h4>Steg 2<a class="headerlink" href="#steg-2" title="Link to this heading">#</a></h4>
 <p>Längst upp i filen lägg till:</p>
@@ -443,13 +453,38 @@ Börja med att deklarera funktionen med parametrarna `x`, `y` och `höjd`. I fun
 </pre></div>
 </div>
 </section>
+<hr class="docutils" />
 <section id="steg-3">
 <h4>Steg 3<a class="headerlink" href="#steg-3" title="Link to this heading">#</a></h4>
 <p>Lägg sedan till funktionerna <code class="docutils literal notranslate"><span class="pre">hoppa</span></code>, <code class="docutils literal notranslate"><span class="pre">skapa_turtle</span></code> och <code class="docutils literal notranslate"><span class="pre">rektangel</span></code> längst upp i filen.</p>
 </section>
+<hr class="docutils" />
 <section id="steg-4">
 <h4>Steg 4<a class="headerlink" href="#steg-4" title="Link to this heading">#</a></h4>
 <p>Skapa funktionen <code class="docutils literal notranslate"><span class="pre">move_random(t)</span></code> som flyttar skölpaddan i en slumpmässig riktning och sträcka. Riktningen ska ändras i intervallet <code class="docutils literal notranslate"><span class="pre">[-45,</span> <span class="pre">45]</span></code> och längden som skölpaddan ska gå är i intervallet <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">25]</span></code>. För att skapa slumpmässiga värden använd <code class="docutils literal notranslate"><span class="pre">random</span></code> modulen. Ett slumpmässigt tal skapas genom att anropa funktionen <code class="docutils literal notranslate"><span class="pre">random.randint(a,</span> <span class="pre">b)</span></code> där <code class="docutils literal notranslate"><span class="pre">a</span></code> och <code class="docutils literal notranslate"><span class="pre">b</span></code> är mellan vilka tal som talet ska slumpas.</p>
+</section>
+<hr class="docutils" />
+<section id="steg-5">
+<h4>Steg 5<a class="headerlink" href="#steg-5" title="Link to this heading">#</a></h4>
+<p>Skriv nu en kod som skapar en skölpadda, ritar en centrerad kvadrat med metoden <code class="docutils literal notranslate"><span class="pre">rectangle</span></code>. Kvadraten ska ha sidan 500 och fyllas med en ljus färg, exempelvis <code class="docutils literal notranslate"><span class="pre">'lightblue'</span></code>.</p>
+</section>
+<hr class="docutils" />
+<section id="steg-6">
+<h4>Steg 6<a class="headerlink" href="#steg-6" title="Link to this heading">#</a></h4>
+<p>Flytta skölpaddan till en slumpmässig position inom kvadraten. Nu ser koden ut någonting så här:</p>
+<a class="reference internal image-reference" href="../../_images/turtleSquare.PNG"><img alt="En kvadrat." class="align-center" src="../../_images/turtleSquare.PNG" style="width: 50%;" /></a>
+</section>
+<hr class="docutils" />
+<section id="steg-7">
+<h4>Steg 7<a class="headerlink" href="#steg-7" title="Link to this heading">#</a></h4>
+<p>Skriv nu kod som med hjälp av for-satsen gör anrop till <code class="docutils literal notranslate"><span class="pre">move_random</span></code> Nu kan det se ut så här:</p>
+<a class="reference internal image-reference" href="../../_images/turtleRandomStart.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomStart.PNG" style="width: 50%;" /></a>
+</section>
+<hr class="docutils" />
+<section id="steg-8">
+<h4>Steg 8<a class="headerlink" href="#steg-8" title="Link to this heading">#</a></h4>
+<p>Lägg nu till kod i <code class="docutils literal notranslate"><span class="pre">move_random</span></code> som går så att om paddan efter förflyttningen befinner sig utanför den blå rutan vänder sig mot origo. Nu kan resultatet se ut så här:</p>
+<a class="reference internal image-reference" href="../../_images/turtleRandomSecond.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomSecond.PNG" style="width: 50%;" /></a>
 </section>
 </section>
 </section>
@@ -529,6 +564,10 @@ Börja med att deklarera funktionen med parametrarna `x`, `y` och `höjd`. I fun
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
 </ul>
 </li>
 </ul>
