@@ -208,6 +208,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Funktioner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="merfunktioner.html">Mer om funktioner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="%C3%B6vningar.html">Övningar till kursen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fels%C3%B6kning.html">Felsökning</a></li>
 </ul>
 
     </div>
@@ -357,6 +358,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anropa-funktioner">Anropa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-pa-funktioner">Exempel på funktioner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flera-funktioner">Flera funktioner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
@@ -364,6 +367,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-6">Övning 5.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-7">Övning 5.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-8">Övning 5.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-9">Övning 5.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-10">Övning 5.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-11">Övning 5.11</a></li>
 </ul>
 </li>
 </ul>
@@ -385,21 +394,53 @@ document.write(`
 <p>För att skapa en funktion börjar man likt en variabel med att deklarera den.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">namn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">):</span>
     <span class="c1"># Fyll på med koden här.</span>
+    <span class="k">return</span> <span class="n">svar</span>
 </pre></div>
 </div>
 <p>Alltid när en ny funktion ska skapas påbörjas det med <code class="docutils literal notranslate"><span class="pre">def</span></code>, sedan kommer namnet av definitionen <code class="docutils literal notranslate"><span class="pre">namn</span></code>. Namnet väljer man helt själv med precis som för variabler så ska funktioner deklareras med rimliga och förklarande namn som passar situationen.</p>
 <p>Exempelvis om man vill skapa en funktion som räknar ut summan mellan två tal så skulle funktionsnamnet kunna vara <code class="docutils literal notranslate"><span class="pre">summa</span></code>.</p>
 <p>Efter funktionens namn kommer <em>parametrarna</em> som funktionen behöver använda för att kunna ge tillbaka ett funktionsvärde. I matematiken är vi vana med att en funktion tar ett input-värde (vanligtvis x) och sen får man funktionsvärdet som svar. En funktion i programmering fungerar på liknande sätt, funktionen tar ett antal parametrar och ger tillbaka ett funktionsvärde, i funktionen ovan är parametrarna skrivna med <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> och <code class="docutils literal notranslate"><span class="pre">z</span></code> samt separerade med ett komma mellan dem.</p>
 <p>I exemplet tidigare om funktionen <code class="docutils literal notranslate"><span class="pre">summa</span></code> hade det varit rimligt med två parametrar för att kunna ge ett svar. Vi skulle kunna kalla parametrar för <code class="docutils literal notranslate"><span class="pre">tal1</span></code> och <code class="docutils literal notranslate"><span class="pre">tal2</span></code> inom parentesen.</p>
-<p>I slutet kan funktionen även ge en output (alltså ett funktionsvärde) genom att ge tillbaka ett värde. Då behöver funktionen avslutas med en <code class="docutils literal notranslate"><span class="pre">return</span></code>-sats.</p>
+<p>I slutet kan funktionen även ge en output (alltså ett funktionsvärde) genom att ge tillbaka ett värde. Då behöver funktionen avslutas med en <code class="docutils literal notranslate"><span class="pre">return</span></code>-sats. Funktionen i sig behöver inte ha en <code class="docutils literal notranslate"><span class="pre">return</span></code>-sats utan funktionen kan ibland exempelvis skriva ut någonting direkt med hjälp av en <code class="docutils literal notranslate"><span class="pre">print</span></code>-sats.</p>
 <p>För att exemplifiera hur en hel funktion ser ut ska vi skriva hur hela funktionen <code class="docutils literal notranslate"><span class="pre">summa</span></code> kan se ut.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">summa</span><span class="p">(</span><span class="n">tal1</span><span class="p">,</span> <span class="n">tal2</span><span class="p">):</span>
     <span class="n">totalt</span> <span class="o">=</span> <span class="n">tal1</span> <span class="o">+</span> <span class="n">tal2</span>
     <span class="k">return</span> <span class="n">totalt</span>
 </pre></div>
 </div>
-<p>Efter att funktionen är definierade kan man anropa funktionen genom att skriva:</p>
+</section>
+<section id="anropa-funktioner">
+<h2>Anropa funktioner<a class="headerlink" href="#anropa-funktioner" title="Link to this heading">#</a></h2>
+<p>Efter att funktionen är definierade kan man använda funktionen genom att skriva:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">summa</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Att använda en funktion kallas ofta för att <em>anropa</em> en funktion.</p>
+<p>Funktionen kommer använda parametrarna <code class="docutils literal notranslate"><span class="pre">5</span></code> och <code class="docutils literal notranslate"><span class="pre">7</span></code> för att beräkna vad svaret blir och sedan returnera (ge svaret) <code class="docutils literal notranslate"><span class="pre">12</span></code>. I fallet ovan lagrar vi inte värdet i någon variabel så därför skulle ingenting hända om vi körde koden. Om vi vill se resultatet av koden kan vi lagra värdet i en variabel eller så kan vi direkt skriva ut resultatet av beräkningen med hjälp av en <code class="docutils literal notranslate"><span class="pre">print</span></code>-sats.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">summa</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera både funktionen och print-satsen, kör den och se resultatet!</p>
+</div>
+</section>
+<section id="exempel-pa-funktioner">
+<h2>Exempel på funktioner<a class="headerlink" href="#exempel-pa-funktioner" title="Link to this heading">#</a></h2>
+<p>För att förstå funktioner ännu bättre kan vi titta på ett till exempel. Exempelvis om vi vill beräkna medelvärde av en lista så kan vi göra det genom en funktion. Vi börjar med att deklarera en lista med tal som vi sen ska ta medelvärdet av:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tal_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Efter det skapar vi en funktion som beräknar medelvärdet.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">medel</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+    <span class="n">summa</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">tal</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+        <span class="n">summa</span> <span class="o">+=</span> <span class="n">tal</span>
+    <span class="k">return</span> <span class="n">summa</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>För att sedan anropa funktionen och skriva ut resultatet skriver vi direkt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">medel</span><span class="p">(</span><span class="n">tal_lista</span><span class="p">))</span>
 </pre></div>
 </div>
 <div class="hint admonition">
@@ -410,7 +451,7 @@ document.write(`
 <section id="flera-funktioner">
 <h2>Flera funktioner<a class="headerlink" href="#flera-funktioner" title="Link to this heading">#</a></h2>
 <p>När vi programmerar större program kan vi använda oss av flera olika funktioner för att kunna skapa mer sofistikerade program. Säg att vi vill räkna ut arean på en triangel och en rektangeln som bilden nedan visar.</p>
-<a class="reference internal image-reference" href="../../_images/areaHouse.jpg"><img alt="Area av hus" class="align-center" src="../../_images/areaHouse.jpg" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/areaHouse.jpg"><img alt="Area av hus" class="align-center" src="../../_images/areaHouse.jpg" style="width: 30%;" /></a>
 <p>Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rek_area</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">h</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">b</span> <span class="o">*</span> <span class="n">h</span>
@@ -443,8 +484,11 @@ document.write(`
 <span class="n">arean_tri</span> <span class="o">=</span> <span class="n">tri_area</span><span class="p">(</span><span class="n">basen</span><span class="p">,</span> <span class="n">höjden_tri</span><span class="p">)</span>
 <span class="n">arean_rek</span> <span class="o">=</span> <span class="n">rek_area</span><span class="p">(</span><span class="n">basen</span><span class="p">,</span> <span class="n">höjden_rek</span><span class="p">)</span>
 
+<span class="c1"># Beräknar summan av rektangelns och triangelns areor</span>
+<span class="n">area_summa</span> <span class="o">=</span> <span class="n">summa</span><span class="p">(</span><span class="n">arean_tri</span><span class="p">,</span> <span class="n">arean_rek</span><span class="p">)</span>
+
 <span class="c1"># Skriver ut summan av båda areorna</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">summa</span><span class="p">(</span><span class="n">arean_tri</span><span class="p">,</span> <span class="n">arean_rek</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">area_summan</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlighetens skull viktigt att bryta ner problemet i mindre steg, för att sen lösa de individuella stegen med funktioner.</p>
@@ -482,7 +526,7 @@ document.write(`
 <p><span class="math notranslate nohighlight">\(F= \frac{9}{5} \cdot C + 32 \)</span></p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen.</p>
+<!-- Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen. -->
 </div>
 </section>
 <section id="ovning-5-5">
@@ -491,6 +535,54 @@ document.write(`
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">år</span></code>. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.</p>
+</div>
+</section>
+<section id="ovning-5-6">
+<h3>Övning 5.6<a class="headerlink" href="#ovning-5-6" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad medianen är.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">lista</span></code>. För att storleksordna listan använd <code class="docutils literal notranslate"><span class="pre">sorted()</span></code>- metoden. Beräkna sedan hur många element som listan består av, om antalet är udda så blir det mittersta elementet medianen. Om listan består av en jämn mängd element behöver funktionen ta medelvärdet av de två mittersta värdena.</p>
+</div>
+</section>
+<section id="ovning-5-7">
+<h3>Övning 5.7<a class="headerlink" href="#ovning-5-7" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte <code class="docutils literal notranslate"><span class="pre">max()</span></code>)</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.</p>
+</div>
+</section>
+<section id="ovning-5-8">
+<h3>Övning 5.8<a class="headerlink" href="#ovning-5-8" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop.</p>
+</div>
+</section>
+<section id="ovning-5-9">
+<h3>Övning 5.9<a class="headerlink" href="#ovning-5-9" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som kontrollerar om ett tal är ett primtal.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.</p>
+</div>
+</section>
+<section id="ovning-5-10">
+<h3>Övning 5.10<a class="headerlink" href="#ovning-5-10" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan använda <code class="docutils literal notranslate"><span class="pre">max()</span></code> och <code class="docutils literal notranslate"><span class="pre">min()</span></code> för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.</p>
+</div>
+</section>
+<section id="ovning-5-11">
+<h3>Övning 5.11<a class="headerlink" href="#ovning-5-11" title="Link to this heading">#</a></h3>
+<p>Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa två tomma listor och använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop tillsammans med en <code class="docutils literal notranslate"><span class="pre">if-else</span></code>-sats för att skilja på jämna och udda tal med hjälp av <code class="docutils literal notranslate"><span class="pre">%</span></code>-operatorn.</p>
 </div>
 <!-- end-övningar -->
 </section>
@@ -562,6 +654,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-funktioner">Skapa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#anropa-funktioner">Anropa funktioner</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-pa-funktioner">Exempel på funktioner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flera-funktioner">Flera funktioner</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-1">Övning 5.1</a></li>
@@ -569,6 +663,12 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-3">Övning 5.3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-4">Övning 5.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-5">Övning 5.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-6">Övning 5.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-7">Övning 5.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-8">Övning 5.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-9">Övning 5.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-10">Övning 5.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-11">Övning 5.11</a></li>
 </ul>
 </li>
 </ul>

@@ -1,5 +1,25 @@
 # Mer om funktioner
 Under den här fliken fördjupar vi våra kunskaper om funktioner, vi kombinerar våra kunskaper om turtle-modulen med våra kunskaper om funktioner.
+
+## Fler metoder för turtles
+För att klara av projektet nedan, blir en påfyllning med fler metoder att använda med turtle-modulen nödvändig.
+
+---
+```{list-table}
+:header-rows: 1
+
+* - Metod
+  - Betydelse
+* - `t.xcor()`
+  - Returnerar skölpaddans x-koordinat.
+* - `t.ycor()`
+  - Returnerar skölpaddans y-koordinat.
+* - `t.heading()`
+  - Returnerar skölpaddans riktning `0` är x-axeln och `90` är y-axeln.
+* - `t.set_heading(angle)`
+  - Sätter skölpaddans riktning. `0` är x-axeln och `90` är y-axeln.
+``` 
+---
 ## Funktioner och turtles
 
 För att addera lite mer komplexitet när vi skapar turtle-grafik kan vi även använda funktioner. Till att börja med kan vi börja med att skapa en funktion `def hoppa(t, x, y)`:
@@ -46,7 +66,7 @@ Skapa en funktion `def pentagram(x, y, sida)` som skapar ett pentagram vid posit
 Börja med att deklarera funktionen med parametrarna `x`, `y` och `sida`. I funktionskroppen anropas funktionen `t = skapa_turtle(x, y)`, sedan skapar vi pentagrammet genom att skapa fem sidor, där vinkeln mellan varje sida är 36 grader.
 ```
 ---
-### Uppgift 3 - Vietnamnamesiska flaggan
+### Uppgift 3 - Vietnamesiska flaggan
 
 Skapa en funktion `def vietnamesiska_flaggan(x, y, höjd)` som ritar den vietnamesiska flaggan med nedre hörnet i punkten `(x, y)` och med höjden `höjd`. Funktionen ritar flaggan. Flaggans proportioner är 3:2, alltså bredden är 3 och höjden 2. Pentagrammet ska vara centrerad i flaggan. Se bilden nedan för inspiration.
 
@@ -60,7 +80,9 @@ Skapa en funktion `def vietnamesiska_flaggan(x, y, höjd)` som ritar den vietnam
 Börja med att deklarera funktionen med parametrarna `x`, `y` och `höjd`. I funktionskroppen ritar vi flaggan genom att anropa `def rektangel(x, y, bredd, höjd, färg)`. Skapa sedan pentagrammet genom att anropa funktionen `def pentagram(x, y, sida)` du behöver dock skriva om det programmet så den fyller i färgen korrekt.
 ```
 
-### Uppgift 4
+### Uppgift 4 - Slumpmässiga skölpaddor
+Följ stegen nedan för att lösa ett problem med turtle-modulen som använder sig av funktioner, random och turtle-modulen.
+
 ---
 #### Steg 1
 Skapa en ny fil som heter `randomTurtles.py`

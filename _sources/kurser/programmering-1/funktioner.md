@@ -8,6 +8,7 @@ För att skapa en funktion börjar man likt en variabel med att deklarera den.
 ```python
 def namn(x, y, z):
     # Fyll på med koden här.
+    return svar
 ```
 
 Alltid när en ny funktion ska skapas påbörjas det med `def`, sedan kommer namnet av definitionen `namn`. Namnet väljer man helt själv med precis som för variabler så ska funktioner deklareras med rimliga och förklarande namn som passar situationen. 
@@ -18,7 +19,7 @@ Efter funktionens namn kommer *parametrarna* som funktionen behöver använda f�
 
 I exemplet tidigare om funktionen `summa` hade det varit rimligt med två parametrar för att kunna ge ett svar. Vi skulle kunna kalla parametrar för `tal1` och `tal2` inom parentesen.
 
-I slutet kan funktionen även ge en output (alltså ett funktionsvärde) genom att ge tillbaka ett värde. Då behöver funktionen avslutas med en `return`-sats. 
+I slutet kan funktionen även ge en output (alltså ett funktionsvärde) genom att ge tillbaka ett värde. Då behöver funktionen avslutas med en `return`-sats. Funktionen i sig behöver inte ha en `return`-sats utan funktionen kan ibland exempelvis skriva ut någonting direkt med hjälp av en `print`-sats. 
 
 För att exemplifiera hur en hel funktion ser ut ska vi skriva hur hela funktionen `summa` kan se ut.
 
@@ -28,10 +29,50 @@ def summa(tal1, tal2):
     return totalt
 ```
 
-Efter att funktionen är definierade kan man anropa funktionen genom att skriva:
+## Anropa funktioner
+
+Efter att funktionen är definierade kan man använda funktionen genom att skriva:
+
+```python
+summa(5, 7)
+```
+
+Att använda en funktion kallas ofta för att *anropa* en funktion. 
+
+Funktionen kommer använda parametrarna `5` och `7` för att beräkna vad svaret blir och sedan returnera (ge svaret) `12`. I fallet ovan lagrar vi inte värdet i någon variabel så därför skulle ingenting hända om vi körde koden. Om vi vill se resultatet av koden kan vi lagra värdet i en variabel eller så kan vi direkt skriva ut resultatet av beräkningen med hjälp av en `print`-sats. 
 
 ```python
 print(summa(5, 7))
+```
+
+
+```{admonition} Tips
+:class: Hint
+Kopiera både funktionen och print-satsen, kör den och se resultatet!
+```
+
+## Exempel på funktioner
+
+För att förstå funktioner ännu bättre kan vi titta på ett till exempel. Exempelvis om vi vill beräkna medelvärde av en lista så kan vi göra det genom en funktion. Vi börjar med att deklarera en lista med tal som vi sen ska ta medelvärdet av:
+
+```python
+tal_lista = [3, 2, 7, 11, 12]
+```
+
+Efter det skapar vi en funktion som beräknar medelvärdet.
+
+```python
+def medel(lista):
+    summa = 0
+    for tal in lista:
+        summa += tal
+    return summa / len(lista)
+```
+
+För att sedan anropa funktionen och skriva ut resultatet skriver vi direkt:
+
+```python
+print(medel(tal_lista))
 ```
 
 ```{admonition} Tips
@@ -46,7 +87,7 @@ När vi programmerar större program kan vi använda oss av flera olika funktion
 ```{image} img/areaHouse.jpg
 :alt: Area av hus
 :align: center
-:width: 50%
+:width: 30%
 ```
 Vi delar då upp arean av bilden ovan genom att skapa en funktion för rektangeln och en area för triangeln.
 
@@ -86,8 +127,11 @@ höjden_tri = 25
 arean_tri = tri_area(basen, höjden_tri)
 arean_rek = rek_area(basen, höjden_rek)
 
+# Beräknar summan av rektangelns och triangelns areor
+area_summa = summa(arean_tri, arean_rek)
+
 # Skriver ut summan av båda areorna
-print(summa(arean_tri, arean_rek))
+print(area_summan)
 ```
 Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlighetens skull viktigt att bryta ner problemet i mindre steg, för att sen lösa de individuella stegen med funktioner.
 
@@ -127,7 +171,7 @@ $F= \frac{9}{5} \cdot C + 32 $
 
 ```{admonition} Tips
 :class: Hint dropdown
-Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen.
+<!-- Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen. -->
 ```
 
 ### Övning 5.5
@@ -138,5 +182,51 @@ Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är s
 Börja med att deklarera funktionen med parametern `år`. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.
 ```
 
+### Övning 5.6
 
+Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad medianen är.
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera funktionen med parametern `lista`. För att storleksordna listan använd `sorted()`- metoden. Beräkna sedan hur många element som listan består av, om antalet är udda så blir det mittersta elementet medianen. Om listan består av en jämn mängd element behöver funktionen ta medelvärdet av de två mittersta värdena.
+```
+
+### Övning 5.7
+Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte `max()`)
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.
+```
+
+### Övning 5.8
+Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().
+```{admonition} Tips
+:class: Hint dropdown
+
+Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en `for`-loop.
+```
+### Övning 5.9
+Skriv en funktion som kontrollerar om ett tal är ett primtal.
+```{admonition} Tips
+:class: Hint dropdown
+
+Använd en `for`-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.
+```
+### Övning 5.10
+Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.
+```{admonition} Tips
+:class: Hint dropdown
+
+Du kan använda `max()` och `min()` för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.
+```
+### Övning 5.11
+Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Skapa två tomma listor och använd en `for`-loop tillsammans med en `if-else`-sats för att skilja på jämna och udda tal med hjälp av `%`-operatorn.
+```
 <!-- end-övningar -->
