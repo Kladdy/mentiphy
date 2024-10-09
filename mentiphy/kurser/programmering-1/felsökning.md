@@ -1,18 +1,16 @@
 # Felsökning
 Under det här avsnittet kommer övningar där ni får en kod presenterad och ska försöka förbättra koden eller förklara vad som är fel med koden.
 
-## Arbetssätt med felsökning
-När du löser uppgifter under det här avsnittet, lös uppgifterna genom att följa stegen nedan.
+## Uppgiftstyper
+Avsnittet erbjuder två olika sorters frågor, som vi kallarresonemangsuppgifter och felsökningsuppgifter. 
 
-### Resonera uppgifter
-Börja med att endast titta på koden och försök hitta vad problemet är, att kunna se felen utan att behöva skriva någon kod är värdefull kunskap. 
+### Resonemangsuppgifter
+Börja med att endast titta på koden och försök hitta vad problemet är, att kunna se felen utan att behöva skriva någon kod är bra träning. Börja med att titta på tipset innnan du tittar på lösningen.
 
-### 
-Kopiera koden till Visual Studio Code och ändra koden så programmet stämmer.
+### Felsökningsuppgifter
+Kopiera koden till Visual Studio Code och ändra koden så programmet stämmer. Börja med att titta på tipset innnan du tittar på lösningen.
 
-## Övningar
-
-
+## Uppgifter
 ### Kontrollera om ett tal är jämnt (Resonera)
 Denna funktion ska kontrollera om ett tal är jämnt, men den ger inte rätt resultat. Vad är felet?
 
@@ -113,7 +111,7 @@ def first_element(my_list):
 Tänk på vad som krävs för att faktiskt returnera ett värde från en funktion.
 ```
 
-```{admonition} lösning
+```{admonition} Lösning
 :class: Caution dropdown
 Felet är att du aldrig använder `return` för att skicka tillbaka resultatet. Lägg till `return` framför `my_list[0]`:
 ```
