@@ -1,7 +1,7 @@
 # Mer om funktioner
 Under den här fliken fördjupar vi våra kunskaper om funktioner, vi kombinerar våra kunskaper om turtle-modulen med våra kunskaper om funktioner.
 
-## Fler metoder för turtles
+## Funktionsprojekt 1
 För att klara av projektet nedan, blir en påfyllning med fler metoder att använda med turtle-modulen nödvändig.
 
 ---
@@ -40,7 +40,7 @@ def skapa_turtle(x, y):
     return t
 ```
 
-## Funktionsprojekt
+## Uppgifter
 Nedan kommer ett funktionsprojekt där vi ska använda funktioner för att bygga turtle-grafik.
 
 Vi ska börja med att använda dessa två funktioner för att göra ett projekt. Gör stegen nedan i ordning eftersom de senare stegen använder kod från de tidigare stegen.
@@ -75,7 +75,7 @@ Skapa en funktion `def vietnamesiska_flaggan(x, y, höjd)` som ritar den vietnam
 :align: center
 :width: 50%
 ```
-```admonition} Tips
+```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera funktionen med parametrarna `x`, `y` och `höjd`. I funktionskroppen ritar vi flaggan genom att anropa `def rektangel(x, y, bredd, höjd, färg)`. Skapa sedan pentagrammet genom att anropa funktionen `def pentagram(x, y, sida)` du behöver dock skriva om det programmet så den fyller i färgen korrekt.
 ```
@@ -135,5 +135,64 @@ Lägg nu till kod i `move_random` som går så att om paddan efter förflyttning
 :alt: En slumpmässig turtle.
 :align: center
 :width: 50%
+```
+
+---
+#### Steg 9
+Skapa en till skölpadda som slumpas på samma sätt som föregående skölpadda. När avståndet mellan skölpaddorna är inom 20 enheter ska skölpaddan skriva ut meddelandet "nära". Metoden `write(sträng)` skriver ut strängen i fönstret intill skölpaddan. Låt också programmet räkna och sedan skriva ut hur många gånger det var nära mellan skölpaddorna.
+
+---
+
+## Funktionsprojekt 2
+Nästa funktionsprojekt innefattar att bygga ett simpelt system för ett bibliotek. Biblioteket ska kunna lägga till böcker till systemet. En bok ska kunna lånas och lämnas tillbaka och man ska även kunna se alla böcker som är tillängliga.
+
+#### Steg 1
+Skapa en ny fil med namnet `bookShelf.py`
+
+#### Steg 2
+Kopiera följande kod och lägg längst ner.
+
+```python
+def main_program():
+    available_books = []
+    borrowed_books = []
+
+    while True:
+        main_menu()
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            add_book(available_books)
+        elif choice == '2':
+            borrow_book(available_books, borrowed_books)
+        elif choice == '3':
+            return_book(available_books, borrowed_books)
+        elif choice == '4':
+            view_books(available_books)
+        elif choice == '5':
+            print("Exiting the system.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+```
+
+#### Steg 3
+Skapa en funktion `add_book(available_books)` som lägger till en bok i listan `available_books`.
+
+#### Steg 4
+Skapa en funktion `borrow_book(available_books, borrowed_books)` som tillåter användaren låna en bok, då försvinner den från listan `available_books` och läggs till på listan `borrowed_books`.
+
+#### Steg 5
+Skapa en funktion `return_book(available_books, borrowed_books)` som tillåter boken att lämnas tillbaka på listan `available_books` och boken försvinner på listan `borrowed_books`.
+
+#### Steg 6
+Skapa en funktion `view_books(available_books)` som skriver ut alla boken i listan `available_books`.
+
+#### Steg 7
+Lägg till koden nedanför längst ner och kör programmet!
+
+```python
+if __name__ == "__main__":
+    main_program()
 ```
 
