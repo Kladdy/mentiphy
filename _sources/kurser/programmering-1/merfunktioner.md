@@ -16,11 +16,11 @@ För att klara av projektet nedan, blir en påfyllning med fler metoder att anv�
   - Returnerar skölpaddans y-koordinat.
 * - `t.heading()`
   - Returnerar skölpaddans riktning `0` är x-axeln och `90` är y-axeln.
-* - `t.set_heading(angle)`
+* - `t.setheading(angle)`
   - Sätter skölpaddans riktning. `0` är x-axeln och `90` är y-axeln.
 ``` 
 ---
-## Funktioner och turtles
+### Funktioner och turtles
 
 För att addera lite mer komplexitet när vi skapar turtle-grafik kan vi även använda funktioner. Till att börja med kan vi börja med att skapa en funktion `def hoppa(t, x, y)`:
 
@@ -40,7 +40,7 @@ def skapa_turtle(x, y):
     return t
 ```
 
-## Uppgifter
+### Uppgifter
 Nedan kommer ett funktionsprojekt där vi ska använda funktioner för att bygga turtle-grafik.
 
 Vi ska börja med att använda dessa två funktioner för att göra ett projekt. Gör stegen nedan i ordning eftersom de senare stegen använder kod från de tidigare stegen.
