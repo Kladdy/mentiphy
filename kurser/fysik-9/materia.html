@@ -900,13 +900,13 @@
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="zRMltrtoWYgR" data-shufflequestions="True"
+<div class="output text_html"><div id="FGwLfDwHShWG" data-shufflequestions="True"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#zRMltrtoWYgR {
+#FGwLfDwHShWG {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1076,7 +1076,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionszRMltrtoWYgR=[
+</style></div><script type="application/javascript">var questionsFGwLfDwHShWG=[
     {
       "question": "Vilket svar beskriver ett grundämne?",
       "type": "many_choice",
@@ -1104,7 +1104,7 @@
             },
             {
                 "answer": "Ett ämne som består av flera sorters atomer",
-                "correct": false,
+                "correct": true,
                 "feedback": "Snyggt! Ett exempel är vatten, som består av väte och syre."
           }
       ]
@@ -1561,7 +1561,7 @@
         {
             "answer": "Den punkt då temperaturen är som absolut lägst, när atomerna står helt stilla",
             "correct": true,
-            "feedback": "Nej, fler lampor ger inte en högre spänning."
+            "feedback": "Sant!"
         },
         {
             "answer": "Den punkt då temperaturen är som absolut högst, när atomerna rör sig så mycket som möjligt",
@@ -2319,8 +2319,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("zRMltrtoWYgR")) {
-            show_questions(questionszRMltrtoWYgR,  zRMltrtoWYgR); 
+          if(document.getElementById("FGwLfDwHShWG")) {
+            show_questions(questionsFGwLfDwHShWG,  FGwLfDwHShWG); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2329,8 +2329,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("zRMltrtoWYgR");
-        // console.log(document.getElementById("zRMltrtoWYgR"));
+        //console.log("FGwLfDwHShWG");
+        // console.log(document.getElementById("FGwLfDwHShWG"));
 
         try_show();
         }
