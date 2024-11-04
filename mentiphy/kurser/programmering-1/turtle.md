@@ -109,6 +109,8 @@ Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. G
 
 ```{image} img/turtleRings.PNG
 :alt: Flera ringar inom varandra.
+:align: center
+:width: 50%
 ```
 
 ```{admonition} Tips
@@ -121,6 +123,8 @@ Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.
 
 ```{image} img/turtleHouse.PNG
 :alt: Flera ringar inom varandra.
+:align: center
+:width: 50%
 ```
 
 ```{admonition} Tips
@@ -133,6 +137,8 @@ Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultat
 
 ```{image} img/turtleColorrings.PNG
 :alt: Ringar med färger.
+:align: center
+:width: 50%
 ```
 
 ```{admonition} Tips
@@ -145,6 +151,8 @@ Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
 
 ```{image} img/turtleSpiral.PNG
 :alt: En spiral.
+:align: center
+:width: 50%
 ```
 ```{admonition} Tips
 :class: Hint dropdown

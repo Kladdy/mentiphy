@@ -26,6 +26,7 @@ parts:
     - file: kurser/programmering-1/funktioner
     - file: kurser/programmering-1/merfunktioner
     - file: kurser/programmering-1/övningar
+    - file: kurser/programmering-1/felsökning
     
   # - caption: Fysik 1
   #   chapters:
