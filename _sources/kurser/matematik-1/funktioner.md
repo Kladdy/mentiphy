@@ -1,3 +1,5 @@
+# Funktioner
+
 ## Räta linjens ekvation
 
 <div>
