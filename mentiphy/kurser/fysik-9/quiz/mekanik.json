@@ -1,344 +1,851 @@
 [
     {
-      "question": "Fråga om kraft",
-      "type": "many_choice",
-      "answers": [
-          {
-              "answer": "Negativ",
-              "correct": true,
-              "feedback": "Snyggt!"
-          },
-          {
-              "answer": "Neutral",
-              "correct": false,
-              "feedback": "Nej, det är neutronen som har neutral laddning."
-          },
-          {
-              "answer": "Positiv",
-              "correct": false,
-              "feedback": "Nej, det är protonen som har positiv laddning."
-          }
-      ]
-    },
-    {
-        "question": "Vilken laddning har en proton?",
+        "question": "Vad är en likformig rörelse?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Positiv",
+                "answer": "En rörelse med konstant hastighet",
                 "correct": true,
                 "feedback": "Snyggt!"
             },
             {
-                "answer": "Neutral",
+                "answer": "En rörelse där hastigheten ändras",
                 "correct": false,
-                "feedback": "Nej, det är neutronen som har neutral laddning."
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
             },
             {
-                "answer": "Negativ",
+                "answer": "En rörelse där hastigheten minskar",
                 "correct": false,
-                "feedback": "Nej, det är elektronen som har negativ laddning."
-          }
-      ]
+                "feedback": "Nej tyvärr, det är en retarderad rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en accelererad rörelse."
+            }
+        ]
     },
     {
-        "question": "Vilken laddning har en neutron?",
+        "question": "Vad är en olikformig rörelse?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Neutral",
+                "answer": "En rörelse med konstant hastighet",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en likformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ändras",
                 "correct": true,
                 "feedback": "Snyggt!"
             },
             {
-                "answer": "Positiv",
-                "correct": false,
-                "feedback": "Nej, det är protonen som har positiv laddning."
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": true,
+                "feedback": "Snyggt! En retarderad rörelse är en olikformig rörelse."
             },
             {
-                "answer": "Negativ",
-                "correct": false,
-                "feedback": "Nej, det är elektronen som har neutral laddning."
-          }
-      ]
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": true,
+                "feedback": "Snyggt! En accelererad rörelse är en olikformig rörelse."
+            }
+        ]
     },
     {
-        "question": "Olika laddningar _____ varandra.",
+        "question": "Vad är en retarderad rörelse?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "attraherar (dras mot)",
-                "correct": true,
-                "feedback": "Jajamen!"
+                "answer": "En rörelse med konstant hastighet",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
             },
             {
-                "answer": "repellerar (dras ifrån)",
+                "answer": "En rörelse där hastigheten ändras",
+                "correct": true,
+                "feedback": "Ja, men ökar eller minskar den?"
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
                 "correct": false,
-                "feedback": "Försök igen..."
-          }
-      ]
+                "feedback": "Nej tyvärr, det är en accelererad rörelse."
+            }
+        ]
     },
     {
-        "question": "Lika laddningar _____ varandra.",
+        "question": "Vad är en accelererad rörelse?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "attraherar (dras mot)",
+                "answer": "En rörelse med konstant hastighet",
                 "correct": false,
-                "feedback": "Försök igen..."
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
             },
             {
-                "answer": "repellerar (dras ifrån)",
+                "answer": "En rörelse där hastigheten ändras",
                 "correct": true,
-                "feedback": "Jajamen!"
-          }
-      ]
+                "feedback": "Ja, men ökar eller minskar den?"
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en retarderad rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": true,
+                "feedback": "Snyggt!"
+            }
+        ]
     },
     {
-        "question": "Spänning har enheten (alltså mäts i)...",
+        "question": "En rörelse där hastigheten är konstant är en...",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Ampere",
-                "correct": false,
-                "feedback": "Nej, det är ström som mäts i ampere."
-            },
-            {
-                "answer": "Ohm",
-                "correct": false,
-                "feedback": "Nej, det är resistans som mäts i ohm."
-            },
-            {
-                "answer": "Volt",
+                "answer": "likformig rörelse.",
                 "correct": true,
-                "feedback": "Exakt, namngivet efter Alessandro Volta."
-          }
-      ]
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "olikformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten ändras."
+            },
+            {
+                "answer": "accelererad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten ökar."
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten minskar."
+            }
+        ]
     },
     {
-        "question": "Ström har enheten (alltså mäts i)...",
+        "question": "En rörelse där hastigheten ändras är en...",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Ampere",
+                "answer": "likformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
+            },
+            {
+                "answer": "olikformig rörelse.",
                 "correct": true,
-                "feedback": "Exakt, namngivet efter Andre-Marie Ampere."
+                "feedback": "Bravo!"
             },
             {
-                "answer": "Ohm",
-                "correct": false,
-                "feedback": "Nej, det är resistans som mäts i ohm."
+                "answer": "accelererad rörelse.",
+                "correct": true,
+                "feedback": "Kan vara, men kan också vara retarderad."
             },
             {
-                "answer": "Volt",
-                "correct": false,
-                "feedback": "Nej, det är spänning som mäts i volt."
-          }
-      ]
+                "answer": "retarderad rörelse.",
+                "correct": true,
+                "feedback": "Kan vara, men kan också vara accelererad."
+            }
+        ]
     },
     {
-        "question": "Resistans har enheten (alltså mäts i)...",
+        "question": "En rörelse där hastigheten ökar är en...",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Ampere",
+                "answer": "likformig rörelse.",
                 "correct": false,
-                "feedback": "Nej, det är ström som mäts i ampere."
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
             },
             {
-                "answer": "Ohm",
+                "answer": "olikformig rörelse.",
                 "correct": true,
-                "feedback": "Exakt, namngivet efter George Ohm."
+                "feedback": "Bravo!"
             },
             {
-                "answer": "Volt",
+                "answer": "accelererad rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "retarderad rörelse.",
                 "correct": false,
-                "feedback": "Nej, det är spänning som mäts i volt."
-          }
-      ]
+                "feedback": "Nej tyvärr, det är när hastigheten minskar."
+            }
+        ]
     },
     {
-        "question": "Vad är en isolator?",
+        "question": "En rörelse där hastigheten minskar är en...",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Ett ämne som inte leder ström",
-                "correct": true,
-                "feedback": "Bra! Exempel på isolatorer är glas och plast."
+                "answer": "likformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
             },
             {
-                "answer": "Ett ämne som leder ström",
+                "answer": "olikformig rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "accelererad rörelse.",
                 "correct": false,
-                "feedback": "Nej tyvärr, fortsätt öva!"
-          }
-      ]
+                "feedback": "Nej tyvärr, det är när hastigheten ökar."
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            }
+        ]
     },
     {
-        "question": "Vad är en ledare?",
+        "question": "Vad är en kraft?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "Ett ämne som inte leder ström",
+                "answer": "Någon som är kraftigt byggd",
                 "correct": false,
-                "feedback": "Nej tyvärr, fortsätt öva!"
+                "feedback": "Nja, då är de väl bara stark?"
             },
             {
-                "answer": "Ett ämne som leder ström",
+                "answer": "En viss typ av hastighet",
+                "correct": false,
+                "feedback": "Prova igen."
+            },
+            {
+                "answer": "Någonting som skapar eller motverkar en rörelse",
                 "correct": true,
-                "feedback": "Kanon! Exempel på bra ledare är silver och koppar."
-          }
-      ]
+                "feedback": "Precis!"
+            }
+        ]
     },
     {
-        "question": "Om ett föremål har ett underskott (för få) av elektroner är det...",
+        "question": "Vad är en kraft?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "negativt laddat.",
+                "answer": "Någon som är kraftigt byggd",
                 "correct": false,
-                "feedback": "Nej, kom ihåg att elektroner är negativt laddade."
+                "feedback": "Nja, då är de väl bara stark?"
             },
             {
-                "answer": "positivt laddat.",
+                "answer": "En viss typ av hastighet",
+                "correct": false,
+                "feedback": "Prova igen."
+            },
+            {
+                "answer": "Någonting som skapar eller motverkar en rörelse",
                 "correct": true,
-                "feedback": "Precis! Eftersom elektroner är negativt laddade blir ett föremål positivt laddat om det har för få elektroner."
-          }
-      ]
+                "feedback": "Precis!"
+            }
+        ]
     },
     {
-        "question": "Om ett föremål har ett överskott (för många) av elektroner är det...",
+        "question": "Vad är en dynamometer?",
         "type": "many_choice",
         "answers": [
             {
-                "answer": "negativt laddat.",
-                "correct": true,
-                "feedback": "Precis! Eftersom elektroner är negativt laddade blir ett föremål också negativt laddat om det har för många elektroner."
+                "answer": "Ett verktyg för att mäta hastighet",
+                "correct": false,
+                "feedback": "Försök igen."
             },
             {
-                "answer": "positivt laddat.",
+                "answer": "Ett verktyg för att mäta rörelse",
                 "correct": false,
-                "feedback": "Nej, kom ihåg att elektroner är negativt laddade."
-          }
-      ]
+                "feedback": "Försök igen."
+            },
+            {
+                "answer": "Ett verktyg för att mäta kraft",
+                "correct": true,
+                "feedback": "Precis!"
+            }
+        ]
     },
     {
-        "question": "Vad påverkar resistansen hos en tråd/sladd/kabel?",
-    "type": "many_choice",
-    "answers": [
-        {
-            "answer": "Tråden längd",
-            "correct": true,
-            "feedback": "Precis, en längre kabel ger en högre resistans."
-        },
-        {
-            "answer": "Trådens material",
-            "correct": true,
-            "feedback": "Exakt, exempelvis så har järn högre resistans än silver."
-        },
-        {
-            "answer": "Trådens tjocklek",
-            "correct": true,
-            "feedback": "Snyggt, en tunnare sladd har en högre resistans."
-        },
-        {
-            "answer": "Trådens färg",
-            "correct": false,
-            "feedback": "Nej tyvärr, du kan lika gärna välja de svarta som de röda sladdarna när vi labbar."
-        }
-    ]
+        "question": "Vilken enhet mäts kraft i?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Newton (N)",
+                "correct": true,
+                "feedback": "Ja, uppkallat efter Sir Isaac Newton."
+            },
+            {
+                "answer": "Kilogram (kg)",
+                "correct": false,
+                "feedback": "Försök igen."
+            },
+            {
+                "answer": "Dynamometer",
+                "correct": false,
+                "feedback": "Nej, en dynamometer används för att mäta kraft men är inte en enhet."
+            }
+        ]
     },
     {
-        "question": "Vad händer om man seriekopplar två lampor?",
-    "type": "many_choice",
-    "answers": [
-        {
-            "answer": "De lyser starkare än om man bara hade haft en lampa (de får dubbel spänning)",
-            "correct": false,
-            "feedback": "Nej, fler lampor ger inte en högre spänning."
-        },
-        {
-            "answer": "De lyser svagare än om man bara hade haft en lampa (de får hälften så mycket spänning)",
-            "correct": true,
-            "feedback": "Exakt, bra jobbat!"
-        },
-        {
-            "answer": "De lyser lika starkt som om man bara hade haft en lampa (de får samma spänning)",
-            "correct": false,
-            "feedback": "Nej tyvärr, men det här är sant för parallellkopplade lampor om det var så du tänkte."
-        }
-    ]
+        "question": "Vad är SVT-triangeln?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En inläsningstjänst till Sveriges Television",
+                "correct": false,
+                "feedback": "Nej, så är det inte."
+            },
+            {
+                "answer": "En metod att beräkna sträcka, tid eller hastighet",
+                "correct": true,
+                "feedback": "Precis, om vi vet två av dem kan vi alltid räkna ut den tredje!"
+            }
+        ]
     },
     {
-        "question": "Vad händer om man parallellkopplar två lampor?",
-    "type": "many_choice",
-    "answers": [
-        {
-            "answer": "De lyser starkare än om man bara hade haft en lampa (de får dubbel spänning)",
-            "correct": false,
-            "feedback": "Nej, fler lampor ger inte en högre spänning."
-        },
-        {
-            "answer": "De lyser svagare än om man bara hade haft en lampa (de får hälften så mycket spänning)",
-            "correct": false,
-            "feedback": "Nej tyvärr, men det här är sant för två seriekopplade lampor om det var så du tänkte."
-        },
-        {
-            "answer": "De lyser lika starkt som om man bara hade haft en lampa (de får samma spänning)",
-            "correct": true,
-            "feedback": "Exakt, bra jobbat!"
-        }
-    ]
+        "question": "Är massa och tyngd samma sak?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ja, båda betyder vikt",
+                "correct": false,
+                "feedback": "Nej, tyngd har faktiskt en lite annan betydelse."
+            },
+            {
+                "answer": "Nej, de beror på varandra med är inte samma sak",
+                "correct": true,
+                "feedback": "Precis, massa är vikt medan tyngden är en kraft som beror på tyngdkraften!"
+            }
+        ]
     },
     {
-        "question": "Vad händer om man seriekopplar två batterier?",
-    "type": "many_choice",
-    "answers": [
-        {
-            "answer": "Spänningen i kretsen ökar jämfört men om man bara hade haft ett batteri.",
-            "correct": true,
-            "feedback": "Precis, batteriernas spänning läggs ihop och ökar spänningen i kretsen."
-        },
-        {
-            "answer": "Spänningen i kretsen blir samma som om man bara hade haft ett batteri.",
-            "correct": false,
-            "feedback": "Nej, men det här stämmer om du skulle parallellkoppla batterierna."
-        },
-        {
-            "answer": "Batterierna håller lika länge som om man bara hade haft ett batteri.",
-            "correct": true,
-            "feedback": "Jajamen!"
-        },
-        {
-            "answer": "Batterierna håller längre jämfört med om man bara hade haft ett batteri.",
-            "correct": false,
-            "feedback": "Nej, men det här stämmer om du skulle parallellkoppla batterierna."
-        }
-    ]
+        "question": "Vad är friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som motverkar rörelse mellan två ytor",
+                "correct": true,
+                "feedback": "Korrekt! Friktion är en bromsande kraft som uppstår mellan två ytor."
+            },
+            {
+                "answer": "En kraft som ökar hastigheten mellan två ytor",
+                "correct": false,
+                "feedback": "Nej, friktion bromsar rörelsen."
+            },
+            {
+                "answer": "En kraft som skapas av tyngdkraften",
+                "correct": false,
+                "feedback": "Inte riktigt, prova igen."
+            }
+        ]
     },
     {
-        "question": "Vad händer om man parallellkopplar två batterier?",
-    "type": "many_choice",
-    "answers": [
-        {
-            "answer": "Spänningen i kretsen ökar jämfört men om man bara hade haft ett batteri.",
-            "correct": false,
-            "feedback": "Nej, men det här stämmer om du skulle seriekoppla batterierna."
-        },
-        {
-            "answer": "Spänningen i kretsen blir samma som om man bara hade haft ett batteri.",
-            "correct": true,
-            "feedback": "Bravo!"
-        },
-        {
-            "answer": "Batterierna håller lika länge som om man bara hade haft ett batteri.",
-            "correct": false,
-            "feedback": "Nej, men det här stämmer om du skulle seriekoppla batterierna."
-        },
-        {
-            "answer": "Batterierna håller längre jämfört med om man bara hade haft ett batteri.",
-            "correct": true,
-            "feedback": "Exakt!"
-        }
-    ]
+        "question": "När vill man ha hög friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "När man går på is",
+                "correct": true,
+                "feedback": "Precis! Hög friktion hjälper till att förhindra att man halkar."
+            },
+            {
+                "answer": "När man åker skidor",
+                "correct": false,
+                "feedback": "Nej, då vill man ha låg friktion för att glida lättare."
+            },
+            {
+                "answer": "När man kör bil och behöver stanna snabbt",
+                "correct": true,
+                "feedback": "Rätt! Hög friktion mellan däcken och vägen hjälper bilen att stanna snabbare."
+            }
+        ]
+    },
+    {
+        "question": "När vill man ha låg friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "När man åker skridskor",
+                "correct": true,
+                "feedback": "Korrekt! Låg friktion hjälper skridskor att glida lätt över isen."
+            },
+            {
+                "answer": "När man går uppför en backe",
+                "correct": false,
+                "feedback": "Nej, då är hög friktion bättre för att förhindra att man halkar."
+            },
+            {
+                "answer": "När man glider på en rutschkana",
+                "correct": true,
+                "feedback": "Rätt! Låg friktion gör att man glider snabbt nerför rutschkanan."
+            }
+        ]
+    },
+    {
+        "question": "Varför är friktion en viktig faktor när man kör bil?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den hjälper däcken att greppa vägen och kontrollerar hastigheten",
+                "correct": true,
+                "feedback": "Ja! Friktion är viktig för att hålla bilen stabil och kunna bromsa effektivt."
+            },
+            {
+                "answer": "Den minskar slitaget på däcken",
+                "correct": false,
+                "feedback": "Nej, friktion orsakar faktiskt däckslitage."
+            }
+        ]
+    },
+    {
+        "question": "En bil kör i 60 km/h i 2 timmar. Hur långt har bilen kört?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "120",
+                "correct": true,
+                "feedback": "Korrekt! Sträckan blir 120 km (60 km/h * 2 h)."
+            }
+        ],
+        "unit": "km"
+    },
+    {
+        "question": "En person går 10 km med en hastighet på 5 km/h. Hur lång tid tar promenaden?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "2",
+                "correct": true,
+                "feedback": "Rätt! Det tar 2 timmar (10 km / 5 km/h)."
+            }
+        ],
+        "unit": "timmar"
+    },
+    {
+        "question": "En cyklist tar sig 15 km på 3 timmar. Vad är cyklistens hastighet?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "5",
+                "correct": true,
+                "feedback": "Korrekt! Hastigheten är 5 km/h (15 km / 3 h)."
+            }
+        ],
+        "unit": "km/h"
+    },
+    {
+        "question": "Vad är tyngdpunkten hos ett föremål?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den punkt där hela föremålets massa kan tänkas vara samlad",
+                "correct": true,
+                "feedback": "Rätt! Tyngdpunkten är där föremålets massa är centrerad."
+            },
+            {
+                "answer": "Den punkt där föremålet börjar röra sig",
+                "correct": false,
+                "feedback": "Inte riktigt, tänk på var massan är centrerad."
+            },
+            {
+                "answer": "En punkt vid föremålets botten",
+                "correct": false,
+                "feedback": "Nej, tyngdpunkten kan vara var som helst inom eller utanför föremålet."
+            }
+        ]
+    },
+    {
+        "question": "Vad är lodlinjen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En tänkt linje som går rakt ner från tyngdpunkten mot marken",
+                "correct": true,
+                "feedback": "Korrekt! Lodlinjen visar riktningen av tyngdkraften."
+            },
+            {
+                "answer": "En linje som markerar föremålets kanter",
+                "correct": false,
+                "feedback": "Nej, lodlinjen har att göra med tyngdkraftens riktning."
+            },
+            {
+                "answer": "En linje som alltid är horisontell",
+                "correct": false,
+                "feedback": "Nej, lodlinjen är vertikal och visar tyngdkraftens riktning."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer om lodlinjen hamnar utanför stödytan?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Föremålet välter",
+                "correct": true,
+                "feedback": "Korrekt! När lodlinjen går utanför stödytan blir föremålet instabilt och kan välta."
+            },
+            {
+                "answer": "Föremålet blir stabilare",
+                "correct": false,
+                "feedback": "Nej, föremålet blir istället mer instabilt."
+            },
+            {
+                "answer": "Föremålet kan inte röra sig",
+                "correct": false,
+                "feedback": "Inte riktigt, föremålet riskerar att välta när lodlinjen är utanför stödytan."
+            }
+        ]
+    },
+    {
+        "question": "Hur kan man göra ett föremål stabilare?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Sänka tyngdpunkten och öka stödytan",
+                "correct": true,
+                "feedback": "Rätt! En lägre tyngdpunkt och bredare stödyta gör föremålet stabilare."
+            },
+            {
+                "answer": "Höja tyngdpunkten och minska stödytan",
+                "correct": false,
+                "feedback": "Nej, det skulle göra föremålet mer instabilt."
+            },
+            {
+                "answer": "Placera tyngdpunkten så högt som möjligt",
+                "correct": false,
+                "feedback": "Nej, en högre tyngdpunkt gör föremålet mindre stabilt."
+            }
+        ]
+    },
+    {
+        "question": "Vad innebär fritt fall?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett fall där ett föremål endast påverkas av gravitationen",
+                "correct": true,
+                "feedback": "Korrekt! Fritt fall innebär att föremålet endast påverkas av gravitationskraften."
+            },
+            {
+                "answer": "Ett fall där ett föremål faller med konstant hastighet",
+                "correct": false,
+                "feedback": "Inte riktigt, föremålet accelererar faktiskt på grund av gravitationen."
+            },
+            {
+                "answer": "Ett fall där luftmotståndet är lika stort som tyngdkraften",
+                "correct": false,
+                "feedback": "Nej, det skulle innebära att föremålet når terminalhastighet och inte längre accelererar."
+            }
+        ]
+    },
+    {
+        "question": "Vad är tröghet?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En egenskap som gör att föremål motstår förändringar i rörelse",
+                "correct": true,
+                "feedback": "Rätt! Ett föremål i rörelse vill fortsätta röra sig och ett föremål som är stilla vill fortsätta vara stilla."
+            },
+            {
+                "answer": "En kraft som drar föremål neråt",
+                "correct": false,
+                "feedback": "Nej, det är gravitation som drar föremål neråt."
+            },
+            {
+                "answer": "En kraft som får föremål att röra sig snabbare",
+                "correct": false,
+                "feedback": "Nej, tröghet är snarare motståndet mot att ändra hastighet eller rörelseriktning."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med två föremål av olika vikt i fritt fall (utan luftmotstånd)?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "De faller med samma acceleration och når marken samtidigt",
+                "correct": true,
+                "feedback": "Korrekt! Utan luftmotstånd påverkas båda föremålen endast av gravitationen och faller lika snabbt."
+            },
+            {
+                "answer": "Det tyngre föremålet faller snabbare",
+                "correct": false,
+                "feedback": "Nej, tyngre föremål faller inte snabbare i fritt fall om luftmotståndet inte påverkar."
+            },
+            {
+                "answer": "Det lättare föremålet faller snabbare",
+                "correct": false,
+                "feedback": "Inte riktigt, båda föremålen påverkas lika mycket av gravitationen i fritt fall."
+            }
+        ]
+    },
+    {
+        "question": "Hur märker du tröghet när du åker bil och plötsligt bromsar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Kroppen fortsätter framåt trots att bilen saktar ner",
+                "correct": true,
+                "feedback": "Rätt! Kroppen har tröghet och vill fortsätta röra sig framåt när bilen bromsar."
+            },
+            {
+                "answer": "Kroppen dras bakåt i sätet",
+                "correct": false,
+                "feedback": "Nej, kroppen dras snarare framåt på grund av trögheten."
+            },
+            {
+                "answer": "Kroppen påverkas inte alls",
+                "correct": false,
+                "feedback": "Nej, tröghet gör att kroppen fortsätter i samma riktning även om bilen bromsar."
+            }
+        ]
+    },
+    {
+        "question": "Varför faller en sten snabbare än en fjäder på jorden, trots att gravitationen påverkar dem lika?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "På grund av luftmotståndet som påverkar fjädern mer än stenen",
+                "correct": true,
+                "feedback": "Rätt! Luftmotståndet bromsar fjädern mer, vilket gör att den faller långsammare."
+            },
+            {
+                "answer": "För att stenen har mer tröghet än fjädern",
+                "correct": false,
+                "feedback": "Inte riktigt, tröghet påverkar inte fallhastigheten i det här fallet."
+            },
+            {
+                "answer": "För att gravitationen påverkar tyngre föremål mer",
+                "correct": false,
+                "feedback": "Nej, gravitationen påverkar alla föremål lika i fritt fall oavsett vikt."
+            }
+        ]
+    },
+    {
+        "question": "Vad är en centralrörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse som går i en cirkel runt en punkt",
+                "correct": true,
+                "feedback": "Korrekt! Centralrörelse innebär att ett föremål rör sig i en cirkel runt en medelpunkt."
+            },
+            {
+                "answer": "En rörelse som går rakt fram i en linje",
+                "correct": false,
+                "feedback": "Inte riktigt, centralrörelse innebär att föremålet rör sig runt en punkt."
+            },
+            {
+                "answer": "En rörelse där hastigheten hela tiden ökar",
+                "correct": false,
+                "feedback": "Nej, centralrörelse handlar om cirkelrörelse, inte nödvändigtvis om hastighetsökning."
+            }
+        ]
+    },
+    {
+        "question": "Vad är centripetalkraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som drar ett föremål in mot cirkelns centrum",
+                "correct": true,
+                "feedback": "Rätt! Centripetalkraften verkar in mot centrum och håller föremålet i cirkelbanan."
+            },
+            {
+                "answer": "En kraft som drar ett föremål utåt från cirkelns centrum",
+                "correct": false,
+                "feedback": "Inte riktigt, centripetalkraften drar inåt mot centrum."
+            },
+            {
+                "answer": "En kraft som alltid ökar föremålets hastighet",
+                "correct": false,
+                "feedback": "Nej, centripetalkraften håller föremålet i en cirkelbana utan att ändra hastigheten."
+            }
+        ]
+    },
+    {
+        "question": "Vad är centrifugalkraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som känns som att den drar ett föremål utåt från cirkelns centrum",
+                "correct": true,
+                "feedback": "Rätt! Centrifugalkraft är en upplevd kraft som känns som att den drar föremålet utåt."
+            },
+            {
+                "answer": "En kraft som drar föremålet in mot cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, det är centripetalkraften som drar föremålet inåt."
+            },
+            {
+                "answer": "En kraft som gör att föremålet stannar i cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, centrifugalkraften verkar utåt från cirkelns centrum, inte inåt."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer om centripetalkraften plötsligt försvinner för ett föremål i cirkelrörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Föremålet fortsätter rakt fram i riktningen den har just då",
+                "correct": true,
+                "feedback": "Rätt! Om centripetalkraften försvinner, kommer föremålet att röra sig rakt fram på grund av tröghet."
+            },
+            {
+                "answer": "Föremålet fortsätter att röra sig i en cirkel",
+                "correct": false,
+                "feedback": "Inte riktigt, utan centripetalkraften kan föremålet inte stanna kvar i cirkelrörelsen."
+            },
+            {
+                "answer": "Föremålet rör sig in mot cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, föremålet rör sig i en rak linje i tangentens riktning när centripetalkraften försvinner."
+            }
+        ]
+    },
+    {
+        "question": "Vad är ett exempel på centripetalkraft i vardagen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Kraften som håller bilen på vägen i en kurva",
+                "correct": true,
+                "feedback": "Korrekt! Friktionen mellan däcken och vägen fungerar som centripetalkraften i en kurva."
+            },
+            {
+                "answer": "Kraften som får dig att luta dig utåt i en kurva",
+                "correct": false,
+                "feedback": "Inte riktigt, det är centrifugalkraften som får dig att känna en rörelse utåt."
+            },
+            {
+                "answer": "Kraften som får en boll att falla till marken",
+                "correct": false,
+                "feedback": "Nej, det är gravitationskraften som drar bollen neråt, inte centripetalkraften."
+            }
+        ]
+    },
+    {
+        "question": "Vad upplever du när du känner dig pressad utåt i en kurva?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Centrifugalkraft",
+                "correct": true,
+                "feedback": "Rätt! Centrifugalkraften känns som att den drar dig utåt från kurvan."
+            },
+            {
+                "answer": "Centripetalkraft",
+                "correct": false,
+                "feedback": "Nej, centripetalkraften verkar inåt, inte utåt."
+            },
+            {
+                "answer": "Gravitationskraft",
+                "correct": false,
+                "feedback": "Nej, det är centrifugalkraften som ger den utåtriktade känslan i en kurva."
+            }
+        ]
+    },
+    {
+        "question": "Centrifugalkraft är ingen riktig kraft. Vad beror den på?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Trögheten",
+                "correct": true,
+                "feedback": "Rätt!"
+            },
+            {
+                "answer": "Friktionen",
+                "correct": false,
+                "feedback": "Fel."
+            }
+        ]
+    },                    
+    {
+        "question": "Vad betyder medelhastighet?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den maximala hastighet någonting kan nå",
+                "correct": false,
+                "feedback": "Nej, prova igen!"
+            },
+            {
+                "answer": "Medelvärdet av hastigheten under en viss tid",
+                "correct": true,
+                "feedback": "Bravo!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är kaströrelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse där ett föremål rör sig i en båge under inverkan av gravitationen",
+                "correct": true,
+                "feedback": "Korrekt! Kaströrelse innebär att föremålet rör sig i en båge under påverkan av både kastkraft och gravitation."
+            },
+            {
+                "answer": "En rörelse som endast påverkas av kastkraften",
+                "correct": false,
+                "feedback": "Inte riktigt, kaströrelse påverkas av både kastkraft och gravitation."
+            },
+            {
+                "answer": "En rörelse som bara sker i en rak linje",
+                "correct": false,
+                "feedback": "Nej, kaströrelse sker i en båge på grund av gravitationens påverkan."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med ett föremåls horisontella hastighet under kaströrelsen (om vi bortser från luftmotstånd)?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den förblir konstant",
+                "correct": true,
+                "feedback": "Korrekt! Utan luftmotstånd påverkas inte den horisontella hastigheten av gravitationen."
+            },
+            {
+                "answer": "Den minskar hela tiden",
+                "correct": false,
+                "feedback": "Inte riktigt, den horisontella hastigheten är konstant om vi bortser från luftmotstånd."
+            },
+            {
+                "answer": "Den ökar hela tiden",
+                "correct": false,
+                "feedback": "Nej, den horisontella hastigheten förblir konstant utan luftmotstånd."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med ett föremåls vertikala hastighet under kaströrelsen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den påverkas av gravitationen, vilket gör att föremålet först bromsas upp och sedan accelererar nedåt",
+                "correct": true,
+                "feedback": "Rätt! Den vertikala hastigheten minskar på väg uppåt, stannar tillfälligt i vändpunkten och ökar sedan nedåt."
+            },
+            {
+                "answer": "Den förblir konstant",
+                "correct": false,
+                "feedback": "Nej, den vertikala hastigheten påverkas av gravitationen och ändras därför hela tiden."
+            },
+            {
+                "answer": "Den ökar hela tiden",
+                "correct": false,
+                "feedback": "Inte riktigt, hastigheten minskar på vägen upp och ökar på vägen ner."
+            }
+        ]
     }
-  ]
+]
