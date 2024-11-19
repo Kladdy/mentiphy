@@ -361,13 +361,13 @@
 <h2>Hej<a class="headerlink" href="#hej" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KjjZnBDbssbS" data-shufflequestions="True"
+<div class="output text_html"><div id="UIRLbcuKpcEp" data-shufflequestions="True"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#KjjZnBDbssbS {
+#UIRLbcuKpcEp {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -387,8 +387,8 @@
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
-    padding-bottom: 4px;
+/*    margin-bottom: 15px;*/
+/*    padding-bottom: 4px;*/
     padding-top: 4px;
     line-height: 1.1;
     font-size: 16pt;
@@ -447,7 +447,7 @@
 .Feedback {
     font-size: 16pt;
     text-align: center;
-    min-height: 2em;
+/*    min-height: 2em;*/
 }
 
 .Input {
@@ -568,7 +568,7 @@
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsKjjZnBDbssbS=[
+</style></div><script type="application/javascript">var questionsUIRLbcuKpcEp=[
   {
     "question": "Vad heter Emmas hund?",
     "type": "many_choice",
@@ -842,9 +842,9 @@ function check_mc() {
         var numcorrect = fb.dataset.numcorrect;
         var answeredcorrect = fb.dataset.answeredcorrect;
         if (answeredcorrect >= 0) {
-            fb.textContent = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
+            fb.innerHTML = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
         } else {
-            fb.textContent = feedback + " [" + 0 + "/" + numcorrect + "]";
+            fb.innerHTML = feedback + " [" + 0 + "/" + numcorrect + "]";
         }
 
 
@@ -973,7 +973,7 @@ function check_numeric(ths, event) {
 
         var fb = document.getElementById("fb" + id);
         fb.style.display = "none";
-        fb.textContent = "Incorrect -- try again.";
+        fb.innerHTML = "Incorrect -- try again.";
 
         var answers = JSON.parse(ths.dataset.answers);
         //console.log(answers);
@@ -1157,7 +1157,7 @@ function make_numeric(qa, outerqDiv, qDiv, aDiv, id) {
 
     var lab = document.createElement("label");
     lab.className = "InpLabel";
-    lab.textContent = "Type numeric answer here:";
+    lab.innerHTML = "Type numeric answer here:";
     aDiv.append(lab);
 
     var inp = document.createElement("input");
@@ -1225,6 +1225,10 @@ function jaxify(string) {
         loc2 = mystring.search(/([^\\]|^)(\$\$)/);
         //console.log(mystring,", loc:",loc,", loc2:",loc2);
     }
+
+    // repace markdown style links with actual links
+    mystring = mystring.replace(/<(.*?)>/, '<a href="$1" target="_blank" class="Link">$1</a>');
+    mystring = mystring.replace(/\[(.*?)\]\((.*?)\)/, '<a href="$2" target="_blank" class="Link">$1</a>');
 
     //console.log(mystring);
     return mystring;
@@ -1413,6 +1417,15 @@ if (typeof version == 'undefined') {
             }
         }
     }
+
+    // stop event propagation for the .Link class
+    var links = document.getElementsByClassName('Link')
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function(e){
+            e.stopPropagation();
+        });
+    }
+
     return false;
 }
 /* This is to handle asynchrony issues in loading Jupyter notebooks
@@ -1423,8 +1436,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("KjjZnBDbssbS")) {
-            show_questions(questionsKjjZnBDbssbS,  KjjZnBDbssbS); 
+          if(document.getElementById("UIRLbcuKpcEp")) {
+            show_questions(questionsUIRLbcuKpcEp,  UIRLbcuKpcEp); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -1433,8 +1446,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("KjjZnBDbssbS");
-        // console.log(document.getElementById("KjjZnBDbssbS"));
+        //console.log("UIRLbcuKpcEp");
+        // console.log(document.getElementById("UIRLbcuKpcEp"));
 
         try_show();
         }
@@ -1445,13 +1458,13 @@ if (typeof version == 'undefined') {
 <h2>Hej<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ZYvSmJkSqZzu" data-shufflequestions="False"
+<div class="output text_html"><div id="XVUAPXsRAtlX" data-shufflequestions="False"
                data-shuffleanswers="False"
                data-preserveresponses="false"
                data-numquestions="1000000"
                data-maxwidth="600"
                style="border-radius: 10px; text-align: left"> <style>
-#ZYvSmJkSqZzu {
+#XVUAPXsRAtlX {
    --jq-multiple-choice-bg: #6f78ffff;
    --jq-mc-button-bg: #fafafa;
    --jq-mc-button-border: #e0e0e0e0;
@@ -1471,8 +1484,8 @@ if (typeof version == 'undefined') {
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
-    padding-bottom: 4px;
+/*    margin-bottom: 15px;*/
+/*    padding-bottom: 4px;*/
     padding-top: 4px;
     line-height: 1.1;
     font-size: 16pt;
@@ -1531,7 +1544,7 @@ if (typeof version == 'undefined') {
 .Feedback {
     font-size: 16pt;
     text-align: center;
-    min-height: 2em;
+/*    min-height: 2em;*/
 }
 
 .Input {
@@ -1652,7 +1665,7 @@ if (typeof version == 'undefined') {
         background-color: var(--jq-correct-color);
     }
 }
-</style></div><script type="application/javascript">var questionsZYvSmJkSqZzu=[
+</style></div><script type="application/javascript">var questionsXVUAPXsRAtlX=[
   {
     "question": "Vad heter Emmas hund?",
     "type": "many_choice",
@@ -1926,9 +1939,9 @@ function check_mc() {
         var numcorrect = fb.dataset.numcorrect;
         var answeredcorrect = fb.dataset.answeredcorrect;
         if (answeredcorrect >= 0) {
-            fb.textContent = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
+            fb.innerHTML = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
         } else {
-            fb.textContent = feedback + " [" + 0 + "/" + numcorrect + "]";
+            fb.innerHTML = feedback + " [" + 0 + "/" + numcorrect + "]";
         }
 
 
@@ -2057,7 +2070,7 @@ function check_numeric(ths, event) {
 
         var fb = document.getElementById("fb" + id);
         fb.style.display = "none";
-        fb.textContent = "Incorrect -- try again.";
+        fb.innerHTML = "Incorrect -- try again.";
 
         var answers = JSON.parse(ths.dataset.answers);
         //console.log(answers);
@@ -2241,7 +2254,7 @@ function make_numeric(qa, outerqDiv, qDiv, aDiv, id) {
 
     var lab = document.createElement("label");
     lab.className = "InpLabel";
-    lab.textContent = "Type numeric answer here:";
+    lab.innerHTML = "Type numeric answer here:";
     aDiv.append(lab);
 
     var inp = document.createElement("input");
@@ -2309,6 +2322,10 @@ function jaxify(string) {
         loc2 = mystring.search(/([^\\]|^)(\$\$)/);
         //console.log(mystring,", loc:",loc,", loc2:",loc2);
     }
+
+    // repace markdown style links with actual links
+    mystring = mystring.replace(/<(.*?)>/, '<a href="$1" target="_blank" class="Link">$1</a>');
+    mystring = mystring.replace(/\[(.*?)\]\((.*?)\)/, '<a href="$2" target="_blank" class="Link">$1</a>');
 
     //console.log(mystring);
     return mystring;
@@ -2497,6 +2514,15 @@ if (typeof version == 'undefined') {
             }
         }
     }
+
+    // stop event propagation for the .Link class
+    var links = document.getElementsByClassName('Link')
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function(e){
+            e.stopPropagation();
+        });
+    }
+
     return false;
 }
 /* This is to handle asynchrony issues in loading Jupyter notebooks
@@ -2507,8 +2533,8 @@ if (typeof version == 'undefined') {
            Someone more knowledgeable could make this better ;-) */
 
         function try_show() {
-          if(document.getElementById("ZYvSmJkSqZzu")) {
-            show_questions(questionsZYvSmJkSqZzu,  ZYvSmJkSqZzu); 
+          if(document.getElementById("XVUAPXsRAtlX")) {
+            show_questions(questionsXVUAPXsRAtlX,  XVUAPXsRAtlX); 
           } else {
              setTimeout(try_show, 200);
           }
@@ -2517,8 +2543,8 @@ if (typeof version == 'undefined') {
         {
         // console.log(element);
 
-        //console.log("ZYvSmJkSqZzu");
-        // console.log(document.getElementById("ZYvSmJkSqZzu"));
+        //console.log("XVUAPXsRAtlX");
+        // console.log(document.getElementById("XVUAPXsRAtlX"));
 
         try_show();
         }

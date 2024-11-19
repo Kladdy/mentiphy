@@ -61,6 +61,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/datahantering';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -343,7 +345,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installera-pandas">Installera pandas</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lasa-av-filer">Läsa av filer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering">Projektuppgift med datahantering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-betygsprogram">Projektuppgift med datahantering - Betygsprogram</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
@@ -351,6 +353,21 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-matkort">Projektuppgift med datahantering - Matkort</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Steg 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-11">Steg 11</a></li>
 </ul>
 </li>
 </ul>
@@ -446,8 +463,8 @@
 </div>
 <p>Nu är all data från kolumnen <code class="docutils literal notranslate"><span class="pre">&quot;Kolumnnamn&quot;</span></code>nu lagrats i listan <code class="docutils literal notranslate"><span class="pre">list_kolumn</span></code>. Då kan nu hantera all data från denna kolumn genom att använda inbyggda listfunktioner.</p>
 </section>
-<section id="projektuppgift-med-datahantering">
-<h2>Projektuppgift med datahantering<a class="headerlink" href="#projektuppgift-med-datahantering" title="Link to this heading">#</a></h2>
+<section id="projektuppgift-med-datahantering-betygsprogram">
+<h2>Projektuppgift med datahantering - Betygsprogram<a class="headerlink" href="#projektuppgift-med-datahantering-betygsprogram" title="Link to this heading">#</a></h2>
 <p>Uppgiften är att bygga ett program som räknar ut ditt meritvärde på gymnasiet. Vi ska räkna ut det genom att läsa av en excelfil med betygen och sedan räkna ut meritvärdet.</p>
 <section id="steg-1">
 <h3>Steg 1<a class="headerlink" href="#steg-1" title="Link to this heading">#</a></h3>
@@ -505,6 +522,94 @@
 </tbody>
 </table>
 </div>
+</section>
+<section id="steg-8">
+<h3>Steg 8<a class="headerlink" href="#steg-8" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">antagen(betyg,</span> <span class="pre">krav)</span></code> som tar ditt meritvärde och en lisa över betygskraven. Funktionen returnerar vilka utbildningar som du kommer in på.</p>
+</section>
+</section>
+<section id="projektuppgift-med-datahantering-matkort">
+<h2>Projektuppgift med datahantering - Matkort<a class="headerlink" href="#projektuppgift-med-datahantering-matkort" title="Link to this heading">#</a></h2>
+<p>Uppgiften är att göra ett program som håller koll på hur mycket du kan spendera på ditt matkort.</p>
+<section id="id1">
+<h3>Steg 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Skapa ett exceldokument som kallas <code class="docutils literal notranslate"><span class="pre">matkort.xlsx</span></code>. Fyll i kolumnerna med <code class="docutils literal notranslate"><span class="pre">Dag</span></code> och <code class="docutils literal notranslate"><span class="pre">Kronor</span></code>. Fyll i alla dagar du har varit i skolan den här månaden, fyll i datumen. Fyll sedan i andra kolumnen hur mycket som du spenderade den dagen på ditt matkort. Titta på exemplet nedan. Spara filen i samma mapp som programmet.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dag</p></th>
+<th class="head"><p>Kronor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Måndag 4/11</p></td>
+<td><p>70</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tisdag 5/11</p></td>
+<td><p>85</p></td>
+</tr>
+<tr class="row-even"><td><p>Torsdag 7/11</p></td>
+<td><p>65</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fredag 8/11</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Måndag 11/11</p></td>
+<td><p>70</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tisdag 12/11</p></td>
+<td><p>80</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id2">
+<h3>Steg 2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Importera pandas och openpyxl längst upp i programmet.</p>
+</section>
+<section id="id3">
+<h3>Steg 3<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Läs av filen och spara informationen i ett DataFrame som heter <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
+</section>
+<section id="id4">
+<h3>Steg 4<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Skapa funktionen <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">saldo(dagar,</span> <span class="pre">kronor):</span></code> som tar en lista med alla kronor som du har spenderat den månaden. Den tar även mot en ett värde på hur många skoldagar. Funktionen ska returnera hur mycket pengar du har kvar på ditt matkort. Följ formeln nedan för att veta vad saldot är.</p>
+<p><span class="math notranslate nohighlight">\(saldo= 70 \cdot antaldagar - spenderat\)</span></p>
+<p>Saldo betyder hur mycket som finns kvar på kortet, antal dagar betyder hur många skoldagar som månaden består av, spenderat betyder summan av alla kostnader som finns i listan över kronor.</p>
+</section>
+<section id="id5">
+<h3>Steg 5<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">spendera(dagar_kvar,</span> <span class="pre">saldo)</span></code> som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.</p>
+</section>
+<section id="id6">
+<h3>Steg 6<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Testa att ändra i excelfilen och se om allting stämmer.</p>
+</section>
+<section id="id7">
+<h3>Steg 7<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">main()</span></code>. Mainfunktionen ska vi göra för att det blir med pedagogiskt och enklare att använda programmet. Börja med att skapa funktionen och kopiera följande kod:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Klicka 1 om du vill kolla saldot&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Klicka 2 om du vill kolla hur mycket du ska spendera i snitt varje dag resten av månaden&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Klicka 3 om du vill avsluta programmet&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h3>Steg 8<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>Fyll sedan på funktionen så att om användaren anger <code class="docutils literal notranslate"><span class="pre">1</span></code> som input ska programmet visa saldot.</p>
+</section>
+<section id="steg-9">
+<h3>Steg 9<a class="headerlink" href="#steg-9" title="Link to this heading">#</a></h3>
+<p>Om användaren anger <code class="docutils literal notranslate"><span class="pre">2</span></code> ska programmet visa hur mycket du ska spendera i snitt varje dag resten av månaden.</p>
+</section>
+<section id="steg-10">
+<h3>Steg 10<a class="headerlink" href="#steg-10" title="Link to this heading">#</a></h3>
+<p>När du anger <code class="docutils literal notranslate"><span class="pre">3</span></code> ska programmet avsluta programmet. Använd då bara att om <code class="docutils literal notranslate"><span class="pre">3</span></code> anges så returneras ingenting.</p>
+</section>
+<section id="steg-11">
+<h3>Steg 11<a class="headerlink" href="#steg-11" title="Link to this heading">#</a></h3>
+<p>När du får ett svar från <code class="docutils literal notranslate"><span class="pre">main</span></code> funktionen, kör om mainfunktionen så du kan fortsätta programmet.</p>
 </section>
 </section>
 </section>
@@ -576,7 +681,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installera-pandas">Installera pandas</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lasa-av-filer">Läsa av filer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering">Projektuppgift med datahantering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-betygsprogram">Projektuppgift med datahantering - Betygsprogram</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
@@ -584,6 +689,21 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-matkort">Projektuppgift med datahantering - Matkort</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Steg 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-11">Steg 11</a></li>
 </ul>
 </li>
 </ul>
