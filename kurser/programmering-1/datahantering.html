@@ -368,6 +368,8 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-11">Steg 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-12">Steg 12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-13">Steg 13</a></li>
 </ul>
 </li>
 </ul>
@@ -533,6 +535,10 @@
 <p>Uppgiften är att göra ett program som håller koll på hur mycket du kan spendera på ditt matkort.</p>
 <section id="id1">
 <h3>Steg 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Skapa filen <code class="docutils literal notranslate"><span class="pre">maktort.py</span></code> i din lokala map på skrivbordet.</p>
+</section>
+<section id="id2">
+<h3>Steg 2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>Skapa ett exceldokument som kallas <code class="docutils literal notranslate"><span class="pre">matkort.xlsx</span></code>. Fyll i kolumnerna med <code class="docutils literal notranslate"><span class="pre">Dag</span></code> och <code class="docutils literal notranslate"><span class="pre">Kronor</span></code>. Fyll i alla dagar du har varit i skolan den här månaden, fyll i datumen. Fyll sedan i andra kolumnen hur mycket som du spenderade den dagen på ditt matkort. Titta på exemplet nedan. Spara filen i samma mapp som programmet.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -563,30 +569,32 @@
 </table>
 </div>
 </section>
-<section id="id2">
-<h3>Steg 2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>Importera pandas och openpyxl längst upp i programmet.</p>
-</section>
 <section id="id3">
 <h3>Steg 3<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>Läs av filen och spara informationen i ett DataFrame som heter <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
+<p>Importera pandas och openpyxl längst upp i programmet.</p>
 </section>
 <section id="id4">
 <h3>Steg 4<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p>Skapa funktionen <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">saldo(dagar,</span> <span class="pre">kronor):</span></code> som tar en lista med alla kronor som du har spenderat den månaden. Den tar även mot en ett värde på hur många skoldagar. Funktionen ska returnera hur mycket pengar du har kvar på ditt matkort. Följ formeln nedan för att veta vad saldot är.</p>
-<p><span class="math notranslate nohighlight">\(saldo= 70 \cdot antaldagar - spenderat\)</span></p>
-<p>Saldo betyder hur mycket som finns kvar på kortet, antal dagar betyder hur många skoldagar som månaden består av, spenderat betyder summan av alla kostnader som finns i listan över kronor.</p>
+<p>Läs av filen och spara informationen i ett DataFrame som heter <code class="docutils literal notranslate"><span class="pre">df</span></code>.</p>
 </section>
 <section id="id5">
 <h3>Steg 5<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">spendera(dagar_kvar,</span> <span class="pre">saldo)</span></code> som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.</p>
+<p>Skapa funktionen <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">saldo(dagar,</span> <span class="pre">kronor):</span></code> som tar en lista med alla kronor som du har spenderat den månaden. Den tar även mot en ett värde på hur många skoldagar det är den månaden. Funktionen ska returnera hur mycket pengar du har kvar på ditt matkort. Följ formeln nedan för att veta vad saldot är.</p>
+<p><span class="math notranslate nohighlight">\(saldo= 70 \cdot antalskoldagar - spenderat\)</span></p>
+<p>Saldo betyder hur mycket som finns kvar på kortet, antal dagar betyder hur många skoldagar som månaden består av, spenderat betyder summan av alla kostnader som finns i listan över kronor.</p>
+<p>För att anropa den här funktionen behöver du skapa två variabler längst ner i programmet, nämligen en variabel som heter <code class="docutils literal notranslate"><span class="pre">skoldagar</span></code> som är antalet skoldagar, samt en variabel som heter <code class="docutils literal notranslate"><span class="pre">kronor_lista</span></code> som är en lista över alla tal i kronorkolumnen i excelfilen.</p>
 </section>
 <section id="id6">
 <h3>Steg 6<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<p>Testa att ändra i excelfilen och se om allting stämmer.</p>
+<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">spendera(dagar_kvar,</span> <span class="pre">pengar_kvar)</span></code> som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.</p>
+<p>För att anropa den här funktionen behöver du ge antalet dagar kvar, vilket är <code class="docutils literal notranslate"><span class="pre">skoldagar</span></code> - <code class="docutils literal notranslate"><span class="pre">registrerade_dagar</span></code>. Variabeln <code class="docutils literal notranslate"><span class="pre">registrerade_dagar</span></code> är antalet dagar som finns i kolumnen <code class="docutils literal notranslate"><span class="pre">Dagar</span></code> i excelfilen.</p>
 </section>
 <section id="id7">
 <h3>Steg 7<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Testa att ändra i excelfilen och se om allting stämmer.</p>
+</section>
+<section id="id8">
+<h3>Steg 8<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">main()</span></code>. Mainfunktionen ska vi göra för att det blir med pedagogiskt och enklare att använda programmet. Börja med att skapa funktionen och kopiera följande kod:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Klicka 1 om du vill kolla saldot&quot;</span><span class="p">)</span>
@@ -595,21 +603,25 @@
 </pre></div>
 </div>
 </section>
-<section id="id8">
-<h3>Steg 8<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<p>Fyll sedan på funktionen så att om användaren anger <code class="docutils literal notranslate"><span class="pre">1</span></code> som input ska programmet visa saldot.</p>
-</section>
 <section id="steg-9">
 <h3>Steg 9<a class="headerlink" href="#steg-9" title="Link to this heading">#</a></h3>
-<p>Om användaren anger <code class="docutils literal notranslate"><span class="pre">2</span></code> ska programmet visa hur mycket du ska spendera i snitt varje dag resten av månaden.</p>
+<p>Fyll sedan på funktionen så att om användaren anger <code class="docutils literal notranslate"><span class="pre">1</span></code> som input ska programmet visa saldot.</p>
 </section>
 <section id="steg-10">
 <h3>Steg 10<a class="headerlink" href="#steg-10" title="Link to this heading">#</a></h3>
-<p>När du anger <code class="docutils literal notranslate"><span class="pre">3</span></code> ska programmet avsluta programmet. Använd då bara att om <code class="docutils literal notranslate"><span class="pre">3</span></code> anges så returneras ingenting.</p>
+<p>Om användaren anger <code class="docutils literal notranslate"><span class="pre">2</span></code> ska programmet visa hur mycket du ska spendera i snitt varje dag resten av månaden.</p>
 </section>
 <section id="steg-11">
 <h3>Steg 11<a class="headerlink" href="#steg-11" title="Link to this heading">#</a></h3>
+<p>När du anger <code class="docutils literal notranslate"><span class="pre">3</span></code> ska programmet avsluta programmet. Använd då bara att om <code class="docutils literal notranslate"><span class="pre">3</span></code> anges så returneras ingenting.</p>
+</section>
+<section id="steg-12">
+<h3>Steg 12<a class="headerlink" href="#steg-12" title="Link to this heading">#</a></h3>
 <p>När du får ett svar från <code class="docutils literal notranslate"><span class="pre">main</span></code> funktionen, kör om mainfunktionen så du kan fortsätta programmet.</p>
+</section>
+<section id="steg-13">
+<h3>Steg 13<a class="headerlink" href="#steg-13" title="Link to this heading">#</a></h3>
+<p>Anropa mainfunktionen längst ner i programmet.</p>
 </section>
 </section>
 </section>
@@ -704,6 +716,8 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-11">Steg 11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-12">Steg 12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-13">Steg 13</a></li>
 </ul>
 </li>
 </ul>

@@ -126,6 +126,9 @@ Skapa en funktion `def antagen(betyg, krav)` som tar ditt meritvärde och en lis
 Uppgiften är att göra ett program som håller koll på hur mycket du kan spendera på ditt matkort.
 
 #### Steg 1
+Skapa filen `maktort.py` i din lokala map på skrivbordet.
+
+#### Steg 2
 Skapa ett exceldokument som kallas `matkort.xlsx`. Fyll i kolumnerna med `Dag` och `Kronor`. Fyll i alla dagar du har varit i skolan den här månaden, fyll i datumen. Fyll sedan i andra kolumnen hur mycket som du spenderade den dagen på ditt matkort. Titta på exemplet nedan. Spara filen i samma mapp som programmet.
 
 ```{list-table}
@@ -147,26 +150,30 @@ Skapa ett exceldokument som kallas `matkort.xlsx`. Fyll i kolumnerna med `Dag` o
   - 80
 ```
 
-#### Steg 2
+#### Steg 3
 Importera pandas och openpyxl längst upp i programmet.
 
-#### Steg 3
+#### Steg 4
 Läs av filen och spara informationen i ett DataFrame som heter `df`.
 
-#### Steg 4
-Skapa funktionen `def saldo(dagar, kronor):` som tar en lista med alla kronor som du har spenderat den månaden. Den tar även mot en ett värde på hur många skoldagar. Funktionen ska returnera hur mycket pengar du har kvar på ditt matkort. Följ formeln nedan för att veta vad saldot är.
+#### Steg 5
+Skapa funktionen `def saldo(dagar, kronor):` som tar en lista med alla kronor som du har spenderat den månaden. Den tar även mot en ett värde på hur många skoldagar det är den månaden. Funktionen ska returnera hur mycket pengar du har kvar på ditt matkort. Följ formeln nedan för att veta vad saldot är.
 
-$saldo= 70 \cdot antaldagar - spenderat$
+$saldo= 70 \cdot antalskoldagar - spenderat$
 
 Saldo betyder hur mycket som finns kvar på kortet, antal dagar betyder hur många skoldagar som månaden består av, spenderat betyder summan av alla kostnader som finns i listan över kronor.
 
-#### Steg 5
-Skapa en funktion `def spendera(dagar_kvar, saldo)` som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.
+För att anropa den här funktionen behöver du skapa två variabler längst ner i programmet, nämligen en variabel som heter `skoldagar` som är antalet skoldagar, samt en variabel som heter `kronor_lista` som är en lista över alla tal i kronorkolumnen i excelfilen.
 
 #### Steg 6
-Testa att ändra i excelfilen och se om allting stämmer.
+Skapa en funktion `def spendera(dagar_kvar, pengar_kvar)` som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.
+
+För att anropa den här funktionen behöver du ge antalet dagar kvar, vilket är `skoldagar` - `registrerade_dagar`. Variabeln `registrerade_dagar` är antalet dagar som finns i kolumnen `Dagar` i excelfilen.
 
 #### Steg 7
+Testa att ändra i excelfilen och se om allting stämmer.
+
+#### Steg 8
 Skapa en funktion `def main()`. Mainfunktionen ska vi göra för att det blir med pedagogiskt och enklare att använda programmet. Börja med att skapa funktionen och kopiera följande kod:
 
 ```python
@@ -176,14 +183,17 @@ def main():
   print("Klicka 3 om du vill avsluta programmet")
 ```
 
-#### Steg 8
+#### Steg 9
 Fyll sedan på funktionen så att om användaren anger `1` som input ska programmet visa saldot.
 
-#### Steg 9
+#### Steg 10
 Om användaren anger `2` ska programmet visa hur mycket du ska spendera i snitt varje dag resten av månaden.
 
-#### Steg 10
+#### Steg 11
 När du anger `3` ska programmet avsluta programmet. Använd då bara att om `3` anges så returneras ingenting.
 
-#### Steg 11
+#### Steg 12
 När du får ett svar från `main` funktionen, kör om mainfunktionen så du kan fortsätta programmet.
+
+#### Steg 13
+Anropa mainfunktionen längst ner i programmet.
