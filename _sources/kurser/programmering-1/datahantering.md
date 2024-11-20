@@ -166,9 +166,9 @@ Saldo betyder hur mycket som finns kvar på kortet, antal dagar betyder hur mån
 För att anropa den här funktionen behöver du skapa två variabler längst ner i programmet, nämligen en variabel som heter `skoldagar` som är antalet skoldagar, samt en variabel som heter `kronor_lista` som är en lista över alla tal i kronorkolumnen i excelfilen.
 
 #### Steg 6
-Skapa en funktion `def spendera(dagar_kvar, pengar_kvar)` som tar hur många dagar det är kvar på månaden innan saldot på matkortet fylls på, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.
+Skapa en funktion `def spendera(kronor, pengar_kvar)` som tar listan över alla kronor, samt vad saldot är. Funktionen ska returnera hur mycket du ska spendera i snitt varje dag till starten av nästa månad.
 
-För att anropa den här funktionen behöver du ge antalet dagar kvar, vilket är `skoldagar` - `registrerade_dagar`. Variabeln `registrerade_dagar` är antalet dagar som finns i kolumnen `Dagar` i excelfilen.
+För att anropa den här funktionen behöver du ge funktionen listan `kronor_lista`samt saldot i form av en lokal variabel där du anropar `saldo`-funktionen.
 
 #### Steg 7
 Testa att ändra i excelfilen och se om allting stämmer.
