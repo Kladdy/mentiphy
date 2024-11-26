@@ -359,6 +359,1890 @@
 <hr class="docutils" />
 <section id="quiz">
 <h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading">#</a></h2>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div id="cWlFKDQFoaDy" data-shufflequestions="True"
+               data-shuffleanswers="True"
+               data-preserveresponses="false"
+               data-numquestions="1000000"
+               data-maxwidth="600"
+               style="border-radius: 10px; text-align: left"> <style>
+#cWlFKDQFoaDy {
+   --jq-multiple-choice-bg: #6f78ffff;
+   --jq-mc-button-bg: #fafafa;
+   --jq-mc-button-border: #e0e0e0e0;
+   --jq-mc-button-inset-shadow: #555555;
+   --jq-many-choice-bg: #f75c03ff;
+   --jq-numeric-bg: #392061ff;
+   --jq-numeric-input-bg: #c0c0c0;
+   --jq-numeric-input-label: #101010;
+   --jq-numeric-input-shadow: #999999;
+   --jq-incorrect-color: #c80202;
+   --jq-correct-color: #009113;
+   --jq-text-color: #fafafa;
+}
+
+.Quiz {
+    max-width: 600px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+/*    margin-bottom: 15px;*/
+/*    padding-bottom: 4px;*/
+    padding-top: 4px;
+    line-height: 1.1;
+    font-size: 16pt;
+    border-radius: inherit;
+}
+
+.QuizCode {
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.QuizCode>pre {
+    padding: 4px;
+}
+
+.Quiz code {
+    background-color: lightgray;
+    color: black;
+}
+
+.Quiz .QuizCode code {
+    background-color: inherit;
+    color: inherit;
+}
+
+
+.Quiz .MCButton code {
+    background-color: inherit;
+    color: inherit;
+}
+
+.MCButton .QuizCode {
+    text-align: left;
+}
+
+
+
+
+.Answer {
+    border-radius: inherit;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width:480px) {
+    .Answer {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.Feedback {
+    font-size: 16pt;
+    text-align: center;
+/*    min-height: 2em;*/
+}
+
+.Input {
+    align: left;
+    font-size: 20pt;
+}
+
+.Input-text {
+    display: block;
+    margin: 10px;
+    color: inherit;
+    width: 140px;
+    background-color: var(--jq-numeric-input-bg);
+    color: var(--jq-text-color);
+    padding: 5px;
+    padding-left: 10px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: inherit;
+    line-height: 20pt;
+    border: none;
+    border-radius: 0.2rem;
+    transition: box-shadow 0.1s);
+}
+
+.Input-text:focus {
+    /*outline: none;*/
+    background-color: var(--jq-numeric-input-bg);
+    box-shadow: 0.6rem 0.8rem 1.4rem -0.5rem var(--jq-numeric-input-shadow);
+}
+
+.MCButton {
+    background: var(--jq-mc-button-bg);
+    border: 1px solid var(--jq-mc-button-border);
+    border-radius: inherit;
+    color: #333333;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MCButton p {
+    color: inherit;
+}
+
+.MultipleChoiceQn {
+    padding: 10px;
+    background: var(--jq-multiple-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
+}
+
+.ManyChoiceQn {
+    padding: 10px;
+    background: var(--jq-many-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
+}
+
+.NumericQn {
+    background: var(--jq-numeric-bg);
+    border-radius: inherit;
+    color: var(--jq-text-color);
+    padding: 10px;
+}
+
+.NumericQn p {
+    color: inherit;
+}
+
+.InpLabel {
+    color: var(--jq-numeric-input-label);
+    float: left;
+    font-size: 15pt;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.incorrect {
+    color: var(--jq-incorrect-color);
+}
+
+.correct {
+    color: var(--jq-correct-color);
+}
+
+.correctButton {
+    /*
+    background: var(--jq-correct-color);
+   */
+    animation: correct-anim 0.6s ease;
+    animation-fill-mode: forwards;
+    box-shadow: inset 0 0 5px var(--jq-mc-button-inset-shadow);
+    color: var(--jq-text-color);
+    /*outline: none;*/
+}
+
+.incorrectButton {
+    animation: incorrect-anim 0.8s ease;
+    animation-fill-mode: forwards;
+    box-shadow: inset 0 0 5px var(--jq-mc-button-inset-shadow);
+    color: var(--jq-text-color);
+    /*outline: none;*/
+}
+
+@keyframes incorrect-anim {
+    100% {
+        background-color: var(--jq-incorrect-color);
+    }
+}
+
+@keyframes correct-anim {
+    100% {
+        background-color: var(--jq-correct-color);
+    }
+}
+</style></div><script type="application/javascript">var questionscWlFKDQFoaDy=[
+    {
+        "question": "Vad är en likformig rörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse med konstant hastighet",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "En rörelse där hastigheten ändras",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en retarderad rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en accelererad rörelse."
+            }
+        ]
+    },
+    {
+        "question": "Vad är en olikformig rörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse med konstant hastighet",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en likformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ändras",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": true,
+                "feedback": "Snyggt! En retarderad rörelse är en olikformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": true,
+                "feedback": "Snyggt! En accelererad rörelse är en olikformig rörelse."
+            }
+        ]
+    },
+    {
+        "question": "Vad är en retarderad rörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse med konstant hastighet",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ändras",
+                "correct": true,
+                "feedback": "Ja, men ökar eller minskar den?"
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": true,
+                "feedback": "Snyggt!"
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en accelererad rörelse."
+            }
+        ]
+    },
+    {
+        "question": "Vad är en accelererad rörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse med konstant hastighet",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en olikformig rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ändras",
+                "correct": true,
+                "feedback": "Ja, men ökar eller minskar den?"
+            },
+            {
+                "answer": "En rörelse där hastigheten minskar",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är en retarderad rörelse."
+            },
+            {
+                "answer": "En rörelse där hastigheten ökar",
+                "correct": true,
+                "feedback": "Snyggt!"
+            }
+        ]
+    },
+    {
+        "question": "En rörelse där hastigheten är konstant är en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "likformig rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "olikformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten ändras."
+            },
+            {
+                "answer": "accelererad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten ökar."
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten minskar."
+            }
+        ]
+    },
+    {
+        "question": "En rörelse där hastigheten ändras är en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "likformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
+            },
+            {
+                "answer": "olikformig rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "accelererad rörelse.",
+                "correct": true,
+                "feedback": "Kan vara, men kan också vara retarderad."
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": true,
+                "feedback": "Kan vara, men kan också vara accelererad."
+            }
+        ]
+    },
+    {
+        "question": "En rörelse där hastigheten ökar är en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "likformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
+            },
+            {
+                "answer": "olikformig rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "accelererad rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten minskar."
+            }
+        ]
+    },
+    {
+        "question": "En rörelse där hastigheten minskar är en...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "likformig rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten är konstant."
+            },
+            {
+                "answer": "olikformig rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            },
+            {
+                "answer": "accelererad rörelse.",
+                "correct": false,
+                "feedback": "Nej tyvärr, det är när hastigheten ökar."
+            },
+            {
+                "answer": "retarderad rörelse.",
+                "correct": true,
+                "feedback": "Bravo!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är en kraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Någon som är kraftigt byggd",
+                "correct": false,
+                "feedback": "Nja, då är de väl bara stark?"
+            },
+            {
+                "answer": "En viss typ av hastighet",
+                "correct": false,
+                "feedback": "Prova igen."
+            },
+            {
+                "answer": "Någonting som skapar eller motverkar en rörelse",
+                "correct": true,
+                "feedback": "Precis!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är en kraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Någon som är kraftigt byggd",
+                "correct": false,
+                "feedback": "Nja, då är de väl bara stark?"
+            },
+            {
+                "answer": "En viss typ av hastighet",
+                "correct": false,
+                "feedback": "Prova igen."
+            },
+            {
+                "answer": "Någonting som skapar eller motverkar en rörelse",
+                "correct": true,
+                "feedback": "Precis!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är en dynamometer?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett verktyg för att mäta hastighet",
+                "correct": false,
+                "feedback": "Försök igen."
+            },
+            {
+                "answer": "Ett verktyg för att mäta rörelse",
+                "correct": false,
+                "feedback": "Försök igen."
+            },
+            {
+                "answer": "Ett verktyg för att mäta kraft",
+                "correct": true,
+                "feedback": "Precis!"
+            }
+        ]
+    },
+    {
+        "question": "Vilken enhet mäts kraft i?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Newton (N)",
+                "correct": true,
+                "feedback": "Ja, uppkallat efter Sir Isaac Newton."
+            },
+            {
+                "answer": "Kilogram (kg)",
+                "correct": false,
+                "feedback": "Försök igen."
+            },
+            {
+                "answer": "Dynamometer",
+                "correct": false,
+                "feedback": "Nej, en dynamometer används för att mäta kraft men är inte en enhet."
+            }
+        ]
+    },
+    {
+        "question": "Vad är SVT-triangeln?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En inläsningstjänst till Sveriges Television",
+                "correct": false,
+                "feedback": "Nej, så är det inte."
+            },
+            {
+                "answer": "En metod att beräkna sträcka, tid eller hastighet",
+                "correct": true,
+                "feedback": "Precis, om vi vet två av dem kan vi alltid räkna ut den tredje!"
+            }
+        ]
+    },
+    {
+        "question": "Är massa och tyngd samma sak?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ja, båda betyder vikt",
+                "correct": false,
+                "feedback": "Nej, tyngd har faktiskt en lite annan betydelse."
+            },
+            {
+                "answer": "Nej, de beror på varandra med är inte samma sak",
+                "correct": true,
+                "feedback": "Precis, massa är vikt medan tyngden är en kraft som beror på tyngdkraften!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som motverkar rörelse mellan två ytor",
+                "correct": true,
+                "feedback": "Korrekt! Friktion är en bromsande kraft som uppstår mellan två ytor."
+            },
+            {
+                "answer": "En kraft som ökar hastigheten mellan två ytor",
+                "correct": false,
+                "feedback": "Nej, friktion bromsar rörelsen."
+            },
+            {
+                "answer": "En kraft som skapas av tyngdkraften",
+                "correct": false,
+                "feedback": "Inte riktigt, prova igen."
+            }
+        ]
+    },
+    {
+        "question": "När vill man ha hög friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "När man går på is",
+                "correct": true,
+                "feedback": "Precis! Hög friktion hjälper till att förhindra att man halkar."
+            },
+            {
+                "answer": "När man åker skidor",
+                "correct": false,
+                "feedback": "Nej, då vill man ha låg friktion för att glida lättare."
+            },
+            {
+                "answer": "När man kör bil och behöver stanna snabbt",
+                "correct": true,
+                "feedback": "Rätt! Hög friktion mellan däcken och vägen hjälper bilen att stanna snabbare."
+            }
+        ]
+    },
+    {
+        "question": "När vill man ha låg friktion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "När man åker skridskor",
+                "correct": true,
+                "feedback": "Korrekt! Låg friktion hjälper skridskor att glida lätt över isen."
+            },
+            {
+                "answer": "När man går uppför en backe",
+                "correct": false,
+                "feedback": "Nej, då är hög friktion bättre för att förhindra att man halkar."
+            },
+            {
+                "answer": "När man glider på en rutschkana",
+                "correct": true,
+                "feedback": "Rätt! Låg friktion gör att man glider snabbt nerför rutschkanan."
+            }
+        ]
+    },
+    {
+        "question": "Varför är friktion en viktig faktor när man kör bil?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den hjälper däcken att greppa vägen och kontrollerar hastigheten",
+                "correct": true,
+                "feedback": "Ja! Friktion är viktig för att hålla bilen stabil och kunna bromsa effektivt."
+            },
+            {
+                "answer": "Den minskar slitaget på däcken",
+                "correct": false,
+                "feedback": "Nej, friktion orsakar faktiskt däckslitage."
+            }
+        ]
+    },
+    {
+        "question": "En bil kör i 60 km/h i 2 timmar. Hur långt har bilen kört?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "120",
+                "correct": true,
+                "feedback": "Korrekt! Sträckan blir 120 km (60 km/h * 2 h)."
+            }
+        ],
+        "unit": "km"
+    },
+    {
+        "question": "En person går 10 km med en hastighet på 5 km/h. Hur lång tid tar promenaden?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "2",
+                "correct": true,
+                "feedback": "Rätt! Det tar 2 timmar (10 km / 5 km/h)."
+            }
+        ],
+        "unit": "timmar"
+    },
+    {
+        "question": "En cyklist tar sig 15 km på 3 timmar. Vad är cyklistens hastighet?",
+        "type": "numerical",
+        "answers": [
+            {
+                "answer": "5",
+                "correct": true,
+                "feedback": "Korrekt! Hastigheten är 5 km/h (15 km / 3 h)."
+            }
+        ],
+        "unit": "km/h"
+    },
+    {
+        "question": "Vad är tyngdpunkten hos ett föremål?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den punkt där hela föremålets massa kan tänkas vara samlad",
+                "correct": true,
+                "feedback": "Rätt! Tyngdpunkten är där föremålets massa är centrerad."
+            },
+            {
+                "answer": "Den punkt där föremålet börjar röra sig",
+                "correct": false,
+                "feedback": "Inte riktigt, tänk på var massan är centrerad."
+            },
+            {
+                "answer": "En punkt vid föremålets botten",
+                "correct": false,
+                "feedback": "Nej, tyngdpunkten kan vara var som helst inom eller utanför föremålet."
+            }
+        ]
+    },
+    {
+        "question": "Vad är lodlinjen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En tänkt linje som går rakt ner från tyngdpunkten mot marken",
+                "correct": true,
+                "feedback": "Korrekt! Lodlinjen visar riktningen av tyngdkraften."
+            },
+            {
+                "answer": "En linje som markerar föremålets kanter",
+                "correct": false,
+                "feedback": "Nej, lodlinjen har att göra med tyngdkraftens riktning."
+            },
+            {
+                "answer": "En linje som alltid är horisontell",
+                "correct": false,
+                "feedback": "Nej, lodlinjen är vertikal och visar tyngdkraftens riktning."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer om lodlinjen hamnar utanför stödytan?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Föremålet välter",
+                "correct": true,
+                "feedback": "Korrekt! När lodlinjen går utanför stödytan blir föremålet instabilt och kan välta."
+            },
+            {
+                "answer": "Föremålet blir stabilare",
+                "correct": false,
+                "feedback": "Nej, föremålet blir istället mer instabilt."
+            },
+            {
+                "answer": "Föremålet kan inte röra sig",
+                "correct": false,
+                "feedback": "Inte riktigt, föremålet riskerar att välta när lodlinjen är utanför stödytan."
+            }
+        ]
+    },
+    {
+        "question": "Hur kan man göra ett föremål stabilare?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Sänka tyngdpunkten och öka stödytan",
+                "correct": true,
+                "feedback": "Rätt! En lägre tyngdpunkt och bredare stödyta gör föremålet stabilare."
+            },
+            {
+                "answer": "Höja tyngdpunkten och minska stödytan",
+                "correct": false,
+                "feedback": "Nej, det skulle göra föremålet mer instabilt."
+            },
+            {
+                "answer": "Placera tyngdpunkten så högt som möjligt",
+                "correct": false,
+                "feedback": "Nej, en högre tyngdpunkt gör föremålet mindre stabilt."
+            }
+        ]
+    },
+    {
+        "question": "Vad innebär fritt fall?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ett fall där ett föremål endast påverkas av gravitationen",
+                "correct": true,
+                "feedback": "Korrekt! Fritt fall innebär att föremålet endast påverkas av gravitationskraften."
+            },
+            {
+                "answer": "Ett fall där ett föremål faller med konstant hastighet",
+                "correct": false,
+                "feedback": "Inte riktigt, föremålet accelererar faktiskt på grund av gravitationen."
+            },
+            {
+                "answer": "Ett fall där luftmotståndet är lika stort som tyngdkraften",
+                "correct": false,
+                "feedback": "Nej, det skulle innebära att föremålet når terminalhastighet och inte längre accelererar."
+            }
+        ]
+    },
+    {
+        "question": "Vad är tröghet?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En egenskap som gör att föremål motstår förändringar i rörelse",
+                "correct": true,
+                "feedback": "Rätt! Ett föremål i rörelse vill fortsätta röra sig och ett föremål som är stilla vill fortsätta vara stilla."
+            },
+            {
+                "answer": "En kraft som drar föremål neråt",
+                "correct": false,
+                "feedback": "Nej, det är gravitation som drar föremål neråt."
+            },
+            {
+                "answer": "En kraft som får föremål att röra sig snabbare",
+                "correct": false,
+                "feedback": "Nej, tröghet är snarare motståndet mot att ändra hastighet eller rörelseriktning."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med två föremål av olika vikt i fritt fall (utan luftmotstånd)?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "De faller med samma acceleration och når marken samtidigt",
+                "correct": true,
+                "feedback": "Korrekt! Utan luftmotstånd påverkas båda föremålen endast av gravitationen och faller lika snabbt."
+            },
+            {
+                "answer": "Det tyngre föremålet faller snabbare",
+                "correct": false,
+                "feedback": "Nej, tyngre föremål faller inte snabbare i fritt fall om luftmotståndet inte påverkar."
+            },
+            {
+                "answer": "Det lättare föremålet faller snabbare",
+                "correct": false,
+                "feedback": "Inte riktigt, båda föremålen påverkas lika mycket av gravitationen i fritt fall."
+            }
+        ]
+    },
+    {
+        "question": "Hur märker du tröghet när du åker bil och plötsligt bromsar?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Kroppen fortsätter framåt trots att bilen saktar ner",
+                "correct": true,
+                "feedback": "Rätt! Kroppen har tröghet och vill fortsätta röra sig framåt när bilen bromsar."
+            },
+            {
+                "answer": "Kroppen dras bakåt i sätet",
+                "correct": false,
+                "feedback": "Nej, kroppen dras snarare framåt på grund av trögheten."
+            },
+            {
+                "answer": "Kroppen påverkas inte alls",
+                "correct": false,
+                "feedback": "Nej, tröghet gör att kroppen fortsätter i samma riktning även om bilen bromsar."
+            }
+        ]
+    },
+    {
+        "question": "Varför faller en sten snabbare än en fjäder på jorden, trots att gravitationen påverkar dem lika?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "På grund av luftmotståndet som påverkar fjädern mer än stenen",
+                "correct": true,
+                "feedback": "Rätt! Luftmotståndet bromsar fjädern mer, vilket gör att den faller långsammare."
+            },
+            {
+                "answer": "För att stenen har mer tröghet än fjädern",
+                "correct": false,
+                "feedback": "Inte riktigt, tröghet påverkar inte fallhastigheten i det här fallet."
+            },
+            {
+                "answer": "För att gravitationen påverkar tyngre föremål mer",
+                "correct": false,
+                "feedback": "Nej, gravitationen påverkar alla föremål lika i fritt fall oavsett vikt."
+            }
+        ]
+    },
+    {
+        "question": "Vad är en centralrörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse som går i en cirkel runt en punkt",
+                "correct": true,
+                "feedback": "Korrekt! Centralrörelse innebär att ett föremål rör sig i en cirkel runt en medelpunkt."
+            },
+            {
+                "answer": "En rörelse som går rakt fram i en linje",
+                "correct": false,
+                "feedback": "Inte riktigt, centralrörelse innebär att föremålet rör sig runt en punkt."
+            },
+            {
+                "answer": "En rörelse där hastigheten hela tiden ökar",
+                "correct": false,
+                "feedback": "Nej, centralrörelse handlar om cirkelrörelse, inte nödvändigtvis om hastighetsökning."
+            }
+        ]
+    },
+    {
+        "question": "Vad är centripetalkraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som drar ett föremål in mot cirkelns centrum",
+                "correct": true,
+                "feedback": "Rätt! Centripetalkraften verkar in mot centrum och håller föremålet i cirkelbanan."
+            },
+            {
+                "answer": "En kraft som drar ett föremål utåt från cirkelns centrum",
+                "correct": false,
+                "feedback": "Inte riktigt, centripetalkraften drar inåt mot centrum."
+            },
+            {
+                "answer": "En kraft som alltid ökar föremålets hastighet",
+                "correct": false,
+                "feedback": "Nej, centripetalkraften håller föremålet i en cirkelbana utan att ändra hastigheten."
+            }
+        ]
+    },
+    {
+        "question": "Vad är centrifugalkraft?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En kraft som känns som att den drar ett föremål utåt från cirkelns centrum",
+                "correct": true,
+                "feedback": "Rätt! Centrifugalkraft är en upplevd kraft som känns som att den drar föremålet utåt."
+            },
+            {
+                "answer": "En kraft som drar föremålet in mot cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, det är centripetalkraften som drar föremålet inåt."
+            },
+            {
+                "answer": "En kraft som gör att föremålet stannar i cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, centrifugalkraften verkar utåt från cirkelns centrum, inte inåt."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer om centripetalkraften plötsligt försvinner för ett föremål i cirkelrörelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Föremålet fortsätter rakt fram i riktningen den har just då",
+                "correct": true,
+                "feedback": "Rätt! Om centripetalkraften försvinner, kommer föremålet att röra sig rakt fram på grund av tröghet."
+            },
+            {
+                "answer": "Föremålet fortsätter att röra sig i en cirkel",
+                "correct": false,
+                "feedback": "Inte riktigt, utan centripetalkraften kan föremålet inte stanna kvar i cirkelrörelsen."
+            },
+            {
+                "answer": "Föremålet rör sig in mot cirkelns centrum",
+                "correct": false,
+                "feedback": "Nej, föremålet rör sig i en rak linje i tangentens riktning när centripetalkraften försvinner."
+            }
+        ]
+    },
+    {
+        "question": "Vad är ett exempel på centripetalkraft i vardagen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Kraften som håller bilen på vägen i en kurva",
+                "correct": true,
+                "feedback": "Korrekt! Friktionen mellan däcken och vägen fungerar som centripetalkraften i en kurva."
+            },
+            {
+                "answer": "Kraften som får dig att luta dig utåt i en kurva",
+                "correct": false,
+                "feedback": "Inte riktigt, det är centrifugalkraften som får dig att känna en rörelse utåt."
+            },
+            {
+                "answer": "Kraften som får en boll att falla till marken",
+                "correct": false,
+                "feedback": "Nej, det är gravitationskraften som drar bollen neråt, inte centripetalkraften."
+            }
+        ]
+    },
+    {
+        "question": "Vad upplever du när du känner dig pressad utåt i en kurva?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Centrifugalkraft",
+                "correct": true,
+                "feedback": "Rätt! Centrifugalkraften känns som att den drar dig utåt från kurvan."
+            },
+            {
+                "answer": "Centripetalkraft",
+                "correct": false,
+                "feedback": "Nej, centripetalkraften verkar inåt, inte utåt."
+            },
+            {
+                "answer": "Gravitationskraft",
+                "correct": false,
+                "feedback": "Nej, det är centrifugalkraften som ger den utåtriktade känslan i en kurva."
+            }
+        ]
+    },
+    {
+        "question": "Centrifugalkraft är ingen riktig kraft. Vad beror den på?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Trögheten",
+                "correct": true,
+                "feedback": "Rätt!"
+            },
+            {
+                "answer": "Friktionen",
+                "correct": false,
+                "feedback": "Fel."
+            }
+        ]
+    },                    
+    {
+        "question": "Vad betyder medelhastighet?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den maximala hastighet någonting kan nå",
+                "correct": false,
+                "feedback": "Nej, prova igen!"
+            },
+            {
+                "answer": "Medelvärdet av hastigheten under en viss tid",
+                "correct": true,
+                "feedback": "Bravo!"
+            }
+        ]
+    },
+    {
+        "question": "Vad är kaströrelse?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "En rörelse där ett föremål rör sig i en båge under inverkan av gravitationen",
+                "correct": true,
+                "feedback": "Korrekt! Kaströrelse innebär att föremålet rör sig i en båge under påverkan av både kastkraft och gravitation."
+            },
+            {
+                "answer": "En rörelse som endast påverkas av kastkraften",
+                "correct": false,
+                "feedback": "Inte riktigt, kaströrelse påverkas av både kastkraft och gravitation."
+            },
+            {
+                "answer": "En rörelse som bara sker i en rak linje",
+                "correct": false,
+                "feedback": "Nej, kaströrelse sker i en båge på grund av gravitationens påverkan."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med ett föremåls horisontella hastighet under kaströrelsen (om vi bortser från luftmotstånd)?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den förblir konstant",
+                "correct": true,
+                "feedback": "Korrekt! Utan luftmotstånd påverkas inte den horisontella hastigheten av gravitationen."
+            },
+            {
+                "answer": "Den minskar hela tiden",
+                "correct": false,
+                "feedback": "Inte riktigt, den horisontella hastigheten är konstant om vi bortser från luftmotstånd."
+            },
+            {
+                "answer": "Den ökar hela tiden",
+                "correct": false,
+                "feedback": "Nej, den horisontella hastigheten förblir konstant utan luftmotstånd."
+            }
+        ]
+    },
+    {
+        "question": "Vad händer med ett föremåls vertikala hastighet under kaströrelsen?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den påverkas av gravitationen, vilket gör att föremålet först bromsas upp och sedan accelererar nedåt",
+                "correct": true,
+                "feedback": "Rätt! Den vertikala hastigheten minskar på väg uppåt, stannar tillfälligt i vändpunkten och ökar sedan nedåt."
+            },
+            {
+                "answer": "Den förblir konstant",
+                "correct": false,
+                "feedback": "Nej, den vertikala hastigheten påverkas av gravitationen och ändras därför hela tiden."
+            },
+            {
+                "answer": "Den ökar hela tiden",
+                "correct": false,
+                "feedback": "Inte riktigt, hastigheten minskar på vägen upp och ökar på vägen ner."
+            }
+        ]
+    }
+]
+;
+    // Make a random ID
+function makeid(length) {
+    var result = [];
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+        result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));
+    }
+    return result.join('');
+}
+
+// Choose a random subset of an array. Can also be used to shuffle the array
+function getRandomSubarray(arr, size) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
+
+function printResponses(responsesContainer) {
+    var responses=JSON.parse(responsesContainer.dataset.responses);
+    var stringResponses='<B>IMPORTANT!</B>To preserve this answer sequence for submission, when you have finalized your answers: <ol> <li> Copy the text in this cell below "Answer String"</li> <li> Double click on the cell directly below the Answer String, labeled "Replace Me"</li> <li> Select the whole "Replace Me" text</li> <li> Paste in your answer string and press shift-Enter.</li><li>Save the notebook using the save icon or File->Save Notebook menu item</li></ul><br><br><br><b>Answer String:</b><br> ';
+    console.log(responses);
+    responses.forEach((response, index) => {
+        if (response) {
+            console.log(index + ': ' + response);
+            stringResponses+= index + ': ' + response +"<BR>";
+        }
+    });
+    responsesContainer.innerHTML=stringResponses;
+}
+/* Callback function to determine whether a selected multiple-choice
+   button corresponded to a correct answer and to provide feedback
+   based on the answer */
+function check_mc() {
+    var id = this.id.split('-')[0];
+    //var response = this.id.split('-')[1];
+    //console.log(response);
+    //console.log("In check_mc(), id="+id);
+    //console.log(event.srcElement.id)           
+    //console.log(event.srcElement.dataset.correct)   
+    //console.log(event.srcElement.dataset.feedback)
+
+    var label = event.srcElement;
+    //console.log(label, label.nodeName);
+    var depth = 0;
+    while ((label.nodeName != "LABEL") && (depth < 20)) {
+        label = label.parentElement;
+        console.log(depth, label);
+        depth++;
+    }
+
+
+
+    var answers = label.parentElement.children;
+    //console.log(answers);
+
+    // Split behavior based on multiple choice vs many choice:
+    var fb = document.getElementById("fb" + id);
+
+
+
+    /* Multiple choice (1 answer). Allow for 0 correct
+       answers as an edge case */
+    if (fb.dataset.numcorrect <= 1) {
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            //console.log(responsesContainer);
+            var response = label.firstChild.innerText;
+            if (label.querySelector(".QuizCode")){
+                response+= label.querySelector(".QuizCode").firstChild.innerText;
+            }
+            console.log(response);
+            //console.log(document.getElementById("quizWrap"+id));
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            console.log(responses);
+            responses[qnum]= response;
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End code to preserve responses
+
+        for (var i = 0; i < answers.length; i++) {
+            var child = answers[i];
+            //console.log(child);
+            child.className = "MCButton";
+        }
+
+
+
+        if (label.dataset.correct == "true") {
+            // console.log("Correct action");
+            if ("feedback" in label.dataset) {
+                fb.innerHTML = jaxify(label.dataset.feedback);
+            } else {
+                fb.innerHTML = "Correct!";
+            }
+            label.classList.add("correctButton");
+
+            fb.className = "Feedback";
+            fb.classList.add("correct");
+
+        } else {
+            if ("feedback" in label.dataset) {
+                fb.innerHTML = jaxify(label.dataset.feedback);
+            } else {
+                fb.innerHTML = "Incorrect -- try again.";
+            }
+            //console.log("Error action");
+            label.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+    }
+    else { /* Many choice (more than 1 correct answer) */
+        var reset = false;
+        var feedback;
+         if (label.dataset.correct == "true") {
+            if ("feedback" in label.dataset) {
+                feedback = jaxify(label.dataset.feedback);
+            } else {
+                feedback = "Correct!";
+            }
+            if (label.dataset.answered <= 0) {
+                if (fb.dataset.answeredcorrect < 0) {
+                    fb.dataset.answeredcorrect = 1;
+                    reset = true;
+                } else {
+                    fb.dataset.answeredcorrect++;
+                }
+                if (reset) {
+                    for (var i = 0; i < answers.length; i++) {
+                        var child = answers[i];
+                        child.className = "MCButton";
+                        child.dataset.answered = 0;
+                    }
+                }
+                label.classList.add("correctButton");
+                label.dataset.answered = 1;
+                fb.className = "Feedback";
+                fb.classList.add("correct");
+
+            }
+        } else {
+            if ("feedback" in label.dataset) {
+                feedback = jaxify(label.dataset.feedback);
+            } else {
+                feedback = "Incorrect -- try again.";
+            }
+            if (fb.dataset.answeredcorrect > 0) {
+                fb.dataset.answeredcorrect = -1;
+                reset = true;
+            } else {
+                fb.dataset.answeredcorrect--;
+            }
+
+            if (reset) {
+                for (var i = 0; i < answers.length; i++) {
+                    var child = answers[i];
+                    child.className = "MCButton";
+                    child.dataset.answered = 0;
+                }
+            }
+            label.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            //console.log(responsesContainer);
+            var response = label.firstChild.innerText;
+            if (label.querySelector(".QuizCode")){
+                response+= label.querySelector(".QuizCode").firstChild.innerText;
+            }
+            console.log(response);
+            //console.log(document.getElementById("quizWrap"+id));
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            if (label.dataset.correct == "true") {
+                if (typeof(responses[qnum]) == "object"){
+                    if (!responses[qnum].includes(response))
+                        responses[qnum].push(response);
+                } else{
+                    responses[qnum]= [ response ];
+                }
+            } else {
+                responses[qnum]= response;
+            }
+            console.log(responses);
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End save responses stuff
+
+
+
+        var numcorrect = fb.dataset.numcorrect;
+        var answeredcorrect = fb.dataset.answeredcorrect;
+        if (answeredcorrect >= 0) {
+            fb.innerHTML = feedback + " [" + answeredcorrect + "/" + numcorrect + "]";
+        } else {
+            fb.innerHTML = feedback + " [" + 0 + "/" + numcorrect + "]";
+        }
+
+
+    }
+
+    if (typeof MathJax != 'undefined') {
+        var version = MathJax.version;
+        console.log('MathJax version', version);
+        if (version[0] == "2") {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        } else if (version[0] == "3") {
+            MathJax.typeset([fb]);
+        }
+    } else {
+        console.log('MathJax not detected');
+    }
+
+}
+
+
+/* Function to produce the HTML buttons for a multiple choice/
+   many choice question  and to update the CSS tags based on
+   the question type */
+function make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id) {
+
+    var shuffled;
+    if (shuffle_answers == "True") {
+        //console.log(shuffle_answers+" read as true");
+        shuffled = getRandomSubarray(qa.answers, qa.answers.length);
+    } else {
+        //console.log(shuffle_answers+" read as false");
+        shuffled = qa.answers;
+    }
+
+
+    var num_correct = 0;
+
+    shuffled.forEach((item, index, ans_array) => {
+        //console.log(answer);
+
+        // Make input element
+        var inp = document.createElement("input");
+        inp.type = "radio";
+        inp.id = "quizo" + id + index;
+        inp.style = "display:none;";
+        aDiv.append(inp);
+
+        //Make label for input element
+        var lab = document.createElement("label");
+        lab.className = "MCButton";
+        lab.id = id + '-' + index;
+        lab.onclick = check_mc;
+        var aSpan = document.createElement('span');
+        aSpan.classsName = "";
+        //qDiv.id="quizQn"+id+index;
+        if ("answer" in item) {
+            aSpan.innerHTML = jaxify(item.answer);
+            //aSpan.innerHTML=item.answer;
+        }
+        lab.append(aSpan);
+
+        // Create div for code inside question
+        var codeSpan;
+        if ("code" in item) {
+            codeSpan = document.createElement('span');
+            codeSpan.id = "code" + id + index;
+            codeSpan.className = "QuizCode";
+            var codePre = document.createElement('pre');
+            codeSpan.append(codePre);
+            var codeCode = document.createElement('code');
+            codePre.append(codeCode);
+            codeCode.innerHTML = item.code;
+            lab.append(codeSpan);
+            //console.log(codeSpan);
+        }
+
+        //lab.textContent=item.answer;
+
+        // Set the data attributes for the answer
+        lab.setAttribute('data-correct', item.correct);
+        if (item.correct) {
+            num_correct++;
+        }
+        if ("feedback" in item) {
+            lab.setAttribute('data-feedback', item.feedback);
+        }
+        lab.setAttribute('data-answered', 0);
+
+        aDiv.append(lab);
+
+    });
+
+    if (num_correct > 1) {
+        outerqDiv.className = "ManyChoiceQn";
+    } else {
+        outerqDiv.className = "MultipleChoiceQn";
+    }
+
+    return num_correct;
+
+}
+function check_numeric(ths, event) {
+
+    if (event.keyCode === 13) {
+        ths.blur();
+
+        var id = ths.id.split('-')[0];
+
+        var submission = ths.value;
+        if (submission.indexOf('/') != -1) {
+            var sub_parts = submission.split('/');
+            //console.log(sub_parts);
+            submission = sub_parts[0] / sub_parts[1];
+        }
+        //console.log("Reader entered", submission);
+
+        if ("precision" in ths.dataset) {
+            var precision = ths.dataset.precision;
+            submission = Number(Number(submission).toPrecision(precision));
+        }
+
+
+        //console.log("In check_numeric(), id="+id);
+        //console.log(event.srcElement.id)           
+        //console.log(event.srcElement.dataset.feedback)
+
+        var fb = document.getElementById("fb" + id);
+        fb.style.display = "none";
+        fb.innerHTML = "Incorrect -- try again.";
+
+        var answers = JSON.parse(ths.dataset.answers);
+        //console.log(answers);
+
+        var defaultFB = "Incorrect. Try again.";
+        var correct;
+        var done = false;
+        answers.every(answer => {
+            //console.log(answer.type);
+
+            correct = false;
+            // if (answer.type=="value"){
+            if ('value' in answer) {
+                if (submission == answer.value) {
+                    if ("feedback" in answer) {
+                        fb.innerHTML = jaxify(answer.feedback);
+                    } else {
+                        fb.innerHTML = jaxify("Correct");
+                    }
+                    correct = answer.correct;
+                    //console.log(answer.correct);
+                    done = true;
+                }
+                // } else if (answer.type=="range") {
+            } else if ('range' in answer) {
+                console.log(answer.range);
+                console.log(submission, submission >=answer.range[0], submission < answer.range[1])
+                if ((submission >= answer.range[0]) && (submission < answer.range[1])) {
+                    fb.innerHTML = jaxify(answer.feedback);
+                    correct = answer.correct;
+                    console.log(answer.correct);
+                    done = true;
+                }
+            } else if (answer.type == "default") {
+                if ("feedback" in answer) {
+                    defaultFB = answer.feedback;
+                } 
+            }
+            if (done) {
+                return false; // Break out of loop if this has been marked correct
+            } else {
+                return true; // Keep looking for case that includes this as a correct answer
+            }
+        });
+        console.log("done:", done);
+
+        if ((!done) && (defaultFB != "")) {
+            fb.innerHTML = jaxify(defaultFB);
+            //console.log("Default feedback", defaultFB);
+        }
+
+        fb.style.display = "block";
+        if (correct) {
+            ths.className = "Input-text";
+            ths.classList.add("correctButton");
+            fb.className = "Feedback";
+            fb.classList.add("correct");
+        } else {
+            ths.className = "Input-text";
+            ths.classList.add("incorrectButton");
+            fb.className = "Feedback";
+            fb.classList.add("incorrect");
+        }
+
+        // What follows is for the saved responses stuff
+        var outerContainer = fb.parentElement.parentElement;
+        var responsesContainer = document.getElementById("responses" + outerContainer.id);
+        if (responsesContainer) {
+            console.log(submission);
+            var qnum = document.getElementById("quizWrap"+id).dataset.qnum;
+            //console.log("Question " + qnum);
+            //console.log(id, ", got numcorrect=",fb.dataset.numcorrect);
+            var responses=JSON.parse(responsesContainer.dataset.responses);
+            console.log(responses);
+            if (submission == ths.value){
+                responses[qnum]= submission;
+            } else {
+                responses[qnum]= ths.value + "(" + submission +")";
+            }
+            responsesContainer.setAttribute('data-responses', JSON.stringify(responses));
+            printResponses(responsesContainer);
+        }
+        // End code to preserve responses
+
+        if (typeof MathJax != 'undefined') {
+            var version = MathJax.version;
+            console.log('MathJax version', version);
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                MathJax.typeset([fb]);
+            }
+        } else {
+            console.log('MathJax not detected');
+        }
+        return false;
+    }
+
+}
+
+function isValid(el, charC) {
+    //console.log("Input char: ", charC);
+    if (charC == 46) {
+        if (el.value.indexOf('.') === -1) {
+            return true;
+        } else if (el.value.indexOf('/') != -1) {
+            var parts = el.value.split('/');
+            if (parts[1].indexOf('.') === -1) {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+    } else if (charC == 47) {
+        if (el.value.indexOf('/') === -1) {
+            if ((el.value != "") && (el.value != ".")) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    } else if (charC == 45) {
+        var edex = el.value.indexOf('e');
+        if (edex == -1) {
+            edex = el.value.indexOf('E');
+        }
+
+        if (el.value == "") {
+            return true;
+        } else if (edex == (el.value.length - 1)) { // If just after e or E
+            return true;
+        } else {
+            return false;
+        }
+    } else if (charC == 101) { // "e"
+        if ((el.value.indexOf('e') === -1) && (el.value.indexOf('E') === -1) && (el.value.indexOf('/') == -1)) {
+            // Prev symbol must be digit or decimal point:
+            if (el.value.slice(-1).search(/\d/) >= 0) {
+                return true;
+            } else if (el.value.slice(-1).search(/\./) >= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    } else {
+        if (charC > 31 && (charC < 48 || charC > 57))
+            return false;
+    }
+    return true;
+}
+
+function numeric_keypress(evnt) {
+    var charC = (evnt.which) ? evnt.which : evnt.keyCode;
+
+    if (charC == 13) {
+        check_numeric(this, evnt);
+    } else {
+        return isValid(this, charC);
+    }
+}
+
+
+
+
+
+function make_numeric(qa, outerqDiv, qDiv, aDiv, id) {
+
+
+
+    //console.log(answer);
+
+
+    outerqDiv.className = "NumericQn";
+    aDiv.style.display = 'block';
+
+    var lab = document.createElement("label");
+    lab.className = "InpLabel";
+    lab.innerHTML = "Type numeric answer here:";
+    aDiv.append(lab);
+
+    var inp = document.createElement("input");
+    inp.type = "text";
+    //inp.id="input-"+id;
+    inp.id = id + "-0";
+    inp.className = "Input-text";
+    inp.setAttribute('data-answers', JSON.stringify(qa.answers));
+    if ("precision" in qa) {
+        inp.setAttribute('data-precision', qa.precision);
+    }
+    aDiv.append(inp);
+    //console.log(inp);
+
+    //inp.addEventListener("keypress", check_numeric);
+    //inp.addEventListener("keypress", numeric_keypress);
+    /*
+    inp.addEventListener("keypress", function(event) {
+        return numeric_keypress(this, event);
+    }
+                        );
+                        */
+    //inp.onkeypress="return numeric_keypress(this, event)";
+    inp.onkeypress = numeric_keypress;
+    inp.onpaste = event => false;
+
+    inp.addEventListener("focus", function (event) {
+        this.value = "";
+        return false;
+    }
+    );
+
+
+}
+function jaxify(string) {
+    var mystring = string;
+
+    var count = 0;
+    var loc = mystring.search(/([^\\]|^)(\$)/);
+
+    var count2 = 0;
+    var loc2 = mystring.search(/([^\\]|^)(\$\$)/);
+
+    //console.log(loc);
+
+    while ((loc >= 0) || (loc2 >= 0)) {
+
+        /* Have to replace all the double $$ first with current implementation */
+        if (loc2 >= 0) {
+            if (count2 % 2 == 0) {
+                mystring = mystring.replace(/([^\\]|^)(\$\$)/, "$1\\[");
+            } else {
+                mystring = mystring.replace(/([^\\]|^)(\$\$)/, "$1\\]");
+            }
+            count2++;
+        } else {
+            if (count % 2 == 0) {
+                mystring = mystring.replace(/([^\\]|^)(\$)/, "$1\\(");
+            } else {
+                mystring = mystring.replace(/([^\\]|^)(\$)/, "$1\\)");
+            }
+            count++;
+        }
+        loc = mystring.search(/([^\\]|^)(\$)/);
+        loc2 = mystring.search(/([^\\]|^)(\$\$)/);
+        //console.log(mystring,", loc:",loc,", loc2:",loc2);
+    }
+
+    // repace markdown style links with actual links
+    mystring = mystring.replace(/<(.*?)>/, '<a href="$1" target="_blank" class="Link">$1</a>');
+    mystring = mystring.replace(/\[(.*?)\]\((.*?)\)/, '<a href="$2" target="_blank" class="Link">$1</a>');
+
+    //console.log(mystring);
+    return mystring;
+}
+
+
+function show_questions(json, mydiv) {
+    console.log('show_questions');
+    //var mydiv=document.getElementById(myid);
+    var shuffle_questions = mydiv.dataset.shufflequestions;
+    var num_questions = mydiv.dataset.numquestions;
+    var shuffle_answers = mydiv.dataset.shuffleanswers;
+    var max_width = mydiv.dataset.maxwidth;
+
+    if (num_questions > json.length) {
+        num_questions = json.length;
+    }
+
+    var questions;
+    if ((num_questions < json.length) || (shuffle_questions == "True")) {
+        //console.log(num_questions+","+json.length);
+        questions = getRandomSubarray(json, num_questions);
+    } else {
+        questions = json;
+    }
+
+    //console.log("SQ: "+shuffle_questions+", NQ: " + num_questions + ", SA: ", shuffle_answers);
+
+    // Iterate over questions
+    questions.forEach((qa, index, array) => {
+        //console.log(qa.question); 
+
+        var id = makeid(8);
+        //console.log(id);
+
+
+        // Create Div to contain question and answers
+        var iDiv = document.createElement('div');
+        //iDiv.id = 'quizWrap' + id + index;
+        iDiv.id = 'quizWrap' + id;
+        iDiv.className = 'Quiz';
+        iDiv.setAttribute('data-qnum', index);
+        iDiv.style.maxWidth  =max_width+"px";
+        mydiv.appendChild(iDiv);
+        // iDiv.innerHTML=qa.question;
+        
+        var outerqDiv = document.createElement('div');
+        outerqDiv.id = "OuterquizQn" + id + index;
+        // Create div to contain question part
+        var qDiv = document.createElement('div');
+        qDiv.id = "quizQn" + id + index;
+        
+        if (qa.question) {
+            iDiv.append(outerqDiv);
+
+            //qDiv.textContent=qa.question;
+            qDiv.innerHTML = jaxify(qa.question);
+            outerqDiv.append(qDiv);
+        }
+
+        // Create div for code inside question
+        var codeDiv;
+        if ("code" in qa) {
+            codeDiv = document.createElement('div');
+            codeDiv.id = "code" + id + index;
+            codeDiv.className = "QuizCode";
+            var codePre = document.createElement('pre');
+            codeDiv.append(codePre);
+            var codeCode = document.createElement('code');
+            codePre.append(codeCode);
+            codeCode.innerHTML = qa.code;
+            outerqDiv.append(codeDiv);
+            //console.log(codeDiv);
+        }
+
+
+        // Create div to contain answer part
+        var aDiv = document.createElement('div');
+        aDiv.id = "quizAns" + id + index;
+        aDiv.className = 'Answer';
+        iDiv.append(aDiv);
+
+        //console.log(qa.type);
+
+        var num_correct;
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
+            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                //aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+                aDiv.style.gridTemplateColumns = 'repeat(' + qa.answer_cols + ', 1fr)';
+            }
+        } else if (qa.type == "numeric") {
+            //console.log("numeric");
+            make_numeric(qa, outerqDiv, qDiv, aDiv, id);
+        }
+
+
+        //Make div for feedback
+        var fb = document.createElement("div");
+        fb.id = "fb" + id;
+        //fb.style="font-size: 20px;text-align:center;";
+        fb.className = "Feedback";
+        fb.setAttribute("data-answeredcorrect", 0);
+        fb.setAttribute("data-numcorrect", num_correct);
+        iDiv.append(fb);
+
+
+    });
+    var preserveResponses = mydiv.dataset.preserveresponses;
+    console.log(preserveResponses);
+    console.log(preserveResponses == "true");
+    if (preserveResponses == "true") {
+        console.log(preserveResponses);
+        // Create Div to contain record of answers
+        var iDiv = document.createElement('div');
+        iDiv.id = 'responses' + mydiv.id;
+        iDiv.className = 'JCResponses';
+        // Create a place to store responses as an empty array
+        iDiv.setAttribute('data-responses', '[]');
+
+        // Dummy Text
+        iDiv.innerHTML="<b>Select your answers and then follow the directions that will appear here.</b>"
+        //iDiv.className = 'Quiz';
+        mydiv.appendChild(iDiv);
+    }
+//console.log("At end of show_questions");
+    if (typeof MathJax != 'undefined') {
+        console.log("MathJax version", MathJax.version);
+        var version = MathJax.version;
+        setTimeout(function(){
+            var version = MathJax.version;
+            console.log('After sleep, MathJax version', version);
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                if (MathJax.hasOwnProperty('typeset') ) {
+                    MathJax.typeset([mydiv]);
+                } else {
+                    console.log('WARNING: Trying to force load MathJax 3');
+                    window.MathJax = {
+                        tex: {
+                            inlineMath: [['$', '$'], ['\\(', '\\)']]
+                        },
+                        svg: {
+                            fontCache: 'global'
+                        }
+                    };
+
+                    (function () {
+                        var script = document.createElement('script');
+                        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+                        script.async = true;
+                        document.head.appendChild(script);
+                    })();
+                }
+            }
+        }, 500);
+if (typeof version == 'undefined') {
+        } else
+        {
+            if (version[0] == "2") {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else if (version[0] == "3") {
+                if (MathJax.hasOwnProperty('typeset') ) {
+                    MathJax.typeset([mydiv]);
+                } else {
+                    console.log('WARNING: Trying to force load MathJax 3');
+                    window.MathJax = {
+                        tex: {
+                            inlineMath: [['$', '$'], ['\\(', '\\)']]
+                        },
+                        svg: {
+                            fontCache: 'global'
+                        }
+                    };
+
+                    (function () {
+                        var script = document.createElement('script');
+                        script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+                        script.async = true;
+                        document.head.appendChild(script);
+                    })();
+                }
+            } else {
+                console.log("MathJax not found");
+            }
+        }
+    }
+
+    // stop event propagation for the .Link class
+    var links = document.getElementsByClassName('Link')
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function(e){
+            e.stopPropagation();
+        });
+    }
+
+    return false;
+}
+/* This is to handle asynchrony issues in loading Jupyter notebooks
+           where the quiz has been previously run. The Javascript was generally
+           being run before the div was added to the DOM. I tried to do this
+           more elegantly using Mutation Observer, but I didn't get it to work.
+
+           Someone more knowledgeable could make this better ;-) */
+
+        function try_show() {
+          if(document.getElementById("cWlFKDQFoaDy")) {
+            show_questions(questionscWlFKDQFoaDy,  cWlFKDQFoaDy); 
+          } else {
+             setTimeout(try_show, 200);
+          }
+        };
+    
+        {
+        // console.log(element);
+
+        //console.log("cWlFKDQFoaDy");
+        // console.log(document.getElementById("cWlFKDQFoaDy"));
+
+        try_show();
+        }
+        </script></div>
+</div>
 </section>
 </section>
 
