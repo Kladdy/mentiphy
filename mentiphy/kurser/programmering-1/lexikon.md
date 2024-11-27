@@ -114,37 +114,94 @@ for värde in inköpslista.values():
 <!-- start-övningar -->
 ### Övning 6.1
 
-Skriv en funktion som tar in ett lexikon och returnerar en lista med alla värden i lexikonet.
+Skapa ett program som tar in ett lexikon med matvaror och deras kostnad, programmet skriver ut alla priser.
 
 ```{admonition} Tips
 :class: Hint dropdown
 
-Du kan skapa en tom lista och loopa igenom alla värden i lexikonet och tilldela dem till listan.
+Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lexikon".
 
 ```
 
 ### Övning 6.2
 
-Skriv en funktion som tar in ett lexikon och returnerar en lista med alla nycklar i lexikonet.
+Använd samma lexikon som från övning 6.1 för att skriva ut alla nycklar (matvaror) i lexikonet.
 
 ```{admonition} Tips
 :class: Hint dropdown
 
-Du kan skapa en tom lista och loopa igenom alla nycklar i lexikonet och tilldela dem till listan.
+Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lexikon".
 
 ```
 
 ### Övning 6.3
 
-Skriv en funktion som tar in ett lexikon och en nyckel och returnerar värdena i lexikonet under den nyckeln.
+Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.
+
+```{admonition} Tips
+:class: Hint dropdown  
+
+Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i en dictionary. Du kan använda en tom dictionary och fylla på den med `dict[key] = value`.
+
+```
+
+### Övning 6.4
+
+Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.
+
 
 ```{admonition} Tips
 :class: Hint dropdown
 
-Du kan skapa en tom lista och loopa igenom alla nycklar i lexikonet och tilldela dem till listan.
+Använd en dictionary för att hålla reda på antalet förekomster. Du kan använda `if key in dict:` för att kontrollera om nyckeln redan finns.
 
 ```
-
 <!-- end-övningar -->
 
+## Projekt med lexikon
+
+I det här projektet ska vi skapa ett program som håller reda på filmer och hur dem betygssätts.
+
+#### Steg 1
+Skapa ett exceldokument med följande struktur:
+
+```{list-table}
+:header-rows: 1
+
+* - Film
+  - Betyg
+* - The Shawshank Redemption
+  - 9.3
+* - The Godfather
+  - 9.2
+* - The Dark Knight
+  - 9
+* - Pulp Fiction
+  - 8.9
+* - Schindler's List
+  - 8.9
+* - The Lord of the Rings
+  - 8.8
+```
+
+#### Steg 2
+Skapa en funktion som tar en excelfil som input och returnerar en dataframe med informationen.
+
+#### Steg 3
+Skapa en funktion som tar ditt dataframe som sedan skapar ett lexikon med filmnamnen som nycklar och betygen som värden. Funktionen returnerar lexikonet.
+
+#### Steg 4
+Skapa en funktion som lägger till en ny film till lexikonet.
+
+#### Steg 5
+Skapa en funktion som hittar det högsta betyget och returnerar vilken film som har det högsta betyget.
+
+#### Steg 6
+Skapa en funktion som hittar det lägsta betyget och returnerar vilken film som har det lägsta betyget.
+
+#### Steg 7
+Skapa ett funktion som beräknar medelbetyget och returnerar det.
+
+#### Steg 8
+Skapa en mainfunktion som du kan använda för att anropa alla olika funktioner.
 
