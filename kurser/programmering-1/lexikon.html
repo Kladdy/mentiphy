@@ -356,6 +356,18 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-1">Övning 6.1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-2">Övning 6.2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-3">Övning 6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-4">Övning 6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-med-lexikon">Projekt med lexikon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
 </ul>
 </li>
 </ul>
@@ -468,28 +480,100 @@
 <!-- start-övningar -->
 <section id="ovning-6-1">
 <h3>Övning 6.1<a class="headerlink" href="#ovning-6-1" title="Link to this heading">#</a></h3>
-<p>Skriv en funktion som tar in ett lexikon och returnerar en lista med alla värden i lexikonet.</p>
+<p>Skapa ett program som tar in ett lexikon med matvaror och deras kostnad, programmet skriver ut alla priser.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Du kan skapa en tom lista och loopa igenom alla värden i lexikonet och tilldela dem till listan.</p>
+<p>Använd en for-loop, ta inspiration längre upp på fliken från ”Loopar och lexikon”.</p>
 </div>
 </section>
 <section id="ovning-6-2">
 <h3>Övning 6.2<a class="headerlink" href="#ovning-6-2" title="Link to this heading">#</a></h3>
-<p>Skriv en funktion som tar in ett lexikon och returnerar en lista med alla nycklar i lexikonet.</p>
+<p>Använd samma lexikon som från övning 6.1 för att skriva ut alla nycklar (matvaror) i lexikonet.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Du kan skapa en tom lista och loopa igenom alla nycklar i lexikonet och tilldela dem till listan.</p>
+<p>Använd en for-loop, ta inspiration längre upp på fliken från ”Loopar och lexikon”.</p>
 </div>
 </section>
 <section id="ovning-6-3">
 <h3>Övning 6.3<a class="headerlink" href="#ovning-6-3" title="Link to this heading">#</a></h3>
-<p>Skriv en funktion som tar in ett lexikon och en nyckel och returnerar värdena i lexikonet under den nyckeln.</p>
+<p>Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Du kan skapa en tom lista och loopa igenom alla nycklar i lexikonet och tilldela dem till listan.</p>
+<p>Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i en dictionary. Du kan använda en tom dictionary och fylla på den med <code class="docutils literal notranslate"><span class="pre">dict[key]</span> <span class="pre">=</span> <span class="pre">value</span></code>.</p>
+</div>
+</section>
+<section id="ovning-6-4">
+<h3>Övning 6.4<a class="headerlink" href="#ovning-6-4" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en dictionary för att hålla reda på antalet förekomster. Du kan använda <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">key</span> <span class="pre">in</span> <span class="pre">dict:</span></code> för att kontrollera om nyckeln redan finns.</p>
 </div>
 <!-- end-övningar -->
+</section>
+</section>
+<section id="projekt-med-lexikon">
+<h2>Projekt med lexikon<a class="headerlink" href="#projekt-med-lexikon" title="Link to this heading">#</a></h2>
+<p>I det här projektet ska vi skapa ett program som håller reda på filmer och hur dem betygssätts.</p>
+<section id="steg-1">
+<h3>Steg 1<a class="headerlink" href="#steg-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett exceldokument med följande struktur:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Film</p></th>
+<th class="head"><p>Betyg</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>The Shawshank Redemption</p></td>
+<td><p>9.3</p></td>
+</tr>
+<tr class="row-odd"><td><p>The Godfather</p></td>
+<td><p>9.2</p></td>
+</tr>
+<tr class="row-even"><td><p>The Dark Knight</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pulp Fiction</p></td>
+<td><p>8.9</p></td>
+</tr>
+<tr class="row-even"><td><p>Schindler’s List</p></td>
+<td><p>8.9</p></td>
+</tr>
+<tr class="row-odd"><td><p>The Lord of the Rings</p></td>
+<td><p>8.8</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="steg-2">
+<h3>Steg 2<a class="headerlink" href="#steg-2" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar en excelfil som input och returnerar en dataframe med informationen.</p>
+</section>
+<section id="steg-3">
+<h3>Steg 3<a class="headerlink" href="#steg-3" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som tar ditt dataframe som sedan skapar ett lexikon med filmnamnen som nycklar och betygen som värden. Funktionen returnerar lexikonet.</p>
+</section>
+<section id="steg-4">
+<h3>Steg 4<a class="headerlink" href="#steg-4" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som lägger till en ny film till lexikonet.</p>
+</section>
+<section id="steg-5">
+<h3>Steg 5<a class="headerlink" href="#steg-5" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som hittar det högsta betyget och returnerar vilken film som har det högsta betyget.</p>
+</section>
+<section id="steg-6">
+<h3>Steg 6<a class="headerlink" href="#steg-6" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion som hittar det lägsta betyget och returnerar vilken film som har det lägsta betyget.</p>
+</section>
+<section id="steg-7">
+<h3>Steg 7<a class="headerlink" href="#steg-7" title="Link to this heading">#</a></h3>
+<p>Skapa ett funktion som beräknar medelbetyget och returnerar det.</p>
+</section>
+<section id="steg-8">
+<h3>Steg 8<a class="headerlink" href="#steg-8" title="Link to this heading">#</a></h3>
+<p>Skapa en mainfunktion som du kan använda för att anropa alla olika funktioner.</p>
 </section>
 </section>
 </section>
@@ -573,6 +657,18 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-1">Övning 6.1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-2">Övning 6.2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-3">Övning 6.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-4">Övning 6.4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-med-lexikon">Projekt med lexikon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
 </ul>
 </li>
 </ul>
