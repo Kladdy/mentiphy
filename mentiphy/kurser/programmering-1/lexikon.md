@@ -158,6 +158,8 @@ Använd en dictionary för att hålla reda på antalet förekomster. Du kan anv�
 ```
 <!-- end-övningar -->
 
+<!-- start-projekt -->
+
 ## Projekt med lexikon
 
 I det här projektet ska vi skapa ett program som håller reda på filmer och hur dem betygssätts.
@@ -205,3 +207,4 @@ Skapa ett funktion som beräknar medelbetyget och returnerar det.
 #### Steg 8
 Skapa en mainfunktion som du kan använda för att anropa alla olika funktioner.
 
+<!-- end-projekt -->

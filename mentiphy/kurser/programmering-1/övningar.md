@@ -25,6 +25,9 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 * - Funktioner
   - Deklarera och använda funktioner.
   - *5.1-5.11*
+* - Projekt i programmering
+  - Lösa diverse projekt i programmering
+  - Onumrerade
 ```
 
 ## 1. Grundläggande programmering
@@ -135,3 +138,28 @@ Använd en `for`-loop för att iterera genom listan och en `if`-sats för att ko
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
+
+## 6. Lexikon
+
+```{include} lexikon.md
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
+```
+
+## Projekt i programmering
+
+```{include} merfunktioner.md
+:start-after: <!-- start-projekt -->
+:end-before: <!-- end-projekt -->
+```
+ 	
+```{include} datahantering.md
+:start-after: <!-- start-projekt -->
+:end-before: <!-- end-projekt -->
+```
+
+```{include} lexikon.md
+:start-after: <!-- start-projekt -->
+:end-before: <!-- end-projekt -->
+```
+
