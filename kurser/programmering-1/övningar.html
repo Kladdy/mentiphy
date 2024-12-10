@@ -451,6 +451,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Steg 6</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-4-hanga-gubbe">Projekt 4 - Hänga gubbe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1-forberedelser">Steg 1: Förberedelser</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2-spelets-logik">Steg 2: Spelets logik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3-spelets-grafik">Steg 3: Spelets grafik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4-utvardera-programmet">Steg 4: Utvärdera programmet</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-betygsprogram">Projektuppgift med datahantering - Betygsprogram</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Steg 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Steg 2</a></li>
@@ -1196,6 +1203,102 @@
 <p>Exempel: Du anger talen <code class="docutils literal notranslate"><span class="pre">2</span></code> och <code class="docutils literal notranslate"><span class="pre">3</span></code>, du väljer addition och får summan <code class="docutils literal notranslate"><span class="pre">5</span></code>. Då frågar programmet dig om du vill spara summan <code class="docutils literal notranslate"><span class="pre">5</span></code> för att använda den senare. Då frågar programmet dig på nytt vilken operator du vill välja, då kanske du väljer subtraktion, då blir <code class="docutils literal notranslate"><span class="pre">5</span></code> det första talet som inputparameter till funktionerna.</p>
 </section>
 </section>
+<section id="projekt-4-hanga-gubbe">
+<h2>Projekt 4 - Hänga gubbe<a class="headerlink" href="#projekt-4-hanga-gubbe" title="Link to this heading">#</a></h2>
+<section id="steg-1-forberedelser">
+<h3>Steg 1: Förberedelser<a class="headerlink" href="#steg-1-forberedelser" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Skapa en ny fil</strong>:</p>
+<ul class="simple">
+<li><p>Skapa en ny fil med namnet <code class="docutils literal notranslate"><span class="pre">hangagubbe.py</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Importera nödvändiga bibliotek</strong>:</p>
+<ul>
+<li><p>Lägg till följande kod högst upp i filen:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="kn">import</span> <span class="nn">random</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Definiera ordlistan</strong>:</p>
+<ul>
+<li><p>Skapa en lista med ord som spelarna ska gissa:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ordlista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;ord1&quot;</span><span class="p">,</span> <span class="s2">&quot;ord2&quot;</span><span class="p">,</span> <span class="s2">&quot;ord3&quot;</span><span class="p">,</span> <span class="s2">&quot;ord4&quot;</span><span class="p">,</span> <span class="s2">&quot;ord5&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Programmet kommer sedan slumpa ett av orden ovan för dig att gissa.</p>
+</li>
+</ol>
+</section>
+<section id="steg-2-spelets-logik">
+<h3>Steg 2: Spelets logik<a class="headerlink" href="#steg-2-spelets-logik" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Välj ett slumpmässigt ord</strong>:</p>
+<ul>
+<li><p>Lägg till följande kod för att slumpa ett ord från listan och skapa variabler för spelets tillstånd:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hemligt_ord</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+<span class="n">gissade_ord</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">försök</span> <span class="o">=</span> <span class="mi">6</span>  <span class="c1"># Antal försök innan gubben hängs</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p><strong>Skapa huvudloopen</strong>:</p>
+<ul class="simple">
+<li><p>Skapa en while-loop som fortsätter till det spelaren gubben hängs:</p></li>
+<li><p>Skapa en lista med varje tecken i ordet.</p></li>
+<li><p>Skapa en annan lista som är lika lång som <code class="docutils literal notranslate"><span class="pre">hemligt_ord</span></code> och fyller med ”_”.</p></li>
+<li><p>Fråga användaren om en gissning, om gissningen stämmer ska programmet skriva ut att gissningen var korrekt, samt  visa på vilken position som tecknet fyllde. Om gissningen är fel ska programmet skriva ut att gissningen var fel. Vi ska börja med att rita gubben vid senare skede, just nu fokuserar vi bara på att programmet ska fungera någorlunda.</p></li>
+<li><p>Om antalet gissnar överskrider <code class="docutils literal notranslate"><span class="pre">försök</span></code> ska programmet skriva ut att vi har förlorat, samt avsluta koden.</p></li>
+<li><p>Om vi har gissat rätt, ska programmet också avslutas.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="steg-3-spelets-grafik">
+<h3>Steg 3: Spelets grafik<a class="headerlink" href="#steg-3-spelets-grafik" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Rita platsen där gubben ska hängas</strong>:</p>
+<ul class="simple">
+<li><p>Skapa en funktion som ritar ut platsen där gubben kommer hängas, anropa funktionen längst ner i koden.</p></li>
+<li><p>Titta på bilden nedan som inspiration för hur den kan se ut.</p></li>
+</ul>
+</li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/hangman_1.png"><img alt="En plats." class="align-center" src="../../_images/hangman_1.png" style="width: 50%;" /></a>
+<ol class="arabic simple" start="2">
+<li><p><strong>Rita gubben</strong>:</p>
+<ul class="simple">
+<li><p>Skapa en funktion där gubben ritas ut med hjälp av turtlegrafik.</p></li>
+<li><p>Dela upp ritningen av gubben i olika delar.</p></li>
+<li><p>Anropa rita gubben-funktionen vid en fel gissning ska en viss del av gubben ritas ut.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="steg-4-utvardera-programmet">
+<h3>Steg 4: Utvärdera programmet<a class="headerlink" href="#steg-4-utvardera-programmet" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="7">
+<li><p><strong>Utvärdera programmet</strong>:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Kör programmet och testa spelet.</p></li>
+<li><p>Fundera på hur du kan förbättra det:</p>
+<ul>
+<li><p>Lägg till fler ord i listan.</p></li>
+<li><p>Visa en vinst- eller förlustskärm med Turtle.</p></li>
+<li><p>Gör spelet snyggare med färger eller animationer.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
 <section id="projektuppgift-med-datahantering-betygsprogram">
 <h2>Projektuppgift med datahantering - Betygsprogram<a class="headerlink" href="#projektuppgift-med-datahantering-betygsprogram" title="Link to this heading">#</a></h2>
 <p>Uppgiften är att bygga ett program som räknar ut ditt meritvärde på gymnasiet. Vi ska räkna ut det genom att läsa av en excelfil med betygen och sedan räkna ut meritvärdet.</p>
@@ -1591,6 +1694,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Steg 4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Steg 5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Steg 6</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-4-hanga-gubbe">Projekt 4 - Hänga gubbe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1-forberedelser">Steg 1: Förberedelser</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2-spelets-logik">Steg 2: Spelets logik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3-spelets-grafik">Steg 3: Spelets grafik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4-utvardera-programmet">Steg 4: Utvärdera programmet</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projektuppgift-med-datahantering-betygsprogram">Projektuppgift med datahantering - Betygsprogram</a><ul class="nav section-nav flex-column">
