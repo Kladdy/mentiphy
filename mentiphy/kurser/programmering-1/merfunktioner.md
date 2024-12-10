@@ -223,4 +223,70 @@ Redigera `main()` funktionen så att den frågar användaren om den vill spara s
 
 Exempel: Du anger talen `2` och `3`, du väljer addition och får summan `5`. Då frågar programmet dig om du vill spara summan `5` för att använda den senare. Då frågar programmet dig på nytt vilken operator du vill välja, då kanske du väljer subtraktion, då blir `5` det första talet som inputparameter till funktionerna.
 
+## Projekt 4 - Hänga gubbe
+
+#### Steg 1: Förberedelser
+
+1. **Skapa en ny fil**:
+    - Skapa en ny fil med namnet `hangagubbe.py`
+
+
+2. **Importera nödvändiga bibliotek**:
+    - Lägg till följande kod högst upp i filen:
+
+      ```python
+      import turtle
+      import random
+      ```
+3. **Definiera ordlistan**:
+    - Skapa en lista med ord som spelarna ska gissa:
+
+      ```python
+      ordlista = ["ord1", "ord2", "ord3", "ord4", "ord5"]
+      ```
+    Programmet kommer sedan slumpa ett av orden ovan för dig att gissa.
+
+#### Steg 2: Spelets logik
+1. **Välj ett slumpmässigt ord**:
+    - Lägg till följande kod för att slumpa ett ord från listan och skapa variabler för spelets tillstånd:
+
+      ```python
+      hemligt_ord = random.choice(words)
+      gissade_ord = []
+      försök = 6  # Antal försök innan gubben hängs
+      ```
+2. **Skapa huvudloopen**:
+    - Skapa en while-loop som fortsätter till det spelaren gubben hängs:
+    - Skapa en lista med varje tecken i ordet.
+    - Skapa en annan lista som är lika lång som `hemligt_ord` och fyller med "_".
+    - Fråga användaren om en gissning, om gissningen stämmer ska programmet skriva ut att gissningen var korrekt, samt  visa på vilken position som tecknet fyllde. Om gissningen är fel ska programmet skriva ut att gissningen var fel. Vi ska börja med att rita gubben vid senare skede, just nu fokuserar vi bara på att programmet ska fungera någorlunda.
+    - Om antalet gissnar överskrider `försök` ska programmet skriva ut att vi har förlorat, samt avsluta koden.
+    - Om vi har gissat rätt, ska programmet också avslutas.
+
+#### Steg 3: Spelets grafik
+1. **Rita platsen där gubben ska hängas**:
+    - Skapa en funktion som ritar ut platsen där gubben kommer hängas, anropa funktionen längst ner i koden.
+    - Titta på bilden nedan som inspiration för hur den kan se ut.
+
+```{image} img/hangman_1.png
+:alt: En plats.
+:align: center
+:width: 50%
+```
+
+2. **Rita gubben**:
+    - Skapa en funktion där gubben ritas ut med hjälp av turtlegrafik.
+    - Dela upp ritningen av gubben i olika delar. 
+    - Anropa rita gubben-funktionen vid en fel gissning ska en viss del av gubben ritas ut. 
+
+#### Steg 4: Utvärdera programmet
+
+7. **Utvärdera programmet**:
+- Kör programmet och testa spelet.
+- Fundera på hur du kan förbättra det:
+  - Lägg till fler ord i listan.
+  - Visa en vinst- eller förlustskärm med Turtle.
+  - Gör spelet snyggare med färger eller animationer.
+
+
 <!-- end-projekt -->
