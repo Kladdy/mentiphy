@@ -232,7 +232,7 @@ Det här är en mening.
 
 Dela upp meningen i en lista där varje ord är ett element. Skriv sedan ut listan.
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Använd metoden `split()` för att dela upp en text i ord.
 ```
@@ -244,7 +244,7 @@ Skapa ett program som innehåller en lista med minst 10 heltal. Låt programmet 
 
 Skriv ut resultaten.
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Metoden `sort()`, om du vill ha den i andra ordningen använd `sort(reverse=True)`.
 ```
@@ -264,7 +264,7 @@ Skriv ett program som:
 
 Skriv ut den slutgiltiga listan.
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
 ```
@@ -277,7 +277,7 @@ Skapa en lista med minst 15 heltal. Skriv ett program som:
 
 Skriv ut de två nya listorna.
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Använd `if`- och `else`-satsen.
 ```
@@ -290,7 +290,7 @@ Låt användaren skriva in en mening. Skriv ett program som:
 
 Skriv ut resultaten.
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
 ```
@@ -307,7 +307,7 @@ Skriv ett program som:
 - Hittar de gemensamma elementen mellan listorna
 - Räknar antalet gemensamma element
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Använd `set()` och operatorn `&` för att hitta gemensamma element.
 ```
@@ -324,7 +324,7 @@ Steg: 2
 Resultat: [4, 5, 1, 2, 3]
 ```
 
-```admonition Tips
+```{admonition} Tips
 :class: Hint dropdown
 Använd slicing för att dela upp listan och kombinera delarna igen.
 ```
@@ -332,6 +332,7 @@ Använd slicing för att dela upp listan och kombinera delarna igen.
 
 ### Övning 2.11
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
+
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
