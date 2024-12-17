@@ -357,6 +357,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-4">Övning 2.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-5">Övning 2.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-6">Övning 2.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-7">Övning 2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-8">Övning 2.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-9">Övning 2.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-10">Övning 2.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-11">Övning 2.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-12">Övning 2.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-13">Övning 2.13</a></li>
 </ul>
 </li>
 </ul>
@@ -562,7 +569,7 @@
 </section>
 <section id="ovningar-till-avsnittet">
 <h2>Övningar till avsnittet<a class="headerlink" href="#ovningar-till-avsnittet" title="Link to this heading">#</a></h2>
-<p>De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.</p>
+<p>De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser.</p>
 <!-- start-övningar -->
 <section id="ovning-2-1">
 <h3>Övning 2.1<a class="headerlink" href="#ovning-2-1" title="Link to this heading">#</a></h3>
@@ -590,14 +597,116 @@
 </section>
 <section id="ovning-2-4">
 <h3>Övning 2.4<a class="headerlink" href="#ovning-2-4" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som tar en mening från användaren, exempelvis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Det</span> <span class="n">här</span> <span class="n">är</span> <span class="n">en</span> <span class="n">mening</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Dela upp meningen i en lista där varje ord är ett element. Skriv sedan ut listan.</p>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Använd metoden `split()` för att dela upp en text i ord.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-5">
+<h3>Övning 2.5<a class="headerlink" href="#ovning-2-5" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som innehåller en lista med minst 10 heltal. Låt programmet sortera listan i:</p>
+<ul class="simple">
+<li><p>Stigande ordning</p></li>
+<li><p>Fallande ordning</p></li>
+</ul>
+<p>Skriv ut resultaten.</p>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Metoden `sort()`, om du vill ha den i andra ordningen använd `sort(reverse=True)`.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-6">
+<h3>Övning 2.6<a class="headerlink" href="#ovning-2-6" title="Link to this heading">#</a></h3>
+<p>Skapa två listor med heltal, t.ex.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Kombinerar de två listorna</p></li>
+<li><p>Sorterar den kombinerade listan i stigande ordning</p></li>
+<li><p>Tar bort dubbletter från den sorterade listan</p></li>
+</ul>
+<p>Skriv ut den slutgiltiga listan.</p>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-7">
+<h3>Övning 2.7<a class="headerlink" href="#ovning-2-7" title="Link to this heading">#</a></h3>
+<p>Skapa en lista med minst 15 heltal. Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Filtrerar ut alla jämna tal och skapar en ny lista</p></li>
+<li><p>Filtrerar ut alla udda tal och skapar en annan ny lista</p></li>
+</ul>
+<p>Skriv ut de två nya listorna.</p>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Använd `if`- och `else`-satsen.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-8">
+<h3>Övning 2.8<a class="headerlink" href="#ovning-2-8" title="Link to this heading">#</a></h3>
+<p>Låt användaren skriva in en mening. Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Räknar antalet ord i meningen</p></li>
+<li><p>Hittar det längsta ordet</p></li>
+<li><p>Hittar det kortaste ordet</p></li>
+</ul>
+<p>Skriv ut resultaten.</p>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-9">
+<h3>Övning 2.9<a class="headerlink" href="#ovning-2-9" title="Link to this heading">#</a></h3>
+<p>Skapa två listor med heltal.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Hittar de gemensamma elementen mellan listorna</p></li>
+<li><p>Räknar antalet gemensamma element</p></li>
+</ul>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Använd `set()` och operatorn `&amp;` för att hitta gemensamma element.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-10">
+<h3>Övning 2.10<a class="headerlink" href="#ovning-2-10" title="Link to this heading">#</a></h3>
+<p>Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.</p>
+<p>Exempel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Lista</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">Steg</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Resultat</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-admonition notranslate"><div class="highlight"><pre><span></span>:class: Hint dropdown
+Använd slicing för att dela upp listan och kombinera delarna igen.
+</pre></div>
+</div>
+</section>
+<section id="ovning-2-11">
+<h3>Övning 2.11<a class="headerlink" href="#ovning-2-11" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.</p>
 </div>
 </section>
-<section id="ovning-2-5">
-<h3>Övning 2.5<a class="headerlink" href="#ovning-2-5" title="Link to this heading">#</a></h3>
+<section id="ovning-2-12">
+<h3>Övning 2.12<a class="headerlink" href="#ovning-2-12" title="Link to this heading">#</a></h3>
 <p>Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -627,8 +736,8 @@
 <p>Använd sen en if-, elif- och else-sats.</p>
 </div>
 </section>
-<section id="ovning-2-6">
-<h3>Övning 2.6<a class="headerlink" href="#ovning-2-6" title="Link to this heading">#</a></h3>
+<section id="ovning-2-13">
+<h3>Övning 2.13<a class="headerlink" href="#ovning-2-13" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
@@ -719,6 +828,13 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-4">Övning 2.4</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-5">Övning 2.5</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-6">Övning 2.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-7">Övning 2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-8">Övning 2.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-9">Övning 2.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-10">Övning 2.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-11">Övning 2.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-12">Övning 2.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-13">Övning 2.13</a></li>
 </ul>
 </li>
 </ul>
