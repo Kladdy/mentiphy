@@ -198,7 +198,7 @@ elif-satsen underlättar för addera fler villkor om det behövs för att progra
 
 
 ## Övningar till avsnittet
-De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser. De sista 3 är för att träna på for-loopar.
+De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser.
 
 <!-- start-övningar -->
 ### Övning 2.1
@@ -224,13 +224,121 @@ Använd skivningsoperatorerna.
 ```
 
 ### Övning 2.4
+Skriv ett program som tar en mening från användaren, exempelvis: 
+
+```
+Det här är en mening.
+```
+
+Dela upp meningen i en lista där varje ord är ett element. Skriv sedan ut listan.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd metoden `split()` för att dela upp en text i ord.
+```
+
+### Övning 2.5
+Skapa ett program som innehåller en lista med minst 10 heltal. Låt programmet sortera listan i:
+- Stigande ordning
+- Fallande ordning
+
+Skriv ut resultaten.
+
+```{admonition} Tips
+:class: Hint dropdown
+Metoden `sort()`, om du vill ha den i andra ordningen använd `sort(reverse=True)`.
+```
+
+### Övning 2.6
+Skapa två listor med heltal, t.ex.:
+
+```python
+lista1 = [5, 2, 9]
+lista2 = [8, 1, 6]
+```
+
+Skriv ett program som:
+- Kombinerar de två listorna
+- Sorterar den kombinerade listan i stigande ordning
+- Tar bort dubbletter från den sorterade listan
+
+Skriv ut den slutgiltiga listan.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
+```
+
+### Övning 2.7
+
+Skapa en lista med minst 15 heltal. Skriv ett program som:
+- Filtrerar ut alla jämna tal och skapar en ny lista
+- Filtrerar ut alla udda tal och skapar en annan ny lista
+
+Skriv ut de två nya listorna.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd `if`- och `else`-satsen.
+```
+
+### Övning 2.8
+Låt användaren skriva in en mening. Skriv ett program som:
+- Räknar antalet ord i meningen
+- Hittar det längsta ordet
+- Hittar det kortaste ordet
+
+Skriv ut resultaten.
+
+```{admonition} Tips
+:class: Hint dropdown
+Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
+```
+
+### Övning 2.9
+Skapa två listor med heltal.
+
+```python
+lista1 = [1, 2, 3, 4, 5]
+lista2 = [4, 5, 6, 7, 8]
+```
+
+Skriv ett program som:
+- Hittar de gemensamma elementen mellan listorna
+- Räknar antalet gemensamma element
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd `set()` och operatorn `&` för att hitta gemensamma element.
+```
+
+### Övning 2.10
+
+Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.
+
+Exempel:
+
+```
+Lista: [1, 2, 3, 4, 5]
+Steg: 2
+Resultat: [4, 5, 1, 2, 3]
+```
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd slicing för att dela upp listan och kombinera delarna igen.
+```
+
+
+### Övning 2.11
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
+
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
 ```
 
-### Övning 2.5
+### Övning 2.12
 Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
 
 ```{list-table}
@@ -254,7 +362,7 @@ Låt sedan programmet skriva ut vilket betyg som användaren fick.
 Använd sen en if-, elif- och else-sats.
 ```
 
-### Övning 2.6
+### Övning 2.13
 Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
 ```{admonition} Tips
 :class: Hint dropdown

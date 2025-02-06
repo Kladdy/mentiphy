@@ -74,6 +74,8 @@ list_kolumn = df["Kolumnnamn"]
 ```
 Nu är all data från kolumnen `"Kolumnnamn"`nu lagrats i listan `list_kolumn`. Då kan nu hantera all data från denna kolumn genom att använda inbyggda listfunktioner.
 
+<!-- start-projekt -->
+
 ## Projektuppgift med datahantering - Betygsprogram
 Uppgiften är att bygga ett program som räknar ut ditt meritvärde på gymnasiet. Vi ska räkna ut det genom att läsa av en excelfil med betygen och sedan räkna ut meritvärdet.
 
@@ -121,6 +123,7 @@ Titta i tabellen nedan som inspiration för hur ni ska fylla i excelfilen.
 
 #### Steg 8
 Skapa en funktion `def antagen(betyg, krav)` som tar ditt meritvärde och en lisa över betygskraven. Funktionen returnerar vilka utbildningar som du kommer in på.
+
 
 ## Projektuppgift med datahantering - Matkort
 Uppgiften är att göra ett program som håller koll på hur mycket du kan spendera på ditt matkort.
@@ -197,3 +200,5 @@ När du får ett svar från `main` funktionen, kör om mainfunktionen så du kan
 
 #### Steg 13
 Anropa mainfunktionen längst ner i programmet.
+
+<!-- end-projekt -->
