@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -437,14 +437,14 @@
 <section id="funktioner-och-turtles">
 <h3>Funktioner och turtles<a class="headerlink" href="#funktioner-och-turtles" title="Link to this heading">#</a></h3>
 <p>För att addera lite mer komplexitet när vi skapar turtle-grafik kan vi även använda funktioner. Till att börja med kan vi börja med att skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">hoppa(t,</span> <span class="pre">x,</span> <span class="pre">y)</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hoppa</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">hoppa</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">t</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
     <span class="n">t</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
     <span class="n">t</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>För att skapa en turtle kan vi även skapa en funktion som heter <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">skapa_turtle()</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">skapa_turtle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">skapa_turtle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
     <span class="n">hoppa</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">t</span>
@@ -499,8 +499,8 @@
 <section id="steg-2">
 <h4>Steg 2<a class="headerlink" href="#steg-2" title="Link to this heading">#</a></h4>
 <p>Längst upp i filen lägg till:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">turtle</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 </pre></div>
 </div>
 </section>
@@ -555,7 +555,7 @@
 <section id="id2">
 <h3>Steg 2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>Kopiera följande kod och lägg längst ner.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main_program</span><span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">main_program</span><span class="p">():</span>
     <span class="n">available_books</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">borrowed_books</span> <span class="o">=</span> <span class="p">[]</span>
 
@@ -646,8 +646,8 @@
 <li><p><strong>Importera nödvändiga bibliotek</strong>:</p>
 <ul>
 <li><p>Lägg till följande kod högst upp i filen:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">turtle</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 </pre></div>
 </div>
 </li>

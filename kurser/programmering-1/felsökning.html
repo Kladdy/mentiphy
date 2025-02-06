@@ -30,7 +30,7 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -392,7 +392,7 @@
 <section id="kontrollera-om-ett-tal-ar-jamnt-resonera">
 <h3>Kontrollera om ett tal är jämnt (Resonera)<a class="headerlink" href="#kontrollera-om-ett-tal-ar-jamnt-resonera" title="Link to this heading">#</a></h3>
 <p>Denna funktion ska kontrollera om ett tal är jämnt, men den ger inte rätt resultat. Vad är felet?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">is_even</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">True</span>
     <span class="k">else</span><span class="p">:</span>
@@ -411,7 +411,7 @@
 <section id="summera-alla-tal-i-en-lista-resonera-1">
 <h3>Summera alla tal i en lista (Resonera) (1)<a class="headerlink" href="#summera-alla-tal-i-en-lista-resonera-1" title="Link to this heading">#</a></h3>
 <p>Koden nedan är tänkt att summera alla tal i en lista, men den fungerar inte som förväntat. Vad är problemet?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_numbers</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sum_numbers</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
         <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">i</span>
@@ -430,7 +430,7 @@
 <section id="summera-alla-talen-i-en-lista-resonera-2">
 <h3>Summera alla talen i en lista (Resonera) (2)<a class="headerlink" href="#summera-alla-talen-i-en-lista-resonera-2" title="Link to this heading">#</a></h3>
 <p>Den här funktionen ska summera alla tal i en lista, men den fungerar inte som förväntat. Vad är problemet?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sum_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
         <span class="n">total</span> <span class="o">=</span> <span class="n">number</span>
@@ -449,7 +449,7 @@
 <section id="skriv-ut-alla-element-i-en-lista-felsok">
 <h3>Skriv ut alla element i en lista (Felsök)<a class="headerlink" href="#skriv-ut-alla-element-i-en-lista-felsok" title="Link to this heading">#</a></h3>
 <p>Koden nedan ska skriva ut varje element i en lista, men den fungerar inte som den ska. Felsök och rätta koden.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_list_elements</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">print_list_elements</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span>
 
@@ -468,7 +468,7 @@
 <section id="returnera-det-forsta-elementet-i-en-lista-felsok">
 <h3>Returnera det första elementet i en lista (Felsök)<a class="headerlink" href="#returnera-det-forsta-elementet-i-en-lista-felsok" title="Link to this heading">#</a></h3>
 <p>Funktionen nedan ska returnera det första elementet i en lista, men den returnerar inget alls. Vad är felet?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">first_element</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">first_element</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
     <span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -485,7 +485,7 @@
 <section id="summera-alla-element-i-en-lista-felsok">
 <h3>Summera alla element i en lista (Felsök)<a class="headerlink" href="#summera-alla-element-i-en-lista-felsok" title="Link to this heading">#</a></h3>
 <p>Denna kod ska summera alla element i en lista, men den ger alltid fel svar. Rätta koden så att den fungerar korrekt.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_list</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sum_list</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_list</span><span class="p">)):</span>
         <span class="n">total</span> <span class="o">+=</span> <span class="n">my_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -507,7 +507,7 @@
 <section id="kontrollera-om-ett-tal-ar-storre-an-10-felsok">
 <h3>Kontrollera om ett tal är större än 10 (Felsök)<a class="headerlink" href="#kontrollera-om-ett-tal-ar-storre-an-10-felsok" title="Link to this heading">#</a></h3>
 <p>Koden ska kontrollera om ett tal är större än 10, men den returnerar alltid fel resultat. Felsök och förbättra koden.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">is_greater_than_ten</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">is_greater_than_ten</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
         <span class="k">return</span> <span class="kc">False</span>
     <span class="k">else</span><span class="p">:</span>
