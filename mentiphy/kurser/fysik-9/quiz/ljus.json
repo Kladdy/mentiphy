@@ -1,0 +1,549 @@
+[
+    {
+      "question": "Varför kan vi se?",
+      "type": "many_choice",
+      "answers": [
+          {
+              "answer": "Våra ögon sänder ut osynliga strålar",
+              "correct": false,
+              "feedback": "Nej, även om man förr trodde att det var så."
+          },
+          {
+              "answer": "Ljuset reflekteras på föremål runt omkring oss och når sedan våra ögon",
+              "correct": true,
+              "feedback": "Precis! För att vi ska se krävs en ljuskälla."
+          }
+      ]
+    },
+    {
+        "question": "Vad är sant?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljus behöver ingenting att färdas i som ljud behöver utan kan ta sig fram även i vakuum",
+                "correct": true,
+                "feedback": "Precis!"
+            },
+            {
+                "answer": "Ljud behöver ingenting att färdas i som ljus behöver utan kan ta sig fram även i vakuum",
+                "correct": false,
+                "feedback": "Nej, fundera på om du kan komma på ett exempel där ljuset färdas men inte ljudet."
+          }
+      ]
+    },
+    {
+        "question": "Vad är ljusets hastighet i vakuum?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Nästan 300 000 km/s",
+                "correct": true,
+                "feedback": "Exakt! Det tar ljuset ungefär 8 minuter att färdas från solen till oss."
+            },
+            {
+                "answer": "Väldigt snabbt",
+                "correct": true,
+                "feedback": "Yes, det är också ett sätt att se det."
+            },
+            {
+                "answer": "Ungefär 340 m/s",
+                "correct": false,
+                "feedback": "Nej, det är ljudets ungefärliga hastighet i luft."
+          }
+      ]
+    },
+    {
+        "question": "Ljus kan absorberas, reflekteras eller brytas. Vad innebär det att ljuset absorberas?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljuset “försvinner” in i materialet och blir värme",
+                "correct": true,
+                "feedback": "Exakt! Ett exempel är när ljuset når en svart tröja, så blir den som har tröjan på sig varm."
+            },
+            {
+                "answer": "Ljuset studsar på materialet och fortsätter sedan",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+            },
+            {
+                "answer": "Ljuset tar sig igenom materialet men byter ofta riktning",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+          }
+      ]
+    },
+    {
+        "question": "Ljus kan absorberas, reflekteras eller brytas. Vad innebär det att ljuset reflekteras?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljuset “försvinner” in i materialet och blir värme",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+            },
+            {
+                "answer": "Ljuset studsar på materialet och fortsätter sedan",
+                "correct": true,
+                "feedback": "Exakt! Ett exempel är när ljuset når en spegel, då studsar det bara vidare."
+            },
+            {
+                "answer": "Ljuset tar sig igenom materialet men byter ofta riktning",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+          }
+      ]
+    },
+    {
+        "question": "Ljus kan absorberas, reflekteras eller brytas. Vad innebär det att ljuset bryts?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Ljuset “försvinner” in i materialet och blir värme",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+            },
+            {
+                "answer": "Ljuset studsar på materialet och fortsätter sedan",
+                "correct": false,
+                "feedback": "Nej tyvärr."
+            },
+            {
+                "answer": "Ljuset tar sig igenom materialet men byter ofta riktning",
+                "correct": true,
+                "feedback": "Exakt! Ett exempel är när ljuset når en glasruta, då fortsätter det igenom."
+          }
+      ]
+    },
+    {
+        "question": "Vilka av dessa påverkar om ljuset absorberas, reflekteras eller bryts när det når ett föremål?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Vilket material föremålet är",
+                "correct": true,
+                "feedback": "Där satt den!"
+            },
+            {
+                "answer": "Vilken vinkel ljuset når föremålet med",
+                "correct": true,
+                "feedback": "Jajamen, tänk på totalreflektion."
+          }
+      ]
+    },
+    {
+        "question": "En ljusstråle reflekteras mot en plan yta. Vad är sant?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Infallsvinkeln är större än reflektionsvinkeln",
+                "correct": false,
+                "feedback": "Nej, prova igen."
+            },
+            {
+                "answer": "Infallsvinkeln är lika stor som reflektionsvinkeln",
+                "correct": true,
+                "feedback": "Yes, precis som en biljardboll som slår mot kanten!"
+            },
+            {
+                "answer": "Infallsvinkeln är mindre än reflektionsvinkeln",
+                "correct": false,
+                "feedback": "Nej, prova igen."
+          }
+      ]
+    },
+    {
+        "question": "Om du tittar i en konvex spegel blir bilden...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "förminskad.",
+                "correct": true,
+                "feedback": "Exakt! Det kan vara användbart i backspeglar."
+            },
+            {
+                "answer": "förstorad.",
+                "correct": false,
+                "feedback": "Nej, det är för en konkav spegel."
+          }
+      ]
+    },
+    {
+        "question": "Om du tittar i en konkav spegel blir bilden...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "förminskad.",
+                "correct": false,
+                "feedback": "Nej, det är för en konvex spegel."
+            },
+            {
+                "answer": "förstorad.",
+                "correct": true,
+                "feedback": "Exakt! Det kan vara användbart i sminkspeglar. Beroende på avstånd kan bilden också bli upp- och nervänd."
+          }
+      ]
+    },
+    {
+        "question": "Vad menas med brännpunkt?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den punkt där ljusstrålarna skär varandra (eller ser ut att komma från) när de träffar en buktig lins eller spegel.",
+                "correct": true,
+                "feedback": "Snyggt! Just 440 Hz är också normaltonen."
+            },
+            {
+                "answer": "Den punkt som finns i änden av en spegel eller lins.",
+                "correct": false,
+                "feedback": "Nej, det där hittade jag på."
+          }
+      ]
+    },
+    {
+        "question": "När kan det vara bra att använda en konvex spegel?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "I backspeglar",
+                "correct": true,
+                "feedback": "Jajamen, en konvex spegel förminskar bilden så då får mer saker “plats” i bakspegeln."
+            },
+            {
+                "answer": "I sminkspeglar",
+                "correct": false,
+                "feedback": "Nej, där vill vi ha en konkav spegel."
+          }
+      ]
+    },
+{
+        "question": "När kan det vara bra att använda en konkav spegel?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "I backspeglar",
+                "correct": false,
+                "feedback": "Nej, där vill vi ha en konvex spegel."
+            },
+            {
+                "answer": "I sminkspeglar",
+                "correct": true,
+                "feedback": "Jajamen, en konkav spegel förstorar bilden så att vi ser hur vi sminkar oss bättre."
+          }
+      ]
+    },
+    {
+        "question": "När ljuset bryts från ett tunnare (t. ex. luft) till ett tätare (t. ex. vatten) ämne så är...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "brytningsvinkeln större än infallsvinkeln.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+            },
+            {
+                "answer": "brytningsvinkeln mindre än infallsvinkeln.",
+                "correct": true,
+                "feedback": "Snyggt jobbat!"
+          }
+      ]
+    },
+    {
+        "question": "När ljuset bryts från ett tätare (t. ex. vatten) till ett tunnare (t. ex. luft) ämne så är...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "brytningsvinkeln större än infallsvinkeln.",
+                "correct": true,
+                "feedback": "Snyggt jobbat!"
+            },
+            {
+                "answer": "brytningsvinkeln mindre än infallsvinkeln.",
+                "correct": false,
+                "feedback": "Nej tyvärr, fortsätt öva!"
+          }
+      ]
+    },
+    {
+        "question": "När ljus träffar vatten så...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "bryts alltid allt ljus.",
+                "correct": false,
+                "feedback": "Nej."
+            },
+            {
+                "answer": "reflekteras alltid allt ljus.",
+                "correct": false,
+                "feedback": "Nej."
+            },
+            {
+                "answer": "reflekteras en del av det och resten bryts, beroende på vinkeln.",
+                "correct": true,
+                "feedback": "Precis!"
+          }
+      ]
+    },
+    {
+        "question": "Vad innebär totalreflektion?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Att allt ljus som träffar ett ämne (som vanligtvis bryter ljuset) reflekteras.",
+                "correct": true,
+                "feedback": "Precis!"
+            },
+            {
+                "answer": "Att allt ljus som träffar ett ämne (som vanligtvis reflekterar ljuset) reflekteras.",
+                "correct": false,
+                "feedback": "Nej, inte alls faktiskt..."
+          }
+      ]
+    },
+    {
+        "question": "När kan totalreflektion ske?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "När ljuset går från ett tätare till ett tunnare ämne med tillräckligt stor infallsvinkel.",
+                "correct": true,
+                "feedback": "Precis, från vatten till luft går gränsen vid ungefär 49 grader medan den från glas till luft går vid ungefär 45 grader."
+            },
+            {
+                "answer": "När ljuset går från ett tätare till ett tunnare ämne med tillräckligt liten infallsvinkel.",
+                "correct": false,
+                "feedback": "Nej, det krävs en större infallsvinkel för ljuset att totalreflekteras."
+          }
+      ]
+    },
+    {
+        "question": "Vad kan totalreflektion vara användbart till?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Fiber.",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "Ekolod.",
+                "correct": false,
+                "feedback": "Nej, ekolod har med ljud att göra."
+          }
+      ]
+    },
+    {
+        "question": "När ljuset går genom en plan lins så...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "lämnar ljuset i samma riktning, men kan flyttas i sida.",
+                "correct": true,
+                "feedback": "Exakt!"
+            },
+            {
+                "answer": "sprids ljuset ut.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en konkav lins."
+            },
+            {
+                "answer": "samlas ljuset ihop.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en konvex lins."
+          }
+      ]
+    },
+    {
+        "question": "När ljuset går genom en konkav lins så...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "lämnar ljuset i samma riktning, men kan flyttas i sida.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en plan lins."
+            },
+            {
+                "answer": "sprids ljuset ut.",
+                "correct": true,
+                "feedback": "Exakt!"
+            },
+            {
+                "answer": "samlas ljuset ihop.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en konvex lins."
+          }
+      ]
+    },
+    {
+        "question": "När ljuset går genom en konvex lins så...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "lämnar ljuset i samma riktning, men kan flyttas i sida.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en plan lins."
+            },
+            {
+                "answer": "sprids ljuset ut.",
+                "correct": false,
+                "feedback": "Nej, det gäller för en konkav lins."
+            },
+            {
+                "answer": "samlas ljuset ihop.",
+                "correct": true,
+                "feedback": "Nej, det gäller för en konvex lins."
+          }
+      ]
+    },
+    {
+        "question": "Vilken beskrivning gäller för en konvex lins?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den är tunnast på mitten",
+                "correct": false,
+                "feedback": "Nej, det är en konkav lins."
+            },
+            {
+                "answer": "Den är tjockast på mitten",
+                "correct": true,
+                "feedback": "Jajamen!"
+          }
+      ]
+    },
+    {
+        "question": "Vilken beskrivning gäller för en konkav lins?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Den är tunnast på mitten",
+                "correct": true,
+                "feedback": "Jajamen!"
+            },
+            {
+                "answer": "Den är tjockast på mitten",
+                "correct": false,
+                "feedback": "Nej, det är en konvex lins."
+          }
+      ]
+    },
+    {
+        "question": "Vad är det som avgör vilken sorts ljus det är (exempelvis synligt eller röntgenstrålning)?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Våglängden",
+                "correct": true,
+                "feedback": "Precis, snyggt jobbat!"
+            },
+            {
+                "answer": "Färgen",
+                "correct": false,
+                "feedback": "Nej, det är våglängden som avgör vilken sorts ljus, och även vilken färg ljuset har."
+          }
+      ]
+    },
+    {
+        "question": "Vilken beskrivning hör ihop med infraröd strålning?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Värmestrålning",
+                "correct": true,
+                "feedback": "Exakt, infravärmare använder sig av det."
+            },
+            {
+                "answer": "Vi har pigment i huden som skyddar oss",
+                "correct": false,
+                "feedback": "Nej, den här beskrivningen hör ihop med ultraviolett strålning."
+          }
+      ]
+    },
+    {
+        "question": "Vilken beskrivning hör ihop med ultraviolett strålning?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Värmestrålning",
+                "correct": false,
+                "feedback": "Nej, den här beskrivningen hör ihop med infraröd strålning."
+            },
+            {
+                "answer": "Vi har pigment i huden som skyddar oss",
+                "correct": true,
+                "feedback": "Exakt, solen skickar ut ultraviolett ljus som gör oss bruna."
+          }
+      ]
+    },
+    {
+        "question": "Polariserat ljus...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "svänger i alla riktningar.",
+                "correct": false,
+                "feedback": "Nej, då kallas det opolariserat."
+            },
+            {
+                "answer": "svänger bara i en riktning.",
+                "correct": true,
+                "feedback": "Yes!"
+          }
+      ]
+    },
+    {
+        "question": "Opolariserat ljus...",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "svänger i alla riktningar.",
+                "correct": true,
+                "feedback": "Exakt!"
+            },
+            {
+                "answer": "svänger bara i en riktning.",
+                "correct": false,
+                "feedback": "Nej, då kallas det opolariserat."
+          }
+      ]
+    },
+    {
+        "question": "Vilka färger innehåller vitt ljus?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Blått och gult",
+                "correct": false,
+                "feedback": "Nja, nu tänker du väl på grönt?"
+            },
+            {
+                "answer": "Rött och gult",
+                "correct": false,
+                "feedback": "Nja, nu tänker du väl på orange?"
+            },
+            {
+                "answer": "Alla",
+                "correct": true,
+                "feedback": "Exakt, vitt ljus innehåller alla färger. Det är därför som regnbågen kan uppstå."
+          }
+      ]
+    },
+    {
+        "question": "Vilken beskrivning hör ihop med infraröd strålning?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Värmestrålning",
+                "correct": true,
+                "feedback": "Exakt, infravärmare använder sig av det."
+            },
+            {
+                "answer": "Vi har pigment i huden som skyddar oss",
+                "correct": false,
+                "feedback": "Nej, den här beskrivningen hör ihop med ultraviolett strålning."
+        }
+    ]
+    }
+  ]
+

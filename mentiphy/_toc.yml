@@ -16,8 +16,9 @@ parts:
     - file: kurser/fysik-9/energioeffekt
     - file: kurser/fysik-9/atomokärn
     - file: kurser/fysik-9/universum
-  - caption: Matematik 1
+  - caption: Matematik 1c
     chapters:
+    - file: kurser/matematik-1/introduktion
     - file: kurser/matematik-1/funktioner
   - caption: Programmering 1
     chapters:
