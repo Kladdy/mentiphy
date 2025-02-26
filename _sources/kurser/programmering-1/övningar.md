@@ -25,9 +25,18 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 * - Funktioner
   - Deklarera och använda funktioner.
   - *5.1-5.11*
+* - Lexikon
+  - Deklarera och använda lexikon.
+  - *6.1-6.4*
 * - Projekt i programmering
   - Lösa diverse projekt i programmering
   - Onumrerade
+* - Repetition inför klasser
+  - Repetitionsuppgifter anpassade för att förbereda inför att lära sig klasser.
+  - *1-11*
+- Klasser
+  - Deklarera och använda klasser, metoder, arv av klasser.
+  - *8.1-8.10*
 ```
 
 ## 1. Grundläggande programmering
@@ -146,7 +155,7 @@ Använd en `for`-loop för att iterera genom listan och en `if`-sats för att ko
 :end-before: <!-- end-övningar -->
 ```
 
-## Projekt i programmering
+## 7. Projekt i programmering
 
 ```{include} merfunktioner.md
 :start-after: <!-- start-projekt -->
@@ -163,7 +172,7 @@ Använd en `for`-loop för att iterera genom listan och en `if`-sats för att ko
 :end-before: <!-- end-projekt -->
 ```
 
-## Repetition inför klasser
+## 8. Repetition inför klasser
 
 ### Övning 1
 Skriv en funktion factorial(n) som returnerar fakulteten av n.
@@ -263,4 +272,11 @@ Skapa ett spel där användaren anger en gissning mellan 0-100. Om gissningen ä
 :class: Hint dropdown
 
 Uppgiften liknar en av projekten, lös problemet och rådfråga på vägen!
+```
+
+## 8. Klasser
+
+```{include} klasser.md
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
 ```

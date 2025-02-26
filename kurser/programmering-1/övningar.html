@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../_static/documentation_options.js?v=d854bcc1"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
@@ -71,7 +68,6 @@
     <link rel="prev" title="Lexikon" href="lexikon.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -87,8 +83,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -96,6 +103,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Sök på Mentiphy..."
          aria-label="Sök på Mentiphy..."
          autocomplete="off"
@@ -103,8 +111,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -120,8 +128,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -151,17 +158,21 @@
     
     
     <img src="../../_static/lo.png" class="logo__image only-light" alt="mentiphy - Home"/>
-    <img src="../../_static/lo.png" class="logo__image only-dark pst-js-only" alt="mentiphy - Home"/>
+    <script>document.write(`<img src="../../_static/lo.png" class="logo__image only-dark" alt="mentiphy - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Sök</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Sök</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -213,14 +224,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -317,16 +323,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -426,7 +440,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-4">Övning 6.4</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-i-programmering">Projekt i programmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-i-programmering">7. Projekt i programmering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-turtles">Projekt - Turtles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgift-1-rektangel">Uppgift 1 - Rektangel</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgift-2-pentagram">Uppgift 2 - Pentagram</a></li>
@@ -509,7 +523,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">Steg 8</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repetition-infor-klasser">Repetition inför klasser</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repetition-infor-klasser">8. Repetition inför klasser</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
@@ -521,6 +535,19 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-10">Övning 10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-11">Övning 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasser">8. Klasser</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-1">Övning 8.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-2">Övning 8.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-3">Övning 8.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-4">Övning 8.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-5">Övning 8.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-6">Övning 8.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-7">Övning 8.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-8">Övning 8.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-9">Övning 8.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-10">Övning 8.10</a></li>
 </ul>
 </li>
 </ul>
@@ -538,41 +565,6 @@
 <h1>Övningar till kursen<a class="headerlink" href="#ovningar-till-kursen" title="Link to this heading">#</a></h1>
 <p>Under den här fliken samlas samtliga övningar till kursen. Istället för att navigera bland de andra flikarna är samtliga övningar samlade här.</p>
 <p>Tabellen nedan visar var övningar till de olika avsnitten finns.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Avsnitt</p></th>
-<th class="head"><p>Innehåll</p></th>
-<th class="head"><p>Nummer</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Grundläggande programmering</p></td>
-<td><p>print-satsen, variabler och tilldelningar, datatyper och typkonverteringar, input-satsen.</p></td>
-<td><p><em>1.1-1.6</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>Satser</p></td>
-<td><p>Listor, if- och else-satsen, elif-satsen, logiska uttryck.</p></td>
-<td><p><em>2.1-2.10</em></p></td>
-</tr>
-<tr class="row-even"><td><p>Loopar</p></td>
-<td><p>for-loopen, range-funktionen, listor och for-loopar, while-loopen.</p></td>
-<td><p><em>3.1-3.12</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>Turtles</p></td>
-<td><p>Rita simpel grafik med hjälp av turtle-modulen.</p></td>
-<td><p><em>4.1-4.8</em></p></td>
-</tr>
-<tr class="row-even"><td><p>Funktioner</p></td>
-<td><p>Deklarera och använda funktioner.</p></td>
-<td><p><em>5.1-5.11</em></p></td>
-</tr>
-<tr class="row-odd"><td><p>Projekt i programmering</p></td>
-<td><p>Lösa diverse projekt i programmering</p></td>
-<td><p>Onumrerade</p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <section id="grundlaggande-programmering">
 <h2>1. Grundläggande programmering<a class="headerlink" href="#grundlaggande-programmering" title="Link to this heading">#</a></h2>
 <section id="ovning-1-1">
@@ -988,7 +980,8 @@
 <section id="ovning-4-5">
 <h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.</p>
-<a class="reference internal image-reference" href="../../_images/turtleRings.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleRings.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleRings.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleRings.PNG" style="width: 50%;" />
+</a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code>. Det är viktigt att for-loopen även inkluderar <em>var</em> skölpaddan ska börja med att rita cirkeln. Använd <code class="docutils literal notranslate"><span class="pre">t.penup()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code> och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.</p>
@@ -997,7 +990,8 @@
 <section id="ovning-4-6">
 <h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.</p>
-<a class="reference internal image-reference" href="../../_images/turtleHouse.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleHouse.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleHouse.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleHouse.PNG" style="width: 50%;" />
+</a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt.</p>
@@ -1006,7 +1000,8 @@
 <section id="ovning-4-7">
 <h3>Övning 4.7<a class="headerlink" href="#ovning-4-7" title="Link to this heading">#</a></h3>
 <p>Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.</p>
-<a class="reference internal image-reference" href="../../_images/turtleColorrings.PNG"><img alt="Ringar med färger." class="align-center" src="../../_images/turtleColorrings.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleColorrings.PNG"><img alt="Ringar med färger." class="align-center" src="../../_images/turtleColorrings.PNG" style="width: 50%;" />
+</a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras.</p>
@@ -1015,7 +1010,8 @@
 <section id="ovning-4-8">
 <h3>Övning 4.8<a class="headerlink" href="#ovning-4-8" title="Link to this heading">#</a></h3>
 <p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
-<a class="reference internal image-reference" href="../../_images/turtleSpiral.PNG"><img alt="En spiral." class="align-center" src="../../_images/turtleSpiral.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleSpiral.PNG"><img alt="En spiral." class="align-center" src="../../_images/turtleSpiral.PNG" style="width: 50%;" />
+</a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en längd som sprialen ska börja med, gör det här värdet lågt. För varje gång som loopen uppdateras se till att göra sträcket längre. <code class="docutils literal notranslate"><span class="pre">längd</span> <span class="pre">+=</span> <span class="pre">1</span></code> Skapa en for-loop som använder range-funkionen som upprepar för varje streck som ska ritas.</p>
@@ -1150,7 +1146,7 @@
 </section>
 </section>
 <section id="projekt-i-programmering">
-<h2>Projekt i programmering<a class="headerlink" href="#projekt-i-programmering" title="Link to this heading">#</a></h2>
+<h2>7. Projekt i programmering<a class="headerlink" href="#projekt-i-programmering" title="Link to this heading">#</a></h2>
 <section id="projekt-turtles">
 <h3>Projekt - Turtles<a class="headerlink" href="#projekt-turtles" title="Link to this heading">#</a></h3>
 <p>Nedan kommer ett funktionsprojekt där vi ska använda funktioner för att bygga turtle-grafik.</p>
@@ -1180,7 +1176,8 @@
 <section id="uppgift-3-vietnamesiska-flaggan">
 <h3>Uppgift 3 - Vietnamesiska flaggan<a class="headerlink" href="#uppgift-3-vietnamesiska-flaggan" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">vietnamesiska_flaggan(x,</span> <span class="pre">y,</span> <span class="pre">höjd)</span></code> som ritar den vietnamesiska flaggan med nedre hörnet i punkten <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> och med höjden <code class="docutils literal notranslate"><span class="pre">höjd</span></code>. Funktionen ritar flaggan. Flaggans proportioner är 3:2, alltså bredden är 3 och höjden 2. Pentagrammet ska vara centrerad i flaggan. Se bilden nedan för inspiration.</p>
-<a class="reference internal image-reference" href="../../_images/vietnam.png"><img alt="en Flagga" class="align-center" src="../../_images/vietnam.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/vietnam.png"><img alt="en Flagga" class="align-center" src="../../_images/vietnam.png" style="width: 50%;" />
+</a>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera funktionen med parametrarna <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> och <code class="docutils literal notranslate"><span class="pre">höjd</span></code>. I funktionskroppen ritar vi flaggan genom att anropa <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">rektangel(x,</span> <span class="pre">y,</span> <span class="pre">bredd,</span> <span class="pre">höjd,</span> <span class="pre">färg)</span></code>. Skapa sedan pentagrammet genom att anropa funktionen <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">pentagram(x,</span> <span class="pre">y,</span> <span class="pre">sida)</span></code> du behöver dock skriva om det programmet så den fyller i färgen korrekt.</p>
@@ -1222,19 +1219,22 @@
 <section id="steg-6">
 <h4>Steg 6<a class="headerlink" href="#steg-6" title="Link to this heading">#</a></h4>
 <p>Flytta skölpaddan till en slumpmässig position inom kvadraten. Nu ser koden ut någonting så här:</p>
-<a class="reference internal image-reference" href="../../_images/turtleSquare.PNG"><img alt="En kvadrat." class="align-center" src="../../_images/turtleSquare.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleSquare.PNG"><img alt="En kvadrat." class="align-center" src="../../_images/turtleSquare.PNG" style="width: 50%;" />
+</a>
 </section>
 <hr class="docutils" />
 <section id="steg-7">
 <h4>Steg 7<a class="headerlink" href="#steg-7" title="Link to this heading">#</a></h4>
 <p>Skriv nu kod som med hjälp av for-satsen gör anrop till <code class="docutils literal notranslate"><span class="pre">move_random</span></code> Nu kan det se ut så här:</p>
-<a class="reference internal image-reference" href="../../_images/turtleRandomStart.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomStart.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleRandomStart.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomStart.PNG" style="width: 50%;" />
+</a>
 </section>
 <hr class="docutils" />
 <section id="steg-8">
 <h4>Steg 8<a class="headerlink" href="#steg-8" title="Link to this heading">#</a></h4>
 <p>Lägg nu till kod i <code class="docutils literal notranslate"><span class="pre">move_random</span></code> som går så att om paddan efter förflyttningen befinner sig utanför den blå rutan vänder sig mot origo. Nu kan resultatet se ut så här:</p>
-<a class="reference internal image-reference" href="../../_images/turtleRandomSecond.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomSecond.PNG" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/turtleRandomSecond.PNG"><img alt="En slumpmässig turtle." class="align-center" src="../../_images/turtleRandomSecond.PNG" style="width: 50%;" />
+</a>
 </section>
 <hr class="docutils" />
 <section id="steg-9">
@@ -1400,7 +1400,8 @@
 </ul>
 </li>
 </ol>
-<a class="reference internal image-reference" href="../../_images/hangman_1.png"><img alt="En plats." class="align-center" src="../../_images/hangman_1.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/hangman_1.png"><img alt="En plats." class="align-center" src="../../_images/hangman_1.png" style="width: 50%;" />
+</a>
 <ol class="arabic simple" start="2">
 <li><p><strong>Rita gubben</strong>:</p>
 <ul class="simple">
@@ -1652,7 +1653,7 @@
 </section>
 </section>
 <section id="repetition-infor-klasser">
-<h2>Repetition inför klasser<a class="headerlink" href="#repetition-infor-klasser" title="Link to this heading">#</a></h2>
+<h2>8. Repetition inför klasser<a class="headerlink" href="#repetition-infor-klasser" title="Link to this heading">#</a></h2>
 <section id="ovning-1">
 <h3>Övning 1<a class="headerlink" href="#ovning-1" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion factorial(n) som returnerar fakulteten av n.</p>
@@ -1742,6 +1743,89 @@
 </div>
 </section>
 </section>
+<section id="klasser">
+<h2>8. Klasser<a class="headerlink" href="#klasser" title="Link to this heading">#</a></h2>
+<section id="ovning-8-1">
+<h3>Övning 8.1<a class="headerlink" href="#ovning-8-1" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bil</span></code> med attributen <code class="docutils literal notranslate"><span class="pre">märke</span></code> och <code class="docutils literal notranslate"><span class="pre">modell</span></code>.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Definiera en klass <code class="docutils literal notranslate"><span class="pre">Bil</span></code> och använd <code class="docutils literal notranslate"><span class="pre">__init__</span></code> för att spara märke och modell.</p>
+</div>
+</section>
+<section id="ovning-8-2">
+<h3>Övning 8.2<a class="headerlink" href="#ovning-8-2" title="Link to this heading">#</a></h3>
+<p>Lägg till en metod <code class="docutils literal notranslate"><span class="pre">beskriv</span></code> i <code class="docutils literal notranslate"><span class="pre">Bil</span></code> som skriver ut bilens märke och modell.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa en metod i klassen som använder <code class="docutils literal notranslate"><span class="pre">print()</span></code> för att skriva ut bilens information.</p>
+</div>
+</section>
+<section id="ovning-8-3">
+<h3>Övning 8.3<a class="headerlink" href="#ovning-8-3" title="Link to this heading">#</a></h3>
+<p>Skapa en subklass <code class="docutils literal notranslate"><span class="pre">Elbil</span></code> som ärver från <code class="docutils literal notranslate"><span class="pre">Bil</span></code> och lägg till ett attribut <code class="docutils literal notranslate"><span class="pre">batterikapacitet</span></code>.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">super().__init__()</span></code> för att återanvända koden från <code class="docutils literal notranslate"><span class="pre">Bil</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-4">
+<h3>Övning 8.4<a class="headerlink" href="#ovning-8-4" title="Link to this heading">#</a></h3>
+<p>Skapa en metod i <code class="docutils literal notranslate"><span class="pre">Elbil</span></code> som skriver ut batterikapaciteten.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa en metod som skriver ut <code class="docutils literal notranslate"><span class="pre">batterikapacitet</span></code> med <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-5">
+<h3>Övning 8.5<a class="headerlink" href="#ovning-8-5" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Person</span></code> med namn och ålder, samt en metod <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> som skriver ut en hälsning.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Metoden kan skriva ut något som ”Hej, jag heter [namn] och är [ålder] år gammal!”</p>
+</div>
+</section>
+<section id="ovning-8-6">
+<h3>Övning 8.6<a class="headerlink" href="#ovning-8-6" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Rektangel</span></code> med attributen <code class="docutils literal notranslate"><span class="pre">bredd</span></code> och <code class="docutils literal notranslate"><span class="pre">höjd</span></code>, och en metod som räknar ut arean.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Arean beräknas med <code class="docutils literal notranslate"><span class="pre">bredd</span> <span class="pre">*</span> <span class="pre">höjd</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-7">
+<h3>Övning 8.7<a class="headerlink" href="#ovning-8-7" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Cirkel</span></code> med en metod för att räkna ut omkretsen (använd <code class="docutils literal notranslate"><span class="pre">math.pi</span></code>).</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Omkretsen beräknas med <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">math.pi</span> <span class="pre">*</span> <span class="pre">radie</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-8">
+<h3>Övning 8.8<a class="headerlink" href="#ovning-8-8" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bibliotek</span></code> där vi kan lägga till och ta bort böcker i en lista.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en lista för att lagra böcker och metoder för att hantera dem.</p>
+</div>
+</section>
+<section id="ovning-8-9">
+<h3>Övning 8.9<a class="headerlink" href="#ovning-8-9" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bankkonto</span></code> där vi kan sätta in och ta ut pengar.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Håll koll på saldot och uppdatera det vid insättning och uttag.</p>
+</div>
+</section>
+<section id="ovning-8-10">
+<h3>Övning 8.10<a class="headerlink" href="#ovning-8-10" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Spelkaraktär</span></code> med hälsa och attackkraft, samt en metod för att attackera en annan karaktär.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en metod som minskar hälsan på den attackerade karaktären.</p>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1799,8 +1883,7 @@
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1885,7 +1968,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-4">Övning 6.4</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-i-programmering">Projekt i programmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-i-programmering">7. Projekt i programmering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projekt-turtles">Projekt - Turtles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgift-1-rektangel">Uppgift 1 - Rektangel</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uppgift-2-pentagram">Uppgift 2 - Pentagram</a></li>
@@ -1968,7 +2051,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">Steg 8</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repetition-infor-klasser">Repetition inför klasser</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repetition-infor-klasser">8. Repetition inför klasser</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-1">Övning 1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2">Övning 2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3">Övning 3</a></li>
@@ -1980,6 +2063,19 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-9">Övning 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-10">Övning 10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-11">Övning 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasser">8. Klasser</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-1">Övning 8.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-2">Övning 8.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-3">Övning 8.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-4">Övning 8.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-5">Övning 8.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-6">Övning 8.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-7">Övning 8.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-8">Övning 8.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-9">Övning 8.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-10">Övning 8.10</a></li>
 </ul>
 </li>
 </ul>
@@ -2056,8 +2152,8 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

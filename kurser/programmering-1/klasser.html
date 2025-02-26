@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+
+
+<html lang="sv" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Klasser &#8212; mentiphy</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=d854bcc1"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/translations.js?v=c568922a"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/klasser';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Sök" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="sv"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Sök på Mentiphy..."
+         aria-label="Sök på Mentiphy..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/lo.png" class="logo__image only-light" alt="mentiphy - Home"/>
+    <script>document.write(`<img src="../../_static/lo.png" class="logo__image only-dark" alt="mentiphy - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Sök</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Hem
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Fysik åk 9</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/materia.html">Materia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/elektricitet.html">Elektricitet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/mekanik.html">Mekanik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/ljud.html">Ljud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/ljus.html">Ljus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/tryckv%C3%A4rmeklimat.html">Tryck, värme och klimat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/elektromagnetism.html">Elektromagnetism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/energioeffekt.html">Energi och effekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/atomok%C3%A4rn.html">Atom- och kärnfysik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fysik-9/universum.html">Universum</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Matematik 1c</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../matematik-1/introduktion.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../matematik-1/funktioner.html">Funktioner</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering 1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduktion.html">Introduktion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="satser.html">Satser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funktioner.html">Funktioner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merfunktioner.html">Mer om funktioner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datahantering.html">Datahantering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lexikon.html">Lexikon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="%C3%B6vningar.html">Övningar till kursen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fels%C3%B6kning.html">Felsökning</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Ladda ner den här sidan">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/kurser/programmering-1/klasser.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Ladda ner källfil"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Skriv ut till PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullskärmsläge"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Sök" aria-label="Sök" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Klasser</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Innehåll </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-en-tarning">Exempel: En tärning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-en-klass">Skapa en klass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoder-i-klasser">Metoder i klasser</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-ett-djur">Exempel: Ett djur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-objekt">Skapa objekt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Metoder i klasser</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arva-fran-en-annan-klass">Ärva från en annan klass</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-1">Övning 8.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-2">Övning 8.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-3">Övning 8.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-4">Övning 8.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-5">Övning 8.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-6">Övning 8.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-7">Övning 8.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-8">Övning 8.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-9">Övning 8.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-10">Övning 8.10</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="klasser">
+<h1>Klasser<a class="headerlink" href="#klasser" title="Link to this heading">#</a></h1>
+<p>I Python kan vi använda klasser och objekt för att organisera vår kod och göra den mer överskådlig. En klass fungerar som en mall för att skapa objekt, alltså egna typer av variabler med specifika egenskaper och funktioner. En klass är som en ritning för att skapa objekt. Vi definierar en klass med nyckelordet <code class="docutils literal notranslate"><span class="pre">class</span></code> följt av klassens namn.</p>
+<section id="exempel-en-tarning">
+<h2>Exempel: En tärning<a class="headerlink" href="#exempel-en-tarning" title="Link to this heading">#</a></h2>
+<p>Vi ska börja med ett exempel där vi skapar en mall för en tärning. En mall på en tärning hade då inkluderat två viktiga egenskaper för en tärning. Den första viktiga egenskapen hos en tärning är att den har ett antal sidor. Antalet sidor varierar, det kan vi låta användaren välja. Dessutom har den andra egenskapen att vi kan slå den, som ger oss ett slumpmässigt värde mellan 1 och antalet sidor (det här ska vi lägga till senare).</p>
+<section id="skapa-en-klass">
+<h3>Skapa en klass<a class="headerlink" href="#skapa-en-klass" title="Link to this heading">#</a></h3>
+<p>Vi börjar med att skapa en klass genom att skriva <code class="docutils literal notranslate"><span class="pre">class</span></code>, därefter ger vi klassen ett namn <code class="docutils literal notranslate"><span class="pre">Tärning</span></code>. Då har vi skapat klassen. Därefter skapar vi en <em>konstruktor</em> som är en funktion där vi lägger till vilka egenskaper som tärningen har. I det här fallet i varje mall för en tärning så finns det ett antal sidor.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Tärning</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sidor</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Den här metoden körs när vi skapar ett objekt av klassen. </span>
+<span class="sd">        Vi sparar hur många sidor tärningen har.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sidor</span> <span class="o">=</span> <span class="n">sidor</span>
+    
+<span class="n">min_tärning</span> <span class="o">=</span> <span class="n">Tärning</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Vi skriver sedan <code class="docutils literal notranslate"><span class="pre">self.sidor</span> <span class="pre">=</span> <span class="pre">sidor</span></code> som betyder att objektet (tärningen) har en egenskap som heter <code class="docutils literal notranslate"><span class="pre">sidor</span></code>. Antalet sidor ska vara en inputparameter som vi skickar in vid skapandet av objektet.</p>
+<p>Om vi vill skapa ett objekt (en tärning i vårt fall) med hjälp av klassen kan vi deklarera en variabel <code class="docutils literal notranslate"><span class="pre">min_tärning</span></code> som har klassen <code class="docutils literal notranslate"><span class="pre">Tärning</span></code> som typ av objekt och vi använder <code class="docutils literal notranslate"><span class="pre">6</span></code> som input då vi vill skapa en tärning med sex sidor.</p>
+</section>
+<section id="metoder-i-klasser">
+<h3>Metoder i klasser<a class="headerlink" href="#metoder-i-klasser" title="Link to this heading">#</a></h3>
+<p>Klasser kan ha metoder, vilket är funktioner som hör till ett objekt och beskriver vad objektet kan göra. Exempelvis kan vi lägga till en metod som gör att tärningen kan kastas och returnera ett slumpmässigt värde.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Tärning</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sidor</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Den här metoden körs när vi skapar ett objekt av klassen. </span>
+<span class="sd">        Vi sparar hur många sidor tärningen har.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sidor</span> <span class="o">=</span> <span class="n">sidor</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">slå</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Returnerar ett slumpmässigt värde mellan 1 och antal sidor.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sidor</span><span class="p">)</span>
+
+<span class="n">min_tärning</span> <span class="o">=</span> <span class="n">Tärning</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">min_tärning</span><span class="o">.</span><span class="n">slå</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Ovan i exemplet ser vi en annan metod <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">slå(self):</span></code> där objektet (tärningen) kan utföra saker, i det här fallet kastas och ge tillbaka ett värde. <code class="docutils literal notranslate"><span class="pre">self</span></code> lägger vi alltid till för att vara tydliga med att det är objektet som ska påverkas av metoden.</p>
+</section>
+</section>
+<section id="exempel-ett-djur">
+<h2>Exempel: Ett djur<a class="headerlink" href="#exempel-ett-djur" title="Link to this heading">#</a></h2>
+<p>Nu kan vi skapa en klass <code class="docutils literal notranslate"><span class="pre">Djur</span></code> för att beskriva djur.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Djur</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">namn</span><span class="p">,</span> <span class="n">art</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Den här metoden skapar objekt med ett namn och en art.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">namn</span> <span class="o">=</span> <span class="n">namn</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">art</span> <span class="o">=</span> <span class="n">art</span>
+</pre></div>
+</div>
+<p>Här skapar vi en klass <code class="docutils literal notranslate"><span class="pre">Djur</span></code> med en metod som kallas <code class="docutils literal notranslate"><span class="pre">__init__</span></code>. Den här metoden kallas automatiskt när vi skapar ett nytt objekt och används för att ge objektet sina startvärden.</p>
+<section id="skapa-objekt">
+<h3>Skapa objekt<a class="headerlink" href="#skapa-objekt" title="Link to this heading">#</a></h3>
+<p>För att skapa ett objekt av klassen använder vi klassnamnet som en funktion:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mitt_djur</span> <span class="o">=</span> <span class="n">Djur</span><span class="p">(</span><span class="s2">&quot;Bella&quot;</span><span class="p">,</span> <span class="s2">&quot;Hund&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mitt_djur</span><span class="o">.</span><span class="n">namn</span><span class="p">)</span>  <span class="c1"># Output: Bella</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3>Metoder i klasser<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>I det här exemplet kan vi lägga till en metod som gör att djuret låter:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Djur</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">namn</span><span class="p">,</span> <span class="n">art</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">namn</span> <span class="o">=</span> <span class="n">namn</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">art</span> <span class="o">=</span> <span class="n">art</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">låt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">namn</span><span class="si">}</span><span class="s2"> gör ett ljud!&quot;</span><span class="p">)</span>
+
+<span class="n">mitt_djur</span> <span class="o">=</span> <span class="n">Djur</span><span class="p">(</span><span class="s2">&quot;Bella&quot;</span><span class="p">,</span> <span class="s2">&quot;Hund&quot;</span><span class="p">)</span>
+<span class="n">mitt_djur</span><span class="o">.</span><span class="n">låt</span><span class="p">()</span>  <span class="c1"># Output: Bella gör ett ljud!</span>
+</pre></div>
+</div>
+</section>
+<section id="arva-fran-en-annan-klass">
+<h3>Ärva från en annan klass<a class="headerlink" href="#arva-fran-en-annan-klass" title="Link to this heading">#</a></h3>
+<p>Python stöder arv, vilket betyder att vi kan skapa en ny klass som bygger på en befintlig klass. Detta gör att vi kan återanvända kod från en annan klass.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">Hund</span><span class="p">(</span><span class="n">Djur</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">namn</span><span class="p">,</span> <span class="n">ras</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">namn</span><span class="p">,</span> <span class="s2">&quot;Hund&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ras</span> <span class="o">=</span> <span class="n">ras</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">skäll</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">namn</span><span class="si">}</span><span class="s2"> skäller!&quot;</span><span class="p">)</span>
+
+<span class="n">min_hund</span> <span class="o">=</span> <span class="n">Hund</span><span class="p">(</span><span class="s2">&quot;Bella&quot;</span><span class="p">,</span> <span class="s2">&quot;Labrador&quot;</span><span class="p">)</span>
+<span class="n">min_hund</span><span class="o">.</span><span class="n">skäll</span><span class="p">()</span>  <span class="c1"># Output: Bella skäller!</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="ovningar">
+<h2>Övningar<a class="headerlink" href="#ovningar" title="Link to this heading">#</a></h2>
+<!-- start-övningar -->
+<section id="ovning-8-1">
+<h3>Övning 8.1<a class="headerlink" href="#ovning-8-1" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bil</span></code> med attributen <code class="docutils literal notranslate"><span class="pre">märke</span></code> och <code class="docutils literal notranslate"><span class="pre">modell</span></code>.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Definiera en klass <code class="docutils literal notranslate"><span class="pre">Bil</span></code> och använd <code class="docutils literal notranslate"><span class="pre">__init__</span></code> för att spara märke och modell.</p>
+</div>
+</section>
+<section id="ovning-8-2">
+<h3>Övning 8.2<a class="headerlink" href="#ovning-8-2" title="Link to this heading">#</a></h3>
+<p>Lägg till en metod <code class="docutils literal notranslate"><span class="pre">beskriv</span></code> i <code class="docutils literal notranslate"><span class="pre">Bil</span></code> som skriver ut bilens märke och modell.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa en metod i klassen som använder <code class="docutils literal notranslate"><span class="pre">print()</span></code> för att skriva ut bilens information.</p>
+</div>
+</section>
+<section id="ovning-8-3">
+<h3>Övning 8.3<a class="headerlink" href="#ovning-8-3" title="Link to this heading">#</a></h3>
+<p>Skapa en subklass <code class="docutils literal notranslate"><span class="pre">Elbil</span></code> som ärver från <code class="docutils literal notranslate"><span class="pre">Bil</span></code> och lägg till ett attribut <code class="docutils literal notranslate"><span class="pre">batterikapacitet</span></code>.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">super().__init__()</span></code> för att återanvända koden från <code class="docutils literal notranslate"><span class="pre">Bil</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-4">
+<h3>Övning 8.4<a class="headerlink" href="#ovning-8-4" title="Link to this heading">#</a></h3>
+<p>Skapa en metod i <code class="docutils literal notranslate"><span class="pre">Elbil</span></code> som skriver ut batterikapaciteten.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa en metod som skriver ut <code class="docutils literal notranslate"><span class="pre">batterikapacitet</span></code> med <code class="docutils literal notranslate"><span class="pre">print()</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-5">
+<h3>Övning 8.5<a class="headerlink" href="#ovning-8-5" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Person</span></code> med namn och ålder, samt en metod <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> som skriver ut en hälsning.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Metoden kan skriva ut något som ”Hej, jag heter [namn] och är [ålder] år gammal!”</p>
+</div>
+</section>
+<section id="ovning-8-6">
+<h3>Övning 8.6<a class="headerlink" href="#ovning-8-6" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Rektangel</span></code> med attributen <code class="docutils literal notranslate"><span class="pre">bredd</span></code> och <code class="docutils literal notranslate"><span class="pre">höjd</span></code>, och en metod som räknar ut arean.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Arean beräknas med <code class="docutils literal notranslate"><span class="pre">bredd</span> <span class="pre">*</span> <span class="pre">höjd</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-7">
+<h3>Övning 8.7<a class="headerlink" href="#ovning-8-7" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Cirkel</span></code> med en metod för att räkna ut omkretsen (använd <code class="docutils literal notranslate"><span class="pre">math.pi</span></code>).</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Omkretsen beräknas med <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">math.pi</span> <span class="pre">*</span> <span class="pre">radie</span></code>.</p>
+</div>
+</section>
+<section id="ovning-8-8">
+<h3>Övning 8.8<a class="headerlink" href="#ovning-8-8" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bibliotek</span></code> där vi kan lägga till och ta bort böcker i en lista.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en lista för att lagra böcker och metoder för att hantera dem.</p>
+</div>
+</section>
+<section id="ovning-8-9">
+<h3>Övning 8.9<a class="headerlink" href="#ovning-8-9" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Bankkonto</span></code> där vi kan sätta in och ta ut pengar.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Håll koll på saldot och uppdatera det vid insättning och uttag.</p>
+</div>
+</section>
+<section id="ovning-8-10">
+<h3>Övning 8.10<a class="headerlink" href="#ovning-8-10" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Spelkaraktär</span></code> med hälsa och attackkraft, samt en metod för att attackera en annan karaktär.</p>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en metod som minskar hälsan på den attackerade karaktären.</p>
+</div>
+<!-- end-övningar -->
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./kurser/programmering-1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Innehåll
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-en-tarning">Exempel: En tärning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-en-klass">Skapa en klass</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoder-i-klasser">Metoder i klasser</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exempel-ett-djur">Exempel: Ett djur</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skapa-objekt">Skapa objekt</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Metoder i klasser</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arva-fran-en-annan-klass">Ärva från en annan klass</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar">Övningar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-1">Övning 8.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-2">Övning 8.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-3">Övning 8.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-4">Övning 8.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-5">Övning 8.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-6">Övning 8.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-7">Övning 8.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-8">Övning 8.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-9">Övning 8.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-10">Övning 8.10</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Av Emil Sarling & Emma Söderström
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+  <div>Vi finns på <a href='https://youtube.com/@mentiphy1'>YouTube</a>. <br>Kontakta oss på <a href='mailto:info@mentiphy.se'>info@mentiphy.se</a>. <br>Hemsidan drivs av <a href='https://consulting.stjarnholm.com'>Stjärnholm Consulting</a>.</div>
+</div>
+<!-- Cookie Consent by PrivacyPolicies.com https://www.PrivacyPolicies.com -->
+<!-- <script type="text/javascript" src="https://www.privacypolicies.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","language":"sv","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"Mentiphy","website_privacy_policy_url":"https://clarity.microsoft.com/terms"});
+});
+</script> -->
+
+<!-- Microsoft Clarity -->
+<!-- <script type="text/javascript" cookie-consent="tracking">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "h0v59y70qe");
+</script> -->
+<!-- end of Microsoft Clarity-->
+
+<noscript>Cookie Consent by <a href="https://www.privacypolicies.com/" rel="noopener">Privacy Policies website</a></noscript>
+<!-- End Cookie Consent by PrivacyPolicies.com https://www.PrivacyPolicies.com -->
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
