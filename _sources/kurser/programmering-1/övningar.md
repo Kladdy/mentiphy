@@ -15,10 +15,10 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - *1.1-1.6*
 * - Satser
   - Listor, if- och else-satsen, elif-satsen, logiska uttryck.
-  - *2.1-2.10*
+  - *2.1-2.12*
 * - Loopar
   - for-loopen, range-funktionen, listor och for-loopar, while-loopen.
-  - *3.1-3.12*
+  - *3.1-3.13*
 * - Turtles
   - Rita simpel grafik med hjälp av turtle-modulen.
   - *4.1-4.8*
@@ -100,38 +100,6 @@ Använd en inbyggd metod för listor som heter len().
 ```{include} loopar.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
-```
-
-### Övning 3.9
-Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.
-
-```{admonition} Tips
-:class: Hint dropdown
-Använd en inbyggd metod för listor som heter len().
-```
-
-### Övning 3.10
-Skapa ett program som tar en lista med heltal och returnerar summan av alla jämna tal i listan.
-```{admonition} Tips
-:class: Hint dropdown
-
-Använd en `for`-loop för att iterera genom listan och kontrollera om ett tal är jämnt med hjälp av `if num % 2 == 0`.
-```
-
-### Övning 3.11
-Skapa ett program som räknar hur många negativa tal som finns i en lista.
-
-```{admonition} Tips
-:class: Hint dropdown
-
-Du kan använda en variabel för att hålla koll på antalet negativa tal och en `for`-loop tillsammans med en `if`-sats för att jämföra varje tal med 0.
-```
-### Övning 3.12
-Skapa ett program som tar en lista och ett gränsvärde, och returnerar en ny lista med alla tal som är större än gränsvärdet
-```{admonition} Tips
-:class: Hint dropdown
-
-Använd en `for`-loop för att iterera genom listan och en `if`-sats för att kontrollera om varje tal är större än gränsvärdet.
 ```
 
 ## 4. Turtles

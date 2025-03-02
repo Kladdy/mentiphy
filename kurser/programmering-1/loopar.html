@@ -381,6 +381,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
 </ul>
 </li>
 </ul>
@@ -494,30 +499,43 @@ document.write(`
 </section>
 <section id="ovning-3-4">
 <h3>Övning 3.4<a class="headerlink" href="#ovning-3-4" title="Link to this heading">#</a></h3>
+<p>Skapa en lista med minst 15 heltal. Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Filtrerar ut alla jämna tal och skapar en ny lista</p></li>
+<li><p>Filtrerar ut alla udda tal och skapar en annan ny lista</p></li>
+</ul>
+<p>Skriv ut de två nya listorna.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">if</span></code>- och <code class="docutils literal notranslate"><span class="pre">else</span></code>-satsen.</p>
+</div>
+</section>
+<section id="ovning-3-5">
+<h3>Övning 3.5<a class="headerlink" href="#ovning-3-5" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som räknar ut och skriver ut summan av alla nummer 1-100.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera en summan som noll, skapa sedan en for-lopp som innehåller en range som går upp hela vägen till 100, sedan för varje tal i addera den till variabeln summan.</p>
 </div>
 </section>
-<section id="ovning-3-5">
-<h3>Övning 3.5<a class="headerlink" href="#ovning-3-5" title="Link to this heading">#</a></h3>
+<section id="ovning-3-6">
+<h3>Övning 3.6<a class="headerlink" href="#ovning-3-6" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.</p>
 </div>
 </section>
-<section id="ovning-3-6">
-<h3>Övning 3.6<a class="headerlink" href="#ovning-3-6" title="Link to this heading">#</a></h3>
+<section id="ovning-3-7">
+<h3>Övning 3.7<a class="headerlink" href="#ovning-3-7" title="Link to this heading">#</a></h3>
 <p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
-<section id="ovning-3-7">
-<h3>Övning 3.7<a class="headerlink" href="#ovning-3-7" title="Link to this heading">#</a></h3>
+<section id="ovning-3-8">
+<h3>Övning 3.8<a class="headerlink" href="#ovning-3-8" title="Link to this heading">#</a></h3>
 <p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:</p>
 <div class="math notranslate nohighlight">
 \[n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 \]</div>
@@ -529,12 +547,44 @@ document.write(`
 <p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
-<section id="ovning-3-8">
-<h3>Övning 3.8<a class="headerlink" href="#ovning-3-8" title="Link to this heading">#</a></h3>
+<section id="ovning-3-9">
+<h3>Övning 3.9<a class="headerlink" href="#ovning-3-9" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler.</p>
+</div>
+</section>
+<section id="ovning-3-10">
+<h3>Övning 3.10<a class="headerlink" href="#ovning-3-10" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en inbyggd metod för listor som heter len().</p>
+</div>
+</section>
+<section id="ovning-3-11">
+<h3>Övning 3.11<a class="headerlink" href="#ovning-3-11" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som tar en lista med heltal och returnerar summan av alla jämna tal i listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att iterera genom listan och kontrollera om ett tal är jämnt med hjälp av <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">num</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span></code>.</p>
+</div>
+</section>
+<section id="ovning-3-12">
+<h3>Övning 3.12<a class="headerlink" href="#ovning-3-12" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som räknar hur många negativa tal som finns i en lista.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Du kan använda en variabel för att hålla koll på antalet negativa tal och en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop tillsammans med en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats för att jämföra varje tal med 0.</p>
+</div>
+</section>
+<section id="ovning-3-13">
+<h3>Övning 3.13<a class="headerlink" href="#ovning-3-13" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som tar en lista och ett gränsvärde, och returnerar en ny lista med alla tal som är större än gränsvärdet</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att iterera genom listan och en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats för att kontrollera om varje tal är större än gränsvärdet.</p>
 </div>
 <!-- end-övningar --></section>
 </section>
@@ -621,6 +671,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
 </ul>
 </li>
 </ul>
