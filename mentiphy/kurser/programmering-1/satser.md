@@ -270,19 +270,6 @@ Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubb
 ```
 
 ### Övning 2.7
-
-Skapa en lista med minst 15 heltal. Skriv ett program som:
-- Filtrerar ut alla jämna tal och skapar en ny lista
-- Filtrerar ut alla udda tal och skapar en annan ny lista
-
-Skriv ut de två nya listorna.
-
-```{admonition} Tips
-:class: Hint dropdown
-Använd `if`- och `else`-satsen.
-```
-
-### Övning 2.8
 Låt användaren skriva in en mening. Skriv ett program som:
 - Räknar antalet ord i meningen
 - Hittar det längsta ordet
@@ -295,7 +282,7 @@ Skriv ut resultaten.
 Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
 ```
 
-### Övning 2.9
+### Övning 2.8
 Skapa två listor med heltal.
 
 ```python
@@ -312,7 +299,7 @@ Skriv ett program som:
 Använd `set()` och operatorn `&` för att hitta gemensamma element.
 ```
 
-### Övning 2.10
+### Övning 2.9
 
 Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.
 
@@ -330,7 +317,7 @@ Använd slicing för att dela upp listan och kombinera delarna igen.
 ```
 
 
-### Övning 2.11
+### Övning 2.10
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
 
 ```{admonition} Tips
@@ -338,7 +325,7 @@ Skapa ett program som frågar användaren efter ett lösenord. Om användaren an
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
 ```
 
-### Övning 2.12
+### Övning 2.11
 Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
 
 ```{list-table}
@@ -362,7 +349,7 @@ Låt sedan programmet skriva ut vilket betyg som användaren fick.
 Använd sen en if-, elif- och else-sats.
 ```
 
-### Övning 2.13
+### Övning 2.12
 Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
 ```{admonition} Tips
 :class: Hint dropdown
