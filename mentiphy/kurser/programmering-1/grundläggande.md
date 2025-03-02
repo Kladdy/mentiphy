@@ -165,6 +165,19 @@ print(sida*sida, 'är kvadratens area')
 
 Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med en area av kvadraten. Eftersom datatypen för sidan är av typen *int* behöver koden förtydliga att inputen kommer vara av typen int. Om datatypen int inte explicit anges kommer python tolka inputen av typen sträng.
 
+## Videogenomgång
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtu.be/ukIiDchlLpU
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
 ## Övningar till avsnittet
 Här nedan listas flera övningar kopplad till innehållet av den här sidan, skriv din kod och se om du kan få svaret som programmet efterfrågar.
 
@@ -222,3 +235,16 @@ $y = C \cdot a^x $
 Börja med att använda input-satsen, deklarera variablerna och tilldela värdena genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
 <!-- end-övningar -->
+
+## Lösningar till övningar
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtu.be/Yz5IuBdzbdc
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
