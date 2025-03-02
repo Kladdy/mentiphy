@@ -171,7 +171,7 @@ Prorammet ovan frågar användaren efter en sida av en kvadrat, och svarar med e
     width="100%"
     max-width="800"
     height="450"
-    src= https://youtu.be/ukIiDchlLpU
+    src= https://youtube.com/embed/ukIiDchlLpU
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
@@ -242,7 +242,7 @@ Börja med att använda input-satsen, deklarera variablerna och tilldela värden
     width="100%"
     max-width="800"
     height="450"
-    src= https://youtu.be/Yz5IuBdzbdc
+    src= https://youtube.com/embed/Yz5IuBdzbdc
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen

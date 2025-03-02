@@ -202,7 +202,7 @@ elif-satsen underlättar för addera fler villkor om det behövs för att progra
     width="100%"
     max-width="800"
     height="450"
-    src= https://youtu.be/PebJzdRhnyQ
+    src= https://youtube.com/embed/PebJzdRhnyQ
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
@@ -376,7 +376,7 @@ Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision
     width="100%"
     max-width="800"
     height="450"
-    src= https://youtu.be/UFCUIO5UfJU
+    src= https://youtube.com/embed/UFCUIO5UfJU
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
