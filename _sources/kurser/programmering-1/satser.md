@@ -196,6 +196,19 @@ else:
 ```
 elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.
 
+## Videogenomgång
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtu.be/PebJzdRhnyQ
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+
 
 ## Övningar till avsnittet
 De första tre uppgifterna syftar till att öva på listor, de 4-6 på if-, elif- och else-satser.
@@ -356,3 +369,16 @@ Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret �
 Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.
 ```
 <!-- end-övningar -->
+
+## Lösningar till övningar
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtu.be/UFCUIO5UfJU
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
