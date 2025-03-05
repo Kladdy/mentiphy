@@ -1,5 +1,5 @@
 # Loopar
-Under det här fliken kommer vi djupfyka i problem där kod behöver upprepas många gånger efter varandra. För att upprepa kod på ett effektivt sätt är det perfekt att göra med hjälp av loopar, som vi ska kolla på under det här avsnittet.
+Under det här fliken kommer vi djupdyka i problem där kod behöver upprepas många gånger efter varandra. För att upprepa kod på ett effektivt sätt är det perfekt att göra med hjälp av loopar, som vi ska kolla på under det här avsnittet.
 
 ## for-loopen
 För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.
@@ -71,6 +71,18 @@ while i <= n:
     i += 1
 print(n, '=', prod)
 ```
+## Videogenomgång
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtube.com/embed/PebJzdRhnyQ
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ## Övningar till avsnittet
 Här kommer fliken för övningar, de första tre övningarna är bra för att träna på for-loopar, sedan kommer övningar för while-loopen.
@@ -185,3 +197,16 @@ Skapa ett program som tar en lista och ett gränsvärde, och returnerar en ny li
 Använd en `for`-loop för att iterera genom listan och en `if`-sats för att kontrollera om varje tal är större än gränsvärdet.
 ```
 <!-- end-övningar -->
+
+## Lösningar till övningar
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtube.com/embed/UFCUIO5UfJU
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>

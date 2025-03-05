@@ -112,7 +112,7 @@ min_hund.skäll()  # Output: Bella skäller!
 Skapa en klass `Bil` med attributen `märke` och `modell`.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint 
 Definiera en klass `Bil` och använd `__init__` för att spara märke och modell.
 ```
 
@@ -120,7 +120,7 @@ Definiera en klass `Bil` och använd `__init__` för att spara märke och modell
 Lägg till en metod `beskriv` i `Bil` som skriver ut bilens märke och modell.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Skapa en metod i klassen som använder `print()` för att skriva ut bilens information.
 ```
 
@@ -128,7 +128,7 @@ Skapa en metod i klassen som använder `print()` för att skriva ut bilens infor
 Skapa en subklass `Elbil` som ärver från `Bil` och lägg till ett attribut `batterikapacitet`.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd `super().__init__()` för att återanvända koden från `Bil`.
 ```
 
@@ -136,7 +136,7 @@ Använd `super().__init__()` för att återanvända koden från `Bil`.
 Skapa en metod i `Elbil` som skriver ut batterikapaciteten.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Skapa en metod som skriver ut `batterikapacitet` med `print()`.
 ```
 
@@ -144,7 +144,7 @@ Skapa en metod som skriver ut `batterikapacitet` med `print()`.
 Skapa en klass `Person` med namn och ålder, samt en metod `hälsa` som skriver ut en hälsning.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Metoden kan skriva ut något som "Hej, jag heter [namn] och är [ålder] år gammal!"
 ```
 
@@ -152,7 +152,7 @@ Metoden kan skriva ut något som "Hej, jag heter [namn] och är [ålder] år gam
 Skapa en klass `Rektangel` med attributen `bredd` och `höjd`, och en metod som räknar ut arean.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Arean beräknas med `bredd * höjd`.
 ```
 
@@ -160,7 +160,7 @@ Arean beräknas med `bredd * höjd`.
 Skapa en klass `Cirkel` med en metod för att räkna ut omkretsen (använd `math.pi`).
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Omkretsen beräknas med `2 * math.pi * radie`.
 ```
 
@@ -168,7 +168,7 @@ Omkretsen beräknas med `2 * math.pi * radie`.
 Skapa en klass `Bibliotek` där vi kan lägga till och ta bort böcker i en lista.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en lista för att lagra böcker och metoder för att hantera dem.
 ```
 
@@ -176,7 +176,7 @@ Använd en lista för att lagra böcker och metoder för att hantera dem.
 Skapa en klass `Bankkonto` där vi kan sätta in och ta ut pengar.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Håll koll på saldot och uppdatera det vid insättning och uttag.
 ```
 
@@ -184,9 +184,99 @@ Håll koll på saldot och uppdatera det vid insättning och uttag.
 Skapa en klass `Spelkaraktär` med hälsa och attackkraft, samt en metod för att attackera en annan karaktär.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en metod som minskar hälsan på den attackerade karaktären.
 ```
 
+### Övning 8.11
+
+Skapa en klass Student med attributen namn, ålder och kurser. Lägg till metoder för att lägga till och ta bort kurser.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd en lista för att lagra kurser och skapa metoder för att ändra den.
+```
+
+### Övning 8.12
+
+Skapa en klass Bok med attributen titel, författare och antal_sidor. Lägg till metoder för att visa information och ändra antal sidor.
+
+```{admonition} Tips
+:class: Hint
+Metoderna ska kunna visa bokens information och ändra antalet sidor vid en ny upplaga.
+```
+
+### Övning 8.13
+
+Skapa en klass Restaurang med namn, meny och öppettider. Lägg till metoder för att lägga till rätter och ändra öppettider.
+
+```{admonition} Tips
+:class: Hint
+Använd en lista för menyn och en sträng för öppettiderna.
+```
+
+### Övning 8.14
+
+Skapa en klass Smartphone med märke, modell och batterinivå. Lägg till metoder för att ladda batteriet och använda telefonen.
+
+```{admonition} Tips	
+:class: Hint
+Se till att batterinivån inte överstiger 100% eller sjunker under 0%.
+```
+
+### Övning 8.15
+
+Skapa en klass Spel med titel, genre och betyg. Lägg till metoder för att ändra betyget och visa information om spelet.
+
+```{admonition} Tips
+:class: Hint
+Betyget ska vara mellan 1 och 10.
+```
+
+### Övning 8.16
+
+Skapa en klass Flygplan med modell, kapacitet och aktuella_passagerare. Lägg till metoder för att lägga till och ta bort passagerare.
+
+```{admonition} Tips	
+:class: Hint
+Se till att flygplanet inte tar fler passagerare än sin kapacitet.
+```
+
+
+### Övning 8.17
+
+Skapa en klass Musikspelare med låtar och nuvarande_låt. Lägg till metoder för att spela, pausa och byta låt.
+
+```{admonition} Tips
+:class: Hint
+Använd en lista för låtar och en metod för att hoppa mellan dem.
+```
+
+### Övning 8.18
+
+Skapa en klass Butik med namn, varor och priser. Lägg till metoder för att lägga till nya varor och ändra priser.
+
+```{admonition} Tips
+:class: Hint
+Använd en ordbok där nyckeln är varans namn och värdet är priset.
+```
+
+### Övning 8.19
+
+Skapa en klass Bibliotekskort med kortnummer, ägare och lånade_böcker. Lägg till metoder för att låna och lämna tillbaka böcker.
+
+```{admonition} Tips
+:class: Hint
+Se till att kortet inte kan låna fler än ett visst antal böcker.
+```
+
+### Övning 20
+
+Skapa en klass Sportlag med namn, spelare och vinster. Lägg till metoder för att lägga till spelare och registrera vinster.
+
+```{admonition} Tips
+:class: Hint
+Använd en lista för spelare och en räknare för vinster.
+```
 <!-- end-övningar -->
 
