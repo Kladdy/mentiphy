@@ -202,7 +202,7 @@ Använd en lista för att lagra kurser och skapa metoder för att ändra den.
 Skapa en klass Bok med attributen titel, författare och antal_sidor. Lägg till metoder för att visa information och ändra antal sidor.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Metoderna ska kunna visa bokens information och ändra antalet sidor vid en ny upplaga.
 ```
 
@@ -211,7 +211,7 @@ Metoderna ska kunna visa bokens information och ändra antalet sidor vid en ny u
 Skapa en klass Restaurang med namn, meny och öppettider. Lägg till metoder för att lägga till rätter och ändra öppettider.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en lista för menyn och en sträng för öppettiderna.
 ```
 
@@ -220,7 +220,7 @@ Använd en lista för menyn och en sträng för öppettiderna.
 Skapa en klass Smartphone med märke, modell och batterinivå. Lägg till metoder för att ladda batteriet och använda telefonen.
 
 ```{admonition} Tips	
-:class: Hint
+:class: Hint dropdown
 Se till att batterinivån inte överstiger 100% eller sjunker under 0%.
 ```
 
@@ -229,7 +229,7 @@ Se till att batterinivån inte överstiger 100% eller sjunker under 0%.
 Skapa en klass Spel med titel, genre och betyg. Lägg till metoder för att ändra betyget och visa information om spelet.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Betyget ska vara mellan 1 och 10.
 ```
 
@@ -238,7 +238,7 @@ Betyget ska vara mellan 1 och 10.
 Skapa en klass Flygplan med modell, kapacitet och aktuella_passagerare. Lägg till metoder för att lägga till och ta bort passagerare.
 
 ```{admonition} Tips	
-:class: Hint
+:class: Hint dropdown
 Se till att flygplanet inte tar fler passagerare än sin kapacitet.
 ```
 
@@ -248,7 +248,7 @@ Se till att flygplanet inte tar fler passagerare än sin kapacitet.
 Skapa en klass Musikspelare med låtar och nuvarande_låt. Lägg till metoder för att spela, pausa och byta låt.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en lista för låtar och en metod för att hoppa mellan dem.
 ```
 
@@ -257,7 +257,7 @@ Använd en lista för låtar och en metod för att hoppa mellan dem.
 Skapa en klass Butik med namn, varor och priser. Lägg till metoder för att lägga till nya varor och ändra priser.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en ordbok där nyckeln är varans namn och värdet är priset.
 ```
 
@@ -266,16 +266,16 @@ Använd en ordbok där nyckeln är varans namn och värdet är priset.
 Skapa en klass Bibliotekskort med kortnummer, ägare och lånade_böcker. Lägg till metoder för att låna och lämna tillbaka böcker.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Se till att kortet inte kan låna fler än ett visst antal böcker.
 ```
 
-### Övning 20
+### Övning 8.20
 
 Skapa en klass Sportlag med namn, spelare och vinster. Lägg till metoder för att lägga till spelare och registrera vinster.
 
 ```{admonition} Tips
-:class: Hint
+:class: Hint dropdown
 Använd en lista för spelare och en räknare för vinster.
 ```
 <!-- end-övningar -->

@@ -34,9 +34,9 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 * - Repetition inför klasser
   - Repetitionsuppgifter anpassade för att förbereda inför att lära sig klasser.
   - *1-11*
-- Klasser
+* - Klasser
   - Deklarera och använda klasser, metoder, arv av klasser.
-  - *8.1-8.10*
+  - *8.1-8.20*
 ```
 
 ## 1. Grundläggande programmering
