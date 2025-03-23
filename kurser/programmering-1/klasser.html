@@ -397,6 +397,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-20">Övning 8.20</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spelovning">Spelövning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -665,6 +678,72 @@ document.write(`
 <p class="admonition-title">Tips</p>
 <p>Använd en lista för spelare och en räknare för vinster.</p>
 </div>
+</section>
+</section>
+<section id="spelovning">
+<h2>Spelövning<a class="headerlink" href="#spelovning" title="Link to this heading">#</a></h2>
+<p>Här kommer en större övning som innefattar att bygga ett spel med hjälp av flera klasser.</p>
+<section id="steg-1">
+<h3>Steg 1<a class="headerlink" href="#steg-1" title="Link to this heading">#</a></h3>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Karaktär</span></code> med attribut som <code class="docutils literal notranslate"><span class="pre">namn</span></code>, <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> och <code class="docutils literal notranslate"><span class="pre">styrka</span></code>.</p>
+<ul class="simple">
+<li><p>Sätt den initiala hälsan till 100 och styrkan till 10.</p></li>
+</ul>
+<p>Skapa ett specialattribut <code class="docutils literal notranslate"><span class="pre">element</span></code> som representerar åtminstone elementen, exempelvis <code class="docutils literal notranslate"><span class="pre">Eld</span></code>, <code class="docutils literal notranslate"><span class="pre">Vatten</span></code> och <code class="docutils literal notranslate"><span class="pre">Jord</span></code>, som har unika attribut.</p>
+<ul class="simple">
+<li><p>En karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Vatten</span></code> har 50% mer styrka mot en karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Eld</span></code>.</p></li>
+<li><p>En karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Jord</span></code> gör 50% mer styrka mot en karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Vatten</span></code>.</p></li>
+<li><p>En karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Eld</span></code> gör 50% mer styrka mot en karaktär med elementen <code class="docutils literal notranslate"><span class="pre">Jord</span></code>.</p></li>
+</ul>
+</section>
+<section id="steg-2">
+<h3>Steg 2<a class="headerlink" href="#steg-2" title="Link to this heading">#</a></h3>
+<p>Lägg till en metod <code class="docutils literal notranslate"><span class="pre">lever</span></code> som returnerar hälsan hos en karaktär.</p>
+</section>
+<section id="steg-3">
+<h3>Steg 3<a class="headerlink" href="#steg-3" title="Link to this heading">#</a></h3>
+<p>Skapa en metod <code class="docutils literal notranslate"><span class="pre">beskriv</span></code> som skriver ut karaktärens <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> och <code class="docutils literal notranslate"><span class="pre">styrka</span></code>.</p>
+</section>
+<section id="steg-4">
+<h3>Steg 4<a class="headerlink" href="#steg-4" title="Link to this heading">#</a></h3>
+<p>Skapa subklassen <code class="docutils literal notranslate"><span class="pre">Fiende</span></code> som ärver attribut och metoder från <code class="docutils literal notranslate"><span class="pre">Karaktär</span></code>. Subklassen <code class="docutils literal notranslate"><span class="pre">Fiende</span></code> har en <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code>, <code class="docutils literal notranslate"><span class="pre">styrka</span></code> och <code class="docutils literal notranslate"><span class="pre">element</span></code>. Se till att den första fienden har en hälsa som är slumpad mellan 50 och 75 och skadan mellan 5-10. Attributet ska vara slumpmässiga.</p>
+</section>
+<section id="steg-5">
+<h3>Steg 5<a class="headerlink" href="#steg-5" title="Link to this heading">#</a></h3>
+<p>Skapa en metod <code class="docutils literal notranslate"><span class="pre">beskriv</span></code> som skriver ut fiendens <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> och <code class="docutils literal notranslate"><span class="pre">styrka</span></code>. Printa även en rad med bindestreck längst ner!</p>
+</section>
+<section id="steg-6">
+<h3>Steg 6<a class="headerlink" href="#steg-6" title="Link to this heading">#</a></h3>
+<p>Lägg till en metod <code class="docutils literal notranslate"><span class="pre">attackera</span></code> som låter en karaktär attackera en annan karaktär och minska dess hälsa.</p>
+<p>Spelet fungerar så att skadan du gör mot motståndaren slumpas mellan styrkan/2 - styrkan som din karaktär, och skadan mot dig slumpas mellan styrkan/2 - styrkan av fienden. Sedan låter man fienden attackera dig varannan gång och du attackera fienden den andra.Använd <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">random</span></code>.</p>
+<p>Viktigt att göra om skadan och hälsan till datatypen int!</p>
+</section>
+<section id="steg-7">
+<h3>Steg 7<a class="headerlink" href="#steg-7" title="Link to this heading">#</a></h3>
+<p>Skapa en def combat(spelare, fiende, level) funktion. Använd en loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa.</p>
+<ul class="simple">
+<li><p>Om din karaktär har 0 i hälsa så har du förlorat och programmet avslutas.</p></li>
+<li><p>Om du vinner ökar din level med 1 och du får två val: Antingen får du 50 % mer styrka, eller så får du öka din nuvaranda hälsa med 100.</p></li>
+</ul>
+<p>Viktigt att göra om skadan och hälsan till datatypen int!</p>
+<p>Anropa main(level) funktionen i slutet av if-satsen om du vinner. Main-funktionen bygger vi i steg 9.</p>
+</section>
+<section id="steg-8">
+<h3>Steg 8<a class="headerlink" href="#steg-8" title="Link to this heading">#</a></h3>
+<p>När du har vunnit mot en fiende ska dessutom den nya fiendens level öka. När fiendens level ökar ska styrkan och hälsan ökas med 25%. Återigen ska nästa monster skapas, men inom den nya intervallet där hälsan och styrkan har ökat med 25%.</p>
+<p>Viktigt att göra om skadan och hälsan till datatypen int!</p>
+</section>
+<section id="steg-9">
+<h3>Steg 9<a class="headerlink" href="#steg-9" title="Link to this heading">#</a></h3>
+<p>Skapa en main() funktion där input från spelaren i form av <code class="docutils literal notranslate"><span class="pre">1</span></code> eller <code class="docutils literal notranslate"><span class="pre">2</span></code> används.</p>
+<ul class="simple">
+<li><p>Varje monster ska beskrivas med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">beskriv</span></code>. Alla fiender ska beskrivas innan man möter dem.</p></li>
+<li><p>När ett monster är besegrat ska valet mellan att öka hälsan eller öka styrkan göras med en input. Beskriv de nya attributerna hos karaktären.</p></li>
+</ul>
+</section>
+<section id="steg-10">
+<h3>Steg 10<a class="headerlink" href="#steg-10" title="Link to this heading">#</a></h3>
+<p>Se över att spelet är balanserat, det betyder att spelet inte ska vara för lätt men inte heller för svårt! Det borde vara svårt att nå level 10.</p>
 <!-- end-övningar -->
 </section>
 </section>
@@ -766,6 +845,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-18">Övning 8.18</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-19">Övning 8.19</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-8-20">Övning 8.20</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spelovning">Spelövning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-1">Steg 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-2">Steg 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-3">Steg 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-4">Steg 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-5">Steg 5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-6">Steg 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-7">Steg 7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-8">Steg 8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-9">Steg 9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#steg-10">Steg 10</a></li>
 </ul>
 </li>
 </ul>

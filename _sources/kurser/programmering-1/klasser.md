@@ -278,5 +278,68 @@ Skapa en klass Sportlag med namn, spelare och vinster. Lägg till metoder för a
 :class: Hint dropdown
 Använd en lista för spelare och en räknare för vinster.
 ```
+
+## Spelövning
+Här kommer en större övning som innefattar att bygga ett spel med hjälp av flera klasser.
+
+#### Steg 1
+Skapa en klass `Karaktär` med attribut som `namn`, `level`, `hälsa` och `styrka`. 
+
+- Sätt den initiala hälsan till 100 och styrkan till 10. 
+
+Skapa ett specialattribut `element` som representerar åtminstone elementen, exempelvis `Eld`, `Vatten` och `Jord`, som har unika attribut. 
+
+- En karaktär med elementen `Vatten` har 50% mer styrka mot en karaktär med elementen `Eld`. 
+
+- En karaktär med elementen `Jord` gör 50% mer styrka mot en karaktär med elementen `Vatten`. 
+
+- En karaktär med elementen `Eld` gör 50% mer styrka mot en karaktär med elementen `Jord`.
+
+
+#### Steg 2
+Lägg till en metod `lever` som returnerar hälsan hos en karaktär.
+
+#### Steg 3
+Skapa en metod `beskriv` som skriver ut karaktärens `level`, `hälsa` och `styrka`.
+
+#### Steg 4
+Skapa subklassen `Fiende` som ärver attribut och metoder från `Karaktär`. Subklassen `Fiende` har en `level`, `hälsa`, `styrka` och `element`. Se till att den första fienden har en hälsa som är slumpad mellan 50 och 75 och skadan mellan 5-10. Attributet ska vara slumpmässiga.
+
+#### Steg 5
+Skapa en metod `beskriv` som skriver ut fiendens `level`, `hälsa` och `styrka`. Printa även en rad med bindestreck längst ner!
+
+#### Steg 6
+Lägg till en metod `attackera` som låter en karaktär attackera en annan karaktär och minska dess hälsa.
+
+Spelet fungerar så att skadan du gör mot motståndaren slumpas mellan styrkan/2 - styrkan som din karaktär, och skadan mot dig slumpas mellan styrkan/2 - styrkan av fienden. Sedan låter man fienden attackera dig varannan gång och du attackera fienden den andra.Använd `import random`.
+
+Viktigt att göra om skadan och hälsan till datatypen int!
+
+#### Steg 7
+Skapa en def combat(spelare, fiende, level) funktion. Använd en loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa. 
+
+- Om din karaktär har 0 i hälsa så har du förlorat och programmet avslutas. 
+
+- Om du vinner ökar din level med 1 och du får två val: Antingen får du 50 % mer styrka, eller så får du öka din nuvaranda hälsa med 100.
+
+Viktigt att göra om skadan och hälsan till datatypen int!
+
+Anropa main(level) funktionen i slutet av if-satsen om du vinner. Main-funktionen bygger vi i steg 9.
+
+#### Steg 8
+När du har vunnit mot en fiende ska dessutom den nya fiendens level öka. När fiendens level ökar ska styrkan och hälsan ökas med 25%. Återigen ska nästa monster skapas, men inom den nya intervallet där hälsan och styrkan har ökat med 25%. 
+
+Viktigt att göra om skadan och hälsan till datatypen int!
+
+#### Steg 9
+Skapa en main() funktion där input från spelaren i form av `1` eller `2` används. 
+
+- Varje monster ska beskrivas med hjälp av metoden `beskriv`. Alla fiender ska beskrivas innan man möter dem. 
+
+- När ett monster är besegrat ska valet mellan att öka hälsan eller öka styrkan göras med en input. Beskriv de nya attributerna hos karaktären.
+
+#### Steg 10
+Se över att spelet är balanserat, det betyder att spelet inte ska vara för lätt men inte heller för svårt! Det borde vara svårt att nå level 10.
+
 <!-- end-övningar -->
 
