@@ -316,7 +316,7 @@ Spelet fungerar så att skadan du gör mot motståndaren slumpas mellan styrkan/
 Viktigt att göra om skadan och hälsan till datatypen int!
 
 #### Steg 7
-Skapa en def combat(spelare, fiende, level) funktion. Använd en loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa. 
+Skapa en def combat(spelare, fiende, level) funktion. Använd en while-loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa. 
 
 - Om din karaktär har 0 i hälsa så har du förlorat och programmet avslutas. 
 
@@ -332,11 +332,13 @@ När du har vunnit mot en fiende ska dessutom den nya fiendens level öka. När 
 Viktigt att göra om skadan och hälsan till datatypen int!
 
 #### Steg 9
-Skapa en main() funktion där input från spelaren i form av `1` eller `2` används. 
+Skapa en `main(level=0)` funktion där input från spelaren i form av `1` eller `2` används. I main-funktionen ska: 
 
-- Varje monster ska beskrivas med hjälp av metoden `beskriv`. Alla fiender ska beskrivas innan man möter dem. 
-
-- När ett monster är besegrat ska valet mellan att öka hälsan eller öka styrkan göras med en input. Beskriv de nya attributerna hos karaktären.
+- Karaktären beskrivas, 
+- En ny fiende ska skapas och beskrivas. 
+- Leveln ska ökas.
+- Ett val om man vill lämna spelet eller att fortsätta spela.
+- Om valet är 1, ska man möta en ny fiende i combat.
 
 #### Steg 10
 Se över att spelet är balanserat, det betyder att spelet inte ska vara för lätt men inte heller för svårt! Det borde vara svårt att nå level 10.

@@ -720,7 +720,7 @@ document.write(`
 </section>
 <section id="steg-7">
 <h3>Steg 7<a class="headerlink" href="#steg-7" title="Link to this heading">#</a></h3>
-<p>Skapa en def combat(spelare, fiende, level) funktion. Använd en loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa.</p>
+<p>Skapa en def combat(spelare, fiende, level) funktion. Använd en while-loop för att låta spelet möta en fiende tills en karaktär har 0 i hälsa.</p>
 <ul class="simple">
 <li><p>Om din karaktär har 0 i hälsa så har du förlorat och programmet avslutas.</p></li>
 <li><p>Om du vinner ökar din level med 1 och du får två val: Antingen får du 50 % mer styrka, eller så får du öka din nuvaranda hälsa med 100.</p></li>
@@ -735,10 +735,13 @@ document.write(`
 </section>
 <section id="steg-9">
 <h3>Steg 9<a class="headerlink" href="#steg-9" title="Link to this heading">#</a></h3>
-<p>Skapa en main() funktion där input från spelaren i form av <code class="docutils literal notranslate"><span class="pre">1</span></code> eller <code class="docutils literal notranslate"><span class="pre">2</span></code> används.</p>
+<p>Skapa en <code class="docutils literal notranslate"><span class="pre">main(level=0)</span></code> funktion där input från spelaren i form av <code class="docutils literal notranslate"><span class="pre">1</span></code> eller <code class="docutils literal notranslate"><span class="pre">2</span></code> används. I main-funktionen ska:</p>
 <ul class="simple">
-<li><p>Varje monster ska beskrivas med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">beskriv</span></code>. Alla fiender ska beskrivas innan man möter dem.</p></li>
-<li><p>När ett monster är besegrat ska valet mellan att öka hälsan eller öka styrkan göras med en input. Beskriv de nya attributerna hos karaktären.</p></li>
+<li><p>Karaktären beskrivas,</p></li>
+<li><p>En ny fiende ska skapas och beskrivas.</p></li>
+<li><p>Leveln ska ökas.</p></li>
+<li><p>Ett val om man vill lämna spelet eller att fortsätta spela.</p></li>
+<li><p>Om valet är 1, ska man möta en ny fiende i combat.</p></li>
 </ul>
 </section>
 <section id="steg-10">
