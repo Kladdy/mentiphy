@@ -135,6 +135,18 @@ print(area_summan)
 ```
 Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlighetens skull viktigt att bryta ner problemet i mindre steg, för att sen lösa de individuella stegen med funktioner.
 
+## Videogenomgång
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtube.com/embed/lj7lJAVGhOA
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ## Övningar till avsnittet
 
@@ -229,4 +241,17 @@ Skriv en funktion som tar en lista med tal och returnerar två listor: en med al
 
 Skapa två tomma listor och använd en `for`-loop tillsammans med en `if-else`-sats för att skilja på jämna och udda tal med hjälp av `%`-operatorn.
 ```
+
+## Lösningar till övningar
+
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtube.com/embed/WGmuMfaaxeI
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 <!-- end-övningar -->

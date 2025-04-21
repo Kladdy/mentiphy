@@ -434,6 +434,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-11">Övning 5.11</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lexikon">6. Lexikon</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-1">Övning 6.1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-2">Övning 6.2</a></li>
@@ -572,6 +573,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Steg 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Steg 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Steg 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekosystemsimulering">Ekosystemsimulering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krav">Krav</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Steg 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Steg 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Steg 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Steg 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Steg 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Steg 6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Steg 7</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1180,6 +1194,19 @@ document.write(`
 <p>Skapa två tomma listor och använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop tillsammans med en <code class="docutils literal notranslate"><span class="pre">if-else</span></code>-sats för att skilja på jämna och udda tal med hjälp av <code class="docutils literal notranslate"><span class="pre">%</span></code>-operatorn.</p>
 </div>
 </section>
+</section>
+<section id="losningar-till-ovningar">
+<h2>Lösningar till övningar<a class="headerlink" href="#losningar-till-ovningar" title="Link to this heading">#</a></h2>
+<iframe
+    width="100%"
+    max-width="800"
+    height="450"
+    src= https://youtube.com/embed/WGmuMfaaxeI
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 </section>
 <section id="lexikon">
 <h2>6. Lexikon<a class="headerlink" href="#lexikon" title="Link to this heading">#</a></h2>
@@ -1982,7 +2009,7 @@ document.write(`
 <p>Här kommer en större övning som innefattar att bygga ett spel med hjälp av flera klasser.</p>
 <section id="id43">
 <h3>Steg 1<a class="headerlink" href="#id43" title="Link to this heading">#</a></h3>
-<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Karaktär</span></code> med attribut som <code class="docutils literal notranslate"><span class="pre">namn</span></code>, <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code> och <code class="docutils literal notranslate"><span class="pre">styrka</span></code>.</p>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Karaktär</span></code> med attribut som <code class="docutils literal notranslate"><span class="pre">namn</span></code>, <code class="docutils literal notranslate"><span class="pre">level</span></code>, <code class="docutils literal notranslate"><span class="pre">hälsa</span></code>,<code class="docutils literal notranslate"><span class="pre">element</span></code> och <code class="docutils literal notranslate"><span class="pre">styrka</span></code>.</p>
 <ul class="simple">
 <li><p>Sätt den initiala hälsan till 100 och styrkan till 10.</p></li>
 </ul>
@@ -2044,6 +2071,131 @@ document.write(`
 <section id="id52">
 <h3>Steg 10<a class="headerlink" href="#id52" title="Link to this heading">#</a></h3>
 <p>Se över att spelet är balanserat, det betyder att spelet inte ska vara för lätt men inte heller för svårt! Det borde vara svårt att nå level 10.</p>
+</section>
+</section>
+<section id="ekosystemsimulering">
+<h2>Ekosystemsimulering<a class="headerlink" href="#ekosystemsimulering" title="Link to this heading">#</a></h2>
+<p>Här kommer en större övning där du får simulera ett ekosystem med hjälp av klasser, arv, och simulering över tid. Du kommer att skapa både bytesdjur och rovdjur som lever, dör, föder barn och påverkas av varandra.</p>
+<section id="krav">
+<h3>Krav<a class="headerlink" href="#krav" title="Link to this heading">#</a></h3>
+<p>Du ska strukturera koden i <strong>flera olika filer</strong> och använda <strong>klasser med arv</strong>. I slutet ska du kunna visualisera populationerna över tid med hjälp av <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>. Ladda ner maplotlib genom att skriva <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">matplotlib</span></code> i terminalen.</p>
+<p>Börja med att skapa en ny mapp, där du har din annan kod döp den mappen till <em>Ekosystem</em> och skapa sedan en separat pythonfil för varje klass.</p>
+<hr class="docutils" />
+<section id="id53">
+<h4>Steg 1<a class="headerlink" href="#id53" title="Link to this heading">#</a></h4>
+<p>Skapa en basklass <code class="docutils literal notranslate"><span class="pre">Djur</span></code> med attributen:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">namn</span></code> (namnet på djuret)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ålder</span></code> (börjar på 0)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_ålder</span></code> (en parameter som ska bestämmas)</p></li>
+</ul>
+<p>Lägg till metoderna:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">åldras()</span></code> som ökar åldern med 1.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lever()</span></code> som returnerar True om djuret fortfarande lever.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ska_föda()</span></code> som returnerar True med 20% sannolikhet.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id54">
+<h4>Steg 2<a class="headerlink" href="#id54" title="Link to this heading">#</a></h4>
+<p>Skapa en subklass <code class="docutils literal notranslate"><span class="pre">Bytesdjur</span></code> som ärver från <code class="docutils literal notranslate"><span class="pre">Djur</span></code>. Den ska dessutom ha attributet:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">flyktsannolikhet</span></code> (float mellan 0.0 och 1.0)</p></li>
+</ul>
+<p>Lägg till metoden:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">flyr()</span></code> som returnerar True med chans enligt <code class="docutils literal notranslate"><span class="pre">flyktsannolikhet</span></code>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id55">
+<h4>Steg 3<a class="headerlink" href="#id55" title="Link to this heading">#</a></h4>
+<p>Skapa en subklass <code class="docutils literal notranslate"><span class="pre">Rovdjur</span></code> som ärver från <code class="docutils literal notranslate"><span class="pre">Djur</span></code>. Den ska ha attributen:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">attack_sannolikhet</span></code> (float mellan 0.0 och 1.0)</p></li>
+</ul>
+<p>Lägg till metoderna:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">jaga(bytesdjur)</span></code> som returnerar True om rovdjuret lyckas fånga bytesdjuret.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id56">
+<h4>Steg 4<a class="headerlink" href="#id56" title="Link to this heading">#</a></h4>
+<p>Skapa en klass <code class="docutils literal notranslate"><span class="pre">Ekosystem</span></code> som innehåller två listor:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">rovdjur</span></code> – en lista med rovdjur</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bytesdjur</span></code> – en lista med bytesdjur</p></li>
+</ul>
+<p>Lägg till en metod <code class="docutils literal notranslate"><span class="pre">tidssteg(self,</span> <span class="pre">år)</span></code> som gör följande:</p>
+<ul class="simple">
+<li><p>Alla djur åldras.</p></li>
+<li><p>Varje rovdjur får chansen att jaga ett slumpmässigt bytesdjur.</p></li>
+<li><p>Nya djur föds enligt födelsesannolikhet.</p></li>
+<li><p>Alla döda djur tas bort.</p></li>
+</ul>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">print()</span></code> för att visa vad som händer varje år.<br />
+Använd <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">time</span> <span class="pre">import</span> <span class="pre">sleep</span></code> för att pausa simuleringen mellan varje år och skapa en känsla av att tiden går.</p>
+<p>Exempel:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;År&quot;</span><span class="p">,</span> <span class="n">år</span><span class="p">,</span> <span class="s2">&quot;börjar...&quot;</span><span class="p">)</span>
+<span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id57">
+<h4>Steg 5<a class="headerlink" href="#id57" title="Link to this heading">#</a></h4>
+<p>Skapa en <code class="docutils literal notranslate"><span class="pre">simulator.py</span></code> där du:</p>
+<ul class="simple">
+<li><p>Skapar ett antal rovdjur och bytesdjur.</p></li>
+<li><p>Startar ett ekosystem-objekt.</p></li>
+<li><p>Kör simuleringen i en loop (t.ex. 20 år).</p></li>
+<li><p>Samlar statistik om antal rovdjur och bytesdjur varje år.</p></li>
+</ul>
+<p>Exempel på loop:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">år</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+    <span class="n">ekosystem</span><span class="o">.</span><span class="n">tidssteg</span><span class="p">(</span><span class="n">år</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Gör att ett år tar en sekund</span>
+</pre></div>
+</div>
+</section>
+<section id="id58">
+<h4>Steg 6<a class="headerlink" href="#id58" title="Link to this heading">#</a></h4>
+<p>När simuleringen är färdig, visualisera resultaten med matplotlib.</p>
+<p>Använd den här koden:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">år</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">eko</span><span class="o">.</span><span class="n">statistik</span><span class="p">]</span>
+<span class="n">rovdjurs_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">eko</span><span class="o">.</span><span class="n">statistik</span><span class="p">]</span>
+<span class="n">bytesdjurs_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">eko</span><span class="o">.</span><span class="n">statistik</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">år</span><span class="p">,</span> <span class="n">rovdjurs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Rovdjur&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">år</span><span class="p">,</span> <span class="n">bytesdjurs_data</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Bytesdjur&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Ekosystemets utveckling över tid&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;År&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Antal djur&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="id59">
+<h4>Steg 7<a class="headerlink" href="#id59" title="Link to this heading">#</a></h4>
+<p>Testa att experimentera med:</p>
+<ul class="simple">
+<li><p>Olika födelsesannolikheter</p></li>
+<li><p>Olika flyktsannolikheter</p></li>
+<li><p>Hur länge rovdjur kan överleva utan mat</p></li>
+<li><p>Vad som händer om man ändrar antalet djur från början</p></li>
+</ul>
+<p>Fundera på:</p>
+<ul class="simple">
+<li><p>När kraschar ekosystemet?</p></li>
+<li><p>Hur kan man balansera det?</p></li>
+<li><p>Kan du hitta en ”stabil” inställning?</p></li>
+</ul>
+</section>
 </section>
 </section>
 </section>
@@ -2181,6 +2333,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-11">Övning 5.11</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lexikon">6. Lexikon</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-1">Övning 6.1</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-2">Övning 6.2</a></li>
@@ -2319,6 +2472,19 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Steg 8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Steg 9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Steg 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekosystemsimulering">Ekosystemsimulering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#krav">Krav</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Steg 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Steg 2</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Steg 3</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Steg 4</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Steg 5</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Steg 6</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Steg 7</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

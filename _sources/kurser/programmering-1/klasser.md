@@ -283,7 +283,7 @@ Använd en lista för spelare och en räknare för vinster.
 Här kommer en större övning som innefattar att bygga ett spel med hjälp av flera klasser.
 
 #### Steg 1
-Skapa en klass `Karaktär` med attribut som `namn`, `level`, `hälsa` och `styrka`. 
+Skapa en klass `Karaktär` med attribut som `namn`, `level`, `hälsa`,`element` och `styrka`. 
 
 - Sätt den initiala hälsan till 100 och styrkan till 10. 
 
@@ -343,5 +343,124 @@ Skapa en `main(level=0)` funktion där input från spelaren i form av `1` eller 
 #### Steg 10
 Se över att spelet är balanserat, det betyder att spelet inte ska vara för lätt men inte heller för svårt! Det borde vara svårt att nå level 10.
 
+## Ekosystemsimulering
+
+Här kommer en större övning där du får simulera ett ekosystem med hjälp av klasser, arv, och simulering över tid. Du kommer att skapa både bytesdjur och rovdjur som lever, dör, föder barn och påverkas av varandra.
+
+### Krav
+Du ska strukturera koden i **flera olika filer** och använda **klasser med arv**. I slutet ska du kunna visualisera populationerna över tid med hjälp av `matplotlib`. Ladda ner maplotlib genom att skriva `pip install matplotlib` i terminalen.
+
+Börja med att skapa en ny mapp, där du har din annan kod döp den mappen till *Ekosystem* och skapa sedan en separat pythonfil för varje klass.
+
+---
+
+#### Steg 1  
+Skapa en basklass `Djur` med attributen:
+
+- `namn` (namnet på djuret)
+- `ålder` (börjar på 0)
+- `max_ålder` (en parameter som ska bestämmas)
+
+Lägg till metoderna:
+
+- `åldras()` som ökar åldern med 1.
+- `lever()` som returnerar True om djuret fortfarande lever.
+- `ska_föda()` som returnerar True med 20% sannolikhet.
+
+---
+
+#### Steg 2  
+Skapa en subklass `Bytesdjur` som ärver från `Djur`. Den ska dessutom ha attributet:
+
+- `flyktsannolikhet` (float mellan 0.0 och 1.0)
+
+Lägg till metoden:
+
+- `flyr()` som returnerar True med chans enligt `flyktsannolikhet`.
+
+---
+
+#### Steg 3  
+Skapa en subklass `Rovdjur` som ärver från `Djur`. Den ska ha attributen:
+
+- `attack_sannolikhet` (float mellan 0.0 och 1.0)
+
+Lägg till metoderna:
+
+- `jaga(bytesdjur)` som returnerar True om rovdjuret lyckas fånga bytesdjuret.
+
+---
+
+#### Steg 4  
+Skapa en klass `Ekosystem` som innehåller två listor:
+
+- `rovdjur` – en lista med rovdjur
+- `bytesdjur` – en lista med bytesdjur
+
+Lägg till en metod `tidssteg(self, år)` som gör följande:
+
+- Alla djur åldras.
+- Varje rovdjur får chansen att jaga ett slumpmässigt bytesdjur.
+- Nya djur föds enligt födelsesannolikhet.
+- Alla döda djur tas bort.
+
+Använd `print()` för att visa vad som händer varje år.  
+Använd `from time import sleep` för att pausa simuleringen mellan varje år och skapa en känsla av att tiden går.
+
+Exempel:
+```python
+print("År", år, "börjar...")
+sleep(1)
+```
+
+#### Steg 5  
+Skapa en `simulator.py` där du:
+
+- Skapar ett antal rovdjur och bytesdjur.
+- Startar ett ekosystem-objekt.
+- Kör simuleringen i en loop (t.ex. 20 år).
+- Samlar statistik om antal rovdjur och bytesdjur varje år.
+
+Exempel på loop:
+```python
+for år in range(1, 21):
+    ekosystem.tidssteg(år)
+    sleep(1)  # Gör att ett år tar en sekund
+```
+
+#### Steg 6
+När simuleringen är färdig, visualisera resultaten med matplotlib.
+
+Använd den här koden: 
+```python
+import matplotlib.pyplot as plt
+
+år = [data[0] for data in eko.statistik]
+rovdjurs_data = [data[1] for data in eko.statistik]
+bytesdjurs_data = [data[2] for data in eko.statistik]
+
+plt.plot(år, rovdjurs_data, label="Rovdjur")
+plt.plot(år, bytesdjurs_data, label="Bytesdjur")
+plt.title("Ekosystemets utveckling över tid")
+plt.xlabel("År")
+plt.ylabel("Antal djur")
+plt.legend()
+plt.grid()
+plt.show()
+```
+
+#### Steg 7
+Testa att experimentera med:
+
+- Olika födelsesannolikheter
+- Olika flyktsannolikheter
+- Hur länge rovdjur kan överleva utan mat
+- Vad som händer om man ändrar antalet djur från början
+
+Fundera på:
+
+- När kraschar ekosystemet?
+- Hur kan man balansera det?
+- Kan du hitta en "stabil" inställning?
 <!-- end-övningar -->
 
