@@ -32,6 +32,7 @@ parts:
     - file: kurser/programmering-1/datahantering
     - file: kurser/programmering-1/lexikon
     - file: kurser/programmering-1/klasser
+    - file: kurser/programmering-1/projekt
     - file: kurser/programmering-1/övningar
     - file: kurser/programmering-1/felsökning
     
