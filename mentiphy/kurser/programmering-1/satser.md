@@ -329,8 +329,15 @@ Resultat: [4, 5, 1, 2, 3]
 Använd slicing för att dela upp listan och kombinera delarna igen.
 ```
 
-
 ### Övning 2.10
+Skapa ett program som tittar om ett namn som du anger med en input är samma som ditt namn. Skriv ut `Ja!` om det gäller, annars skriv ut `Nej!`.
+
+### Övning 2.11
+Skapa ett program som frågar användaren efter ett tal. Efter svarar programmet om talet är mindre eller större än 50.
+Om talet var mindre skrivs ett meddelande att talet var mindre, annars skrivs ett meddelande att talet var större.
+
+
+### Övning 2.12
 Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.
 
 ```{admonition} Tips
@@ -338,7 +345,7 @@ Skapa ett program som frågar användaren efter ett lösenord. Om användaren an
 Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.
 ```
 
-### Övning 2.11
+### Övning 2.13
 Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.
 
 ```{list-table}
@@ -362,7 +369,7 @@ Låt sedan programmet skriva ut vilket betyg som användaren fick.
 Använd sen en if-, elif- och else-sats.
 ```
 
-### Övning 2.12
+### Övning 2.14
 Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt. 
 ```{admonition} Tips
 :class: Hint dropdown
