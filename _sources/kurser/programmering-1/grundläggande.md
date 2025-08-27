@@ -240,6 +240,24 @@ Börja med att använda input-satsen, deklarera variabler och tilldela värdena 
 ```
 
 ### Övning 1.8
+Skapa ett simpelt bankkonto där det finns en variabel som heter `saldo´. Först skrivs saldot ut för användaren så man ser hur mycket pengar det finns från början. Fråga sedan användaren efter hur mycket som användaren vill ta ut från kontot. Programmet svarar sedan med hur mycket pengar det finns efter uttaget och hur mycket som togs ut.
+
+Nedan visas ett exempel på hur programmet kan se ut.
+
+```python
+Du har 5000 kr på ditt konto.
+Hur mycket vill du ta ut?
+500
+Du har tagit ut 500 och har 4500 kr på ditt konto.
+```
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera variabeln `saldo` printa sedan ut saldot, använd sedan input-satsen, använd till sist en till print-sats.
+```
+
+
+### Övning 1.9
 Skapa ett program som frågar efter en temperatur i enheten i grader Celsius och sedan skriver ut vad den temperaturen korresponderar i grader Fahrenheit. Tips formeln för konverteringen från grader Celsius till grader Fahrenheit är: 
 
 $F= \frac{9}{5} \cdot C + 32 $
@@ -249,7 +267,7 @@ $F= \frac{9}{5} \cdot C + 32 $
 Börja med att använda input-satsen, deklarera variabeln och tilldela värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats.
 ```
 
-### Övning 1.9
+### Övning 1.10
 Skapa ett program där programmet frågar efter en summa pengar, efter en räntesats och ett antal år. Beräkna summan av ränta på ränta på det insatta kapitalet med hjälp av en exponentialfunktion och skriv ut resultatet till användaren.
 
 $y = C \cdot a^x $
