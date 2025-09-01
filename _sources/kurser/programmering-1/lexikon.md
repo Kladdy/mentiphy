@@ -112,7 +112,7 @@ for värde in inköpslista.values():
 ## Övningar till avsnittet
 
 <!-- start-övningar -->
-### Övning 6.1
+### Övning 7.1
 
 Skapa ett program som tar in ett lexikon med matvaror och deras kostnad, programmet skriver ut alla priser.
 
@@ -123,7 +123,7 @@ Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lex
 
 ```
 
-### Övning 6.2
+### Övning 7.2
 
 Använd samma lexikon som från övning 6.1 för att skriva ut alla nycklar (matvaror) i lexikonet.
 
@@ -134,7 +134,7 @@ Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lex
 
 ```
 
-### Övning 6.3
+### Övning 7.3
 
 Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.
 
@@ -145,7 +145,7 @@ Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i 
 
 ```
 
-### Övning 6.4
+### Övning 7.4
 
 Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.
 

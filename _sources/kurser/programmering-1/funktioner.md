@@ -151,7 +151,7 @@ Exemplet ovan belyser att vid större programmeringsprojekt blir det för tydlig
 ## Övningar till avsnittet
 
 <!-- start-övningar -->
-### Övning 5.1
+### Övning 6.1
 Skapa en funktion med parametrarna `tal1` och `tal2` som returnerar skillnaden mellan talen.
 
 ```{admonition} Tips
@@ -159,7 +159,7 @@ Skapa en funktion med parametrarna `tal1` och `tal2` som returnerar skillnaden m
 Börja med att deklarera funktionen med parametrarna `tal1` och `tal2`. I funktionskroppen returneras skillnaden mellan talen.
 ```
 
-### Övning 5.2
+### Övning 6.2
 Skapa ett program som tar ett namn som parameter och sedan hälsar på användaren genom att säga *Hej på dig* och sen namnet.
 
 ```{admonition} Tips
@@ -167,7 +167,7 @@ Skapa ett program som tar ett namn som parameter och sedan hälsar på användar
 Börja med att deklarera funktionen med parametern `namn`. I funktionskroppen skrivs en print-sats innehållande en hälsningsfras och sen namnet.
 ```
 
-### Övning 5.3
+### Övning 6.3
 Skapa en funktion som tar tre parametrar och returnerar talet som är störst
 
 ```{admonition} Tips
@@ -175,7 +175,7 @@ Skapa en funktion som tar tre parametrar och returnerar talet som är störst
 Börja med att deklarera funktionen med parametrarna `a`, `b` och `c`. I funktionskroppen returneras det största värdet genom att använda funktionen den inbyggda funktionen `max()`. 
 ```
 
-### Övning 5.4
+### Övning 6.4
 
 Skapa en funktion som tar en input parameter i grader Celsius `c` och sen skriver ut vad den temperaturen korresponderar i grader Fahrenheit `f`. Formeln för konverteringen från grader Celsius till grader Fahrenheit är: 
 
@@ -186,7 +186,7 @@ $F= \frac{9}{5} \cdot C + 32 $
 <!-- Börja med att deklarera en funktion, lägg till ett namn på funktionen samt vilka parametrar och returnera värdet genom att utföra beräkningarna enligt formeln ovan, använd till sist en print-sats där du anropas funktionen. -->
 ```
 
-### Övning 5.5
+### Övning 6.5
 Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är skottår, skriv ut `'Skottår!'` om det inte är skottår: skriv ut `'Inte skottår!'`. 
 
 ```{admonition} Tips
@@ -194,7 +194,7 @@ Skapa en funktion som tittar om det nämnda året är ett skottår. Om det är s
 Börja med att deklarera funktionen med parametern `år`. I funktionskroppen skrivs först en if- och else-sats som bestämmer om det är skottår, inom if- och else-satsen skriv en print-sats som anger svaret.
 ```
 
-### Övning 5.6
+### Övning 6.6
 
 Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad medianen är.
 
@@ -203,7 +203,7 @@ Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad mediane
 Börja med att deklarera funktionen med parametern `lista`. För att storleksordna listan använd `sorted()`- metoden. Beräkna sedan hur många element som listan består av, om antalet är udda så blir det mittersta elementet medianen. Om listan består av en jämn mängd element behöver funktionen ta medelvärdet av de två mittersta värdena.
 ```
 
-### Övning 5.7
+### Övning 6.7
 Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte `max()`)
 
 ```{admonition} Tips
@@ -212,28 +212,28 @@ Skriv en funktion som tar en lista av tal och returnerar det största talet. (An
 Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.
 ```
 
-### Övning 5.8
+### Övning 6.8
 Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().
 ```{admonition} Tips
 :class: Hint dropdown
 
 Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en `for`-loop.
 ```
-### Övning 5.9
+### Övning 6.9
 Skriv en funktion som kontrollerar om ett tal är ett primtal.
 ```{admonition} Tips
 :class: Hint dropdown
 
 Använd en `for`-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.
 ```
-### Övning 5.10
+### Övning 6.10
 Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.
 ```{admonition} Tips
 :class: Hint dropdown
 
 Du kan använda `max()` och `min()` för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.
 ```
-### Övning 5.11
+### Övning 6.11
 Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.
 
 ```{admonition} Tips
@@ -243,6 +243,8 @@ Skapa två tomma listor och använd en `for`-loop tillsammans med en `if-else`-s
 ```
 
 ## Lösningar till övningar
+
+*OBS!* I videon står det uppgift 5.X. men det motsvarar numera övning 6.X.
 
 <iframe
     width="100%"

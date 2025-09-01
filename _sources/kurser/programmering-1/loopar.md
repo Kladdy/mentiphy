@@ -89,7 +89,7 @@ Här kommer fliken för övningar, de första tre övningarna är bra för att t
 
 
 <!-- start-övningar -->
-### Övning 3.1
+### Övning 4.1
 Skapa ett program som med hjälp av en for-loop skriver ut dina favoritluncher från en lista. 
 
 ```{admonition} Tips
@@ -97,21 +97,21 @@ Skapa ett program som med hjälp av en for-loop skriver ut dina favoritluncher f
 Börja med att deklarera en lista med dina favoritluncher, sedan använd en for-loop för att skriva ut samtliga element ur listan.
 ```
 
-### Övning 3.2 
+### Övning 4.2 
 Skapa ett program som räknar upp till ett angivet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
 
-### Övning 3.3
+### Övning 4.3
 Skapa en lista med alla jämna tal mellan 1-50. Listan ska skapas utan skriva in talen själv.
 ```{admonition} Tips
 :class: Hint dropdown
 I den här övningen behövs faktiskt bara en range-funktion. Den kan även göras med en for-loop. Försök att få till en med både en for-loop och en utan.
 ```
 
-### Övning 3.4
+### Övning 4.4
 Skapa en lista med minst 15 heltal. Skriv ett program som:
 - Filtrerar ut alla jämna tal och skapar en ny lista
 - Filtrerar ut alla udda tal och skapar en annan ny lista
@@ -123,28 +123,28 @@ Skriv ut de två nya listorna.
 Använd `if`- och `else`-satsen.
 ```
 
-### Övning 3.5
+### Övning 4.5
 Skapa ett program som räknar ut och skriver ut summan av alla nummer 1-100. 
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera en summan som noll, skapa sedan en for-lopp som innehåller en range som går upp hela vägen till 100, sedan för varje tal i addera den till variabeln summan.
 ```
 
-### Övning 3.6
+### Övning 4.6
 Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.
 ```
 
-### Övning 3.7
+### Övning 4.7
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
 
-### Övning 3.8
+### Övning 4.8
 Skriv ett program som frågar användaren efter en siffra och sedan skriver ut vad talet är i fakultet. Definitionen av fakultet är enligt formeln nedan:
 
 $$n! = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 2 \cdot 1 $$
@@ -157,7 +157,7 @@ $$1!=1$$
 Använd en for-loop och använd range() funktionen.
 ```
 
-### Övning 3.9
+### Övning 4.9
 Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet. 
 
 ```{admonition} Tips
@@ -165,7 +165,7 @@ Skapa ett program som frågar användaren efter en sträng, sedan svarar program
 Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler. 
 ```
 
-### Övning 3.10
+### Övning 4.10
 Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.
 
 ```{admonition} Tips
@@ -173,7 +173,7 @@ Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten
 Använd en inbyggd metod för listor som heter len().
 ```
 
-### Övning 3.11
+### Övning 4.11
 Skapa ett program som tar en lista med heltal och returnerar summan av alla jämna tal i listan.
 ```{admonition} Tips
 :class: Hint dropdown
@@ -181,7 +181,7 @@ Skapa ett program som tar en lista med heltal och returnerar summan av alla jäm
 Använd en `for`-loop för att iterera genom listan och kontrollera om ett tal är jämnt med hjälp av `if num % 2 == 0`.
 ```
 
-### Övning 3.12
+### Övning 4.12
 Skapa ett program som räknar hur många negativa tal som finns i en lista.
 
 ```{admonition} Tips
@@ -189,7 +189,7 @@ Skapa ett program som räknar hur många negativa tal som finns i en lista.
 
 Du kan använda en variabel för att hålla koll på antalet negativa tal och en `for`-loop tillsammans med en `if`-sats för att jämföra varje tal med 0.
 ```
-### Övning 3.13
+### Övning 4.13
 Skapa ett program som tar en lista och ett gränsvärde, och returnerar en ny lista med alla tal som är större än gränsvärdet
 ```{admonition} Tips
 :class: Hint dropdown
@@ -199,6 +199,8 @@ Använd en `for`-loop för att iterera genom listan och en `if`-sats för att ko
 <!-- end-övningar -->
 
 ## Lösningar till övningar
+
+*OBS!* I videon står det uppgift 3.X. men det motsvarar numera övning 4.X.
 
 <iframe
     width="100%"

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Satser &#8212; mentiphy</title>
+    <title>Listor &#8212; mentiphy</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/satser';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'kurser/programmering-1/listor';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Sök" href="../../search.html" />
-    <link rel="next" title="Listor" href="listor.html" />
-    <link rel="prev" title="Grundläggande programmering i Python" href="grundl%C3%A4ggande.html" />
+    <link rel="next" title="Loopar" href="loopar.html" />
+    <link rel="prev" title="Satser" href="satser.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="sv"/>
   </head>
@@ -205,8 +205,8 @@
 <li class="toctree-l1"><a class="reference internal" href="grundl%C3%A4ggande.html">Grundläggande programmering i Python</a></li>
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Satser</a></li>
-<li class="toctree-l1"><a class="reference internal" href="listor.html">Listor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="satser.html">Satser</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Listor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="loopar.html">Loopar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="turtle.html">Turtles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="funktioner.html">Funktioner</a></li>
@@ -271,7 +271,7 @@
       
       
       
-      <li><a href="../../_sources/kurser/programmering-1/satser.md" target="_blank"
+      <li><a href="../../_sources/kurser/programmering-1/listor.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Ladda ner källfil"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,7 +355,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Satser</h1>
+    <h1>Listor</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -365,18 +365,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hantera-element-i-listor">Hantera element i listor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fler-metoder-och-funktioner-med-listor">Fler metoder och funktioner med listor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videogenomgang">Videogenomgång</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-1">Övning 2.1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-2">Övning 2.2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-3">Övning 2.3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-4">Övning 2.4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-5">Övning 2.5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-6">Övning 2.6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-7">Övning 2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-1">Övning 3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-2">Övning 3.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-3">Övning 3.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-4">Övning 3.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-5">Övning 3.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
@@ -391,91 +392,116 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="satser">
-<h1>Satser<a class="headerlink" href="#satser" title="Link to this heading">#</a></h1>
-<p>För att kunna programmera på en lite högre nivå behöver fler satser användas. På föregående sida nämndes några få satser, som print-satsen och input-satsen. Under denna flik kommer vi lägga till flera nya satser som kommer vara nödvändiga att lära sig för att lösa nya sorters problem.</p>
-<section id="if-och-else-satsen">
-<h2>if- och else-satsen<a class="headerlink" href="#if-och-else-satsen" title="Link to this heading">#</a></h2>
-<p>I vissa situationer efterfrågar ett program att någonting ska hända, förutsatt att ett visst villkor uppfylls.</p>
-<p>if-satsen används i dessa situationer, nedan exemplifieras användingsområdet av if-satsen.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: &#39;</span><span class="p">))</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: &#39;</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det första talet är störst&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det andra talet är störst, eller så är dem lika stora&#39;</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="listor">
+<h1>Listor<a class="headerlink" href="#listor" title="Link to this heading">#</a></h1>
+<p>En svaghet för de variablerna vi än så länge har introducerat är att vi endast kan lagra ett värde per variabel, vilket inte alltid är det vi vill. En listor kan laga fler värden i samma variabel. Nedan följer ett exempel på när en lista kan användas för att lösa helt nya sorters problem.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Testa att kopiera programmet ovan, spara det, kör det och ange två siffror. Poängen med if-satsen är alltså att koden som är skriven i satsen endast körs om villkoret uppfylls. I det här fallet <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&gt;</span> <span class="pre">y</span></code>. Den andra delen av koden finns nästa sats, vilket kallas else.</p>
-<p>Om villkoret hos if-satsen inte uppfylls kommer koden inte att läsa av koden innanför if-satsen utan snarare hoppa vidare till else-satsen längre ner i koden.</p>
-<p>Som många förmodligen tänkte på är koden ovan inte perfekt, det beror framför allt på anledningen att det finns tre olika situationer. När <code class="docutils literal notranslate"><span class="pre">x</span></code> är större än <code class="docutils literal notranslate"><span class="pre">y</span></code>, när <code class="docutils literal notranslate"><span class="pre">x</span></code> är lika med <code class="docutils literal notranslate"><span class="pre">y</span></code> och när <code class="docutils literal notranslate"><span class="pre">x</span></code> är mindre än <code class="docutils literal notranslate"><span class="pre">y</span></code>. För att lösa detta problem är det bäst att faktiskt introducera en ny sats.</p>
+<p>I exemplet ovan skapar vi en lista för att hålla redan på namnen, exempelvis i en klass som läser programmering. Om vi nu vill redigera den här listan finns det inbggda funktioner och metoder som gör att man kan ändra listan utan att behöva deklarera en ny.</p>
+<p>Säg till exempel att det tillkommer en till person vi behöver lägga till på listan. Då använder vi en inbyggd metod i listorna som lägger till det namnet.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">]</span>
+<span class="n">namn_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Linus&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<p>Metoden <code class="docutils literal notranslate"><span class="pre">.append()</span></code> lägger alltså till ett nytt element i listan. I andra situationer kanske det blir relevant att en person ska tas bort från listan, då kan det göras på lite olika sätt. Säg att vi vill ta bort Lia, då hade det varit bäst att göra det på följande sätt.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+<span class="n">namn_lista</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;Lia&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<section id="hantera-element-i-listor">
+<h2>Hantera element i listor<a class="headerlink" href="#hantera-element-i-listor" title="Link to this heading">#</a></h2>
+<p>Det finns en hel del olika sätt att hantera olika element i listor. Nedan följer lite simpla sätt att få åtkomst till olika element i en lista samt skapa dellistor. Mer information om det kommer lite längre ner.</p>
+<p>För att nå ett specifikt element i listan skrivs det på följande sätt.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
+<p>Listor i Python är nollindexerade vilket betyder att det första elementet i listan befinner sig på plats 0 i listan, det andra elementet på plats 1, osv.</p>
+<p>I vissa situationer vill man dela upp listan i dellistor, då kan det vara smidigt att använda <em>skivningsoperatorer</em>. En skivningsoperator fungerar på följande sätt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">start</span><span class="p">:</span><span class="n">stop</span><span class="p">:</span><span class="n">steg</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Start indikerar var man vill börja med att dela upp listan, stop betyder var man vill sluta med att dela upp listan och steg innebär hur många steg som ska hoppas över per element när dellistan ska skapas. Vi återvänder till exemplet med <code class="docutils literal notranslate"><span class="pre">namn_lista</span></code> för att skapa några olika dellistor.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Hussein&#39;</span><span class="p">,</span> <span class="s1">&#39;Lia&#39;</span><span class="p">,</span> <span class="s1">&#39;Malcolm&#39;</span><span class="p">,</span> <span class="s1">&#39;Ava&#39;</span><span class="p">,</span> <span class="s1">&#39;Linus&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">namn_lista</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera koden, kör den och se resultatet!</p>
+</div>
 </section>
-<section id="elif-satsen">
-<h2>elif-satsen<a class="headerlink" href="#elif-satsen" title="Link to this heading">#</a></h2>
-<p>För att förbättra koden ovan kan vi introducera en elif-sats. Koden förbättras på följande sätt om elif introduceras.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det första talet: &#39;</span><span class="p">))</span>
-<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange det andra talet: &#39;</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det första talet är störst&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det första talet och det andra talet är lika stora&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Det andra talet är störst&#39;</span><span class="p">)</span>
-</pre></div>
+<section id="fler-metoder-och-funktioner-med-listor">
+<h2>Fler metoder och funktioner med listor<a class="headerlink" href="#fler-metoder-och-funktioner-med-listor" title="Link to this heading">#</a></h2>
+<p>Det finns en hel rad olika metoder och funktioner som är inbyggt i Python rörande listor, nedan listas en hel rad olika metoder och funktioner.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Metod</p></th>
+<th class="head"><p>Betydelse</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">append</span></code></p></td>
+<td><p>Lägger till ett element sist.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">clear</span></code></p></td>
+<td><p>Tar bort alla element ut listan.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">copy</span></code></p></td>
+<td><p>Skapar en kopia av listan dvs ett nytt objekt med samma innehåll.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">count</span></code></p></td>
+<td><p>Räknar antalet förekomster visst element.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">extend</span></code></p></td>
+<td><p>Lägger till alla element från en annan lista.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">index</span></code></p></td>
+<td><p>Returnerar index för första förekomst av ett element.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">insert</span></code></p></td>
+<td><p>Stoppar in ett nytt element på angivet index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pop</span></code></p></td>
+<td><p>Tar bort och returnerar sista elementet.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">remove</span></code></p></td>
+<td><p>Tar bort första förekomst av angivet element.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">reverse</span></code></p></td>
+<td><p>Vänder på listan.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sort</span></code></p></td>
+<td><p>Sorterar listan.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p>Nu med elif-satsen introducerad tar den satsen hand om fallet när båda talen är lika stora. Betydelsen av elif är helt enkelt ”else if” eller ”annars om”på svenska ska det tolkas som. Alltså, om det första villkoret inte är uppfyllt då tittar programmet om nästa villkor som anges i elif-satsen är uppfyllt, om detta villkor inte heller är uppfyllt avslutar programmet med att köra koden som står angivet i else-satsen.</p>
-</section>
-<section id="logiska-uttryck">
-<h2>Logiska uttryck<a class="headerlink" href="#logiska-uttryck" title="Link to this heading">#</a></h2>
-<p>I situationer där satser som if-satsen, elif-satsen och else-satsen används kan det vara bra att förstå vad olika logiska uttryck betyder och hur de används.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># x är lika med y</span>
-<span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
-
-<span class="c1"># x är inte lika med y</span>
-<span class="n">x</span> <span class="o">!=</span> <span class="n">y</span>
-
-<span class="c1"># x är större än y</span>
-<span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>
-
-<span class="c1"># x är mindre än y</span>
-<span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span>
-
-<span class="c1"># x är större eller lika med y</span>
-<span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>
-
-<span class="c1"># x är mindre eller lika med y</span>
-<span class="n">x</span> <span class="o">&lt;=</span> <span class="n">y</span>
-</pre></div>
-</div>
-<p>Det är viktigt att operanderna är jämförbara, dvs <code class="docutils literal notranslate"><span class="pre">x</span></code> och <code class="docutils literal notranslate"><span class="pre">y</span></code> ska kunna jämföras på ett lätt sätt. Till exempel när både <code class="docutils literal notranslate"><span class="pre">x</span></code>och <code class="docutils literal notranslate"><span class="pre">y</span></code> är av typen sträng, int eller float.</p>
-<p>Det finns även andra logiska uttryck som <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> och <code class="docutils literal notranslate"><span class="pre">not</span></code>. Exempel om hur det kan användas visas nedan.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">dag</span> <span class="o">=</span> <span class="s1">&#39;Måndag&#39;</span>
-
-<span class="k">if</span> <span class="n">dag</span><span class="o">==</span> <span class="s1">&#39;Måndag&#39;</span> <span class="ow">or</span> <span class="n">dag</span><span class="o">==</span><span class="s1">&#39;Tisdag&#39;</span> <span class="ow">or</span> <span class="n">dag</span><span class="o">==</span><span class="s1">&#39;Onsdag&#39;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vi är i starten av veckan!&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vi är i slutet av veckan!&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Med <code class="docutils literal notranslate"><span class="pre">or</span></code> operanden kan vi addera fler villkor inom samma if-sats, vilket i många fall kan vara smidigare än att upprepa fler if-satser efter varandra.</p>
-<p>När vi har ett intervall kan det vara smidigt att använda en <code class="docutils literal notranslate"><span class="pre">and</span></code> operand.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ålder</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Ange din ålder: &#39;</span><span class="p">))</span>
-
-<span class="k">if</span> <span class="n">ålder</span> <span class="o">&gt;</span> <span class="mi">12</span> <span class="ow">and</span> <span class="n">ålder</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du är tonåring&#39;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">ålder</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du är inte tonåringen ännu&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Du har redan varit tonåring&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>elif-satsen underlättar för addera fler villkor om det behövs för att programmet ska fungera korrekt.</p>
 </section>
 <section id="videogenomgang">
 <h2>Videogenomgång<a class="headerlink" href="#videogenomgang" title="Link to this heading">#</a></h2>
-<p>Genomgången på if- och else-satsen börjar 11:30 i videon.</p>
+<p>Genomgången på listor är i början av videon fram till ungefär 11:30, sedan kommer nästa genomgång.</p>
 <iframe
     width="100%"
     max-width="800"
@@ -489,86 +515,119 @@ document.write(`
 </section>
 <section id="ovningar-till-avsnittet">
 <h2>Övningar till avsnittet<a class="headerlink" href="#ovningar-till-avsnittet" title="Link to this heading">#</a></h2>
-<section id="ovning-2-1">
-<h3>Övning 2.1<a class="headerlink" href="#ovning-2-1" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som tittar om ett namn som du anger med en input är samma som ditt namn. Skriv ut <code class="docutils literal notranslate"><span class="pre">Ja!</span></code> om det gäller, annars skriv ut <code class="docutils literal notranslate"><span class="pre">Nej!</span></code>.</p>
+<!-- start-övningar -->
+<section id="ovning-3-1">
+<h3>Övning 3.1<a class="headerlink" href="#ovning-3-1" title="Link to this heading">#</a></h3>
+<p>Skapa ett program där en lista med dina fyra favoritfrukter är inkluderade i en lista. Skriv sedan ut den första och den sista frukten i listan.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Börja med att avända en input, jämför sedan namnet med ditt namn i if-satsen och gör därefter en else-sats.</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">[]</span></code> efter listan för att få åtkomst till olika element inom listan, <code class="docutils literal notranslate"><span class="pre">[-1]</span></code> indikerar det sista elementet i listan.</p>
 </div>
 </section>
-<section id="ovning-2-2">
-<h3>Övning 2.2<a class="headerlink" href="#ovning-2-2" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som frågar användaren efter ett tal. Efter svarar programmet om talet är mindre eller större än 50.
-Om talet var mindre skrivs ett meddelande att talet var mindre, annars skrivs ett meddelande att talet var större.</p>
+<section id="ovning-3-2">
+<h3>Övning 3.2<a class="headerlink" href="#ovning-3-2" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Börja med att använda en input som lagrar ett tal, därefter skapa en if och else-sats med hjälp av logista uttryck som <code class="docutils literal notranslate"><span class="pre">&lt;</span></code> och <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>.</p>
+<p>Använd +-operatorn för att lägga ihop två listor.</p>
 </div>
 </section>
-<section id="ovning-2-3">
-<h3>Övning 2.3<a class="headerlink" href="#ovning-2-3" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som frågar användaren efter ett lösenord. Om användaren anger rätt lösenord så skrivs ett meddelande att lösenordet är korrekt, annars skrivs ett meddelande att lösenordet var felaktigt.</p>
+<section id="ovning-3-3">
+<h3>Övning 3.3<a class="headerlink" href="#ovning-3-3" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Börja med att deklarera det korrekta lösenordet, använd sen en if- och else-sats.</p>
+<p>Använd skivningsoperatorerna.</p>
 </div>
 </section>
-<section id="ovning-2-4">
-<h3>Övning 2.4<a class="headerlink" href="#ovning-2-4" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som frågar efter en given frukt. Om de skriver äpple ska programmet skriva ut 5 kr, om det är ett päron ska programmet skriva ut 10 kr. Om användaren anger någonting annat än en frukt ska programmet svara ”Det finns inga priser för den här frukten”.</p>
+<section id="ovning-3-4">
+<h3>Övning 3.4<a class="headerlink" href="#ovning-3-4" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som tar en mening från användaren, exempelvis:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Det</span> <span class="n">här</span> <span class="n">är</span> <span class="n">en</span> <span class="n">mening</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Dela upp meningen i en lista där varje ord är ett element. Skriv sedan ut listan.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Skapa en if-sats för äpplet med ett svar, sedan en elif för päron med ett svar, sedan en else-sats med ett svar.</p>
+<p>Använd metoden <code class="docutils literal notranslate"><span class="pre">split()</span></code> för att dela upp en text i ord.</p>
 </div>
 </section>
-<section id="ovning-2-5">
-<h3>Övning 2.5<a class="headerlink" href="#ovning-2-5" title="Link to this heading">#</a></h3>
-<p>Skapa ett program där användaren anger hur många poäng hen fick på provet. Listan nedan visar hur många poäng som ger ett särskilt betyg.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Betyg</p></th>
-<th class="head"><p>Poäng</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>A</p></td>
-<td><p>100 poäng eller mer.</p></td>
-</tr>
-<tr class="row-odd"><td><p>C</p></td>
-<td><p>50-100 poäng.</p></td>
-</tr>
-<tr class="row-even"><td><p>E</p></td>
-<td><p>30-50 poäng.</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
-<td><p>30 eller mindre</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Låt sedan programmet skriva ut vilket betyg som användaren fick.</p>
+<section id="ovning-3-5">
+<h3>Övning 3.5<a class="headerlink" href="#ovning-3-5" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som innehåller en lista med minst 10 heltal. Låt programmet sortera listan i:</p>
+<ul class="simple">
+<li><p>Stigande ordning</p></li>
+<li><p>Fallande ordning</p></li>
+</ul>
+<p>Skriv ut resultaten.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd sen en if-, elif- och else-sats.</p>
+<p>Metoden <code class="docutils literal notranslate"><span class="pre">sort()</span></code>, om du vill ha den i andra ordningen använd <code class="docutils literal notranslate"><span class="pre">sort(reverse=True)</span></code>.</p>
 </div>
 </section>
-<section id="ovning-2-6">
-<h3>Övning 2.6<a class="headerlink" href="#ovning-2-6" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som avgör om talet du anger är jämt eller udda. Om svaret är udda eller jämt ska programmet svara att talet är udda respektive jämt.</p>
+<section id="ovning-3-6">
+<h3>Övning 3.6<a class="headerlink" href="#ovning-3-6" title="Link to this heading">#</a></h3>
+<p>Skapa två listor med heltal, t.ex.:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Kombinerar de två listorna</p></li>
+<li><p>Sorterar den kombinerade listan i stigande ordning</p></li>
+<li><p>Tar bort dubbletter från den sorterade listan</p></li>
+</ul>
+<p>Skriv ut den slutgiltiga listan.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd en if- och else-sats samt operatorn % som ger resten vid heltalsdivision.</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">+</span></code> för att kombinera listor, och metoden <code class="docutils literal notranslate"><span class="pre">set()</span></code> för att ta bort dubbletter</p>
 </div>
 </section>
-<section id="ovning-2-7">
-<h3>Övning 2.7<a class="headerlink" href="#ovning-2-7" title="Link to this heading">#</a></h3>
-<p>Fråga användaren efter tre tal, programmet ska sedan rangordna vilket tal som är störst och skriva ut den korrekta ordningen på storleksordningen av talen.</p>
+<section id="ovning-3-7">
+<h3>Övning 3.7<a class="headerlink" href="#ovning-3-7" title="Link to this heading">#</a></h3>
+<p>Låt användaren skriva in en mening. Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Räknar antalet ord i meningen</p></li>
+<li><p>Hittar det längsta ordet</p></li>
+<li><p>Hittar det kortaste ordet</p></li>
+</ul>
+<p>Skriv ut resultaten.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd flera villkor i if-satsen med hjälp av <code class="docutils literal notranslate"><span class="pre">and</span></code>.</p>
+<p>Du kan använda metoder som <code class="docutils literal notranslate"><span class="pre">split()</span></code> och funktioner som <code class="docutils literal notranslate"><span class="pre">max()</span></code> och <code class="docutils literal notranslate"><span class="pre">min()</span></code>.</p>
 </div>
-<!-- end-övningar -->
+</section>
+<section id="ovning-3-8">
+<h3>Övning 3.8<a class="headerlink" href="#ovning-3-8" title="Link to this heading">#</a></h3>
+<p>Skapa två listor med heltal.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Skriv ett program som:</p>
+<ul class="simple">
+<li><p>Hittar de gemensamma elementen mellan listorna</p></li>
+<li><p>Räknar antalet gemensamma element</p></li>
+</ul>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">set()</span></code> och operatorn <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> för att hitta gemensamma element.</p>
+</div>
+</section>
+<section id="ovning-3-9">
+<h3>Övning 3.9<a class="headerlink" href="#ovning-3-9" title="Link to this heading">#</a></h3>
+<p>Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.</p>
+<p>Exempel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Lista</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">Steg</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Resultat</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd slicing för att dela upp listan och kombinera delarna igen.</p>
+</div>
 </section>
 </section>
 <section id="losningar-till-ovningar">
@@ -608,20 +667,20 @@ Om talet var mindre skrivs ett meddelande att talet var mindre, annars skrivs et
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="grundl%C3%A4ggande.html"
+       href="satser.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">föregående</p>
-        <p class="prev-next-title">Grundläggande programmering i Python</p>
+        <p class="prev-next-title">Satser</p>
       </div>
     </a>
     <a class="right-next"
-       href="listor.html"
+       href="loopar.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">nästa</p>
-        <p class="prev-next-title">Listor</p>
+        <p class="prev-next-title">Loopar</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -641,18 +700,19 @@ Om talet var mindre skrivs ett meddelande att talet var mindre, annars skrivs et
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-och-else-satsen">if- och else-satsen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elif-satsen">elif-satsen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logiska-uttryck">Logiska uttryck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hantera-element-i-listor">Hantera element i listor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fler-metoder-och-funktioner-med-listor">Fler metoder och funktioner med listor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#videogenomgang">Videogenomgång</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovningar-till-avsnittet">Övningar till avsnittet</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-1">Övning 2.1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-2">Övning 2.2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-3">Övning 2.3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-4">Övning 2.4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-5">Övning 2.5</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-6">Övning 2.6</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-2-7">Övning 2.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-1">Övning 3.1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-2">Övning 3.2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-3">Övning 3.3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-4">Övning 3.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-5">Övning 3.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-6">Övning 3.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-7">Övning 3.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
