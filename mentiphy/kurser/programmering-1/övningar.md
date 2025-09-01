@@ -14,20 +14,23 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - print-satsen, variabler och tilldelningar, datatyper och typkonverteringar, input-satsen.
   - *1.1-1.6*
 * - Satser
-  - Listor, if- och else-satsen, elif-satsen, logiska uttryck.
-  - *2.1-2.12*
+  - if- och else-satsen, elif-satsen, logiska uttryck.
+  - *2.1-2.7*
+* - Listor
+  - Listor och relaterade funktioner till listor.
+  - *3.1-3.9*
 * - Loopar
   - for-loopen, range-funktionen, listor och for-loopar, while-loopen.
-  - *3.1-3.13*
+  - *4.1-4.13*
 * - Turtles
   - Rita simpel grafik med hjälp av turtle-modulen.
-  - *4.1-4.8*
+  - *5.1-5.13*
 * - Funktioner
   - Deklarera och använda funktioner.
-  - *5.1-5.11*
+  - *6.1-6.8*
 * - Lexikon
   - Deklarera och använda lexikon.
-  - *6.1-6.4*
+  - *7.1-7.4*
 * - Projekt i programmering
   - Lösa diverse projekt i programmering
   - Onumrerade
