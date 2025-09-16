@@ -99,8 +99,28 @@ Det finns en hel rad olika metoder och funktioner som är inbyggt i Python röra
   - Vänder på listan.
 * - `sort`
   - Sorterar listan.
+* - `set`
+  - Tar bort dubbletter.
+* - `set.intersection`
+  - Tittar på överlappen mellan två listor.
+* - `len`
+  - Räknar antalet element i listan.
 ```
+## If-, elif- och else med listor
 
+Vi kan titta om exemelvis element finns i en lista eller om ett element inte finns i en lista.
+
+```python
+namn_lista = ['Emma', 'Hussein', 'Lia', 'Malcolm', 'Ava', 'Linus']
+
+if 'Emma' in namn_lista:
+    print('Emma finns i listan')
+
+else:
+    print('Emma finns inte i listan')
+
+```
+Vilket kan vara mycket användbart för att inte till exempel skapa dubletter i listor. 
 ## Videogenomgång
 
 Genomgången på listor är i början av videon fram till ungefär 11:30, sedan kommer nästa genomgång.
@@ -128,21 +148,6 @@ Använd `[]` efter listan för att få åtkomst till olika element inom listan, 
 ```
 
 ### Övning 3.2
-Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista. 
-```{admonition} Tips
-:class: Hint dropdown
-Använd +-operatorn för att lägga ihop två listor.
-```
-
-### Övning 3.3
-Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.
-
-```{admonition} Tips
-:class: Hint dropdown
-Använd skivningsoperatorerna.
-```
-
-### Övning 3.4
 Skriv ett program som tar en mening från användaren, exempelvis: 
 
 ```
@@ -153,10 +158,76 @@ Dela upp meningen i en lista där varje ord är ett element. Skriv sedan ut list
 
 ```{admonition} Tips
 :class: Hint dropdown
-Använd metoden `split()` för att dela upp en text i ord.
+Använd metoden `split()` efter input-satsen för att dela upp en text i en lista.  
+```
+
+### Övning 3.3
+Skapa ett program som tittar på en lista med tal innehåller talet 30, om talet finns med ska programmet skriva ut "Talet finns i listan", annars ska programmet skriva ut "Talet finns inte i listan".
+```{admonition} Tips
+:class: Hint dropdown
+Använd if-satsen och en else-sats.
+```
+
+### Övning 3.4
+Skapa ett program som frågar efter två listor som input och som sen skriver ut båda listorna tillsammans i en lista. 
+```{admonition} Tips
+:class: Hint dropdown
+Lägg till `.split()` för att dela upp listorna. Använd +-operatorn för att lägga ihop två listor.
 ```
 
 ### Övning 3.5
+Skapa ett program som innehåller 12 siffror. Skriv sedan ut varannat element i listan, var tredje element i listan och var fjärde element i listan.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd skivningsoperatorerna.
+```
+
+### Övning 3.6
+Kopiera listan nedan.
+
+```python
+namn_lista = ['Ali', 'Adrian', 'Assar', 'Assad', 'Ali']
+```
+Skriv ett program som skriver ut hur många gånger namnet `'Ali'` förekommer i listan.
+```{admonition} Tips
+:class: Hint dropdown
+Använd en inbyggd metod för listor som heter count().
+```
+
+### Övning 3.7
+Skapa ett program som sorterar och skriver ut listan nedan i storleksordning.
+
+```python
+nummer_lista = [5, 2, 7, 1, -1]
+```
+```{admonition} Tips
+:class: Hint dropdown
+Använd en inbyggd metod för listor som heter sort().
+```
+
+### Övning 3.8
+Skapa ett program som hittar och skriver ut det största och det minsta elementet i listan nedan.
+
+```python
+numb_list = [11, 23, 140, -54, -55, 43, 90]
+```
+```{admonition} Tips
+:class: Hint dropdown
+Använd en inbyggd metod för listor som heter min() respektive max().
+```
+
+### Övning 3.9
+Skapa ett program som beräknar och skriver ut hur många element det är i listan nedan.
+```python
+char_list = ['a', 'b', 'd', 'e'. 'f']
+```
+```{admonition} Tips
+:class: Hint dropdown
+Använd en inbyggd metod för listor som heter len().
+```
+
+### Övning 3.10
 Skapa ett program som innehåller en lista med minst 10 heltal. Låt programmet sortera listan i:
 - Stigande ordning
 - Fallande ordning
@@ -168,7 +239,7 @@ Skriv ut resultaten.
 Metoden `sort()`, om du vill ha den i andra ordningen använd `sort(reverse=True)`.
 ```
 
-### Övning 3.6
+### Övning 3.11
 Skapa två listor med heltal, t.ex.:
 
 ```python
@@ -188,7 +259,7 @@ Skriv ut den slutgiltiga listan.
 Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
 ```
 
-### Övning 3.7
+### Övning 3.12
 Låt användaren skriva in en mening. Skriv ett program som:
 - Räknar antalet ord i meningen
 - Hittar det längsta ordet
@@ -201,7 +272,7 @@ Skriv ut resultaten.
 Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
 ```
 
-### Övning 3.8
+### Övning 3.13
 Skapa två listor med heltal.
 
 ```python
@@ -218,7 +289,7 @@ Skriv ett program som:
 Använd `set()` och operatorn `&` för att hitta gemensamma element.
 ```
 
-### Övning 3.9
+### Övning 3.14
 
 Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.
 

@@ -54,50 +54,6 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 :end-before: <!-- end-övningar -->
 ```
 
-### Övning 2.7
-Kopiera listan nedan.
-
-```python
-namn_lista = ['Ali', 'Adrian', 'Assar', 'Assad', 'Ali']
-```
-Skriv ett program som skriver ut hur många gånger namnet `'Ali'` förekommer i listan.
-```{admonition} Tips
-:class: Hint dropdown
-Använd en inbyggd metod för listor som heter count().
-```
-
-### Övning 2.8
-Skapa ett program som sorterar och skriver ut listan nedan i storleksordning.
-
-```python
-nummer_lista = [5, 2, 7, 1, -1]
-```
-```{admonition} Tips
-:class: Hint dropdown
-Använd en inbyggd metod för listor som heter sort().
-```
-
-### Övning 2.9
-Skapa ett program som hittar och skriver ut det största och det minsta elementet i listan nedan.
-
-```python
-numb_list = [11, 23, 140, -54, -55, 43, 90]
-```
-```{admonition} Tips
-:class: Hint dropdown
-Använd en inbyggd metod för listor som heter min() respektive max().
-```
-
-### Övning 2.10
-Skapa ett program som beräknar och skriver ut hur många element det är i listan nedan.
-```python
-char_list = ['a', 'b', 'd', 'e'. 'f']
-```
-```{admonition} Tips
-:class: Hint dropdown
-Använd en inbyggd metod för listor som heter len().
-```
-
 ## 3. Loopar
 
 ```{include} loopar.md
