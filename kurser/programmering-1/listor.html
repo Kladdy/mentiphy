@@ -380,10 +380,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-14">Övning 3.14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-15">Övning 3.15</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
@@ -648,8 +651,20 @@ document.write(`
 <p>Metoden <code class="docutils literal notranslate"><span class="pre">sort()</span></code>, om du vill ha den i andra ordningen använd <code class="docutils literal notranslate"><span class="pre">sort(reverse=True)</span></code>.</p>
 </div>
 </section>
+</section>
 <section id="ovning-3-11">
-<h3>Övning 3.11<a class="headerlink" href="#ovning-3-11" title="Link to this heading">#</a></h3>
+<h2>Övning 3.11<a class="headerlink" href="#ovning-3-11" title="Link to this heading">#</a></h2>
+<p>Skapa ett program som utgår från listan:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">namn_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Ali&#39;</span><span class="p">,</span> <span class="s1">&#39;Adrian&#39;</span><span class="p">,</span> <span class="s1">&#39;Assar&#39;</span><span class="p">,</span> <span class="s1">&#39;Assad&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Fråga sedan användaren efter ett namn, om namnet finns i listan redan ska namnet tas bort. Om namnet inte finns ska namnet läggas till i slutet av listan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd if-satsen och en else-sats. Samt använd <code class="docutils literal notranslate"><span class="pre">.append()</span></code> och <code class="docutils literal notranslate"><span class="pre">.remove()</span></code>.</p>
+</div>
+<section id="ovning-3-12">
+<h3>Övning 3.12<a class="headerlink" href="#ovning-3-12" title="Link to this heading">#</a></h3>
 <p>Skapa två listor med heltal, t.ex.:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
 <span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
@@ -667,8 +682,8 @@ document.write(`
 <p>Använd <code class="docutils literal notranslate"><span class="pre">+</span></code> för att kombinera listor, och metoden <code class="docutils literal notranslate"><span class="pre">set()</span></code> för att ta bort dubbletter</p>
 </div>
 </section>
-<section id="ovning-3-12">
-<h3>Övning 3.12<a class="headerlink" href="#ovning-3-12" title="Link to this heading">#</a></h3>
+<section id="ovning-3-13">
+<h3>Övning 3.13<a class="headerlink" href="#ovning-3-13" title="Link to this heading">#</a></h3>
 <p>Låt användaren skriva in en mening. Skriv ett program som:</p>
 <ul class="simple">
 <li><p>Räknar antalet ord i meningen</p></li>
@@ -681,8 +696,8 @@ document.write(`
 <p>Du kan använda metoder som <code class="docutils literal notranslate"><span class="pre">split()</span></code> och funktioner som <code class="docutils literal notranslate"><span class="pre">max()</span></code> och <code class="docutils literal notranslate"><span class="pre">min()</span></code>.</p>
 </div>
 </section>
-<section id="ovning-3-13">
-<h3>Övning 3.13<a class="headerlink" href="#ovning-3-13" title="Link to this heading">#</a></h3>
+<section id="ovning-3-14">
+<h3>Övning 3.14<a class="headerlink" href="#ovning-3-14" title="Link to this heading">#</a></h3>
 <p>Skapa två listor med heltal.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lista1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="n">lista2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
@@ -695,11 +710,11 @@ document.write(`
 </ul>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd <code class="docutils literal notranslate"><span class="pre">set()</span></code> och operatorn <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> för att hitta gemensamma element.</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">set.intersection()</span></code> och <code class="docutils literal notranslate"><span class="pre">len()</span></code>.</p>
 </div>
 </section>
-<section id="ovning-3-14">
-<h3>Övning 3.14<a class="headerlink" href="#ovning-3-14" title="Link to this heading">#</a></h3>
+<section id="ovning-3-15">
+<h3>Övning 3.15<a class="headerlink" href="#ovning-3-15" title="Link to this heading">#</a></h3>
 <p>Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.</p>
 <p>Exempel:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Lista</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
@@ -798,10 +813,13 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-8">Övning 3.8</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-9">Övning 3.9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-10">Övning 3.10</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-11">Övning 3.11</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-12">Övning 3.12</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-13">Övning 3.13</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-14">Övning 3.14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-3-15">Övning 3.15</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>

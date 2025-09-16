@@ -239,7 +239,19 @@ Skriv ut resultaten.
 Metoden `sort()`, om du vill ha den i andra ordningen använd `sort(reverse=True)`.
 ```
 
-### Övning 3.11
+## Övning 3.11
+Skapa ett program som utgår från listan:
+```python
+namn_lista = ['Ali', 'Adrian', 'Assar', 'Assad']
+```
+Fråga sedan användaren efter ett namn, om namnet finns i listan redan ska namnet tas bort. Om namnet inte finns ska namnet läggas till i slutet av listan.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd if-satsen och en else-sats. Samt använd `.append()` och `.remove()`.
+```
+
+### Övning 3.12
 Skapa två listor med heltal, t.ex.:
 
 ```python
@@ -259,7 +271,7 @@ Skriv ut den slutgiltiga listan.
 Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
 ```
 
-### Övning 3.12
+### Övning 3.13
 Låt användaren skriva in en mening. Skriv ett program som:
 - Räknar antalet ord i meningen
 - Hittar det längsta ordet
@@ -272,7 +284,7 @@ Skriv ut resultaten.
 Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
 ```
 
-### Övning 3.13
+### Övning 3.14
 Skapa två listor med heltal.
 
 ```python
@@ -286,10 +298,10 @@ Skriv ett program som:
 
 ```{admonition} Tips
 :class: Hint dropdown
-Använd `set()` och operatorn `&` för att hitta gemensamma element.
+Använd `set.intersection()` och `len()`.
 ```
 
-### Övning 3.14
+### Övning 3.15
 
 Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.
 
