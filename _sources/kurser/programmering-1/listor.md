@@ -251,7 +251,19 @@ Fråga sedan användaren efter ett namn, om namnet finns i listan redan ska namn
 Använd if-satsen och en else-sats. Samt använd `.append()` och `.remove()`.
 ```
 
-### Övning 3.12
+## Övning 3.12
+Skapa ett program som utgår från listan:
+```python
+ind_val = ['Matematik 4', 'Matematik 5', 'Engelska 7', 'Programmering 1', 'Naturkunskap 2']
+```
+Fråga sedan användaren om ett ämne. Om ämnet finns först i listan ska programmet skriva ut "Först i listan". Om ämnet finns sist i listan skrivs det ut "Sist i listan". Om det finns någonstans i listan ska det skrivas ut och om ämnet saknas helt skrivs det ut "Det finns inte i listan".
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd först en input-sats, sen en if-sats, två elif-sats och en else-sats. Samt använd titta efter positionen [0] och [-1] i listan.
+```
+
+### Övning 3.13
 Skapa två listor med heltal, t.ex.:
 
 ```python
@@ -271,7 +283,7 @@ Skriv ut den slutgiltiga listan.
 Använd `+` för att kombinera listor, och metoden `set()` för att ta bort dubbletter
 ```
 
-### Övning 3.13
+### Övning 3.14
 Låt användaren skriva in en mening. Skriv ett program som:
 - Räknar antalet ord i meningen
 - Hittar det längsta ordet
@@ -284,7 +296,7 @@ Skriv ut resultaten.
 Du kan använda metoder som `split()` och funktioner som `max()` och `min()`.
 ```
 
-### Övning 3.14
+### Övning 3.15
 Skapa två listor med heltal.
 
 ```python
@@ -301,7 +313,7 @@ Skriv ett program som:
 Använd `set.intersection()` och `len()`.
 ```
 
-### Övning 3.15
+### Övning 3.16
 
 Skapa en lista med minst 10 element. Skriv ett program som roterar listan ett bestämt antal steg åt höger. Användaren ska kunna ange hur många steg listan ska roteras.
 
