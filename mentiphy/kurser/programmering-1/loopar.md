@@ -2,7 +2,7 @@
 Under det här fliken kommer vi djupdyka i problem där kod behöver upprepas många gånger efter varandra. För att upprepa kod på ett effektivt sätt är det perfekt att göra med hjälp av loopar, som vi ska kolla på under det här avsnittet.
 
 ## for-loopen
-För program som genomför liknande uppgifter flera gånger i rad är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.
+För program som genomför liknande uppgifter flera gånger i rad, samt att när man vet hur många gånger man vill upprepa kodeb är en for-loop perfekt att använda för att inte behöva skriva onödigt många rader kod. Titta på de två exempel nedan och se hur mycket mindre kod som behöver användas när en for-loop används.
 
 ### Exempel 1
 ```python
@@ -15,12 +15,12 @@ print(6)
 ```
 ### Exempel 2
 ```python
-for siffror in range(6):
+for siffror in range(1, 7):
     print(siffror)
 ```
 Resultatet av exempel 1 och 2 är faktiskt samma, även om antalet rader kod är begränsad till två rader istället för sex rader som exempel 1 har. 
 
-Koden i Exempel 2 börjar med en `for` (vilket översätts till svenskans för) vilket följs up av siffror. Det betyder alltså till att börja med, "för alla siffror", sedan kommer ett `in` vilket då betyder i. Till sist kommer `range(6)` vilket betyder en siffra i intervallet 0-5. Om vi ska tänka hur koden fungerar i termer av ord så blir det: "för alla siffror i intervallet 0-5". Kolonet betyder sedan att för det här intervallet ska koden nedan upprepas för hela intervallet.
+Koden i Exempel 2 börjar med en `for` (vilket översätts till svenskans för) vilket följs up av siffror. Det betyder alltså till att börja med, "för alla siffror", sedan kommer ett `in` vilket då betyder i. Till sist kommer `range(1, 7)` vilket betyder en siffra i intervallet 1-6. Om vi ska tänka hur koden fungerar i termer av ord så blir det: "för alla siffror i intervallet 1-6". Kolonet betyder sedan att för det här intervallet ska koden nedan upprepas för.
 
 ## range-funktionen
 När man vill skapa en loop som uppdateras ett visst antal gånger baserat på ett antal siffror är range-funkionen perfekt för det ändamålet. Range-funktionen generar en sekvens med heltal. Vilket skapas på följande sätt:
@@ -29,18 +29,18 @@ När man vill skapa en loop som uppdateras ett visst antal gånger baserat på e
 range(start, slut, steg)
 ```
 
-Vilket liknar skivningsoperatorerna för listorna vi gjorde i föregående avsnitt. Som ni kanske såg i exempel 2 angavs bara ett värde, vilket händer ganska ofta när man använder funktioner. Om inte allting anges antar range-funktionen vissa standardvärden, i det här fallet är följande inputs densamma.
+Vilket liknar skivningsoperatorerna för listorna vi gjorde i föregående avsnitt. Som ni kanske såg i exempel 2 angavs bara två värden, vilket händer ganska ofta när man använder funktioner. Om inte allting anges antar range-funktionen vissa standardvärden, i det här fallet är följande inputs densamma.
 
 ```python
 range(5)
 range(0, 5, 1)
 ```
 
-För att bli bekväm med hur range-funktionen fungerar kommer några frågor nedan för att vänja er med hur range-funktionen fungerar.
+Om inget värde skrivs ut för start eller slut kommer range-funktionen starta med 0. Om inget värde skrivs ut för steg kommer range-funktionen vara 1. För att bli bekväm med hur range-funktionen fungerar kommer några frågor nedan för att vänja er med hur range-funktionen fungerar. 
 
 ## Listor och for-  loopar
 
-Anledningen att listor blev introducerade ordentligt i början på den här sidan är också för att for-loopar kan appliceras väldigt väl på listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.
+Loopar är mycket lätta och användbara tillsammans med listor. Exempelvis om vi vill skriva ut alla värden av alla element i listan kan det lätt genomföras med hjälp av en for-loop.
 
 ```python
 nummerlista = [1, 2, 3, 4, 5]
@@ -55,22 +55,106 @@ Kopiera koden, kör den och se resultatet!
 
 Först deklareras listan `nummerlista` sen i for-loopen betyder `element` ett element i listan `nummerlista` och för varje element ska for-loopen skriva ut vad värdet av elementet är.
 
-for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad.
+for-loopen är mycket viktig för att effektivsera arbetet att skriva kod, särskilt när det är liknande saker som ska genomföras många gånger i rad och när man vet hur många gånger man vill upprepa koden.
 
 ## while-loopen
-Ett annat sätt när man vill upprepa kod flera gånger är med hjälp av en `while-loop`. Ordet `while` på svenska blir medan och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt upprepa koden. Nedan kommer ett exempel på hur en while-loop kan användas.
+En annan typ av loop som kallas för `while-loop` är en loop som när man vill upprepa kod flera gånger så länge ett att ett villkor uppfylls. När villkoret inte längre stämmer avslutas loopen. Ordet `while` betyder `medan` och det är precis så loopen fungerar, medan ett visst villkor är uppfyllt ska koden upprepas. Nedan kommer ett exempel på hur en while-loop kan användas.
 
 ```python
-print('Beräkning av n!')
-n = int(input('Ange n: '))
-prod = 1
 i = 1
+while i < 7:
+  print(i)
+  i = i + 1
 
-while i <= n:
-    prod += i
-    i += 1
-print(n, '=', prod)
 ```
+
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+Det finns två ytterligare viktiga sätt att använda while-loopar på, vilket är med hjälp av en `break`-sats och med hjälp av en `continue`-sats. Nedan kommer ett exempel på hur en `break`-sats fungerar.
+
+```python
+i = 1
+while i < 7:
+  print(i)
+  i = i + 1
+  if i == 5:
+    break
+
+```
+
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+
+Det vi ser som resultat av koden är att även om villkoret fortfarande är uppfyllt kan man kringå det och avsluta loopen ändå, vilket i visa situationer kan vara mycket användbart. Nedan kommer ett exempel på en `continue`-sats.
+
+```python
+i = 1
+while i < 7:
+  i = i + 1
+  if i == 5:
+    print('Hoppa över!')
+    continue
+  print(i)
+
+```
+
+```{admonition} Tips
+:class: Hint
+Kopiera koden, kör den och se resultatet!
+```
+
+Här ser vi en `continue`-sats, vilket betyder att om villkoret uppfylls ska koden hoppa över det och fortsätta i while-loopen.
+
+## Listbyggare
+
+Det finns en sätt att skapa listor på ett mer kompakt sätt, vilket exemplifieras genom att titta på två exempel som löser samma problem.
+
+### Exempel 1
+
+```python
+frukt_lista = ['äpple', 'banan', 'ananas', 'apelsin', 'kiwi']
+ny_frukt_lista = []
+for frukt in frukt_lista:
+    if a in frukt:
+        ny_frukt_lista.append(frukt)
+    
+print(ny_frukt_lista)
+```
+
+### Exempel 2
+
+```python
+frukt_lista = ['äpple', 'banan', 'ananas', 'apelsin', 'kiwi']
+ny_frukt_lista = [frukt for frukt in frukt_lista if 'a' in frukt]
+
+print(ny_frukt_lista)
+```
+
+Om du kopierar både exempel 1 och och exempel 2 och kör koden kommer det visa sig att det blir samma resultat, båda exemplen skapar en ny lista med alla frukter som innehåller bokstaven `a`, om bokstaven inte finns med exkluderas de frukterna genom villkoret som är angivet i if-satsen. Vi kan se ett annat exempel på hur vi kan bygga en lista med 10 siffror på ett kompakt sätt.
+
+```python
+
+siffror = [i for i in range(1,11)]
+
+print(siffror)
+
+```
+Eller om vi exempelvis vill skapa en lista med alla tal fast upphöjt med 2 mellan 10 och 20.
+
+```python
+
+siffror = [i**2 for i in range(10,21)]
+
+print(siffror)
+
+```
+
+Listbyggare är ett utmärkt sätt att utmana sig själv från att skapa listor utan att använda for-loopar vilket skapar en mer kompakt kod med färre onödiga rader.
+
 ## Videogenomgång
 
 <iframe
@@ -85,7 +169,6 @@ print(n, '=', prod)
 </iframe>
 
 ## Övningar till avsnittet
-Här kommer fliken för övningar, de första tre övningarna är bra för att träna på for-loopar, sedan kommer övningar för while-loopen.
 
 
 <!-- start-övningar -->
@@ -98,20 +181,34 @@ Börja med att deklarera en lista med dina favoritluncher, sedan använd en for-
 ```
 
 ### Övning 4.2 
-Skapa ett program som räknar upp till ett angivet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.
+Skapa ett program som frågar användaren om ett tal. Talet ska sedan skriva ut samtliga tal från 0 till det angivna talet. Koden avslutas sedan med att skriva ut att "Uppräkningen är avslutad!".
+```{admonition} Tips
+:class: Hint dropdown
+Använd en input-sats, en for-loop och använd range() funktionen.
+```
+
+### Övning 4.3
+Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.
+```
+
+### Övning 4.4
+Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen i en lista för siffran från 1-10.
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en for-loop och använd range() funktionen.
 ```
 
-### Övning 4.3
-Skapa en lista med alla jämna tal mellan 1-50. Listan ska skapas utan skriva in talen själv.
+### Övning 4.5
+Skapa en lista med alla jämna tal mellan 1-50. Uppgiften ska lösas med hjälp av en for-loop, en while-loop och en listbyggare. Listan ska skapas utan skriva in talen själv.
 ```{admonition} Tips
 :class: Hint dropdown
-I den här övningen behövs faktiskt bara en range-funktion. Den kan även göras med en for-loop. Försök att få till en med både en for-loop och en utan.
+Använd en for-loop, en while-loop och en listbyggare. Använd dessutom operatorn `%` och en if-sats.
 ```
 
-### Övning 4.4
+### Övning 4.6
 Skapa en lista med minst 15 heltal. Skriv ett program som:
 - Filtrerar ut alla jämna tal och skapar en ny lista
 - Filtrerar ut alla udda tal och skapar en annan ny lista
@@ -120,28 +217,14 @@ Skriv ut de två nya listorna.
 
 ```{admonition} Tips
 :class: Hint dropdown
-Använd `if`- och `else`-satsen.
+Använd `%`-operatorn samt `if`- och `else`-satsen.
 ```
 
-### Övning 4.5
+### Övning 4.7
 Skapa ett program som räknar ut och skriver ut summan av alla nummer 1-100. 
 ```{admonition} Tips
 :class: Hint dropdown
 Börja med att deklarera en summan som noll, skapa sedan en for-lopp som innehåller en range som går upp hela vägen till 100, sedan för varje tal i addera den till variabeln summan.
-```
-
-### Övning 4.6
-Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.
-```{admonition} Tips
-:class: Hint dropdown
-Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.
-```
-
-### Övning 4.7
-Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.
-```{admonition} Tips
-:class: Hint dropdown
-Använd en for-loop och använd range() funktionen.
 ```
 
 ### Övning 4.8
@@ -158,19 +241,19 @@ Använd en for-loop och använd range() funktionen.
 ```
 
 ### Övning 4.9
-Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet. 
-
-```{admonition} Tips
-:class: Hint dropdown
-Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler. 
-```
-
-### Övning 4.10
 Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.
 
 ```{admonition} Tips
 :class: Hint dropdown
 Använd en inbyggd metod för listor som heter len().
+```
+
+### Övning 4.10
+Skriv ett program som har ett hemligt korrekt tal mellan 1 och 20 och frågar efter ett tal. Om det angivna inte matchar hemligheten, spara talet i en lista. Om det angivna talet är korrekt, skriv ut "Grattis!" och skriv ut listan över alla gissningar.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd en while-loop och en if-sats.
 ```
 
 ### Övning 4.11
@@ -195,6 +278,34 @@ Skapa ett program som tar en lista och ett gränsvärde, och returnerar en ny li
 :class: Hint dropdown
 
 Använd en `for`-loop för att iterera genom listan och en `if`-sats för att kontrollera om varje tal är större än gränsvärdet.
+```
+
+### Övning 4.14
+Skapa ett program som frågar användaren om ett tal eller "stopp". Om användaren anger ett tal ska talet läggas till en lista och i slutet ska alla tal på listan summeras. Om användaren anger "stopp" ska programmet avslutas och skriva ut summan av alla tal.
+
+Ett exempel på hur körningen skulle kunna se ut hade varit:
+
+```python
+Ange ett tal eller "stopp": 2
+Ange ett tal eller "stopp": 7
+Ange ett tal eller "stopp": 9
+Ange ett tal eller "stopp": stopp
+Din lista: [2, 7, 9]
+Summan av alla tal: 18
+```
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Använd en `while True:` och en `if`-sats, samt en `else`-sats med en `break`.
+```
+
+### Övning 4.15
+Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet. 
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler. 
 ```
 <!-- end-övningar -->
 
