@@ -395,6 +395,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-11">Övning 4.11</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-12">Övning 4.12</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-13">Övning 4.13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-14">Övning 4.14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-15">Övning 4.15</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turtles">4. Turtles</a><ul class="nav section-nav flex-column">
@@ -749,22 +751,38 @@ document.write(`
 </section>
 <section id="ovning-4-2">
 <h3>Övning 4.2<a class="headerlink" href="#ovning-4-2" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som räknar upp till ett angivet tal från 0, koden avslutas sedan med att skriva ut att räkningen är avslutad.</p>
+<p>Skapa ett program som frågar användaren om ett tal. Talet ska sedan skriva ut samtliga tal från 0 till det angivna talet. Koden avslutas sedan med att skriva ut att ”Uppräkningen är avslutad!”.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en input-sats, en for-loop och använd range() funktionen.</p>
+</div>
+</section>
+<section id="ovning-4-3">
+<h3>Övning 4.3<a class="headerlink" href="#ovning-4-3" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.</p>
+</div>
+</section>
+<section id="ovning-4-4">
+<h3>Övning 4.4<a class="headerlink" href="#ovning-4-4" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen i en lista för siffran från 1-10.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en for-loop och använd range() funktionen.</p>
 </div>
 </section>
-<section id="ovning-4-3">
-<h3>Övning 4.3<a class="headerlink" href="#ovning-4-3" title="Link to this heading">#</a></h3>
-<p>Skapa en lista med alla jämna tal mellan 1-50. Listan ska skapas utan skriva in talen själv.</p>
+<section id="ovning-4-5">
+<h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
+<p>Skapa en lista med alla jämna tal mellan 1-50. Uppgiften ska lösas med hjälp av en for-loop, en while-loop och en listbyggare. Listan ska skapas utan skriva in talen själv.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>I den här övningen behövs faktiskt bara en range-funktion. Den kan även göras med en for-loop. Försök att få till en med både en for-loop och en utan.</p>
+<p>Använd en for-loop, en while-loop och en listbyggare. Använd dessutom operatorn <code class="docutils literal notranslate"><span class="pre">%</span></code> och en if-sats.</p>
 </div>
 </section>
-<section id="ovning-4-4">
-<h3>Övning 4.4<a class="headerlink" href="#ovning-4-4" title="Link to this heading">#</a></h3>
+<section id="ovning-4-6">
+<h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
 <p>Skapa en lista med minst 15 heltal. Skriv ett program som:</p>
 <ul class="simple">
 <li><p>Filtrerar ut alla jämna tal och skapar en ny lista</p></li>
@@ -773,31 +791,15 @@ document.write(`
 <p>Skriv ut de två nya listorna.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd <code class="docutils literal notranslate"><span class="pre">if</span></code>- och <code class="docutils literal notranslate"><span class="pre">else</span></code>-satsen.</p>
-</div>
-</section>
-<section id="ovning-4-5">
-<h3>Övning 4.5<a class="headerlink" href="#ovning-4-5" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som räknar ut och skriver ut summan av alla nummer 1-100.</p>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Börja med att deklarera en summan som noll, skapa sedan en for-lopp som innehåller en range som går upp hela vägen till 100, sedan för varje tal i addera den till variabeln summan.</p>
-</div>
-</section>
-<section id="ovning-4-6">
-<h3>Övning 4.6<a class="headerlink" href="#ovning-4-6" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som fyller en lista med alla tal från 0-10 upphöjt med 2.</p>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Börja med att skapa en tom lista, skapa sedan en for-loop som fyller på med talen i kvadrat. Använd metoden .append() för att lägga till listan.</p>
+<p>Använd <code class="docutils literal notranslate"><span class="pre">%</span></code>-operatorn samt <code class="docutils literal notranslate"><span class="pre">if</span></code>- och <code class="docutils literal notranslate"><span class="pre">else</span></code>-satsen.</p>
 </div>
 </section>
 <section id="ovning-4-7">
 <h3>Övning 4.7<a class="headerlink" href="#ovning-4-7" title="Link to this heading">#</a></h3>
-<p>Skriv ett program som frågar användaren efter en siffra och sedan skriver ut multiplikationstabellen för siffran från 1-10.</p>
+<p>Skapa ett program som räknar ut och skriver ut summan av alla nummer 1-100.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
-<p>Använd en for-loop och använd range() funktionen.</p>
+<p>Börja med att deklarera en summan som noll, skapa sedan en for-lopp som innehåller en range som går upp hela vägen till 100, sedan för varje tal i addera den till variabeln summan.</p>
 </div>
 </section>
 <section id="ovning-4-8">
@@ -815,18 +817,18 @@ document.write(`
 </section>
 <section id="ovning-4-9">
 <h3>Övning 4.9<a class="headerlink" href="#ovning-4-9" title="Link to this heading">#</a></h3>
-<p>Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet.</p>
-<div class="hint dropdown admonition">
-<p class="admonition-title">Tips</p>
-<p>Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler.</p>
-</div>
-</section>
-<section id="ovning-4-10">
-<h3>Övning 4.10<a class="headerlink" href="#ovning-4-10" title="Link to this heading">#</a></h3>
 <p>Skriv ett program som multiplicerar alla tal i en lista och returnerar produkten. Om listan är tom, returnera 1.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en inbyggd metod för listor som heter len().</p>
+</div>
+</section>
+<section id="ovning-4-10">
+<h3>Övning 4.10<a class="headerlink" href="#ovning-4-10" title="Link to this heading">#</a></h3>
+<p>Skriv ett program som har ett hemligt korrekt tal mellan 1 och 20 och frågar efter ett tal. Om det angivna inte matchar hemligheten, spara talet i en lista. Om det angivna talet är korrekt, skriv ut ”Grattis!” och skriv ut listan över alla gissningar.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en while-loop och en if-sats.</p>
 </div>
 </section>
 <section id="ovning-4-11">
@@ -851,6 +853,31 @@ document.write(`
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att iterera genom listan och en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats för att kontrollera om varje tal är större än gränsvärdet.</p>
+</div>
+</section>
+<section id="ovning-4-14">
+<h3>Övning 4.14<a class="headerlink" href="#ovning-4-14" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar användaren om ett tal eller ”stopp”. Om användaren anger ett tal ska talet läggas till en lista och i slutet ska alla tal på listan summeras. Om användaren anger ”stopp” ska programmet avslutas och skriva ut summan av alla tal.</p>
+<p>Ett exempel på hur körningen skulle kunna se ut hade varit:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ange</span> <span class="n">ett</span> <span class="n">tal</span> <span class="n">eller</span> <span class="s2">&quot;stopp&quot;</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Ange</span> <span class="n">ett</span> <span class="n">tal</span> <span class="n">eller</span> <span class="s2">&quot;stopp&quot;</span><span class="p">:</span> <span class="mi">7</span>
+<span class="n">Ange</span> <span class="n">ett</span> <span class="n">tal</span> <span class="n">eller</span> <span class="s2">&quot;stopp&quot;</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">Ange</span> <span class="n">ett</span> <span class="n">tal</span> <span class="n">eller</span> <span class="s2">&quot;stopp&quot;</span><span class="p">:</span> <span class="n">stopp</span>
+<span class="n">Din</span> <span class="n">lista</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">Summan</span> <span class="n">av</span> <span class="n">alla</span> <span class="n">tal</span><span class="p">:</span> <span class="mi">18</span>
+</pre></div>
+</div>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True:</span></code> och en <code class="docutils literal notranslate"><span class="pre">if</span></code>-sats, samt en <code class="docutils literal notranslate"><span class="pre">else</span></code>-sats med en <code class="docutils literal notranslate"><span class="pre">break</span></code>.</p>
+</div>
+</section>
+<section id="ovning-4-15">
+<h3>Övning 4.15<a class="headerlink" href="#ovning-4-15" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar användaren efter en sträng, sedan svarar programmet hur många vokaler som det finns i det givna ordet.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att skapa en sträng över alla vokaler, deklarera sen en variabel som håller räkningen på hur många vokaler som finns i ordet. Därefter skapar du en for-loop som går igenom strängen bokstav för bokstav, som tittar om bokstaven finns i variabeln som håller koll på alla vokaler. Bokstaven är en vokal, lägg till +1 på variabeln som håller räkningen på antalet vokaler.</p>
 </div>
 </section>
 </section>
@@ -2119,6 +2146,8 @@ Använd <code class="docutils literal notranslate"><span class="pre">from</span>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-11">Övning 4.11</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-12">Övning 4.12</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-13">Övning 4.13</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-14">Övning 4.14</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-4-15">Övning 4.15</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turtles">4. Turtles</a><ul class="nav section-nav flex-column">
