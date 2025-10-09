@@ -12,34 +12,34 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - Nummer
 * - Grundläggande programmering
   - print-satsen, variabler och tilldelningar, datatyper och typkonverteringar, input-satsen.
-  - *1.1-1.6*
+  - *1.1-1.10*
 * - Satser
   - if- och else-satsen, elif-satsen, logiska uttryck.
   - *2.1-2.7*
 * - Listor
   - Listor och relaterade funktioner till listor.
-  - *3.1-3.9*
+  - *3.1-3.16*
 * - Loopar
   - for-loopen, range-funktionen, listor och for-loopar, while-loopen.
-  - *4.1-4.13*
+  - *4.1-4.18*
 * - Turtles
   - Rita simpel grafik med hjälp av turtle-modulen.
-  - *5.1-5.13*
+  - *5.1-5.8*
 * - Funktioner
   - Deklarera och använda funktioner.
-  - *6.1-6.8*
+  - *6.1-6.11*
 * - Lexikon
   - Deklarera och använda lexikon.
   - *7.1-7.4*
+* - Klasser
+  - Deklarera och använda klasser, metoder, arv av klasser.
+  - *8.1-8.20*
 * - Projekt i programmering
   - Lösa diverse projekt i programmering
   - Onumrerade
 * - Repetition inför klasser
   - Repetitionsuppgifter anpassade för att förbereda inför att lära sig klasser.
   - *1-11*
-* - Klasser
-  - Deklarera och använda klasser, metoder, arv av klasser.
-  - *8.1-8.20*
 ```
 
 ## 1. Grundläggande programmering
@@ -49,40 +49,54 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
 ```
 
 ## 2. Satser
+
 ```{include} satser.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
 
-## 3. Loopar
+## 3. Listor
+
+```{include} listor.md
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
+```
+## 4. Loopar
 
 ```{include} loopar.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
 
-## 4. Turtles
+## 5. Turtles
 
 ```{include} turtle.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
 
-## 5. Funktioner
+## 6. Funktioner
 
 ```{include} funktioner.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
 
-## 6. Lexikon
+## 7. Lexikon
 
 ```{include} lexikon.md
 :start-after: <!-- start-övningar -->
 :end-before: <!-- end-övningar -->
 ```
 
-## 7. Projekt i programmering
+## 8. Klasser
+
+```{include} klasser.md
+:start-after: <!-- start-övningar -->
+:end-before: <!-- end-övningar -->
+```
+
+## 9. Projekt i programmering
 
 ```{include} merfunktioner.md
 :start-after: <!-- start-projekt -->
@@ -201,9 +215,3 @@ Skapa ett spel där användaren anger en gissning mellan 0-100. Om gissningen ä
 Uppgiften liknar en av projekten, lös problemet och rådfråga på vägen!
 ```
 
-## 8. Klasser
-
-```{include} klasser.md
-:start-after: <!-- start-övningar -->
-:end-before: <!-- end-övningar -->
-```
