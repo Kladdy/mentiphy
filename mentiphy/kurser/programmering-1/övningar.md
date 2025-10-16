@@ -24,7 +24,7 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - *4.1-4.18*
 * - Turtles
   - Rita simpel grafik med hjälp av turtle-modulen.
-  - *5.1-5.8*
+  - *5.1-5.10*
 * - Funktioner
   - Deklarera och använda funktioner.
   - *6.1-6.11*
