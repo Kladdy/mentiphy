@@ -412,6 +412,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-6">Övning 5.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-7">Övning 5.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-8">Övning 5.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-9">Övning 5.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-10">Övning 5.10</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktioner">6. Funktioner</a><ul class="nav section-nav flex-column">
@@ -623,7 +625,7 @@ document.write(`
 </tr>
 <tr class="row-even"><td><p>Turtles</p></td>
 <td><p>Rita simpel grafik med hjälp av turtle-modulen.</p></td>
-<td><p><em>5.1-5.8</em></p></td>
+<td><p><em>5.1-5.10</em></p></td>
 </tr>
 <tr class="row-odd"><td><p>Funktioner</p></td>
 <td><p>Deklarera och använda funktioner.</p></td>
@@ -955,6 +957,22 @@ document.write(`
 </section>
 <section id="ovning-5-5">
 <h3>Övning 5.5<a class="headerlink" href="#ovning-5-5" title="Link to this heading">#</a></h3>
+<p>Skapa ett program som frågar användaren efter om den vill göra en cirkel eller en kvadrat, därefter frågar programmet vilken färg du vill fylla cirkeln eller kvadraten med. Sedan skapas kvadraten eller cirkeln med fyllnadsfärgen som du angav. Du kan även be om radien på cirkeln eller sidlängden på kvadraten om du vill göra det svårare!</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Deklarera först två variabler med input-funktionen och sedan använd dessa variabler i koden. Använd <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code> och <code class="docutils literal notranslate"><span class="pre">t.forward(längd)</span></code> i staden av <code class="docutils literal notranslate"><span class="pre">t.forward(längd)</span></code> i koden.</p>
+</div>
+</section>
+<section id="ovning-5-6">
+<h3>Övning 5.6<a class="headerlink" href="#ovning-5-6" title="Link to this heading">#</a></h3>
+<p>Fråga användaren om ett antal cirklar, programmet ritar sedan ut så många cirklar bredvid varandra med samma radie.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Använd en for-loop med range-funktionen som upprepar koden för varje cirkel. Använd <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code> och ett skapa ett sätt med hjälp av t.goto(x, y)` i for-loopen för att förflytta cirklarna.</p>
+</div>
+</section>
+<section id="ovning-5-7">
+<h3>Övning 5.7<a class="headerlink" href="#ovning-5-7" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.</p>
 <a class="reference internal image-reference" href="../../_images/turtleRings.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleRings.PNG" style="width: 50%;" />
 </a>
@@ -963,8 +981,8 @@ document.write(`
 <p>Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden <code class="docutils literal notranslate"><span class="pre">t.circle(radie)</span></code>. Det är viktigt att for-loopen även inkluderar <em>var</em> skölpaddan ska börja med att rita cirkeln. Använd <code class="docutils literal notranslate"><span class="pre">t.penup()</span></code> och <code class="docutils literal notranslate"><span class="pre">t.pendown()</span></code> och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.</p>
 </div>
 </section>
-<section id="ovning-5-6">
-<h3>Övning 5.6<a class="headerlink" href="#ovning-5-6" title="Link to this heading">#</a></h3>
+<section id="ovning-5-8">
+<h3>Övning 5.8<a class="headerlink" href="#ovning-5-8" title="Link to this heading">#</a></h3>
 <p>Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.</p>
 <a class="reference internal image-reference" href="../../_images/turtleHouse.PNG"><img alt="Flera ringar inom varandra." class="align-center" src="../../_images/turtleHouse.PNG" style="width: 50%;" />
 </a>
@@ -973,8 +991,8 @@ document.write(`
 <p>Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt.</p>
 </div>
 </section>
-<section id="ovning-5-7">
-<h3>Övning 5.7<a class="headerlink" href="#ovning-5-7" title="Link to this heading">#</a></h3>
+<section id="ovning-5-9">
+<h3>Övning 5.9<a class="headerlink" href="#ovning-5-9" title="Link to this heading">#</a></h3>
 <p>Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.</p>
 <a class="reference internal image-reference" href="../../_images/turtleColorrings.PNG"><img alt="Ringar med färger." class="align-center" src="../../_images/turtleColorrings.PNG" style="width: 50%;" />
 </a>
@@ -983,8 +1001,8 @@ document.write(`
 <p>Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras.</p>
 </div>
 </section>
-<section id="ovning-5-8">
-<h3>Övning 5.8<a class="headerlink" href="#ovning-5-8" title="Link to this heading">#</a></h3>
+<section id="ovning-5-10">
+<h3>Övning 5.10<a class="headerlink" href="#ovning-5-10" title="Link to this heading">#</a></h3>
 <p>Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.</p>
 <a class="reference internal image-reference" href="../../_images/turtleSpiral.PNG"><img alt="En spiral." class="align-center" src="../../_images/turtleSpiral.PNG" style="width: 50%;" />
 </a>
@@ -2201,6 +2219,8 @@ Använd <code class="docutils literal notranslate"><span class="pre">from</span>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-6">Övning 5.6</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-7">Övning 5.7</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-8">Övning 5.8</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-9">Övning 5.9</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-5-10">Övning 5.10</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktioner">6. Funktioner</a><ul class="nav section-nav flex-column">

@@ -105,6 +105,23 @@ Deklarera två variabel som använder input-funktionen för att lagra vilken fä
 ```
 
 ### Övning 5.5
+Skapa ett program som frågar användaren efter om den vill göra en cirkel eller en kvadrat, därefter frågar programmet vilken färg du vill fylla cirkeln eller kvadraten med. Sedan skapas kvadraten eller cirkeln med fyllnadsfärgen som du angav. Du kan även be om radien på cirkeln eller sidlängden på kvadraten om du vill göra det svårare!
+
+```{admonition} Tips
+:class: Hint dropdown
+Deklarera först två variabler med input-funktionen och sedan använd dessa variabler i koden. Använd `t.circle(radie)` och `t.forward(längd)` i staden av `t.forward(längd)` i koden.
+```
+
+### Övning 5.6
+Fråga användaren om ett antal cirklar, programmet ritar sedan ut så många cirklar bredvid varandra med samma radie.
+
+```{admonition} Tips
+:class: Hint dropdown
+Använd en for-loop med range-funktionen som upprepar koden för varje cirkel. Använd `t.circle(radie)` och ett skapa ett sätt med hjälp av t.goto(x, y)` i for-loopen för att förflytta cirklarna.
+```
+
+
+### Övning 5.7
 Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. Gör så att cirklarna är placerade innanför den andra. Bilden nedan visar hur resultatet ska se ut.
 
 ```{image} img/turtleRings.PNG
@@ -118,7 +135,7 @@ Skapa ett program som ritar en cirkel med radien 20, 40, 60, osv upp till 200. G
 Skapa en for-loop som använder range-funkionen för att skapa alla radier som krävs av cirklarna. I for-loopen ritas cirklarna med hjälp av metoden `t.circle(radie)`. Det är viktigt att for-loopen även inkluderar *var* skölpaddan ska börja med att rita cirkeln. Använd `t.penup()` och `t.pendown()` och ´t.goto(x, y)` i början av for-loopen för att få skölpaddan att börja rita på rätt ställe.
 ```
 
-### Övning 5.6
+### Övning 5.8
 Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.
 
 ```{image} img/turtleHouse.PNG
@@ -132,7 +149,7 @@ Skapa ett program som ritar ett rektangulärt hus med ett triangulärt tak.
 Börja med att skapa basen till huset genom att göra en forloop som skapar husets bas, sedan skapa en annan loop för taket som är triangulärt. 
 ```
 
-### Övning 5.7
+### Övning 5.9
 Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultatet kan se ut.
 
 ```{image} img/turtleColorrings.PNG
@@ -146,7 +163,7 @@ Rita 5 cirklar i olika färger bredvid varandra. Bilden nedan visar hur resultat
 Börja med att deklarera en lista med alla färger. Skapa sedan en for-loop som går igenom alla färger, skapa en cirkel för varje gång loppen uppdateras. 
 ```
 
-### Övning 5.8
+### Övning 5.10
 Skapa en spiral. Bilden nedan visar hur resultatet kan se ut.
 
 ```{image} img/turtleSpiral.PNG
