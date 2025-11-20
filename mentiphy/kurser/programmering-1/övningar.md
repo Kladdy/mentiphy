@@ -27,7 +27,7 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - *5.1-5.10*
 * - Funktioner
   - Deklarera och använda funktioner.
-  - *6.1-6.11*
+  - *6.1-6.13*
 * - Lexikon
   - Deklarera och använda lexikon.
   - *7.1-7.4*
