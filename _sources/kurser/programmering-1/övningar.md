@@ -2,7 +2,7 @@
 
 Under den här fliken samlas samtliga övningar till kursen. Istället för att navigera bland de andra flikarna är samtliga övningar samlade här. 
 
-Tabellen nedan visar var övningar till de olika avsnitten finns.
+Tabellen nedan visar var övningar till de olika avsnitten finns..
 
 ```{list-table}
 :header-rows: 1
@@ -27,7 +27,7 @@ Tabellen nedan visar var övningar till de olika avsnitten finns.
   - *5.1-5.10*
 * - Funktioner
   - Deklarera och använda funktioner.
-  - *6.1-6.11*
+  - *6.1-6.13*
 * - Lexikon
   - Deklarera och använda lexikon.
   - *7.1-7.4*

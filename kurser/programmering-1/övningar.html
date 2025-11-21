@@ -428,6 +428,8 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-9">Övning 6.9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-10">Övning 6.10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-11">Övning 6.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-12">Övning 6.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-13">Övning 6.13</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>
@@ -598,7 +600,7 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="ovningar-till-kursen">
 <h1>Övningar till kursen<a class="headerlink" href="#ovningar-till-kursen" title="Link to this heading">#</a></h1>
 <p>Under den här fliken samlas samtliga övningar till kursen. Istället för att navigera bland de andra flikarna är samtliga övningar samlade här.</p>
-<p>Tabellen nedan visar var övningar till de olika avsnitten finns.</p>
+<p>Tabellen nedan visar var övningar till de olika avsnitten finns..</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Avsnitt</p></th>
@@ -629,7 +631,7 @@ document.write(`
 </tr>
 <tr class="row-odd"><td><p>Funktioner</p></td>
 <td><p>Deklarera och använda funktioner.</p></td>
-<td><p><em>6.1-6.11</em></p></td>
+<td><p><em>6.1-6.13</em></p></td>
 </tr>
 <tr class="row-even"><td><p>Lexikon</p></td>
 <td><p>Deklarera och använda lexikon.</p></td>
@@ -1057,46 +1059,89 @@ document.write(`
 </section>
 <section id="ovning-6-6">
 <h3>Övning 6.6<a class="headerlink" href="#ovning-6-6" title="Link to this heading">#</a></h3>
+<p>Skapa en funktion <code class="docutils literal notranslate"><span class="pre">betyg(poäng)</span></code>som tar en parameter <code class="docutils literal notranslate"><span class="pre">poäng</span></code> och returnerar ett betyg baserat på poängen. Listan nedan visar hur mycket poäng som ger ett särskilt betyg.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Poäng</p></th>
+<th class="head"><p>Betyg</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>100</p></td>
+<td><p>A</p></td>
+</tr>
+<tr class="row-odd"><td><p>50</p></td>
+<td><p>C</p></td>
+</tr>
+<tr class="row-even"><td><p>30</p></td>
+<td><p>E</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Låt sedan programmet skriva ut betyget baserat på poängen. Om talet är mindre än 30 ska personen få betyget F.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">poäng</span></code>. I funktionskroppen returneras betyget genom att använda en if-, elif- och else-sats</p>
+</div>
+</section>
+<section id="ovning-6-7">
+<h3>Övning 6.7<a class="headerlink" href="#ovning-6-7" title="Link to this heading">#</a></h3>
+<p>Använd din funktion från uppgift 6.6 för att göra ett program som tar en lista med flera betyg som sedan fyller in en ny lista med betygen baserat på poängen i listan. Exempelvis kan listan se ut så här:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">poäng_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">110</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Då ska programmet skapa listan:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">betyg_lista</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Skapa listan med hjälp av en for-loop där du anropar din funktion.</p>
+</div>
+</section>
+<section id="ovning-6-8">
+<h3>Övning 6.8<a class="headerlink" href="#ovning-6-8" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad medianen är.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Börja med att deklarera funktionen med parametern <code class="docutils literal notranslate"><span class="pre">lista</span></code>. För att storleksordna listan använd <code class="docutils literal notranslate"><span class="pre">sorted()</span></code>- metoden. Beräkna sedan hur många element som listan består av, om antalet är udda så blir det mittersta elementet medianen. Om listan består av en jämn mängd element behöver funktionen ta medelvärdet av de två mittersta värdena.</p>
 </div>
 </section>
-<section id="ovning-6-7">
-<h3>Övning 6.7<a class="headerlink" href="#ovning-6-7" title="Link to this heading">#</a></h3>
+<section id="ovning-6-9">
+<h3>Övning 6.9<a class="headerlink" href="#ovning-6-9" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte <code class="docutils literal notranslate"><span class="pre">max()</span></code>)</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.</p>
 </div>
 </section>
-<section id="ovning-6-8">
-<h3>Övning 6.8<a class="headerlink" href="#ovning-6-8" title="Link to this heading">#</a></h3>
+<section id="ovning-6-10">
+<h3>Övning 6.10<a class="headerlink" href="#ovning-6-10" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop.</p>
 </div>
 </section>
-<section id="ovning-6-9">
-<h3>Övning 6.9<a class="headerlink" href="#ovning-6-9" title="Link to this heading">#</a></h3>
+<section id="ovning-6-11">
+<h3>Övning 6.11<a class="headerlink" href="#ovning-6-11" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion som kontrollerar om ett tal är ett primtal.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Använd en <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.</p>
 </div>
 </section>
-<section id="ovning-6-10">
-<h3>Övning 6.10<a class="headerlink" href="#ovning-6-10" title="Link to this heading">#</a></h3>
+<section id="ovning-6-12">
+<h3>Övning 6.12<a class="headerlink" href="#ovning-6-12" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Du kan använda <code class="docutils literal notranslate"><span class="pre">max()</span></code> och <code class="docutils literal notranslate"><span class="pre">min()</span></code> för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.</p>
 </div>
 </section>
-<section id="ovning-6-11">
-<h3>Övning 6.11<a class="headerlink" href="#ovning-6-11" title="Link to this heading">#</a></h3>
+<section id="ovning-6-13">
+<h3>Övning 6.13<a class="headerlink" href="#ovning-6-13" title="Link to this heading">#</a></h3>
 <p>Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
@@ -2235,6 +2280,8 @@ Använd <code class="docutils literal notranslate"><span class="pre">from</span>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-9">Övning 6.9</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-10">Övning 6.10</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-11">Övning 6.11</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-12">Övning 6.12</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-6-13">Övning 6.13</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losningar-till-ovningar">Lösningar till övningar</a></li>

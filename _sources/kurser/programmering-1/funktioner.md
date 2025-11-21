@@ -195,6 +195,47 @@ Börja med att deklarera funktionen med parametern `år`. I funktionskroppen skr
 ```
 
 ### Övning 6.6
+Skapa en funktion `betyg(poäng)`som tar en parameter `poäng` och returnerar ett betyg baserat på poängen. Listan nedan visar hur mycket poäng som ger ett särskilt betyg.
+
+```{list-table}
+:header-rows: 1
+
+* - Poäng
+  - Betyg
+* - 100
+  - A
+* - 50  
+  - C
+* - 30
+  - E
+```
+
+Låt sedan programmet skriva ut betyget baserat på poängen. Om talet är mindre än 30 ska personen få betyget F.
+
+```{admonition} Tips
+:class: Hint dropdown
+Börja med att deklarera funktionen med parametern `poäng`. I funktionskroppen returneras betyget genom att använda en if-, elif- och else-sats
+```
+
+### Övning 6.7
+Använd din funktion från uppgift 6.6 för att göra ett program som tar en lista med flera betyg som sedan fyller in en ny lista med betygen baserat på poängen i listan. Exempelvis kan listan se ut så här:
+
+```python
+poäng_lista = [110, 55, 40, 0]
+```
+
+Då ska programmet skapa listan:
+
+```python
+betyg_lista = ['A', 'C', 'E', 'F']
+```
+
+```{admonition} Tips
+:class: Hint dropdown
+Skapa listan med hjälp av en for-loop där du anropar din funktion.
+```
+
+### Övning 6.8
 
 Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad medianen är.
 
@@ -203,7 +244,7 @@ Skapa en funktion som beräknar medianen av en lista. Skriv sedan ut vad mediane
 Börja med att deklarera funktionen med parametern `lista`. För att storleksordna listan använd `sorted()`- metoden. Beräkna sedan hur många element som listan består av, om antalet är udda så blir det mittersta elementet medianen. Om listan består av en jämn mängd element behöver funktionen ta medelvärdet av de två mittersta värdena.
 ```
 
-### Övning 6.7
+### Övning 6.9
 Skriv en funktion som tar en lista av tal och returnerar det största talet. (Använd inte `max()`)
 
 ```{admonition} Tips
@@ -212,28 +253,28 @@ Skriv en funktion som tar en lista av tal och returnerar det största talet. (An
 Du kan använda en variabel som börjar med det första talet i listan och sedan jämföra varje efterföljande tal med denna variabel.
 ```
 
-### Övning 6.8
+### Övning 6.10
 Skriv en funktion som vänder på en lista utan att använda inbyggda funktioner som reverse().
 ```{admonition} Tips
 :class: Hint dropdown
 
 Du kan skapa en tom lista och lägga till elementen från original-listan baklänges genom att använda en `for`-loop.
 ```
-### Övning 6.9
+### Övning 6.11
 Skriv en funktion som kontrollerar om ett tal är ett primtal.
 ```{admonition} Tips
 :class: Hint dropdown
 
 Använd en `for`-loop för att kontrollera om talet är delbart med något tal mellan 2 och talet själv. Om det är delbart med något av dessa tal är det inte ett primtal.
 ```
-### Övning 6.10
+### Övning 6.12
 Skriv en funktion som tar en lista av tal och returnerar skillnaden mellan det största och det minsta talet.
 ```{admonition} Tips
 :class: Hint dropdown
 
 Du kan använda `max()` och `min()` för att hitta det största och minsta talet i listan och sedan beräkna skillnaden mellan dessa.
 ```
-### Övning 6.11
+### Övning 6.13
 Skriv en funktion som tar en lista med tal och returnerar två listor: en med alla udda tal och en med alla jämna tal.
 
 ```{admonition} Tips
