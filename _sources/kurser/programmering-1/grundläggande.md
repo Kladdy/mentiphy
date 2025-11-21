@@ -244,7 +244,7 @@ Skapa ett simpelt bankkonto där det finns en variabel som heter `saldo´. Förs
 
 Nedan visas ett exempel på hur programmet kan se ut.
 
-```python
+```
 Du har 5000 kr på ditt konto.
 Hur mycket vill du ta ut?
 500
