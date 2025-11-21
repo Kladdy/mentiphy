@@ -2,7 +2,7 @@
 
 Under den här fliken samlas samtliga övningar till kursen. Istället för att navigera bland de andra flikarna är samtliga övningar samlade här. 
 
-Tabellen nedan visar var övningar till de olika avsnitten finns..
+Tabellen nedan visar var övningar till de olika avsnitten finns.
 
 ```{list-table}
 :header-rows: 1
