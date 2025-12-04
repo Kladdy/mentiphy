@@ -197,11 +197,13 @@ Använd en while-loop med villkoret att värdet ska vara mindre än 1000.
 ### Övning 4.4
 Skriv ett program som frågar användaren om hur många stjärnor man vill ha i en trappa. Programmet ska sedan med en for-loop skapar en trappa av stjärnor. Kolla nedan på ett exempel.
 
+```
 *
 **
 ***
 ****
 *****
+```
 
 ```{admonition} Tips
 :class: Hint dropdown
