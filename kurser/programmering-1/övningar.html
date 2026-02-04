@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
@@ -47,10 +47,10 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleHintShow = 'Klicka för att visa';</script>
+    <script>let toggleHintHide = 'Klicka för att dölja';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=1ae7504c"></script>
     <script src="../../_static/translations.js?v=c568922a"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
@@ -219,7 +219,6 @@
 <li class="toctree-l1"><a class="reference internal" href="projekt.html">Pythonprojekt: Skapa ett eget program</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Övningar till kursen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fels%C3%B6kning.html">Felsökning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rekord.html">Rekord</a></li>
 </ul>
 
     </div>
@@ -439,6 +438,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-2">Övning 7.2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-3">Övning 7.3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-4">Övning 7.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-5">Övning 7.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-6">Övning 7.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-7">Övning 7.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-8">Övning 7.8</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasser">8. Klasser</a><ul class="nav section-nav flex-column">
@@ -1184,14 +1187,62 @@ Du har tagit ut 500 och har 4500 kr på ditt konto.
 </section>
 <section id="ovning-7-3">
 <h3>Övning 7.3<a class="headerlink" href="#ovning-7-3" title="Link to this heading">#</a></h3>
+<p>Utgå från följande lexikon:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">betyg</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Anna&#39;</span><span class="p">:</span> <span class="n">A</span><span class="p">,</span> <span class="s1">&#39;Bengt&#39;</span><span class="p">:</span> <span class="n">C</span><span class="p">,</span> <span class="s1">&#39;Cecilie&#39;</span><span class="p">:</span> <span class="n">E</span><span class="p">,</span> <span class="s1">&#39;Dennis&#39;</span><span class="p">:</span> <span class="n">D</span><span class="p">,</span> <span class="s1">&#39;Erik&#39;</span><span class="p">:</span> <span class="n">B</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Skapa en funktion som tar en nyckel som input och returnerar betyget.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera först lexikonet, sedan skapa en funktion som tar en nyckel som input och returnerar betyget.</p>
+</div>
+</section>
+<section id="ovning-7-4">
+<h3>Övning 7.4<a class="headerlink" href="#ovning-7-4" title="Link to this heading">#</a></h3>
+<p>Utgå från följande lexikon:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">resultat</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Ali&quot;</span><span class="p">:</span> <span class="mi">78</span><span class="p">,</span> <span class="s2">&quot;Bea&quot;</span><span class="p">:</span> <span class="mi">45</span><span class="p">,</span> <span class="s2">&quot;Chen&quot;</span><span class="p">:</span> <span class="mi">62</span><span class="p">,</span> <span class="s2">&quot;Stina&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span> <span class="s2">&quot;Erik&quot;</span><span class="p">:</span> <span class="mi">49</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Skapa en funktion som tar en nyckel som input och säger om personen är godkänd på provet, gränsen för att bli godkänd går vid 50 poäng.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera först lexikonet, sedan skapa en funktion som tar en nyckel som input, bestäm sedan personens poäng, gör sedan en if- och else-sats för att avgöra om personen är godkänd. Returnera sedan tillbaka om personen är godkänd eller inte.</p>
+</div>
+</section>
+<section id="ovning-7-5">
+<h3>Övning 7.5<a class="headerlink" href="#ovning-7-5" title="Link to this heading">#</a></h3>
+<p>Utgå från följande lexikon:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">försäljning</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;måndag&quot;</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="s2">&quot;tisdag&quot;</span><span class="p">:</span> <span class="mi">950</span><span class="p">,</span> <span class="s2">&quot;onsdag&quot;</span><span class="p">:</span> <span class="mi">1100</span><span class="p">,</span> <span class="s2">&quot;torsdag&quot;</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span> <span class="s2">&quot;fredag&quot;</span><span class="p">:</span> <span class="mi">1300</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Skapa en funktion som beräknar hur mycket de har tjänat på sin försäljning på hela veckan.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera först lexikonet, sedan skapa en funktion som beräknar hur mycket de har tjänat på sin försäljning på hela veckan. Returnera sedan tillbaka summan.</p>
+</div>
+</section>
+<section id="ovning-7-6">
+<h3>Övning 7.6<a class="headerlink" href="#ovning-7-6" title="Link to this heading">#</a></h3>
+<p>Utgå från följande lexikon:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lager</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;penna&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;sudd&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;linjal&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;stift&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Skapa en funktion som skriver ut de nycklarna som behöver fyllas på, alltså för varje nyckel som har 0 i lagret.</p>
+<div class="hint dropdown admonition">
+<p class="admonition-title">Tips</p>
+<p>Kopiera först lexikonet, sedan skapa en funktion som tar lexikonet som parameter, funktionen tittar sedan på alla värden i lexikonet, om lexikonet har värde 0, skriv ut nyckeln.</p>
+</div>
+</section>
+<section id="ovning-7-7">
+<h3>Övning 7.7<a class="headerlink" href="#ovning-7-7" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
 <p>Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i en dictionary. Du kan använda en tom dictionary och fylla på den med <code class="docutils literal notranslate"><span class="pre">dict[key]</span> <span class="pre">=</span> <span class="pre">value</span></code>.</p>
 </div>
 </section>
-<section id="ovning-7-4">
-<h3>Övning 7.4<a class="headerlink" href="#ovning-7-4" title="Link to this heading">#</a></h3>
+<section id="ovning-7-8">
+<h3>Övning 7.8<a class="headerlink" href="#ovning-7-8" title="Link to this heading">#</a></h3>
 <p>Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.</p>
 <div class="hint dropdown admonition">
 <p class="admonition-title">Tips</p>
@@ -2291,6 +2342,10 @@ Använd <code class="docutils literal notranslate"><span class="pre">from</span>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-2">Övning 7.2</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-3">Övning 7.3</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-4">Övning 7.4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-5">Övning 7.5</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-6">Övning 7.6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-7">Övning 7.7</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ovning-7-8">Övning 7.8</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#klasser">8. Klasser</a><ul class="nav section-nav flex-column">

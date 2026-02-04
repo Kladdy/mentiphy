@@ -133,8 +133,70 @@ Använd samma lexikon som från övning 6.1 för att skriva ut alla nycklar (mat
 Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lexikon".
 
 ```
-
 ### Övning 7.3
+
+Utgå från följande lexikon:
+
+```python
+betyg = {'Anna': A, 'Bengt': C, 'Cecilie': E, 'Dennis': D, 'Erik': B}
+```
+
+Skapa en funktion som tar en nyckel som input och returnerar betyget.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Kopiera först lexikonet, sedan skapa en funktion som tar en nyckel som input och returnerar betyget.
+```
+
+### Övning 7.4
+
+Utgå från följande lexikon:
+
+```python
+resultat = {"Ali": 78, "Bea": 45, "Chen": 62, "Stina": 90, "Erik": 49}
+```
+
+Skapa en funktion som tar en nyckel som input och säger om personen är godkänd på provet, gränsen för att bli godkänd går vid 50 poäng.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Kopiera först lexikonet, sedan skapa en funktion som tar en nyckel som input, bestäm sedan personens poäng, gör sedan en if- och else-sats för att avgöra om personen är godkänd. Returnera sedan tillbaka om personen är godkänd eller inte.
+
+```
+### Övning 7.5
+
+Utgå från följande lexikon:
+
+```python
+försäljning = {"måndag": 1200, "tisdag": 950, "onsdag": 1100, "torsdag": 800, "fredag": 1300}
+```
+
+Skapa en funktion som beräknar hur mycket de har tjänat på sin försäljning på hela veckan.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Kopiera först lexikonet, sedan skapa en funktion som beräknar hur mycket de har tjänat på sin försäljning på hela veckan. Returnera sedan tillbaka summan.
+```
+
+### Övning 7.6  
+
+Utgå från följande lexikon:
+
+```python
+lager = {"penna": 10, "sudd": 5, "linjal": 0, "stift": 15}
+```
+
+Skapa en funktion som skriver ut de nycklarna som behöver fyllas på, alltså för varje nyckel som har 0 i lagret.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Kopiera först lexikonet, sedan skapa en funktion som tar lexikonet som parameter, funktionen tittar sedan på alla värden i lexikonet, om lexikonet har värde 0, skriv ut nyckeln.
+```
+### Övning 7.7
 
 Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.
 
@@ -145,7 +207,7 @@ Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i 
 
 ```
 
-### Övning 7.4
+### Övning 7.8
 
 Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.
 
