@@ -36,7 +36,7 @@ parts:
     - file: kurser/programmering-1/projekt
     - file: kurser/programmering-1/övningar
     - file: kurser/programmering-1/felsökning
-    - file: kurser/programmering-1/rekord
+ 
     
   # - caption: Fysik 1
   #   chapters:
