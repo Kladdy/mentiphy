@@ -125,7 +125,7 @@ Använd en for-loop, ta inspiration längre upp på fliken från "Loopar och lex
 
 ### Övning 7.2
 
-Använd samma lexikon som från övning 6.1 för att skriva ut alla nycklar (matvaror) i lexikonet.
+Använd samma lexikon som från övning 7.1 för att skriva ut alla nycklar (matvaror) i lexikonet.
 
 ```{admonition} Tips
 :class: Hint dropdown
@@ -197,6 +197,34 @@ Skapa en funktion som skriver ut de nycklarna som behöver fyllas på, alltså f
 Kopiera först lexikonet, sedan skapa en funktion som tar lexikonet som parameter, funktionen tittar sedan på alla värden i lexikonet, om lexikonet har värde 0, skriv ut nyckeln.
 ```
 ### Övning 7.7
+Utgå från följande lexikon:
+
+```python
+temperaturer = {"måndag": 18, "tisdag": 22, "onsdag": 20, "torsdag": 25, "fredag": 26}
+```
+Skapa en funktion som räknar ut hur många dagar temperaturen var mellan 20 grader och 25 grader.
+
+```{admonition} Tips
+:class: Hint dropdown
+
+Kopiera först lexikonet, sedan skapa en funktion som tar lexikonet som parameter, funktionen tittar sedan på alla värden i lexikonet, om lexikonet har värde mellan 20 och 25, spara antalet i en variabel som heter antal_dagar. Returnera sedan tillbaka antal_dagar.
+```
+
+### Övning 7.8
+Utgå från följande lexikon:
+
+```python
+poäng = {"Anna": 45, "Erik": 60, "Sara": 30, "Bengt": 50}
+```
+Skapa en funktion som ger alla personer 5 mer poäng.
+
+```{admonition} Tips
+:class: Hint dropdown
+Kopierat först lexikonet, skapa sedan en funktion som tar lexikonet som parameter och byter lägger till 5 poäng, returnera sedan tillbaka lexikonet. Uppgiften är lättast att lösa genom att göra ett nytt lexikon som returneras.
+```
+
+
+### Övning 7.9
 
 Skapa en funktion som tar en lista med namn som indata och returnerar en dictionary där varje namn är en nyckel och värdet är längden på namnet.
 
@@ -207,7 +235,7 @@ Tänk på hur du kan iterera över en lista och lägga till nyckel-värde-par i 
 
 ```
 
-### Övning 7.8
+### Övning 7.10
 
 Skapa en funktion som tar en lista med ord och returnerar en dictionary där varje ord är en nyckel och värdet är hur många gånger ordet förekommer i listan.
 
