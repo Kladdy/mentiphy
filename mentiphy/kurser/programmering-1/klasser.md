@@ -295,15 +295,17 @@ Skapa ett specialattribut `element` som representerar åtminstone elementen, exe
 
 - En karaktär med elementen `Eld` gör 50% mer styrka mot en karaktär med elementen `Jord`.
 
+Hur den här styrkan implementeras kommer senare, men det är bra att förstå principen.
+
 
 #### Steg 2
 Lägg till en metod `lever` som returnerar hälsan hos en karaktär.
 
 #### Steg 3
-Skapa en metod `beskriv` som skriver ut karaktärens `level`, `hälsa` och `styrka`.
+Skapa en metod `beskriv` som skriver ut karaktärens `level`, `hälsa` och `styrka`. Varje attribut kan beskrivas på en ny rad med en ny print. Printa även en rad med bindestreck längst ner!
 
 #### Steg 4
-Skapa subklassen `Fiende` som ärver attribut och metoder från `Karaktär`. Subklassen `Fiende` har en `level`, `hälsa`, `styrka` och `element`. Se till att den första fienden har en hälsa som är slumpad mellan 50 och 75 och skadan mellan 5-10. Attributet ska vara slumpmässiga.
+Skapa subklassen `Fiende` som ärver attribut och metoder från `Karaktär`. Subklassen `Fiende` har en `level`, `hälsa`, `styrka` och `element`. Se till att den första fienden har en hälsa som är slumpad mellan 50 och 75 och skadan mellan 5-10. Attributen ska vara slumpmässiga.
 
 #### Steg 5
 Skapa en metod `beskriv` som skriver ut fiendens `level`, `hälsa` och `styrka`. Printa även en rad med bindestreck längst ner!
